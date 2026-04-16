@@ -1,0 +1,83 @@
+{
+  "states": {
+    "free": "Les limites du plan gratuit s'appliquent",
+    "unactivated": "Activer Ordinay sur cet appareil",
+    "activating": "Activation en cours",
+    "active": "Activation terminée",
+    "expired": "Licence expirée - Réactivez cet appareil",
+    "error": "Erreur d'activation - Réessayez"
+  },
+  "views": {
+    "waiting": {
+      "title": "Activation d'Ordinay",
+      "description": "Terminez le paiement dans votre navigateur. L'application s'activera automatiquement une fois le paiement terminé.",
+      "status": "En attente d'activation..."
+    },
+    "success": {
+      "title": "Activation terminée",
+      "description": "Votre appareil est maintenant activé. Les détails de la licence sont prêts.",
+      "rewardsTitle": "Récompense de parrainage ajoutée",
+      "rewards": {
+        "percentage": "{{value}}% de réduction",
+        "fixed": "{{value}} de réduction",
+        "extraDays": "{{value}} jours supplémentaires",
+        "expires": "Expire le {{date}}",
+        "noExpiry": "Sans expiration"
+      }
+    },
+    "error": {
+      "title": "Échec de l'activation"
+    },
+    "freeSetup": {
+      "title": "Configuration du plan gratuit",
+      "description": "Configuration de votre plan gratuit. Un instant...",
+      "status": "Préparation du plan gratuit..."
+    },
+    "choice": {
+      "title": "Activer Ordinay (facultatif)",
+      "subtitle": "Continuez sur le plan gratuit ou activez quand vous êtes prêt.",
+      "description": "L'activation supprime les limites du plan gratuit pour que vous puissiez évoluer sans interruption.",
+      "bullets": {
+        "limits": "Supprime les limites du plan gratuit pour les clients, dossiers et tâches actives.",
+        "manage": "Activez à tout moment depuis Paramètres > Licence."
+      },
+      "footer": "Ordinay reste utilisable sans activation. Les limites du plan gratuit s'appliquent."
+    }
+  },
+  "actions": {
+    "openActivation": "Rouvrir la page d'activation",
+    "back": "Retour",
+    "continue": "Continuer vers Ordinay",
+    "tryAgain": "Réessayer",
+    "continueFree": "Continuer sur le plan gratuit",
+    "activate": "Activer maintenant"
+  },
+  "details": {
+    "status": "Statut : {{status}}",
+    "plan": "Plan : {{plan}}",
+    "validUntil": "Valable jusqu'au : {{date}}",
+    "statusDefaults": {
+      "active": "actif"
+    },
+    "plans": {
+      "free": "gratuit",
+      "yearly": "annuel",
+      "monthly": "mensuel",
+      "perpetual": "perpétuel"
+    },
+    "validUntilValues": {
+      "lifetime": "À vie",
+      "unlimited": "Illimité",
+      "fallbackDate": "2027-01-20"
+    }
+  },
+  "planChange": {
+    "toast": {
+      "title": "Plan mis a jour",
+      "message": "Votre plan a ete modifie avec succes."
+    }
+  },
+  "errors": {
+    "activationFailed": "Échec de l'activation. Veuillez réessayer."
+  }
+}

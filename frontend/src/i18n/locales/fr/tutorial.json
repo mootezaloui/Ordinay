@@ -1,0 +1,284 @@
+{
+  "progress": "Étape {{current}} sur {{total}}",
+  "controls": {
+    "next": "Suivant",
+    "back": "Retour",
+    "finish": "Terminer",
+    "skipStep": "Passer cette étape",
+    "exit": "Quitter le tutoriel",
+    "pressEscToExit": "Appuyez sur Échap pour quitter",
+    "continuePhase2": "Continuer vers les Dossiers",
+    "continuePhase3": "Continuer vers les Procès",
+    "continuePhase4": "Continuer vers les Tâches",
+    "continuePhase5": "Continuer vers les Audiences",
+    "continuePhase6": "Continuer vers les Huissiers",
+    "continuePhase7": "Continuer vers les Finances",
+    "continuePhase8": "Continuer vers les Documents"
+  },
+  "steps": {
+    "dashboard-intro": {
+      "title": "Bienvenue au Tableau de Bord ✨",
+      "description": "Un aperçu complet en un coup d'œil : clients, dossiers, procès, tâches, revenus. Tout ce qu'il vous faut pour diriger efficacement."
+    },
+    "sidebar-clients": {
+      "title": "Commencez par les Clients 👥",
+      "description": "Dans Ordinay, tout commence par un client. C'est ici que vous les gérez.",
+      "action": "Ouvrir la section Clients"
+    },
+    "create-client": {
+      "title": "Ajoutez Votre Premier Client ➕",
+      "description": "Créons votre premier client. C'est la base de tout votre travail juridique.",
+      "action": "Cliquez sur 'Ajouter un client'"
+    },
+    "phase1-complete": {
+      "title": "Excellent Début ! ✅",
+      "description": "Les bases, c'est du passé. Vous savez naviguer et ajouter des clients. Suivant : les dossiers."
+    },
+    "client-detail-intro": {
+      "title": "À l'Intérieur du Profil Client 📋",
+      "description": "Tout ce qui concerne ce client se trouve ici : dossiers, tâches, audiences, finances."
+    },
+    "client-dossiers-tab": {
+      "title": "Afficher les Dossiers 📁",
+      "description": "Voyez tous les dossiers liés à ce client. Créez et gérez les dossiers ici.",
+      "action": "Ouvrir l'onglet Dossiers"
+    },
+    "create-dossier-from-client": {
+      "title": "Créer un Dossier 📋",
+      "description": "Un dossier = un dossier juridique. Créons-en un pour ce client.",
+      "action": "Cliquez sur 'Ajouter un dossier'"
+    },
+    "client-notification-intro": {
+      "title": "Notifications Intelligentes 🔔",
+      "description": "Ordinay détecte les moments importants — nouveaux dossiers, changements de statut, audiences à venir. Restez informé sans effort.",
+      "action": "Choisir d'envoyer ou passer"
+    },
+    "dossier-detail-overview": {
+      "title": "Le Cœur de Votre Travail 🎯",
+      "description": "Un dossier contient tout : tâches, missions, audiences, documents, notes, finances — organisés au même endroit."
+    },
+    "sidebar-dossiers": {
+      "title": "Vue Globale des Dossiers 🗂️",
+      "description": "Voyez tous vos dossiers, tous clients confondus, en un seul endroit. Gérez-les comme vous préférez.",
+      "action": "Ouvrir la section Dossiers"
+    },
+    "dossiers-list-overview": {
+      "title": "Workflows Flexibles ⚡",
+      "description": "Créez des dossiers depuis un client ou depuis ici. Les deux approches fonctionnent — choisissez ce qui vous convient."
+    },
+    "phase2-complete": {
+      "title": "Maître des Dossiers ! ✅",
+      "description": "Vous maîtrisez les dossiers sur le bout des doigts. Suivant : les procès."
+    },
+    "select-dossier-for-lawsuits": {
+      "title": "Ouvrir un Dossier 📂",
+      "description": "Pour apprendre les procès, sélectionnez d'abord un dossier.",
+      "action": "Cliquer sur un dossier pour l'ouvrir"
+    },
+    "dossier-lawsuits-tab": {
+      "title": "Gérer les Procès ⚖️",
+      "description": "Les procès sont vos procédures judiciaires formelles — litiges, contentieux, procédures de cour. Un dossier peut contenir plusieurs procès.",
+      "action": "Ouvrir l'onglet Procès"
+    },
+    "create-lawsuit-from-dossier": {
+      "title": "Créer un Procès 📝",
+      "description": "Ajoutez un procès avec sa cour, ses parties et son statut. Suivez chaque procès.",
+      "action": "Cliquez sur 'Ajouter un procès'"
+    },
+    "lawsuit-notification-intro": {
+      "title": "Tenez les Clients Informés 📢",
+      "description": "Nouveau procès ? Ordinay peut notifier votre client automatiquement. Gardez-les dans la boucle.",
+      "action": "Choisir d'envoyer ou passer"
+    },
+    "lawsuit-detail-overview": {
+      "title": "Aperçu du Procès 🔍",
+      "description": "Suivez la cour, le statut, les audiences, les résultats — tout documenté au même endroit."
+    },
+    "phase3-complete": {
+      "title": "Procès Sous Contrôle ! ✅",
+      "description": "Vous savez gérer les procès. Suivant : les tâches et votre flux quotidien."
+    },
+    "sidebar-dossiers-for-tasks": {
+      "title": "Retour aux Dossiers 🔙",
+      "description": "Continuons avec les tâches. Retournez à votre liste de dossiers.",
+      "action": "Ouvrir Dossiers"
+    },
+    "select-dossier-for-tasks": {
+      "title": "Ouvrir un Dossier 📂",
+      "description": "Sélectionnez un dossier pour explorer ses tâches.",
+      "action": "Cliquer sur un dossier pour l'ouvrir"
+    },
+    "dossier-tasks-tab": {
+      "title": "Votre Liste de Tâches ✓",
+      "description": "Les tâches, c'est comment le travail se fait. Chaque dossier a sa propre liste.",
+      "action": "Ouvrir l'onglet Tâches"
+    },
+    "create-task-from-dossier": {
+      "title": "Créer une Tâche 📌",
+      "description": "Ajoutez une tâche avec deadline et priorité. Restez organisé.",
+      "action": "Cliquez sur 'Ajouter une tâche'"
+    },
+    "task-detail-overview": {
+      "title": "Détails de la Tâche 📊",
+      "description": "Définissez la priorité, la date limite, assignez à l'équipe. Tout est suivi."
+    },
+    "task-status-workflow": {
+      "title": "Suivre la Progression 📈",
+      "description": "Déplacez les tâches de 'À faire' → 'En cours' → 'Terminé'. Votre tableau affiche ce qui attend."
+    },
+    "sidebar-personal-tasks": {
+      "title": "Tâches Personnelles 📝",
+      "description": "Pas tout ce qui est une tâche n'appartient à un dossier. Utilisez ceci pour vos rappels.",
+      "action": "Ouvrir Tâches Personnelles"
+    },
+    "personal-tasks-overview": {
+      "title": "Vos Rappels Privés 🔒",
+      "description": "Tâches non liées à un dossier. Parfait pour appels, travail administratif, relances."
+    },
+    "phase4-complete": {
+      "title": "Maître des Tâches ! ✅",
+      "description": "Vous avez maîtrisé les tâches. Suivant : les sessions judiciaires."
+    },
+    "sidebar-sessions": {
+      "title": "Sessions Judiciaires 📅",
+      "description": "Les sessions sont vos comparutions — audiences, réunions, rendez-vous. Gérez-les ici.",
+      "action": "Ouvrir Sessions"
+    },
+    "sessions-list-overview": {
+      "title": "Votre Calendrier 🗓️",
+      "description": "Toutes les sessions programmées en un seul endroit. Chacune liée à son dossier ou procès."
+    },
+    "create-session": {
+      "title": "Planifier une Session 📌",
+      "description": "Ajoutez une audience ou réunion. Définissez date, heure, lieu et liez à votre procès.",
+      "action": "Cliquez sur 'Ajouter une session'"
+    },
+    "session-detail-overview": {
+      "title": "Fiche de Session 📝",
+      "description": "Documentez le résultat, les notes, et les prochaines étapes. Gardez un dossier clair."
+    },
+    "phase5-complete": {
+      "title": "Pro des Sessions ! ✅",
+      "description": "Vous pouvez gérer les sessions. Suivant : les huissiers et missions."
+    },
+    "sidebar-officers": {
+      "title": "Rencontrez Vos Huissiers 👔",
+      "description": "Les huissiers exécutent vos missions : significations, recouvrements, etc.",
+      "action": "Ouvrir Huissiers"
+    },
+    "officers-list-overview": {
+      "title": "Votre Réseau d'Huissiers 🤝",
+      "description": "Gérez votre liste d'huissiers et officiers. Vous en aurez besoin pour créer des missions."
+    },
+    "missions-workflow-explained": {
+      "title": "Comment Fonctionnent les Missions ⚡",
+      "description": "Les missions sont du travail facturable par les huissiers. Créez-les, suivez le progrès, les honoraires vont à vos finances."
+    },
+    "phase6-complete": {
+      "title": "Expert des Missions ! ✅",
+      "description": "Vous comprenez huissiers et missions. Suivant : votre aperçu financier."
+    },
+    "sidebar-accounting": {
+      "title": "Vos Finances 💰",
+      "description": "La comptabilité affiche votre tableau financier complet : revenus, dépenses, soldes.",
+      "action": "Ouvrir Comptabilité"
+    },
+    "financial-overview": {
+      "title": "Tableau de Bord Financier 📊",
+      "description": "Voyez vos revenus en un coup d'œil : honoraires de missions, paiements clients, dépenses — ensemble."
+    },
+    "financial-entries-explained": {
+      "title": "Traçabilité Complète 🔗",
+      "description": "Chaque entrée est liée à sa source : mission, paiement ou dépense. Toujours transparent."
+    },
+    "phase7-complete": {
+      "title": "Clarté Financière ! ✅",
+      "description": "Vous comprenez comment Ordinay suit votre argent. Dernier acte : documents et historique."
+    },
+    "sidebar-dossiers-for-documents": {
+      "title": "Gestion Documentaire 📄",
+      "description": "Avant de terminer, explorons documents, notes et historique. Retournez aux dossiers.",
+      "action": "Ouvrir Dossiers"
+    },
+    "select-dossier-for-documents": {
+      "title": "Ouvrir un Dossier 📂",
+      "description": "Sélectionnez un dossier pour voir les outils de gestion documentaire.",
+      "action": "Cliquer sur un dossier"
+    },
+    "dossier-documents-tab": {
+      "title": "Stocker les Documents 📎",
+      "description": "Liez tous les fichiers importants à votre dossier : contrats, preuves, pièces légales.",
+      "action": "Ouvrir l'onglet Documents"
+    },
+    "documents-overview": {
+      "title": "Espace Documentaire 📎",
+      "description": "Centralisez tous vos fichiers. Téléversez, ouvrez, téléchargez, liez, gérez en simplicité."
+    },
+    "dossier-notes-tab": {
+      "title": "Prenez des Notes 📝",
+      "description": "Ajoutez des notes internes pour contexte, décisions, rappels. Privées et organisées."
+    },
+    "notes-overview": {
+      "title": "Espace Notes 📝",
+      "description": "Gardez le contexte, décisions, rappels. Notes privées, organisées par dossier."
+    },
+    "dossier-history-tab": {
+      "title": "Piste d'Audit 🔍",
+      "description": "Chaque action est enregistrée : créations, modifications, événements clés. Historique clair et fiable.",
+      "action": "Ouvrir l'onglet Historique"
+    },
+    "history-overview": {
+      "title": "Piste d'Audit 🔍",
+      "description": "Consulter la chronologie complète : créations, mises à jour, paiements, audiences — tout tracé."
+    },
+    "return-to-dashboard": {
+      "title": "Retour au Tableau de Bord 🏠",
+      "description": "Vous avez exploré toutes les fonctionnalités clés. Retournons où tout se rejoint.",
+      "action": "Ouvrir Tableau de bord"
+    },
+    "phase8-complete": {
+      "title": "Maîtrise Complète ! ✅",
+      "description": "Vous maîtrisez documents, notes, historique. Vous êtes prêt à gérer votre cabinet efficacement."
+    },
+    "tutorial-complete": {
+      "title": "Félicitations ! 🎉",
+      "description": "Vous avez terminé le tutoriel Ordinay. Vous pouvez gérer clients, dossiers, procès, tâches, sessions, missions, finances et documents. Dirigez votre cabinet avec assurance."
+    }
+  },
+  "completion": {
+    "title": "Tutoriel en Pause",
+    "description": "Vous pouvez reprendre ou relancer le tutoriel à tout moment depuis les Paramètres.",
+    "continueExploring": "Continuer l'exploration"
+  },
+  "prompt": {
+    "title": "Prêt à Apprendre ?",
+    "description": "Souhaitez-vous une visite guidée rapide d'Ordinay ? Nous vous montrerons comment naviguer dans l'application et créer votre premier client.",
+    "startTutorial": "Commencer le tutoriel guidé",
+    "exploreAlone": "Je préfère explorer seul",
+    "laterNote": "Vous pouvez toujours commencer le tutoriel plus tard depuis les Paramètres."
+  },
+  "settings": {
+    "section": "Tutoriel Interactif",
+    "startTitle": "Démarrer le tutoriel interactif",
+    "startDescription": "Apprenez en pratiquant avec une visite guidée étape par étape.",
+    "startButton": "Démarrer le tutoriel",
+    "resumeButton": "Reprendre le tutoriel",
+    "restartButton": "Recommencer le tutoriel",
+    "status": {
+      "notStarted": "Non commencé",
+      "inProgress": "En cours",
+      "completed": "Terminé"
+    }
+  },
+  "phases": {
+    "phase1": "Phase 1 : Clients",
+    "phase2": "Phase 2 : Dossiers",
+    "phase3": "Phase 3 : Procès",
+    "phase4": "Phase 4 : Tâches",
+    "phase5": "Phase 5 : Audiences",
+    "phase6": "Phase 6 : Huissiers & Missions",
+    "phase7": "Phase 7 : Finances",
+    "phase8": "Phase 8 : Documents, Notes, Historique",
+    "phase9": "Phase 9 : Terminé"
+  }
+}

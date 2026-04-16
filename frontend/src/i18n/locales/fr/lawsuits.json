@@ -1,0 +1,248 @@
+{
+  "page": {
+    "title": "Procès",
+    "subtitle": "{{total}} procès au total",
+    "subtitleFiltered": "{{total}} procès au total, {{displayed}} affichés",
+    "actions": {
+      "newLawsuit": "Nouveau Procès",
+      "newLawsuitDisabled": "Impossible de créer un procès sans dossiers. Veuillez d'abord créer un dossier."
+    },
+    "loading": "Chargement des procès..."
+  },
+  "stats": {
+    "total": "Total des Procès",
+    "inProgress": "En Cours",
+    "upcoming": "Audiences à Venir",
+    "upcomingTrend": "dans les 7 jours",
+    "completed": "Terminés"
+  },
+  "table": {
+    "columns": {
+      "lawsuitNumber": "Procès #",
+      "title": "Titre",
+      "dossier": "Dossier",
+      "court": "Tribunal",
+      "nextHearing": "Prochaine audience",
+      "status": "Statut",
+      "actions": "Actions"
+    },
+    "nextHearing": {
+      "none": "Pas d'audience"
+    },
+    "status": {
+      "inProgress": "En Cours",
+      "onHold": "En Attente",
+      "suspended": "Suspendu",
+      "closed": "Clos",
+      "completed": "Terminé"
+    },
+    "actions": {
+      "view": "Voir les détails",
+      "edit": "Modifier",
+      "delete": "Supprimer"
+    },
+    "empty": "Aucun procès trouvé",
+    "emptyNoDossier": "Veuillez ajouter un dossier avant d'ajouter un procès.",
+    "emptyFiltered": "Aucun résultat trouvé"
+  },
+  "confirm": {
+    "delete": {
+      "title": "Supprimer le procès",
+      "message": "Êtes-vous sûr de vouloir supprimer ce procès ?",
+      "confirm": "Supprimer",
+      "cancel": "Annuler"
+    }
+  },
+  "form": {
+    "title": {
+      "edit": "Modifier le Procès",
+      "create": "Nouveau Procès"
+    },
+    "subtitle": {
+      "edit": "Modifier les informations du procès",
+      "create": "Ajouter un nouveau procès"
+    },
+    "help": {
+      "statusLocked": "Le statut ne peut être modifié qu'à l'aide du sélecteur dans la liste"
+    },
+    "fields": {
+      "lawsuitNumber": {
+        "label": "Référence / Numéro",
+        "placeholder": "Ex : PRO-2025-001 (auto-généré si vide)",
+        "helper": "Optionnel - laisser vide pour auto-génération (PRO-ANNÉE-XXX)"
+      },
+      "title": {
+        "label": "Titre du Procès",
+        "placeholder": "Ex : Litige Commercial - Audience"
+      },
+      "dossierId": {
+        "label": "Dossier",
+        "helper": "Chaque procès doit être lié à un dossier"
+      },
+      "court": {
+        "label": "Tribunal",
+        "createLabel": "Ajouter"
+      },
+      "filingDate": {
+        "label": "Date de dépôt"
+      },
+      "courtReference": {
+        "label": "Numéro de référence du tribunal",
+        "placeholder": "Ex : TPI-2024-COM-1234",
+        "helper": "Numéro de référence du tribunal pour ce procès (optionnel)"
+      },
+      "adversaryParty": {
+        "label": "Partie adverse",
+        "placeholder": "Nom de la partie adverse"
+      },
+      "adversaryLawyer": {
+        "label": "Avocat adverse",
+        "placeholder": "Me. Nom de l'avocat"
+      },
+      "status": {
+        "label": "Statut du procès",
+        "options": {
+          "inProgress": "En Cours",
+          "onHold": "En Attente",
+          "closed": "Clos"
+        }
+      },
+      "description": {
+        "label": "Description",
+        "placeholder": "Description du procès..."
+      }
+    }
+  },
+  "toasts": {
+    "statusTitle": "Statut du procès",
+    "statusUpdated": "Statut mis à jour : {{status}}",
+    "deleteSuccess": {
+      "title": "Supprimé",
+      "body": "Procès supprimé"
+    },
+    "cascadeError": "Erreur lors de la suppression en cascade",
+    "cascadeSuccess": {
+      "title": "Suppression en cascade",
+      "body": "Procès et toutes les entités associées supprimés"
+    },
+    "updateSuccess": "Procès mis à jour avec succès !",
+    "createSuccess": "Procès ajouté avec succès !",
+    "saveError": "Erreur lors de l'enregistrement",
+    "missingId": "Identifiant du procès manquant"
+  },
+  "blockerModal": {
+    "actionName": "Modifier/Supprimer le Procès",
+    "entityFallback": "Procès"
+  },
+  "confirmImpact": {
+    "action": "modifier le lien du Procès"
+  },
+  "detail": {
+    "entityName": "Procès",
+    "notFound": "Procès introuvable",
+    "deleteConfirm": "Êtes-vous sûr de vouloir supprimer ce procès ?",
+    "quickActions": {
+      "status": {
+        "label": "Statut",
+        "inProgress": "En Cours",
+        "onHold": "En Attente",
+        "closed": "Clos"
+      }
+    },
+    "header": {
+      "court": "Tribunal",
+      "nextHearing": "Prochaine audience",
+      "at": "à",
+      "adversaryLawyer": "Avocat adverse",
+        "judgmentNumber": "Numero du jugement",
+        "judgmentDate": "Date du jugement",
+      "noDossier": "Aucun dossier assigné"
+    },
+    "fallback": {
+      "na": "N/A",
+      "unknownDossier": "Dossier inconnu",
+      "noHearings": "Pas d'audiences",
+      "noHearingsScheduled": "Aucune audience programmée",
+      "noDescription": "Pas de description",
+      "noDossier": "Pas de dossier"
+    },
+    "tabs": {
+      "overview": "Vue d'ensemble",
+      "sessions": "Audiences",
+      "tasks": "Tâches",
+      "missions": "Missions",
+      "financial": "Comptabilité",
+      "documents": "Documents",
+      "notes": "Notes",
+      "history": "Historique"
+    },
+    "sessions": {
+      "entityName": "une audience",
+      "addSubtitle": "Créer une nouvelle audience judiciaire pour ce procès",
+      "help": {
+        "lawsuitLink": "Cette audience sera liée à ce procès",
+        "linkType": "Cette audience est liée à ce procès"
+      },
+      "placeholders": {
+        "location": "Salle d'audience / Lieu de réunion"
+      }
+    },
+    "tasks": {
+      "entityName": "une tâche",
+      "addSubtitle": "Créer une nouvelle tâche pour ce procès",
+      "help": {
+        "parentType": "Choisissez si cette tâche concerne le procès ou le dossier parent",
+        "lawsuitLink": "Cette tâche sera liée à ce procès",
+        "dossierLink": "Cette tâche sera liée au dossier parent"
+      }
+    },
+    "missions": {
+      "entityName": "mission",
+      "addSubtitle": "Créer une nouvelle mission d'huissier pour ce procès",
+      "help": {
+        "lawsuitLink": "Cette mission sera liée au procès {{lawsuitNumber}}"
+      }
+    },
+    "overview": {
+      "general": "Informations Générales",
+      "description": "Description du Procès",
+      "courtInfo": "Informations du Tribunal",
+      "dates": "Dates Importantes",
+      "parties": "Parties",
+      "judgment": "Jugement",
+      "relatedDossier": "Dossier Associé",
+      "fields": {
+        "lawsuitNumber": "Numéro du Procès",
+        "title": "Titre du Procès",
+        "court": "Tribunal",
+        "courtReference": "Numéro de référence du tribunal",
+        "filingDate": "Date de dépôt",
+        "adversaryParty": "Partie adverse",
+        "adversaryLawyer": "Avocat adverse",
+        "judgmentNumber": "Numero du jugement",
+        "judgmentDate": "Date du jugement",
+        "associatedDossier": "Dossier associé"
+      },
+      "courtOptions": {
+        "firstInstance": "Tribunal de première instance",
+        "appeal": "Cour d'appel",
+        "cassation": "Cour de cassation"
+      },
+      "help": {
+        "associatedDossier": "Sélectionnez le dossier associé à ce procès"
+      },
+      "placeholders": {
+        "associatedDossier": "Rechercher un dossier..."
+      }
+    },
+    "nextHearing": {
+      "badges": {
+        "today": "Aujourd'hui",
+        "urgent": "Urgent",
+        "soon": "Bientôt",
+        "scheduled": "Programmé"
+      },
+      "viewDetails": "Voir les Détails de l'Audience"
+    }
+  }
+}

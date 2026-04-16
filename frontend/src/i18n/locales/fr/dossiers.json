@@ -1,0 +1,322 @@
+{
+  "page": {
+    "title": "Dossiers",
+    "subtitle": "{{total}} dossiers au total",
+    "subtitleFiltered": "{{total}} dossiers au total • {{displayed}} affichés",
+    "loading": "Chargement des dossiers..."
+  },
+  "actions": {
+    "new": "Nouveau dossier",
+    "disabledTooltip": "Ajoutez d'abord un client avant de créer un dossier."
+  },
+  "stats": {
+    "total": "Total des dossiers",
+    "open": "Dossiers ouverts",
+    "closed": "Dossiers fermés",
+    "highPriority": "Haute priorité"
+  },
+  "table": {
+    "columns": {
+      "number": "Numéro",
+      "title": "Titre",
+      "client": "Client",
+      "category": "Catégorie",
+      "status": "Statut",
+      "openDate": "Date d'ouverture",
+      "priority": "Priorité",
+      "actions": "Actions"
+    },
+    "status": {
+      "open": "Ouvert",
+      "inProgress": "En cours",
+      "onHold": "En attente",
+      "closed": "Fermé"
+    },
+    "priority": {
+      "high": "Haute",
+      "medium": "Moyenne",
+      "low": "Basse"
+    },
+    "actions": {
+      "view": "Voir les détails",
+      "edit": "Modifier",
+      "delete": "Supprimer"
+    },
+    "empty": "Aucun dossier trouvé",
+    "emptyFiltered": "Aucun résultat trouvé",
+    "emptyNoClients": "Ajoutez d'abord un client avant de créer un dossier."
+  },
+  "confirm": {
+    "delete": {
+      "title": "Supprimer le dossier",
+      "message": "Êtes-vous sûr de vouloir supprimer ce dossier ?",
+      "confirm": "Supprimer",
+      "cancel": "Annuler"
+    }
+  },
+  "toasts": {
+    "delete": {
+      "title": "Suppression réussie",
+      "body": "Dossier supprimé"
+    },
+    "cascadeError": "Erreur lors de la suppression en cascade",
+    "cascadeSuccess": {
+      "title": "Suppression en cascade",
+      "body": "Dossier et toutes les entités associées supprimées"
+    },
+    "statusUpdated": "Statut mis à jour : {{status}}",
+    "statusTitle": "Statut du dossier",
+    "priorityUpdated": "Priorité mise à jour : {{priority}}",
+    "priorityTitle": "Priorité du dossier",
+    "updateSuccess": "Dossier mis à jour avec succès !",
+    "createSuccess": "Dossier ajouté avec succès !",
+    "saveError": "Erreur lors de l'enregistrement"
+  },
+  "form": {
+    "title": {
+      "edit": "Modifier le dossier",
+      "create": "Créer un dossier"
+    },
+    "subtitle": {
+      "edit": "Modifier les informations du dossier",
+      "create": "Créer un nouveau dossier"
+    },
+    "help": {
+      "statusLocked": "Le statut ne peut être changé que via le sélecteur dans la liste"
+    },
+    "fields": {
+      "lawsuitNumber": {
+        "label": "Référence / Numéro",
+        "placeholder": "Ex : DOS-2025-001 (auto-généré si vide)",
+        "helper": "Optionnel - Laissez vide pour la génération automatique (DOS-ANNÉE-XXX)"
+      },
+      "title": {
+        "label": "Titre du dossier",
+        "placeholder": "Ex : Affaire commerciale - Contrat"
+      },
+      "clientId": {
+        "label": "Client",
+        "helper": "Sélectionnez le client concerné"
+      },
+      "category": {
+        "label": "Catégorie",
+        "options": {
+          "commercialLaw": "Droit commercial",
+          "familyLaw": "Droit de la famille",
+          "criminalLaw": "Droit pénal",
+          "laborLaw": "Droit du travail",
+          "realEstateLaw": "Droit immobilier",
+          "administrativeLaw": "Droit administratif",
+          "taxLaw": "Droit fiscal"
+        }
+      },
+      "priority": {
+        "label": "Priorité"
+      },
+      "phase": {
+        "label": "Phase",
+        "options": {
+          "opening": "Ouverture",
+          "investigation": "Instruction",
+          "negotiation": "Négociation",
+          "pleading": "Plaidoyer",
+          "judgment": "Jugement",
+          "execution": "Exécution"
+        }
+      },
+      "status": {
+        "label": "Statut",
+        "options": {
+          "open": "Ouvert",
+          "inProgress": "En cours",
+          "onHold": "En attente",
+          "closed": "Fermé"
+        }
+      },
+      "openDate": {
+        "label": "Date d'ouverture"
+      },
+      "description": {
+        "label": "Description",
+        "placeholder": "Description détaillée du dossier..."
+      },
+      "adversaryParty": {
+        "label": "Partie adverse",
+        "placeholder": "Nom de la partie adverse"
+      },
+      "adversaryLawyer": {
+        "label": "Avocat adverse",
+        "placeholder": "Me. Nom de l'avocat"
+      },
+      "estimatedValue": {
+        "label": "Valeur estimée",
+        "placeholder": "Ex : 50 000 {{currency}}"
+      },
+      "courtReference": {
+        "label": "Référence du tribunal",
+        "placeholder": "Ex : TPI-2024-1234"
+      }
+    }
+  },
+  "blocker": {
+    "action": "Modifier/Supprimer le dossier",
+    "entityFallback": "Dossier"
+  },
+  "confirmImpact": {
+    "action": "Modifier l'attachement du dossier"
+  },
+  "errors": {
+    "missingId": "Identifiant du dossier manquant"
+  },
+  "detail": {
+    "entityName": "Dossier",
+    "notFound": "Dossier non trouvé",
+    "deleteConfirm": "Êtes-vous sûr de vouloir supprimer ce dossier ?",
+    "defaults": {
+      "phases": {
+        "opening": "Ouverture",
+        "investigation": "Instruction",
+        "negotiation": "Négociation",
+        "pleading": "Plaidoyer",
+        "judgment": "Jugement",
+        "execution": "Exécution"
+      },
+      "categories": {
+        "commercial": "Droit commercial",
+        "family": "Droit de la famille",
+        "criminal": "Droit pénal",
+        "labor": "Droit du travail",
+        "realEstate": "Droit immobilier",
+        "administrative": "Droit administratif",
+        "tax": "Droit fiscal"
+      }
+    },
+    "status": {
+      "open": "Ouvert",
+      "inProgress": "En cours",
+      "onHold": "En attente",
+      "closed": "Fermé"
+    },
+    "fallback": {
+      "na": "N/A",
+      "noDeadlines": "Aucun délai",
+      "notDefined": "Non défini",
+      "unknownClient": "Client inconnu",
+      "unassignedClient": "Client non assigné",
+      "nextDeadlineEmpty": "Aucun délai à venir"
+    },
+    "quickActions": {
+      "status": {
+        "label": "Statut",
+        "open": "Ouvert",
+        "inProgress": "En cours",
+        "onHold": "En attente",
+        "closed": "Fermé"
+      },
+      "priority": {
+        "label": "Priorité",
+        "high": "Haute",
+        "medium": "Moyenne",
+        "low": "Basse"
+      },
+      "phase": {
+        "label": "Phase",
+        "create": "Ajouter une phase"
+      }
+    },
+    "header": {
+      "priority": "Priorité",
+      "openingDate": "Date d'ouverture",
+      "category": "Catégorie",
+      "phase": "Phase",
+      "nextDeadline": "Prochain délai"
+    },
+    "category": {
+      "options": {
+        "commercialLaw": "Droit commercial",
+        "familyLaw": "Droit de la famille",
+        "criminalLaw": "Droit pénal",
+        "laborLaw": "Droit du travail",
+        "realEstateLaw": "Droit immobilier",
+        "administrativeLaw": "Droit administratif",
+        "taxLaw": "Droit fiscal"
+      }
+    },
+    "deadlines": {
+      "urgency": {
+        "critical": "Critique",
+        "urgent": "Urgent",
+        "soon": "Prochainement",
+        "normal": "Planifié"
+      },
+      "viewDetails": "Voir les détails"
+    },
+    "stats": {
+      "documents": "Documents",
+      "tasks": "Tâches",
+      "lawsuits": "Procès",
+      "netProfit": "Bénéfice net"
+    },
+    "tabs": {
+      "overview": "Aperçu",
+      "proceedings": "Procès",
+      "proceedingsEntity": "un procès",
+      "proceedingsAddSubtitle": "Créer un nouveau procès pour ce dossier",
+      "sessions": "Audiences",
+      "sessionsEntity": "une audience",
+      "sessionsAddSubtitle": "Créer une nouvelle audience pour ce dossier",
+      "tasks": "Tâches",
+      "tasksEntity": "une tâche",
+      "tasksAddSubtitle": "Créer une nouvelle tâche pour ce dossier",
+      "missions": "Missions",
+      "missionsEntity": "une mission",
+      "missionsAddSubtitle": "Créer une nouvelle mission de huissier pour ce dossier",
+      "financial": "Comptabilité",
+      "documents": "Documents",
+      "notes": "Notes",
+      "history": "Historique"
+    },
+    "forms": {
+      "sessions": {
+        "linkHelpWithLawsuits": "Choisissez si cette audience est liée à ce dossier ou à un procès spécifique",
+        "linkHelpNoLawsuits": "Cette audience sera liée à ce dossier (aucun procès disponible)",
+        "lawsuitsEmpty": "Aucun procès disponible. Veuillez d'abord créer un procès.",
+        "lawsuitHelp": "Sélectionnez le procès auquel cette audience sera liée",
+        "dossierHelp": "Cette audience sera liée à ce dossier"
+      },
+      "tasks": {
+        "linkHelpWithLawsuits": "Choisissez si cette tâche concerne le dossier en général ou un procès spécifique",
+        "linkHelpNoLawsuits": "Cette tâche sera liée au dossier (aucun procès disponible)",
+        "lawsuitsEmpty": "Aucun procès disponible. Veuillez d'abord créer un procès.",
+        "lawsuitHelp": "Sélectionnez le procès auquel cette tâche sera liée",
+        "dossierHelp": "Cette tâche sera liée à ce dossier"
+      },
+      "missions": {
+        "linkedToDossier": "Cette mission sera liée au dossier {{lawsuitNumber}}"
+      }
+    },
+    "overview": {
+      "general": "Informations générales",
+      "description": "Description du dossier",
+      "adverse": "Partie adverse",
+      "legal": "Informations juridiques",
+      "fields": {
+        "lawsuitNumber": "Numéro du dossier",
+        "lawsuitNumberHelp": "Format : DOS-ANNÉE-NUMÉRO",
+        "title": "Titre du dossier",
+        "client": "Client",
+        "clientHelp": "Attention : Changer le client transférera le dossier à un autre client",
+        "category": "Catégorie",
+        "phase": "Phase",
+        "openDate": "Date d'ouverture",
+        "nextDeadline": "Prochain délai",
+        "nextDeadlineEmpty": "Aucun délai à venir",
+        "adversaryParty": "Nom",
+        "adversaryLawyer": "Avocat",
+        "courtReference": "Référence du tribunal",
+        "estimatedValue": "Valeur estimée"
+      }
+    }
+  }
+}
+

@@ -1,0 +1,38 @@
+{
+  "page": {
+    "title": "ملفي الشخصي",
+    "subtitle": "إدارة معلوماتك الشخصية والمهنية"
+  },
+  "actions": {
+    "edit": "تعديل الملف الشخصي",
+    "cancel": "إلغاء",
+    "save": "حفظ التغييرات"
+  },
+  "stats": {
+    "activeDossiers": "الملفات النشطة",
+    "totalClients": "إجمالي العملاء",
+    "resolvedDossiers": "الملفات المنجزة"
+  },
+  "sections": {
+    "personal": "المعلومات الشخصية",
+    "professional": "المعلومات المهنية"
+  },
+  "fields": {
+    "firstName": "الاسم الأول",
+    "lastName": "اسم العائلة",
+    "email": "البريد الإلكتروني",
+    "phone": "الهاتف",
+    "title": "المسمى الوظيفي",
+    "specialization": "التخصص",
+    "office": "المكتب",
+    "bio": "السيرة الذاتية",
+    "mobile": "الجوال",
+    "fax": "الفاكس",
+    "officeName": "اسم المكتب",
+    "officeAddress": "عنوان المكتب",
+    "vpa": "VPA"
+  },
+  "toasts": {
+    "saveSuccess": "تم تحديث الملف بنجاح!"
+  }
+}

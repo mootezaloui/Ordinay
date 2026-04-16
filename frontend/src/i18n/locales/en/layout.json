@@ -1,0 +1,27 @@
+{
+  "sidebar": {
+    "dashboard": "Dashboard",
+    "clients": "Clients",
+    "dossiers": "Dossiers",
+    "tasks": "Tasks",
+    "lawsuits": "Lawsuits",
+    "sessions": "Hearings",
+    "personalTasks": "Chores",
+    "officers": "Bailiff",
+    "accounting": "Accounting",
+    "chatbot": "Ordinay Intelligence",
+    "theme": {
+      "light": "Light Mode",
+      "dark": "Dark Mode"
+    },
+    "logout": "Exit application",
+    "exitApp": "Exit application",
+    "groups": {
+      "core": "Core",
+      "workflow": "Workflow",
+      "operations": "Operations",
+      "tools": "Tools"
+    }
+  },
+  "header": {}
+}

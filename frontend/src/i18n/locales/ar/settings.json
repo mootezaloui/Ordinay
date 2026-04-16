@@ -1,0 +1,698 @@
+{
+  "page": {
+    "title": "الإعدادات",
+    "subtitle": "اضبط تفضيلات التطبيق"
+  },
+  "sections": {
+    "general": "الإعدادات العامة",
+    "notifications": "الإشعارات",
+    "clientEmails": "إشعارات البريد الإلكتروني للعملاء",
+    "appointments": "إشعارات المواعيد والمواعيد النهائية",
+    "accountSecurity": "الحساب والأمان",
+    "appearance": "المظهر",
+    "imports": "الاستيراد التاريخي"
+  },
+  "clientEmails": {
+    "enabled": {
+      "title": "طلبات البريد الإلكتروني للعميل",
+      "description": "إظهار طلب لإشعار العملاء عبر البريد الإلكتروني بعد الإجراءات المهمة"
+    },
+    "categoriesDescription": "اختر الأحداث التي يمكن أن تُنشئ طلبات بريد إلكتروني للعميل:",
+    "categories": {
+      "dossiers": "تحديثات الملفات (تغييرات الحالة، المواعيد النهائية)",
+      "lawsuits": "تحديثات القضايا (الحالة، تواريخ الجلسات)",
+      "sessions": "جدولة وتغييرات الجلسات",
+      "financial": "القيود المالية"
+    }
+  },
+  "imports": {
+    "subtitle": "راجع سجلات الاستيراد التاريخية الخام للعملاء."
+  },
+  "general": {
+    "language": {
+      "label": "اللغة",
+      "description": "اختر لغة الواجهة"
+    },
+    "dateFormat": {
+      "label": "تنسيق التاريخ",
+      "description": "كيفية عرض التواريخ"
+    },
+    "currency": {
+      "label": "العملة",
+      "description": "اختر العملة المستخدمة لكل القيم المالية"
+    }
+  },
+  "notifications": {
+    "desktop": {
+      "title": "تفعيل الإشعارات",
+      "description": "إظهار الإشعارات داخل التطبيق"
+    }
+  },
+  "appointments": {
+    "tasks": {
+      "title": "المهام",
+      "overdue": {
+        "label": "تذكيرات بالمهام المتأخرة",
+        "description": "تنبيه يومي للمهام المتأخرة (حتى 3 أيام)."
+      },
+      "upcoming": {
+        "label": "تذكيرات بالمواعيد النهائية القادمة",
+        "description": "تذكيرات: {{days}} يومًا قبل الموعد النهائي."
+      }
+    },
+    "personalTasks": {
+      "title": "المهام الشخصية",
+      "upcoming": {
+        "label": "تذكيرات بالمواعيد النهائية القادمة",
+        "description": "تذكيرات: {{days}} يومًا قبل الموعد النهائي."
+      },
+      "completion": {
+        "label": "تذكيرات الإكمال بعد الموعد النهائي",
+        "description": "سؤال ما إذا كانت المهمة أُنجزت بعد الموعد النهائي."
+      }
+    },
+    "sessions": {
+      "title": "الجلسات",
+      "preparation": {
+        "label": "تذكيرات التحضير",
+        "description": "تذكيرات للجلسات القادمة: {{days}} يومًا قبل الجلسة."
+      },
+      "dayOf": {
+        "label": "تذكير يوم الجلسة",
+        "description": "تنبيه مهم يوم الجلسة لتجنب أي سهو."
+      }
+    },
+    "lawsuits": {
+      "title": "القضايا",
+      "basedOnPriority": "حسب أولوية القضية الأم",
+      "automaticTitle": "إشعارات تلقائية:",
+      "items": {
+        "noSession": "تذكير إذا لم يتم تحديد جلسة (التكرار حسب أولوية القضية الأم)",
+        "updateSuggestion": "اقتراح تحديث بعد إنهاء الجلسات/المهام"
+      },
+      "inherits": "ترث القضايا أولوية القضية الأم لتحديد تكرار التذكيرات."
+    },
+    "payments": {
+      "title": "المدفوعات",
+      "overdue": {
+        "label": "تذكيرات المدفوعات المتأخرة",
+        "before": "تذكيرات قبل: {{days}} يومًا",
+        "frequency": "تذكيرات التأخير: كل {{days}} يوم"
+      }
+    },
+    "missions": {
+      "title": "المهام",
+      "upcoming": {
+        "label": "تذكيرات قبل مواعيد المهام",
+        "description": "تذكيرات: {{days}} يومًا قبل الموعد النهائي."
+      },
+      "completion": {
+        "label": "تحقق بعد الموعد النهائي",
+        "description": "طلب تأكيد ما إذا كان العون القضائي أكمل المهمة بعد الموعد النهائي."
+      }
+    },
+    "dossiers": {
+      "title": "الملفات",
+      "inactivity": {
+        "label": "تذكير بالجمود ({{days}} يومًا)",
+        "description": "تنبيه إذا لم يتم تحديث الملف لمدة {{days}} يومًا."
+      },
+      "review": {
+        "label": "تذكير بالمراجعة (حسب الأولوية)",
+        "high": "أولوية عالية: كل {{days}} يوم",
+        "medium": "أولوية متوسطة: كل {{days}} يوم",
+        "low": "أولوية منخفضة: كل {{days}} يوم"
+      },
+      "deadline": {
+        "label": "أقرب موعد نهائي (next_deadline)",
+        "description": "تذكيرات بالمواعيد النهائية: 7 أيام قبل، 3 أيام قبل، يوم الموعد، وفي حالة التأخير."
+      }
+    },
+    "clients": {
+      "title": "العملاء",
+      "inactivity": {
+        "label": "تذكير بالجمود ({{days}} يومًا دون نشاط)",
+        "description": "تنبيه إذا لم يكن لدى العميل أي نشاط (قضايا، مهام، جلسات، مدفوعات) لمدة {{days}} يومًا."
+      }
+    }
+  },
+  "security": {
+    "current": {
+      "title": "الوضع الحالي (إصدار سطح المكتب)",
+      "localOperator": "يستخدم هذا التطبيق المكتبي هوية مشغل محلية على هذا الجهاز.",
+      "noOnlineAuth": "لا يوجد حتى الآن توثيق حسابات عبر الإنترنت.",
+      "osControlled": "يتم التحكم في الوصول بواسطة مستخدم نظام التشغيل لديك.",
+      "localData": "احمِ بياناتك عبر صلاحيات النظام والنسخ الاحتياطي/التصدير المحلي."
+    },
+    "comingSoon": {
+      "title": "قريباً (حساب سحابي)",
+      "caption": "ستصل ميزات الحساب مع النسخة السحابية.",
+      "badge": "قريباً",
+      "items": {
+        "twoFactor": {
+          "label": "المصادقة الثنائية (2FA)",
+          "description": "تأمين الحسابات برموز تحقق."
+        },
+        "sessionTimeout": {
+          "label": "انتهاء الجلسة / تسجيل الخروج عند الخمول",
+          "description": "تسجيل الخروج تلقائياً بعد فترات الخمول."
+        },
+        "changePassword": {
+          "label": "تغيير كلمة المرور",
+          "description": "إدارة بيانات الاعتماد من الحساب السحابي."
+        }
+      }
+    }
+  },
+  "appearance": {
+    "theme": {
+      "label": "السمة",
+      "description": "اختر سمة التطبيق",
+      "options": {
+        "light": "فاتح",
+        "dark": "داكن",
+        "system": "النظام"
+      }
+    }
+  },
+  "updates": {
+    "sectionTitle": "التحديثات",
+    "currentVersion": "الإصدار الحالي",
+    "versionUnavailable": "غير متوفر",
+    "statusLabel": "حالة التحديث",
+    "availableVersion": "متوفر: {{version}}",
+    "available": "تحديث متوفر",
+    "checking": "جارٍ التحقق من التحديثات",
+    "downloading": "جارٍ تنزيل التحديث",
+    "downloadProgress": "التنزيل: {{percent}}٪",
+    "upToDate": "محدّث",
+    "updateFailed": "فشل التحديث",
+    "actions": {
+      "check": "التحقق من التحديثات",
+      "download": "تنزيل التحديث",
+      "install": "التثبيت وإعادة التشغيل"
+    },
+    "notice": {
+      "availableTitle": "تحديث متوفر",
+      "availableMessage": "نسخة جديدة جاهزة عندما ترغب.",
+      "downloadFailedTitle": "فشل التحديث",
+      "downloadFailedMessage": "فشل التنزيل. يمكنك المحاولة مرة أخرى في أي وقت."
+    }
+  },
+  "agent": {
+    "sectionTitle": "تفضيلات الوكيل",
+    "loading": "جاري تحميل إعدادات الوكيل...",
+    "preferredOutputFormat": {
+      "label": "تنسيق الإخراج المفضل",
+      "description": "يُستخدم عند إنشاء المستندات بواسطة الوكيل عندما لا يتم تحديد التنسيق صراحةً."
+    },
+    "options": {
+      "auto": "تلقائي",
+      "pdf": "PDF",
+      "docx": "DOCX",
+      "xlsx": "XLSX",
+      "html": "HTML"
+    },
+    "actions": {
+      "save": "حفظ الإعدادات",
+      "saving": "جارٍ الحفظ..."
+    },
+    "toast": {
+      "saved": "تم حفظ إعدادات الوكيل",
+      "loadError": "فشل تحميل إعدادات الوكيل",
+      "saveError": "فشل حفظ إعدادات الوكيل"
+    },
+    "aiConfig": {
+      "sectionTitle": "إعدادات الذكاء الاصطناعي",
+      "loading": "جاري تحميل إعدادات الذكاء الاصطناعي...",
+      "mode": {
+        "label": "كيف يجب أن يشغّل Ordinay الذكاء الاصطناعي؟",
+        "byok": "استخدام مفتاح API الخاص بي",
+        "ordinay": "استخدام Ordinay AI"
+      },
+      "ordinay": {
+        "description": "طلبات الذكاء الاصطناعي تتم عبر Ordinay. لا حاجة لمفتاح API.",
+        "requiresLicense": "يتطلب Ordinay AI ترخيصًا نشطًا. قم بتفعيل ترخيصك لاستخدام هذه الميزة.",
+        "status": {
+          "connected": "متصل بـ Ordinay AI",
+          "notConnected": "غير متصل"
+        },
+        "actions": {
+          "authenticate": "ربط الترخيص",
+          "authenticating": "جارٍ الاتصال..."
+        },
+        "toast": {
+          "authenticated": "تم الاتصال بـ Ordinay AI",
+          "authFailed": "فشل الاتصال بـ Ordinay AI"
+        }
+      },
+      "source": {
+        "saved": "إعداد محفوظ",
+        "savedNote": "تم حفظ هذا المزوّد في الإعدادات ويُستخدم مباشرة من الوكيل.",
+        "fallback": "وضع احتياطي من الخادم (.env)",
+        "fallbackNote": "الوكيل يعمل بإعدادات البيئة من الخادم. احفظ القيم هنا لتثبيت الإعدادات.",
+        "notConfigured": "غير مُعدّ",
+        "notConfiguredNote": "املأ الحقول واختبر الاتصال ثم احفظ."
+      },
+      "guide": {
+        "title": "دليل إعداد سريع",
+        "step1": "اختر نوع المزوّد.",
+        "step2": "أدخل مفتاح API وعنوان URL الأساسي والنموذج (حسب الحاجة).",
+        "step3": "اضغط اختبار الاتصال ثم حفظ الإعداد."
+      },
+      "provider": {
+        "label": "المزوّد",
+        "openai": "OpenAI",
+        "ollama": "Ollama (محلي)",
+        "custom": "نقطة وصول مخصصة",
+        "anthropic": "Anthropic (Claude)",
+        "gemini": "Google (Gemini)",
+        "azure_openai": "Azure OpenAI",
+        "bedrock": "AWS Bedrock",
+        "comingSoon": "قريبًا"
+      },
+      "customPreset": {
+        "label": "إعداد مخصص",
+        "openrouter": "OpenRouter",
+        "groq": "Groq",
+        "manual": "يدوي مخصص"
+      },
+      "fields": {
+        "baseUrl": "عنوان URL الأساسي",
+        "apiKey": "مفتاح API",
+        "model": "النموذج",
+        "placeholders": {
+          "baseUrlOpenAI": "https://api.openai.com/v1",
+          "baseUrlOllama": "http://localhost:11434",
+          "baseUrlCustom": "https://your-endpoint.com/v1",
+          "apiKey": "sk-...",
+          "modelOpenAI": "gpt-4.1-mini",
+          "modelOllama": "llama3",
+          "modelCustom": "اسم-النموذج",
+          "modelAnthropic": "claude-sonnet-4-5-20250514",
+          "modelGemini": "gemini-2.5-flash"
+        }
+      },
+      "actions": {
+        "save": "حفظ الإعدادات",
+        "saving": "جارٍ الحفظ...",
+        "test": "اختبار الاتصال",
+        "testing": "جارٍ الاختبار..."
+      },
+      "test": {
+        "success": "متصل",
+        "latency": "{{ms}} مللي ثانية",
+        "failed": "فشل الاختبار"
+      },
+      "toast": {
+        "saved": "تم حفظ إعدادات الذكاء الاصطناعي",
+        "saveError": "فشل حفظ إعدادات الذكاء الاصطناعي",
+        "testError": "فشل اختبار الاتصال"
+      },
+      "help": {
+        "providerHelpTitle": "مساعدة المزوّد",
+        "fieldMeaningTitle": "معنى الحقول",
+        "summary": {
+          "openai": "استخدم الوصول المباشر إلى واجهة OpenAI.",
+          "custom": "استخدم هذا لـ OpenRouter أو Groq أو أي واجهة متوافقة مع صيغة OpenAI.",
+          "ollama": "استخدم هذا لنماذج Ollama المحلية أو المستضافة ذاتيًا.",
+          "anthropic": "استخدم الوصول المباشر إلى واجهة Anthropic لنماذج Claude.",
+          "gemini": "استخدم وصول Google AI Studio لنماذج Gemini.",
+          "azure_openai": "تكامل Azure OpenAI مخطط له لكنه غير متاح في هذا الإصدار.",
+          "bedrock": "تكامل AWS Bedrock مخطط له لكنه غير متاح في هذا الإصدار."
+        },
+        "baseUrl": {
+          "openai": "عنوان OpenAI الافتراضي غالبًا مناسب إلا إذا كنت تستخدم وسيطًا.",
+          "custom": "أدخل عنوان مزوّدك (مثل OpenRouter أو Groq).",
+          "ollama": "عنوان Ollama المحلي الافتراضي هو http://localhost:11434."
+        },
+        "apiKey": {
+          "standard": "أنشئ مفتاح API من لوحة مزوّد الخدمة ثم الصقه هنا.",
+          "anthropic": "أنشئ مفتاح API من Anthropic Console.",
+          "gemini": "أنشئ مفتاح API من Google AI Studio.",
+          "savedMaskHint": "المفتاح الحالي محفوظ بالفعل."
+        },
+        "model": {
+          "openai": "استخدم معرف نموذج OpenAI (مثل gpt-4.1-mini).",
+          "custom": "استخدم المعرف الدقيق الذي يتوقعه مزوّدك المخصص.",
+          "ollama": "استخدم نموذجًا مثبتًا في Ollama (مثل llama3.1:8b).",
+          "anthropic": "استخدم معرف نموذج Claude من وثائق Anthropic.",
+          "gemini": "استخدم معرف نموذج Gemini من وثائق Google."
+        },
+        "fieldMeaning": {
+          "baseUrl": "جذر عنوان واجهة API المستخدمة في الطلبات.",
+          "apiKey": "بيانات اعتماد سرية للمصادقة على الطلبات.",
+          "model": "معرف النموذج الدقيق الذي يستخدمه المزوّد."
+        },
+        "missingModelWarning": "اختر مزوّدًا ونموذجًا أولًا، ثم اختبر الاتصال قبل الحفظ."
+      },
+      "modelPicker": {
+        "placeholder": "اختر نموذجًا...",
+        "hint": "{{count}} نموذج(نماذج) مثبّت في Ollama",
+        "vendor": {
+          "meta": "Meta",
+          "mistral": "Mistral AI",
+          "google": "Google",
+          "microsoft": "Microsoft",
+          "alibaba": "Alibaba (Qwen)",
+          "deepseek": "DeepSeek",
+          "cohere": "Cohere",
+          "huggingface": "Hugging Face",
+          "01ai": "01.AI",
+          "upstage": "Upstage",
+          "lmsys": "LMSYS",
+          "tii": "TII (Falcon)",
+          "wizardlm": "WizardLM",
+          "nousresearch": "Nous Research",
+          "nomic": "Nomic",
+          "mixedbread": "Mixedbread",
+          "snowflake": "Snowflake",
+          "ibm": "IBM",
+          "other": "أخرى"
+        },
+        "tier": {
+          "small": "خفيف — سريع، استهلاك موارد قليل",
+          "medium": "متوازن — جودة جيدة، موارد معتدلة",
+          "large": "قوي — جودة عالية، يحتاج ذاكرة أكبر",
+          "xlarge": "قوي جدًا — جودة ممتازة، استهلاك موارد عالي",
+          "xxlarge": "أقصى أداء — أفضل جودة، يتطلب عتاد متقدم"
+        }
+      },
+      "ollamaStatus": {
+        "title": "حالة تشغيل Ollama",
+        "checking": "جارٍ التحقق من Ollama...",
+        "refreshing": "جارٍ التحديث...",
+        "autoRefresh": "تحديث تلقائي كل 5 ثوانٍ",
+        "states": {
+          "not_installed": "Ollama غير مثبت على هذا الجهاز.",
+          "not_running": "Ollama لا يعمل.",
+          "starting": "جارٍ تشغيل Ollama...",
+          "running_no_models": "Ollama يعمل لكن لا توجد نماذج محلية متاحة.",
+          "ready": "Ollama يعمل وجاهز.",
+          "api_mismatch": "هذا العنوان يستجيب لكنه ليس خادم Ollama."
+        },
+        "labels": {
+          "installed": "مثبّت",
+          "running": "قيد التشغيل",
+          "models": "النماذج",
+          "endpoint": "نقطة الاتصال"
+        },
+        "values": {
+          "yes": "نعم",
+          "no": "لا",
+          "unknown": "غير معروف"
+        },
+        "hints": {
+          "install": "ثبّت Ollama. إذا كان مثبتًا بالفعل، اضغط فتح / تشغيل Ollama.",
+          "start": "Ollama مثبّت لكنه لا يعمل. اضغط تشغيل لبدء التشغيل.",
+          "pullModel": "أضف نموذجًا واحدًا على الأقل داخل Ollama قبل الاختبار.",
+          "apiMismatch": "استخدم عنوان Ollama مع هذا المزوّد، أو بدّل إلى مزوّد مخصص/OpenAI لهذا العنوان."
+        },
+        "actions": {
+          "install": "تثبيت Ollama",
+          "start": "فتح / تشغيل Ollama",
+          "starting": "جارٍ التشغيل...",
+          "openLibrary": "فتح مكتبة النماذج",
+          "refresh": "تحديث الآن"
+        },
+        "connecting": "جارٍ الاتصال...",
+        "toast": {
+          "startRequested": "تم طلب تشغيل Ollama — جارٍ الاتصال...",
+          "startSuccess": "تم تشغيل Ollama بنجاح",
+          "startFailed": "تعذر تشغيل Ollama"
+        }
+      },
+      "links": {
+        "openaiKeys": "مفاتيح OpenAI API",
+        "openaiModels": "توثيق نماذج OpenAI",
+        "openrouterKeys": "مفاتيح OpenRouter",
+        "groqKeys": "مفاتيح Groq",
+        "ollamaInstall": "تثبيت Ollama",
+        "ollamaLibrary": "مكتبة نماذج Ollama",
+        "anthropicKeys": "مفاتيح Anthropic API",
+        "anthropicModels": "توثيق نماذج Claude",
+        "geminiKey": "مفتاح Gemini API",
+        "geminiModels": "توثيق نماذج Gemini",
+        "openaiFormat": "مرجع واجهة API بصيغة OpenAI"
+      },
+      "notConfigured": "لم يتم تكوين مزوّد ذكاء اصطناعي. لن يكون الوكيل متاحًا حتى يتم تكوين مزوّد."
+    }
+  },
+  "domains": {
+    "general": {
+      "label": "عام",
+      "description": "اللغة والمظهر وتنسيقات التاريخ."
+    },
+    "workspace": {
+      "label": "مساحة العمل",
+      "description": "إعدادات المساحة وأدوات الاستيراد/التصدير."
+    },
+    "notifications": {
+      "label": "الإشعارات",
+      "description": "قواعد الإشعارات وسلوك التذكيرات."
+    },
+    "agent": {
+      "label": "الوكيل",
+      "description": "تفضيلات السلوك المستخدمة بواسطة Ordinay Intelligence."
+    },
+    "security": {
+      "label": "الأمان والوصول",
+      "description": "قفل مساحة العمل وحالة الترخيص وضوابط الوصول."
+    },
+    "updates": {
+      "label": "التحديثات",
+      "description": "حالة الإصدار وتحديثات التطبيق."
+    },
+    "referrals": {
+      "label": "الإحالات والمكافآت",
+      "description": "رابط الإحالة والإحصائيات والمكافآت المكتسبة."
+    },
+    "advanced": {
+      "label": "متقدم",
+      "description": "عناصر نادرة الاستخدام وأدوات التدريب.",
+      "groupLabel": "متقدم"
+    }
+  },
+  "securityAccess": {
+    "workspaceLock": {
+      "title": "قفل مساحة العمل",
+      "header": {
+        "title": "حماية مساحة العمل",
+        "enabledDescription": "تتطلب مساحات العمل المقفلة كلمة مرور عند التشغيل أو بعد عدم النشاط.",
+        "disabledDescription": "أضف كلمة مرور محلية لحماية بيانات العملاء الحساسة."
+      },
+      "status": {
+        "enabled": "مفعّل",
+        "disabled": "معطّل"
+      },
+      "why": {
+        "title": "لماذا قفل مساحة العمل؟",
+        "items": {
+          "protectsData": "يحمي بيانات العملاء عندما تبتعد.",
+          "autoLock": "قفل تلقائي بعد عدم النشاط أو عند التشغيل.",
+          "localOnly": "كلمة مرور محلية فقط، بدون حساب عبر الإنترنت."
+        }
+      },
+      "actions": {
+        "setup": "إعداد قفل مساحة العمل",
+        "enable": "تفعيل القفل",
+        "cancel": "إلغاء",
+        "changePassword": "تغيير كلمة المرور",
+        "updatePassword": "تحديث كلمة المرور",
+        "lockNow": "قفل الآن",
+        "disable": "تعطيل القفل"
+      },
+      "preview": {
+        "title": "معاينة الأمان",
+        "description": "اضبط الحماية عند التشغيل وعدم النشاط قبل التفعيل.",
+        "cards": {
+          "lockOnStartup": {
+            "title": "القفل عند التشغيل",
+            "description": "يتطلب كلمة مرور عند الإطلاق."
+          },
+          "inactivity": {
+            "title": "قفل عدم النشاط",
+            "description": "قفل تلقائي بعد دقائق محددة."
+          }
+        }
+      },
+      "form": {
+        "title": "إعداد قفل مساحة العمل",
+        "subtitle": "اختر كلمة مرور محلية وكيفية عمل القفل.",
+        "warning": "إذا نسيت كلمة المرور، فلا توجد استعادة. ستحتاج إلى إعادة ضبط التطبيق لاستعادة الوصول. نوصي بشدة بتدوينها وحفظها بأمان.",
+        "fields": {
+          "password": {
+            "label": "كلمة المرور",
+            "placeholder": "أدخل كلمة المرور (الحد الأدنى 6 أحرف)"
+          },
+          "confirmPassword": {
+            "label": "تأكيد كلمة المرور",
+            "placeholder": "أعد إدخال كلمة المرور"
+          },
+          "lockOnStartup": {
+            "label": "القفل عند التشغيل",
+            "description": "يتطلب كلمة مرور عند فتح التطبيق."
+          },
+          "inactivityTimeout": {
+            "label": "القفل بعد عدم النشاط (بالدقائق)",
+            "hint": "استخدم 0 لتعطيل القفل التلقائي."
+          }
+        }
+      },
+      "settings": {
+        "title": "إعدادات القفل",
+        "subtitle": "اضبط متى يتم تفعيل القفل.",
+        "lockOnStartup": {
+          "label": "القفل عند التشغيل",
+          "description": "يتطلب كلمة مرور عند بدء التطبيق."
+        },
+        "inactivityTimeout": {
+          "label": "مهلة عدم النشاط (بالدقائق)",
+          "disabled": "تم تعطيل القفل التلقائي.",
+          "enabled": "يقفل بعد {{minutes}} دقيقة من عدم النشاط."
+        }
+      },
+      "changePassword": {
+        "title": "تغيير كلمة المرور",
+        "fields": {
+          "currentPassword": "كلمة المرور الحالية",
+          "newPassword": "كلمة المرور الجديدة",
+          "confirmNewPassword": "تأكيد كلمة المرور الجديدة",
+          "newPasswordPlaceholder": "الحد الأدنى 6 أحرف"
+        }
+      },
+      "messages": {
+        "lockEnabled": "تم تفعيل قفل مساحة العمل بنجاح",
+        "lockDisabled": "تم تعطيل قفل مساحة العمل",
+        "passwordChanged": "تم تغيير كلمة المرور بنجاح",
+        "settingsUpdated": "تم تحديث الإعدادات"
+      },
+      "errors": {
+        "passwordRequired": "كلمة المرور مطلوبة",
+        "passwordTooShort": "يجب أن تتكون كلمة المرور من 6 أحرف على الأقل",
+        "passwordMismatch": "كلمتا المرور غير متطابقتين",
+        "allFieldsRequired": "جميع حقول كلمة المرور مطلوبة",
+        "newPasswordTooShort": "يجب أن تتكون كلمة المرور الجديدة من 6 أحرف على الأقل",
+        "newPasswordMismatch": "كلمتا المرور الجديدتان غير متطابقتين",
+        "currentPasswordIncorrect": "كلمة المرور الحالية غير صحيحة"
+      },
+      "disableConfirm": {
+        "title": "تعطيل قفل مساحة العمل؟",
+        "description": "لن تكون مساحة العمل محمية حتى تقوم بتفعيل القفل مرة أخرى."
+      }
+    },
+    "license": {
+      "title": "الترخيص",
+      "statusLabel": "الحالة",
+      "statusDescription": "ترخيص محلي على هذا الجهاز",
+      "status": {
+        "free": "الخطة المجانية",
+        "unactivated": "غير مفعّل",
+        "activating": "جارٍ التفعيل",
+        "active": "نشط",
+        "expired": "منتهي الصلاحية",
+        "error": "خطأ",
+        "inactive": "غير نشط"
+      },
+      "plan": {
+        "paid": "الخطة المدفوعة (غير محدودة)",
+        "free": "الخطة المجانية (مرحلة تجريبية)"
+      },
+      "labels": {
+        "unknown": "غير معروف",
+        "notApplicable": "غير متاح",
+        "never": "أبدًا"
+      },
+      "cards": {
+        "licenseType": "نوع الترخيص",
+        "nextBilling": "الفوترة القادمة",
+        "expirationDate": "تاريخ الانتهاء",
+        "currentPlan": "الخطة الحالية",
+        "planLimits": "حدود الخطة"
+      },
+      "planLimits": {
+        "clients": "الخطة المجانية: العملاء {{count}}",
+        "dossiers": "الخطة المجانية: الملفات {{count}}",
+        "lawsuitsPerDossier": "الخطة المجانية: القضايا لكل ملف {{count}}",
+        "activeTasks": "الخطة المجانية: المهام النشطة {{count}}",
+        "paidUnlimited": "الخطة المدفوعة: غير محدودة"
+      },
+      "freePlanNote": "الوصول المجاني محدود بحسب حجم الاستخدام. قم بالترقية لإزالة الحدود.",
+      "actions": {
+        "activate": "تفعيل / ترقية"
+      },
+      "emptyState": "لا يوجد ترخيص مفعّل.",
+      "errors": {
+        "activationFailed": "فشل التفعيل. يرجى المحاولة مرة أخرى."
+      },
+      "perpetual": {
+        "highestPlan": "أنت تملك أعلى ترخيص من Ordinay.",
+        "noChanges": "تغيير الخطة غير متاح للتراخيص الدائمة. ستتوفر الإضافات والوكلاء بشكل منفصل مستقبلًا."
+      },
+      "planChange": {
+        "action": "تغيير الخطة",
+        "manageAction": "إدارة الخطة",
+        "upgradeAction": "تغيير الخطة",
+        "title": "تغيير الخطة",
+        "subtitle": "راجع خطتك الحالية واختر خطة أخرى.",
+        "currentPlan": "الخطة الحالية",
+        "availablePlans": "الخطط المتاحة",
+        "status": {
+          "activationInProgress": "جارٍ التفعيل. أكمل التفعيل قبل تغيير الخطة."
+        },
+        "actions": {
+          "select": "اختيار الخطة",
+          "manage": "إدارة الخطة",
+          "current": "الخطة الحالية",
+          "refresh": "تحديث الترخيص",
+          "close": "إغلاق",
+          "unavailable": "غير متاح",
+          "changeTo": "تبديل"
+        },
+        "messages": {
+          "opened": "تم فتح صفحة الخطة في المتصفح.",
+          "openFailed": "تعذر فتح صفحة الخطة.",
+          "refreshSuccess": "تم تحديث الترخيص.",
+          "refreshFailed": "تعذر تحديث الترخيص. يرجى المحاولة مرة أخرى."
+        },
+        "notes": {
+          "title": "إجراء خارجي",
+          "external": "تتم تغييرات الخطة في المتصفح. سنفتح موقع Ordinay لإكمال التحديث.",
+          "after": "بعد إكمال التغيير، عد هنا وقم بتحديث الترخيص."
+        },
+        "plans": {
+          "free": {
+            "title": "مجانية",
+            "description": "استخدام محدود للتجربة."
+          },
+          "trial": {
+            "title": "تجريبية",
+            "description": "وصول مؤقت للميزات المدفوعة."
+          },
+          "monthly": {
+            "title": "شهري",
+            "description": "وصول كامل مع فوترة شهرية."
+          },
+          "yearly": {
+            "title": "سنوي",
+            "description": "وصول كامل مع فوترة سنوية."
+          },
+          "perpetual": {
+            "title": "مدى الحياة",
+            "description": "شراء لمرة واحدة مع وصول مدى الحياة."
+          }
+        }
+      },
+      "referral": {
+        "title": "دعوة زميل",
+        "subtitle": "شارك رابط الإحالة بعد اكتمال التفعيل.",
+        "loading": "جارٍ جلب رابط الإحالة...",
+        "unavailable": "رابط الإحالة غير متاح",
+        "retry": "إعادة المحاولة",
+        "copyLink": "نسخ الرابط",
+        "copied": "تم النسخ",
+        "copyFailed": "فشل النسخ. يرجى المحاولة مرة أخرى."
+      }
+    }
+  }
+}

@@ -1,0 +1,253 @@
+{
+  "page": {
+    "title": "Tâches",
+    "subtitle": "{{total}} tâches au total",
+    "subtitleFiltered": "{{total}} tâches au total, {{displayed}} affichées",
+    "actions": {
+      "newTask": "Nouvelle tâche",
+      "newTaskDisabled": "Ajoutez d'abord un dossier avant de créer une tâche."
+    },
+    "loading": "Chargement des tâches..."
+  },
+  "stats": {
+    "total": "Total des tâches",
+    "inProgress": "En cours",
+    "completed": "Terminées",
+    "overdue": "En retard"
+  },
+  "table": {
+    "columns": {
+      "title": "Tâche",
+      "parent": "Liée à",
+      "assignedTo": "Assignée à",
+      "dueDate": "Date d'échéance",
+      "status": "Statut",
+      "priority": "Priorité",
+      "actions": "Actions"
+    },
+    "status": {
+      "notStarted": "Non commencée",
+      "inProgress": "En cours",
+      "pending": "En attente",
+      "onHold": "En attente",
+      "completed": "Terminée",
+      "scheduled": "Planifiée",
+      "blocked": "Bloquée",
+      "done": "Faite",
+      "cancelled": "Annulée"
+    },
+    "priority": {
+      "high": "Élevée",
+      "medium": "Moyenne",
+      "low": "Faible"
+    },
+    "actions": {
+      "view": "Voir les détails",
+      "edit": "Modifier",
+      "delete": "Supprimer"
+    },
+    "empty": "Aucune tâche trouvée",
+    "emptyNoDossier": "Ajoutez d'abord un dossier avant de créer une tâche.",
+    "emptyFiltered": "Aucun résultat trouvé"
+  },
+  "confirm": {
+    "delete": {
+      "title": "Supprimer la tâche",
+      "message": "Êtes-vous sûr de vouloir supprimer cette tâche ?",
+      "confirm": "Supprimer",
+      "cancel": "Annuler"
+    }
+  },
+  "form": {
+    "title": {
+      "edit": "Modifier la tâche",
+      "create": "Nouvelle tâche"
+    },
+    "subtitle": {
+      "edit": "Modifier les informations de la tâche",
+      "create": "Ajouter une nouvelle tâche"
+    },
+    "help": {
+      "statusLocked": "Le statut ne peut être modifié que via le sélecteur dans la liste"
+    },
+    "fields": {
+      "title": {
+        "label": "Titre de la tâche",
+        "placeholder": "Ex : Préparer le dossier de plaidoirie"
+      },
+      "parentType": {
+        "label": "Liée à",
+        "options": {
+          "dossier": "Dossier",
+          "lawsuit": "Procès"
+        },
+        "helper": "Sélectionnez si cette tâche est liée à un dossier ou à un procès."
+      },
+      "dossierId": {
+        "label": "Dossier"
+      },
+      "lawsuitId": {
+        "label": "Procès"
+      },
+      "assignedTo": {
+        "label": "Assignée à",
+        "createLabel": "Ajouter"
+      },
+      "dueDate": {
+        "label": "Date d'échéance"
+      },
+      "priority": {
+        "label": "Priorité"
+      },
+      "status": {
+        "label": "Statut",
+        "options": {
+          "notStarted": "Non commencée",
+          "inProgress": "En cours",
+          "blocked": "Bloquée",
+          "done": "Faite",
+          "cancelled": "Annulée"
+        }
+      },
+      "description": {
+        "label": "Description",
+        "placeholder": "Description détaillée de la tâche..."
+      },
+      "estimatedTime": {
+        "label": "Temps estimé",
+        "helper": "Durée estimée pour accomplir la tâche",
+        "options": {
+          "0_5h": "30 minutes",
+          "1h": "1 heure",
+          "1_5h": "1h30",
+          "2h": "2 heures",
+          "3h": "3 heures",
+          "4h": "4 heures",
+          "6h": "6 heures",
+          "8h": "8 heures",
+          "12h": "12 heures",
+          "16h": "16 heures",
+          "20h": "20 heures",
+          "24h": "1 jour",
+          "40h": "2 jours",
+          "80h": "1 semaine"
+        }
+      }
+    }
+  },
+  "toasts": {
+    "statusTitle": "Statut de la tâche",
+    "statusUpdated": "Statut mis à jour : {{status}}",
+    "priorityTitle": "Priorité de la tâche",
+    "priorityUpdated": "Priorité mise à jour : {{priority}}",
+    "deleteSuccess": {
+      "title": "Supprimée",
+      "body": "Tâche supprimée"
+    },
+    "updateSuccess": "Tâche mise à jour avec succès !",
+    "createSuccess": "Tâche ajoutée avec succès !",
+    "saveError": "Erreur lors de l'enregistrement",
+    "missingId": "Identifiant de tâche manquant"
+  },
+  "blockerModal": {
+    "actionName": "Modifier/Supprimer la tâche",
+    "entityFallback": "Tâche"
+  },
+  "confirmImpact": {
+    "action": "modifier le lien de la tâche"
+  },
+  "detail": {
+    "entityName": "Tâche",
+    "notFound": "Tâche non trouvée",
+    "deleteConfirm": "Êtes-vous sûr de vouloir supprimer cette tâche ?",
+    "subtitle": "Créée le {{date}}",
+    "defaults": {
+      "assignees": {
+        "myself": "Moi-même",
+        "intern": "Stagiaire"
+      }
+    },
+    "fallback": {
+      "na": "N/D",
+      "none": "Aucun",
+      "noDescription": "Aucune description"
+    },
+    "quickActions": {
+      "status": {
+        "label": "Statut",
+        "notStarted": "Non commencée",
+        "inProgress": "En cours",
+        "pending": "En attente",
+        "scheduled": "Planifiée",
+        "blocked": "Bloquée",
+        "done": "Faite",
+        "cancelled": "Annulée"
+      },
+      "priority": {
+        "label": "Priorité",
+        "high": "Élevée",
+        "medium": "Moyenne",
+        "low": "Faible"
+      },
+      "assignedTo": {
+        "label": "Assignée à",
+        "create": "Ajouter",
+        "myself": "Moi-même",
+        "intern": "Stagiaire"
+      }
+    },
+    "header": {
+      "priority": "Priorité",
+      "assignedTo": "Assignée à",
+      "dueDate": "Date d'échéance",
+      "estimatedTime": "Temps estimé"
+    },
+    "estimatedTime": {
+      "values": {
+        "0_5h": "30 minutes",
+        "1h": "1 heure",
+        "1_5h": "1h30",
+        "2h": "2 heures",
+        "3h": "3 heures",
+        "4h": "4 heures",
+        "6h": "6 heures",
+        "8h": "8 heures",
+        "12h": "12 heures",
+        "16h": "16 heures",
+        "20h": "20 heures",
+        "24h": "1 jour",
+        "40h": "2 jours",
+        "80h": "1 semaine"
+      }
+    },
+    "tabs": {
+      "overview": "Aperçu",
+      "financial": "Comptabilité",
+      "financialDescription": "Suivi financier lié à cette tâche",
+      "documents": "Documents",
+      "comments": "Commentaires",
+      "history": "Historique"
+    },
+    "overview": {
+      "description": "Description de la tâche",
+      "details": "Détails de la tâche",
+      "association": "Entité associée",
+      "fields": {
+        "dueDate": "Date d'échéance",
+        "estimatedTime": "Temps estimé",
+        "parentType": "Type de lien",
+        "parentTypeOptions": {
+          "dossier": "Dossier",
+          "lawsuit": "Procès"
+        },
+        "parentTypeHelp": "Une tâche peut être liée à un dossier ou à un procès",
+        "dossier": "Dossier",
+        "dossierPlaceholder": "Sélectionner un dossier...",
+        "dossierHelp": "Sélectionnez le dossier concerné",
+        "lawsuit": "Procès",
+        "lawsuitPlaceholder": "Sélectionner un procès...",
+        "lawsuitHelp": "Sélectionnez le procès concerné"
+      }
+    }
+  }
+}

@@ -1,0 +1,1823 @@
+{
+  "dashboard": {
+    "title": "Tableau de Bord",
+    "subtitle": "Vue d'ensemble des performances et activités de votre cabinet",
+    "greeting": {
+      "morning": {
+        "default": "Bonjour.",
+        "withName": "Bonjour, {{userName}}."
+      },
+      "afternoon": {
+        "default": "Bon après-midi.",
+        "withName": "Bon après-midi, {{userName}}."
+      },
+      "evening": {
+        "default": "Bonsoir.",
+        "withName": "Bonsoir, {{userName}}."
+      }
+    },
+    "context": {
+      "afternoon": "Continuons là où nous nous sommes arrêtés.",
+      "evening": "Clôturons le travail du jour."
+    },
+    "quickActions": {
+      "title": "Actions Rapides",
+      "newClient": "Nouveau client",
+      "newDossier": "Nouveau dossier",
+      "newTask": "Nouvelle tâche",
+      "newSession": "Nouvelle séance",
+      "subtitles": {
+        "client": "Ajouter un nouveau client à votre base de données",
+        "dossier": "Créer un nouveau dossier juridique",
+        "task": "Créer une nouvelle tâche à effectuer",
+        "session": "Planifier une nouvelle séance ou rendez-vous"
+      },
+      "placeholders": {
+        "dossier": "Sélectionnez un dossier...",
+        "lawsuit": "Sélectionnez un procès..."
+      }
+    },
+    "stats": {
+      "totalClients": "Total Clients",
+      "activeDossiers": "Dossiers Actifs",
+      "pendingTasks": "Tâches en Attente",
+      "revenue": "Chiffre d'Affaires",
+      "currency": "{{currency}}",
+      "trendVsLastMonth": "vs le mois dernier",
+      "newThisWeek_one": "{{count}} nouveau cette semaine",
+      "newThisWeek_other": "{{count}} nouveaux cette semaine",
+      "dueToday_one": "{{count}} dû aujourd'hui",
+      "dueToday_other": "{{count}} dus aujourd'hui"
+    },
+    "urgentTasks": {
+      "title": "Tâches Urgentes ({{count}})",
+      "empty": "Aucune tâche urgente ! Excellent travail pour rester à jour.",
+      "viewAll": "Voir toutes les tâches ({{count}})"
+    },
+    "upcomingEvents": {
+      "title": "Événements à Venir ({{count}})",
+      "empty": "Aucun événement à venir programmé.",
+      "time": {
+        "inHours": "dans {{count}} heure(s)",
+        "inDays": "dans {{count}} jour(s)",
+        "soon": "bientôt"
+      }
+    },
+    "workload": {
+      "title": "Charge de travail (90 jours)",
+      "show": "Afficher la charge",
+      "hide": "Masquer",
+      "subtitle": "Signal de charge pour les 90 prochains jours - uniquement les volumes.",
+      "guiding": "Projection = anticipation de la charge, pas un calendrier.",
+      "pressureLabel": "Charge : {{level}}",
+      "pressureHint": "Basée sur les 7 prochains jours",
+      "buckets": {
+        "immediate": "Prochains 7 jours",
+        "near": "8-30 jours",
+        "upcoming": "31-90 jours"
+      },
+      "range": {
+        "immediate": "Aujourd'hui à J+7",
+        "near": "J+8 à J+30",
+        "upcoming": "J+31 à J+90"
+      },
+      "entities": {
+        "tasks": "Tâches",
+        "hearings": "Audiences",
+        "missions": "Missions"
+      },
+      "counts": {
+        "task_one": "{{count}} tâche",
+        "task_other": "{{count}} tâches",
+        "hearing_one": "{{count}} audience",
+        "hearing_other": "{{count}} audiences",
+        "mission_one": "{{count}} mission",
+        "mission_other": "{{count}} missions"
+      },
+      "pressure": {
+        "calm": "Léger",
+        "steady": "Modéré",
+        "heavy": "Chargé",
+        "critical": "Critique"
+      },
+      "empty": "Aucune charge à venir dans les 90 prochains jours.",
+      "emptyBucket": "Aucun élément dans cette fenêtre."
+    },
+    "projection": {
+      "title": "Projection (30-90 jours)",
+      "show": "Afficher la Projection",
+      "hide": "Masquer",
+      "daysLabel_one": "{{count}} jour",
+      "daysLabel_other": "{{count}} jours",
+      "nothing": "Rien à signaler",
+      "itemMeta": "{{date}} - {{label}}"
+    },
+    "planningLane": {
+      "title": "Voie de Planification",
+      "subtitle": "Événements à venir (8-12 éléments)",
+      "empty": "Aucun événement à venir détecté."
+    },
+    "loadMap": {
+      "title": "Charge hebdomadaire (roulante)",
+      "show": "Afficher la charge hebdo",
+      "hide": "Masquer la charge",
+      "empty": "Aucune charge détectée pour les prochaines semaines.",
+      "week": {
+        "this": "Cette semaine",
+        "next": "Semaine prochaine",
+        "inN": "Dans {{count}} semaines",
+        "beyond": "Au-delà"
+      },
+      "range": "{{start}} - {{end}}",
+      "beyondRange": "Après 4 semaines",
+      "itemsCount_one": "{{count}} élément",
+      "itemsCount_other": "{{count}} éléments"
+    },
+    "recentActivity": {
+      "title": "Activité Récente",
+      "empty": "Aucune activité récente à afficher."
+    },
+    "quickStats": {
+      "title": "Statistiques",
+      "dossiers": {
+        "title": "Dossiers par statut",
+        "inProgress": "En Cours",
+        "pending": "En Attente",
+        "closed": "Clos"
+      },
+      "tasks": {
+        "title": "Tâches par priorité",
+        "high": "Haute",
+        "medium": "Moyenne",
+        "low": "Basse"
+      },
+      "payments": {
+        "title": "État des Paiements",
+        "paid": "Payé",
+        "pending": "En Attente",
+        "overdue": "En Retard"
+      }
+    },
+    "activities": {
+      "newClient": "Nouveau client : {{name}}",
+      "dossierUpdated": "Dossier mis à jour : {{lawsuitNumber}}",
+      "scheduledHearing": "Audience programmée : {{title}}",
+      "sessionDescription": "{{date}} à {{time}}",
+      "deadline": "Échéance : {{title}}",
+      "entryTitle": "Entrée #{{id}}"
+    },
+    "types": {
+      "session": "Audience",
+      "task": "Tâches",
+      "lawsuit": "Procès",
+      "dossier": "Dossier",
+      "finance": "Finances",
+      "mission": "Mission",
+      "generic": "{{type}}"
+    }
+  },
+  "actions": {
+    "close": "Fermer",
+    "back": "Retour",
+    "backToList": "Retour à la liste",
+    "edit": "Modifier",
+    "delete": "Supprimer",
+    "save": "Enregistrer",
+    "cancel": "Annuler",
+    "add": "Ajouter",
+    "view": "Voir"
+  },
+  "forms": {
+    "titles": {
+      "client": { "new": "Nouveau Client", "edit": "Modifier Client" },
+      "dossier": { "new": "Nouveau Dossier", "edit": "Modifier Dossier" },
+      "lawsuit": { "new": "Nouveau Procès", "edit": "Modifier Procès" },
+      "session": { "new": "Nouvelle Séance", "edit": "Modifier Séance" },
+      "task": { "new": "Nouvelle Tâche", "edit": "Modifier Tâche" },
+      "personalTask": { "new": "Nouvelle Tâche Personnelle", "edit": "Modifier Tâche Personnelle" },
+      "invoice": { "new": "Nouvelle Facture", "edit": "Modifier Facture" },
+      "officerAssignment": { "new": "Assigner Huissier", "edit": "Modifier Mission" },
+      "mission": { "new": "Nouvelle Mission d'Huissier", "edit": "Modifier Mission d'Huissier" },
+      "financialEntry": { "new": "Nouvelle Entrée Financière", "edit": "Modifier Entrée Financière" }
+    }
+  },
+  "detail": {
+    "tabs": {
+      "notes": "Notes"
+    },
+    "toast": {
+      "success": {
+        "save": "Modifications enregistrées avec succès !",
+        "cascade": "{{entity}} et toutes les entités associées supprimées"
+      },
+      "error": {
+        "save": "Erreur lors de l'enregistrement des modifications",
+        "saveInline": "Erreur lors de l'enregistrement",
+        "cascade": "Erreur lors de la suppression en cascade",
+        "cascadeUnavailable": "Suppression en cascade non disponible pour cette entité",
+        "delete": "Erreur de suppression",
+        "notAllowed": "Cette modification n'est pas autorisée"
+      },
+      "title": {
+        "blocked": "Modification bloquée",
+        "validationFailed": "Échec de validation",
+        "saveError": "Erreur d'enregistrement",
+        "cascade": "Suppression en Cascade"
+      }
+    },
+    "validation": {
+      "modificationNotAllowed": "Cette modification n'est pas autorisée"
+    },
+    "history": {
+      "loading": "Chargement de l'historique...",
+      "empty": {
+        "title": "Aucun historique disponible pour le moment",
+        "description": "Les événements importants apparaîtront ici : créations, changements de statut, attributions et actions significatives."
+      },
+      "actions": {
+        "created": "Créé",
+        "updated": "Modifié",
+        "deleted": "Supprimé",
+        "cancelled": "Annulé",
+        "closed": "Clôturé",
+        "archived": "Archivé",
+        "reopened": "Réouvert"
+      },
+      "badges": {
+        "lifecycle": "Cycle de vie",
+        "status": "Statut",
+        "assignment": "Attribution",
+        "finance": "Finances",
+        "system": "Système",
+        "relation": "Relation",
+        "childCreated": "Enfant créé",
+        "childDeleted": "Enfant supprimé"
+      },
+      "fields": {
+        "amount": "Montant",
+        "status": "Statut",
+        "paidAt": "Date de paiement",
+        "assignment": "Affectation",
+        "title": "Titre",
+        "priority": "Priorité",
+        "dueDate": "Échéance",
+        "scheduledAt": "Date prévue",
+        "sessionDate": "Date de session",
+        "location": "Lieu",
+        "outcome": "Résultat",
+        "description": "Description",
+        "type": "Type"
+      },
+      "changes": "Modifications",
+      "metadata": {
+        "oldStatus": "Ancien statut",
+        "newStatus": "Nouveau statut",
+        "assignedTo": "Assigné à",
+        "previousAssignee": "Précédent",
+        "amount": "Montant",
+        "actionType": "Type"
+      },
+      "time": {
+        "justNow": "À l'instant",
+        "minutesAgo_one": "il y a {{count}} minute",
+        "minutesAgo_other": "il y a {{count}} minutes",
+        "hoursAgo_one": "il y a {{count}} heure",
+        "hoursAgo_other": "il y a {{count}} heures",
+        "daysAgo_one": "il y a {{count}} jour",
+        "daysAgo_other": "il y a {{count}} jours"
+      },
+      "labels": {
+        "creation": "Création",
+        "entityAdded": "{{name}} a été ajouté",
+        "entityCreated": "Entité créée",
+        "entityUpdated": "{{entity}} mis à jour",
+        "entityDeleted": "{{entity}} supprimé",
+        "statusChanged": "Statut changé : {{oldStatus}} → {{newStatus}}",
+        "reassigned": "Réassigné à : {{previousAssignee}} → {{assignedTo}}",
+        "assigned": "Assigné à {{assignedTo}}",
+        "reassignmentPerformed": "Réattribution effectuée",
+        "initialAssignment": "Attribution initiale effectuée",
+        "closed": "Clos",
+        "reopened": "Réouvert",
+        "archived": "Archivé",
+        "activated": "Activé",
+        "completed": "Terminé",
+        "cancelled": "Annulé",
+        "dossierCreated": "Dossier Créé",
+        "lawsuitCreated": "Procès Créé",
+        "hearingCreated": "Audience Créée",
+        "taskCreated": "Tâche Créée",
+        "missionCreated": "Mission Créée",
+        "itemCreated": "Élément Créé",
+        "finance": {
+          "entryAdded": "Entrée financière ajoutée",
+          "entryUpdated": "Entrée financière mise à jour",
+          "entryDeleted": "Entrée financière supprimée",
+          "amount": "Montant : {{amount}}"
+        },
+        "domainRule": {
+          "confirmed": "Règle de domaine confirmée",
+          "rejected": "Règle de domaine rejetée"
+        },
+        "relationalImpact": {
+          "confirmed": "Impact relationnel confirmé",
+          "rejected": "Impact relationnel rejeté"
+        }
+      }
+    },
+    "timeline": {
+      "title": "Historique",
+      "empty": "Aucun événement dans l'historique"
+    },
+    "documents": {
+      "title": "Documents ({{count}})",
+      "upload": {
+        "dragDrop": "Glissez-déposez vos fichiers ici",
+        "or": "ou",
+        "browse": "Parcourir les fichiers",
+        "browseLink": "parcourir",
+        "dragDropOr": "Glissez-déposez vos fichiers ici ou",
+        "formats": "PDF, DOC, XLS, PPT, Images, Archives (Max 10MB par fichier)",
+        "uploading": "Téléchargement en cours..."
+      },
+        "status": {
+          "missing": "Fichier manquant",
+          "missingFile": "Fichier manquant",
+          "processing": "OCR en cours",
+          "ocr": "Document lu via OCR",
+          "unreadable": "Document illisible ({{reason}})"
+        },
+        "failureReasons": {
+          "unknown": "raison inconnue",
+          "missing_file_path": "chemin de fichier manquant",
+          "file_not_found": "fichier introuvable",
+          "file_stat_failed": "métadonnées de fichier indisponibles",
+          "not_a_file": "le chemin n'est pas un fichier",
+          "file_too_large": "fichier trop volumineux",
+          "unsupported_type": "type de fichier non pris en charge",
+          "no_pdf_text": "PDF sans texte lisible",
+          "no_docx_text": "DOCX sans texte lisible",
+          "empty_text": "fichier sans texte lisible",
+          "ocr_timeout": "délai OCR dépassé",
+          "ocr_empty": "OCR n'a pas produit de texte lisible",
+          "ocr_failed": "Échec de l'OCR{{detail}}",
+          "ocr_spawn_failed": "Démarrage de l'OCR impossible{{detail}}",
+          "ingestion_error": "Erreur d'ingestion{{detail}}",
+          "legacy_unreadable": "document marqué illisible précédemment"
+        },
+      "actions": {
+        "relink": "Relier",
+        "download": "Télécharger",
+        "reveal": "Afficher dans le dossier",
+        "delete": "Supprimer"
+      },
+      "stats": {
+        "total": "Total documents",
+        "pdf": "PDF",
+        "images": "Images",
+        "totalSize": "Taille totale"
+      },
+      "toast": {
+        "success": {
+          "upload": "{{count}} document(s) ajouté(s) avec succès !",
+          "downloadStart": "Téléchargement de {{name}}",
+          "delete": "Document supprimé",
+          "unlink": "Lien supprimé",
+          "relink": "Document relié avec succès"
+        },
+        "error": {
+          "uploadFailed": "Échec du téléchargement de {{count}} document(s)",
+          "uploadError": "Erreur lors de l'ajout des documents",
+          "open": "Impossible d'ouvrir le document. Fichier manquant ?",
+          "download": "Erreur lors du téléchargement du document",
+          "reveal": "Impossible d'afficher le fichier",
+          "delete": "Erreur lors de la suppression du document",
+          "replace": "Erreur lors du remplacement du document"
+        }
+      }
+    },
+    "notes": {
+      "title": "Notes / Procès-verbaux",
+      "empty": "Aucune note pour le moment",
+      "actions": {
+        "addPostit": "Ajouter un post-it",
+        "addPostitShort": "Ajouter post-it"
+      },
+      "status": {
+        "editing": "Édition en cours...",
+        "saving": "Enregistrement en cours..."
+      },
+      "placeholder": {
+        "content": "Écrivez votre note ici..."
+      },
+      "label": {
+        "postit": "Post-it"
+      },
+      "time": {
+        "updated": "Mis à jour :",
+        "created": "Créé :"
+      },
+      "toast": {
+        "success": {
+          "save": "Note enregistrée",
+          "delete": "Note supprimée"
+        },
+        "error": {
+          "saveMissing": "Impossible d'enregistrer les notes",
+          "empty": "La note ne peut pas être vide",
+          "save": "Erreur lors de l'enregistrement de la note",
+          "deleteMissing": "Impossible de supprimer la note",
+          "delete": "Erreur lors de la suppression de la note"
+        }
+      }
+    },
+    "missions": {
+      "empty": "Aucune mission trouvée.",
+      "add": "Ajouter {{entityName}}",
+      "addDefault": "Ajouter une mission",
+      "search": {
+        "placeholder": "Rechercher par numéro, titre, référence...",
+        "empty": "Aucune mission trouvée correspondant aux critères."
+      },
+      "filter": {
+        "all": "Tous ({{count}})",
+        "scheduled": "Programmées ({{count}})",
+        "inProgress": "En Cours ({{count}})",
+        "completed": "Terminées ({{count}})",
+        "cancelled": "Annulées ({{count}})"
+      },
+      "priority": {
+        "high": "Haute Priorité"
+      },
+      "labels": {
+        "assigned": "Assigné à :",
+        "dueDate": "Date d'échéance :",
+        "documents": "{{count}} document(s)",
+        "fees": "{{amount}} Honoraires"
+      },
+      "financial": {
+        "addTitle": "Ajouter des frais d'huissier",
+        "expenseType": "Dépense (frais payés)"
+      },
+      "fallback": {
+        "unknownClient": "Client inconnu",
+        "unknownDossier": "Dossier inconnu",
+        "noLawsuit": "Pas de procès"
+      },
+      "blockers": {
+        "missingParent": "Ajoutez un dossier ou un procès avant de créer une mission."
+      }
+    },
+    "financial": {
+      "title": "Entrées Comptables ({{count}})",
+      "columns": {
+        "date": "Date",
+        "entry": "Entrée",
+        "type": "Type",
+        "amount": "Montant",
+        "status": "Statut",
+        "actions": "Actions"
+      },
+      "types": {
+        "revenue": "Revenu",
+        "expense": "Dépense"
+      },
+      "status": {
+        "draft": "Brouillon",
+        "confirmed": "Confirmé",
+        "paid": "Payé",
+        "cancelled": "Annulé"
+      },
+      "summary": {
+        "billedFees": "Honoraires Facturés",
+        "billedFeesHelp": "Total des honoraires d'avocat facturés au client",
+        "billedFeesDescription": "Ce que vous avez facturé",
+        "reimbursableExpenses": "Dépenses Remboursables",
+        "reimbursableExpensesHelp": "Dépenses payées pour le client (frais de justice, frais d'huissier, etc.) à récupérer",
+        "reimbursableExpensesDescription": "Dépenses à récupérer auprès du client",
+        "paymentsReceived": "Paiements Reçus",
+        "paymentsReceivedDescription": "Ce que le client a déjà payé",
+        "balance": {
+          "toReceive": "À recevoir",
+          "overpaid": "Surpayé",
+          "balanced": "Équilibré",
+          "clientOwes": "Le client vous doit {{amount}}",
+          "youOwe": "Vous devez au client {{amount}}",
+          "settled": "Tout est réglé !"
+        },
+        "revenue": "Revenu",
+        "expenses": "Dépenses",
+        "netBalance": "Solde Net"
+      },
+      "table": {
+        "title": "Entrées Comptables ({{count}})",
+        "empty": {
+          "search": "Aucun résultat trouvé",
+          "noData": "Aucune entrée comptable disponible"
+        },
+        "columns": {
+          "actions": "Actions"
+        }
+      },
+      "actions": {
+        "newEntry": "Nouvelle Entrée"
+      },
+      "detail": {
+        "sectionTitle": "Détails de l'Entrée",
+        "date": "Date",
+        "category": "Catégorie",
+        "status": "Statut",
+        "amount": "Montant",
+        "client": "Client",
+        "dossier": "Dossier",
+        "lawsuit": "Procès",
+        "createdBy": "Créé par",
+        "description": "Description"
+      },
+      "form": {
+        "title": {
+          "edit": "Modifier l'Entrée Comptable"
+        },
+        "subtitle": {
+          "add": "Créer une Nouvelle Entrée"
+        }
+      },
+      "blocker": {
+        "actionName": "Modifier/Supprimer l'Entrée Financière"
+      },
+      "scope": {
+        "internal": "Interne (dépenses bureau)",
+        "client": "Client (affecte le solde client)"
+      },
+      "category": {
+        "bailiffFees": "Frais d'Huissier",
+        "expenseBailiffFees": "Dépenses (Frais d'huissier)"
+      },
+      "fallback": {
+        "unknownClient": "Client inconnu",
+        "unknownDossier": "Dossier inconnu"
+      }
+    },
+    "overview": {
+      "noConfig": "Aucune configuration de vue d'ensemble trouvée",
+      "noNotes": "Pas de notes",
+      "editAttachment": "modifier la pièce jointe"
+    },
+    "related": {
+      "add": "Ajouter {{entityName}}",
+      "addDefault": "Ajouter un élément",
+      "edit": "Modifier",
+      "disabledAction": "Action indisponible pour le moment.",
+      "errors": {
+        "createDossier": "Impossible de créer le dossier. Veuillez réessayer.",
+        "createLawsuit": "Impossible de créer le procès. Veuillez réessayer.",
+        "createSession": "Impossible de créer l'audience. Veuillez réessayer.",
+        "createTask": "Impossible de créer la tâche. Veuillez réessayer."
+      },
+      "toast": {
+        "addSuccess": "{{entityName}} ajouté avec succès !",
+        "addError": "Erreur lors de l'ajout"
+      },
+      "subtitle": {
+        "add": "Ajouter {{entity}} pour {{parent}}",
+        "edit": "Modifier {{entity}}"
+      },
+      "help": {
+        "taskLawsuitLink": "Cette tâche sera liée à ce procès"
+      },
+      "empty": {
+        "noItems": "Aucun élément"
+      },
+      "fallback": {
+        "entity": "Élément",
+        "element": "Élément"
+      },
+      "labels": {
+        "due": "Échéance : {{date}}"
+      },
+      "form": {
+        "add": "Ajouter {{entityName}}",
+        "create": "Créer un nouveau {{entityName}}"
+      }
+    },
+    "deadlines": {
+      "labels": {
+        "session": "Audience – {{title}}",
+        "task": "Tâche – {{title}}",
+        "financial": "Échéance de paiement – {{title}}",
+        "manual": "Échéance manuelle"
+      },
+      "defaults": {
+        "sessionTitle": "Audience",
+        "taskTitle": "Tâche",
+        "financialTitle": "Paiement"
+      }
+    },
+    "aggregated": {
+      "empty": {
+        "dossiers": "Aucun dossier pour ce client",
+        "lawsuitsClient": "Aucun procès pour ce client",
+        "lawsuitsDossier": "Aucun procès pour ce dossier",
+        "hearingsClient": "Aucune audience programmée pour ce client.\nPour ajouter une audience, créez un dossier ou un procès.",
+        "hearingsDossier": "Aucune audience programmée pour ce dossier",
+        "hearingsLawsuit": "Aucune audience programmée pour ce procès",
+        "tasksClient": "Aucune tâche pour ce client",
+        "tasksDossier": "Aucune tâche pour ce dossier",
+        "tasksLawsuit": "Aucune tâche pour ce procès",
+        "missionsDossier": "Aucune mission d'huissier pour ce dossier",
+        "missionsLawsuit": "Aucune mission d'huissier pour ce procès"
+      },
+      "labels": {
+        "category": "Catégorie",
+        "nextHearing": "Prochaine audience",
+        "notScheduled": "Non programmé",
+        "due": "Échéance",
+        "assignedTo": "Assigné à",
+        "bailiff": "Huissier"
+      }
+    },
+    "errors": {
+      "tabNotFound": "Contenu de l'onglet non trouvé",
+      "unrecognizedAggregation": "Type d'agrégation non reconnu"
+    },
+    "quickActions": {
+      "title": "Actions Rapides",
+      "toast": {
+        "success": {
+          "update": "{{label}} Mis à jour : {{value}}"
+        },
+        "info": {
+          "cancel": "Mise à jour annulée"
+        },
+        "title": {
+          "updateSuccess": "Mise à jour réussie",
+          "undoSuccess": "Annulation réussie"
+        }
+      }
+    },
+    "blocker": {
+      "title": {
+        "actionNotPossible": "Action impossible",
+        "blockersResolved": "Blocages résolus !",
+        "deleteAnyway": "Supprimer quand même ?"
+      },
+      "subtitle": {
+        "unableTo": "Impossible de {{actionName}}{{entityName}}",
+        "canRetry": "Vous pouvez maintenant réessayer l'action"
+      },
+      "sections": {
+        "issuesToResolve": "Problèmes à résoudre :",
+        "resolved": "Résolus ({{count}}) :",
+        "warnings": "Avertissements :",
+        "howToResolve": "Comment résoudre ?",
+        "status": "Statut :"
+      },
+      "help": {
+        "useButtons": "Utilisez les boutons d'action ci-dessus pour résoudre chaque problème. Vous pouvez naviguer vers les éléments bloquants ou les résoudre directement depuis cet écran."
+      },
+      "forceDelete": {
+        "willBeDeleted": "sera supprimé",
+        "willBeDeletedPlural": "seront supprimés",
+        "andMore": "... et {{count}} autres",
+        "irreversible": "Cette action est irréversible. Toutes les données seront définitivement supprimées.",
+        "confirmButton": "Oui, tout supprimer définitivement"
+      },
+      "actions": {
+        "retryAction": "Réessayer l'action",
+        "close": "Fermer",
+        "cancel": "Annuler",
+        "changeStatusTo": "changer le statut en \"{{status}}\" pour"
+      },
+      "entityTypes": {
+        "client": "client",
+        "clients": "clients",
+        "dossier": "dossier",
+        "dossiers": "dossiers",
+        "lawsuit": "procès",
+        "lawsuits": "procès",
+        "task": "tâche",
+        "tasks": "tâches",
+        "session": "séance",
+        "sessions": "séances",
+        "mission": "mission",
+        "missions": "missions",
+        "financialEntry": "entrée financière",
+        "financialEntries": "entrées financières",
+        "officer": "huissier",
+        "officers": "huissiers"
+      },
+      "toast": {
+        "success": {
+          "taskComplete": "Tâche marquée comme terminée",
+          "hearingComplete": "Audience marquée comme terminée",
+          "entryPaid": "Entrée marquée comme payée",
+          "lawsuitClosed": "Procès clos",
+          "dossierClosed": "Dossier clos",
+          "resolved": "Tous les blocages ont été résolus !"
+        },
+        "error": {
+          "taskComplete": "Impossible de marquer cette tâche comme terminée",
+          "hearingComplete": "Impossible de marquer cette audience comme terminée",
+          "entryPaid": "Impossible de marquer cette entrée comme payée",
+          "lawsuitClosed": "Impossible de clore ce procès",
+          "dossierClosed": "Impossible de clore ce dossier",
+          "unsupported": "Action non supportée",
+          "generic": "Une erreur est survenue"
+        }
+      },
+      "enrichment": {
+        "actions": {
+          "viewTask": "Voir la Tâche",
+          "markComplete": "Marquer comme Terminé",
+          "viewLawsuit": "Voir le Procès",
+          "closeLawsuit": "Clore le Procès",
+          "viewHearing": "Voir l'Audience",
+          "viewMission": "Voir la Mission",
+          "completeMission": "Terminer la Mission",
+          "viewEntry": "Voir l'Entrée",
+          "markAsPaid": "Marquer comme Payé",
+          "goTo": "Aller à {{entityType}}",
+          "reopen": "Rouvrir {{entityType}}",
+          "chooseAnotherParent": "Choisir un Autre Parent",
+          "viewDossier": "Voir le Dossier"
+        },
+        "summary": {
+          "incompleteTask": "{{count}} Tâche incomplète",
+          "incompleteTasks": "{{count}} Tâches incomplètes",
+          "openLawsuit": "{{count}} Procès ouvert",
+          "openLawsuits": "{{count}} Procès ouverts",
+          "upcomingHearing": "{{count}} Audience à venir",
+          "upcomingHearings": "{{count}} Audiences à venir",
+          "activeMission": "{{count}} Mission active",
+          "activeMissions": "{{count}} Missions actives",
+          "openDossier": "{{count}} Dossier ouvert",
+          "openDossiers": "{{count}} Dossiers ouverts",
+          "openTask": "{{count}} Tâche ouverte",
+          "openTasks": "{{count}} Tâches ouvertes"
+        },
+        "temporal": {
+          "invalidDate": "date invalide",
+          "birthDateFuture": "La date de naissance ({{date}}) ne peut pas être dans le futur.",
+          "birthDateAgeUnusual": "La date de naissance indique un âge de {{years}} ans. Veuillez vérifier cette date.",
+          "birthDateMinor": "Le client serait mineur ({{years}} ans). Vérifiez qu'un représentant légal est enregistré.",
+          "registrationDateFuture": "La date d'inscription ({{date}}) ne peut pas être dans le futur.",
+          "openingDateFuture": "La date d'ouverture ({{date}}) ne peut pas être dans le futur.",
+          "dossierOpenBeforeClient": "La date d'ouverture du dossier ({{openDate}}) ne peut pas être antérieure à la date d'inscription du client ({{joinDate}}).",
+          "nextDeadlinePast": "La prochaine échéance ({{date}}) est dans le passé. Pensez à la mettre à jour.",
+          "closingDateAfterOpening": "La date de clôture ({{closeDate}}) doit être postérieure à la date d'ouverture ({{openDate}}).",
+          "cannotCloseDossierOpenLawsuits_one": "Impossible de clôturer le dossier : {{count}} procès est encore en cours.",
+          "cannotCloseDossierOpenLawsuits_other": "Impossible de clôturer le dossier : {{count}} procès sont encore en cours.",
+          "filingDateFuture": "La date de dépôt ({{date}}) ne peut pas être dans le futur.",
+          "filingBeforeDossierOpen": "La date de dépôt du procès ({{filingDate}}) ne peut pas être antérieure à la date d'ouverture du dossier ({{openDate}}).",
+          "nextHearingPast": "La prochaine audience ({{date}}) est dans le passé. Mettez à jour cette date.",
+          "closingDateAfterFiling": "La date de clôture ({{closeDate}}) doit être postérieure à la date de dépôt ({{filingDate}}).",
+          "cannotCloseLawsuitFutureHearings_one": "Impossible de clôturer le procès : {{count}} audience future est encore programmée.",
+          "cannotCloseLawsuitFutureHearings_other": "Impossible de clôturer le procès : {{count}} audiences futures sont encore programmées.",
+          "judgmentBeforeFiling": "La date du jugement ({{judgmentDate}}) ne peut pas être antérieure à la date de dépôt ({{filingDate}}).",
+          "dueDatePast": "La date d'échéance ({{date}}) est dans le passé.",
+          "taskDueAfterHearing": "La date d'échéance de la tâche ({{dueDate}}) est après la prochaine audience du procès ({{hearingDate}}). Vérifiez la cohérence.",
+          "taskParentClosed": "Impossible de créer une tâche : le parent {{parentType}} est déjà clos.",
+          "completionBeforeCreation": "La date d'achèvement ({{completionDate}}) ne peut pas être antérieure à la date de création ({{createdDate}}).",
+          "startAfterDue": "La date de début ({{startDate}}) doit être antérieure à la date d'échéance ({{dueDate}}).",
+          "hearingDatePastStatus": "La date d'audience ({{date}}) est dans le passé, mais son statut n'est pas \"Terminé\".",
+          "endTimeBeforeStart": "L'heure de fin ({{endTime}}) doit être postérieure à l'heure de début ({{startTime}}).",
+          "hearingAfterCaseClosed": "L'audience ne peut pas être planifiée après la clôture du procès ({{closeDate}}).",
+          "hearingCreateClosedCase": "Impossible de créer une audience : le procès parent est déjà clos.",
+          "hearingAfterDossierClosed": "L'audience ne peut pas être planifiée après la clôture du dossier ({{closeDate}}).",
+          "hearingCreateClosedDossier": "Impossible de créer une audience : le dossier parent est déjà clos.",
+          "hearingBeforeFiling": "La date d'audience ({{date}}) ne peut pas être antérieure à la date de dépôt du procès ({{filingDate}}).",
+          "assignmentDateFuture": "La date d'affectation ({{date}}) ne peut pas être dans le futur.",
+          "missionDueAfterAssign": "La date d'échéance ({{dueDate}}) doit être postérieure à la date d'affectation ({{assignDate}}).",
+          "missionDueOverdue": "La date d'échéance de la mission ({{dueDate}}) est dépassée. Statut actuel : {{status}}.",
+          "missionCompletionBeforeAssign": "La date de réalisation ({{completionDate}}) ne peut pas être antérieure à la date d'affectation ({{assignDate}}).",
+          "missionParentClosed": "Impossible de créer une mission : le parent {{parentType}} est déjà clos.",
+          "entryDateFuture": "La date de l'entrée ({{date}}) ne peut pas être dans le futur.",
+          "financialDueBeforeEntry": "La date d'échéance ({{dueDate}}) doit être postérieure ou égale à la date de l'entrée ({{entryDate}}).",
+          "paymentBeforeEntry": "La date de paiement ({{paymentDate}}) ne peut pas être antérieure à la date de l'entrée ({{entryDate}}).",
+          "entryOverdue": "Cette entrée est en retard. Date d'échéance dépassée : {{dueDate}}.",
+          "entryBeforeClientJoin": "La date de l'entrée ({{entryDate}}) ne peut pas être antérieure à la date d'inscription du client ({{joinDate}}).",
+          "entryAfterDossierClose": "L'entrée est datée après la clôture du dossier ({{closeDate}}). Vérifiez la cohérence.",
+          "personalTaskDueOverdue": "La date d'échéance ({{date}}) est dépassée.",
+          "personalTaskCompletionFuture": "La date de réalisation ({{date}}) ne peut pas être dans le futur.",
+          "genericError": "Erreur de validation temporelle. Veuillez vérifier les dates saisies."
+        },
+        "helpText": {
+          "closeDossierTasks": "Pour clore ce dossier, toutes les tâches associées doivent d'abord être terminées. Vous pouvez marquer les tâches comme terminées individuellement.",
+          "closeLawsuitTasks": "Pour clore ce procès, toutes les tâches associées doivent d'abord être terminées. Vous pouvez marquer les tâches comme terminées individuellement.",
+          "closeDossierLawsuits": "Pour clore ce dossier, tous les procès associés doivent d'abord être clos. Vous pouvez clore chaque procès individuellement.",
+          "closeLawsuitHearings": "Pour clore ce procès, toutes les audiences à venir doivent d'abord être terminées ou annulées. Vous pouvez marquer les audiences comme terminées individuellement.",
+          "closeDossierHearings": "Pour clore ce dossier, toutes les audiences à venir doivent d'abord être terminées ou annulées. Vous pouvez marquer les audiences comme terminées individuellement.",
+          "closeDossierMissions": "Pour clore ce dossier, toutes les missions d'huissier actives doivent d'abord être terminées.",
+          "closeLawsuitMissions": "Pour clore ce procès, toutes les missions d'huissier actives doivent d'abord être terminées.",
+          "closeDossierFinancial": "Pour clore ce dossier, toutes les entrées financières impayées doivent d'abord être marquées comme payées.",
+          "closeLawsuitFinancial": "Pour clore ce procès, toutes les entrées financières impayées doivent d'abord être marquées comme payées.",
+          "inactivateClientLawsuits": "Pour marquer ce client comme inactif, tous les procès associés doivent d'abord être clos. Vous pouvez clore chaque procès individuellement.",
+          "inactivateClientTasks": "Pour marquer ce client comme inactif, toutes les tâches associées doivent d'abord être terminées. Vous pouvez marquer les tâches comme terminées individuellement.",
+          "inactivateClientHearings": "Pour marquer ce client comme inactif, toutes les audiences associées doivent d'abord être terminées. Vous pouvez marquer les audiences comme terminées individuellement.",
+          "closedParent": "Cet élément appartient à une entité parente close et ne peut pas être modifié. Vous devez d'abord rouvrir le parent.",
+          "cannotCreateUnderClosed": "Vous ne pouvez pas créer d'éléments sous une entité parente close. Veuillez sélectionner un parent actif ou rouvrir celui qui est clos.",
+          "paidEntryLocked": "Cette entrée a été marquée comme payée et est verrouillée pour maintenir l'intégrité des registres financiers. Créez une nouvelle entrée si vous devez faire des ajustements.",
+          "temporalConstraints": "Les dates saisies violent les contraintes temporelles. Assurez-vous que toutes les dates respectent l'ordre chronologique et les exigences légales.",
+          "inactivateClientDossiers": "Pour marquer un client comme inactif, tous les dossiers associés doivent d'abord être clos. Vous pouvez clore chaque dossier individuellement."
+        },
+        "warnings": {
+          "correctDates": "Veuillez corriger les dates pour respecter la chronologie légale."
+        }
+      }
+    }
+  },
+  "data": {
+    "toast": {
+      "error": {
+        "loadRemote": "Impossible de charger les données distantes (lecture seule)."
+      }
+    }
+  },
+  "form": {
+    "placeholder": {
+      "notProvided": "Non fourni",
+      "input": "Saisissez une valeur",
+      "search": "Rechercher...",
+      "filter": "Filtrer...",
+      "select": "Choisissez une option",
+      "searchableSelect": "Rechercher ou choisir une option",
+      "loadingSearch": "Recherche en cours..."
+    },
+    "upload": {
+      "dropPrompt": "Glissez-déposez des fichiers ici, ou",
+      "browse": "parcourir"
+    },
+    "select": {
+      "default": "Choisissez une option",
+      "searching": "Rechercher ou choisir une option",
+      "noResults": "Aucun résultat trouvé",
+      "noResultsFor": "pour \"{{term}}\"",
+      "createLabel": "Ajouter",
+      "createOption": "{{label}} \"{{term}}\"",
+      "noSelection": "Aucun élément sélectionné",
+      "client": "Sélectionnez un client",
+      "dossier": "Sélectionnez un dossier",
+      "lawsuit": "Sélectionnez un procès",
+      "task": "Sélectionnez une tâche",
+      "session": "Sélectionnez une audience",
+      "officer": "Sélectionnez un huissier",
+      "mission": "Sélectionnez une mission",
+      "court": "Sélectionnez un tribunal",
+      "judge": "Sélectionnez un juge",
+      "phase": "Sélectionnez une phase",
+      "category": "Sélectionnez une catégorie",
+      "assignee": "Sélectionnez un assigné",
+      "adversaryLawyer": "Sélectionnez l'avocat adverse",
+      "missionType": "Sélectionnez le type de mission",
+      "relationType": "Choisissez un type de lien",
+      "time": "Sélectionnez l'heure",
+      "date": "Sélectionnez la date",
+      "status": "Sélectionnez un statut",
+      "priority": "Sélectionnez la priorité"
+    }
+  },
+  "table": {
+    "searching": "Rechercher...",
+    "searchResults": "{{filtered}} résultat(s) sur {{total}}",
+    "toolbar": {
+      "view": "Affichage",
+      "viewTable": "Tableau",
+      "viewGrid": "Grille",
+      "columns": "Colonnes",
+      "manageColumns": "Gérer les Colonnes",
+      "export": "Exporter",
+      "import": "Importer",
+      "reset": "Réinitialiser",
+      "reorderHint": "💡 Faites glisser-déposer les colonnes pour réordonner"
+    },
+    "pagination": {
+      "showing": "Affichage de {{from}} à {{to}} sur {{total}} résultats",
+      "perPage": "{{count}} par page"
+    },
+    "empty": "Aucune donnée disponible",
+    "columns": {
+      "actions": "Actions",
+      "joinDate": "Date d'adhésion",
+      "email": "Email",
+      "phone": "Téléphone",
+      "name": "Nom",
+      "status": "Statut",
+      "lawsuitNumber": "Numéro du procès",
+      "title": "Titre",
+      "client": "Client",
+      "date": "Date",
+      "dueDate": "Date d'échéance",
+      "priority": "Priorité",
+      "assignedTo": "Assigné à"
+    },
+    "actions": {
+      "view": "Voir",
+      "edit": "Modifier",
+      "delete": "Supprimer"
+    }
+  },
+  "import": {
+    "title": "Importer des {{entity}} historiques",
+    "subtitle": "Mapping automatique. Les lignes valides sont importees comme non validees; les autres restent en quarantaine.",
+    "notice": "Veuillez aider Ordinay a comprendre vos donnees : selectionnez les colonnes de votre fichier que vous souhaitez importer. Note importante : le champ Notes peut etre mappe a plusieurs colonnes. Vous retrouverez ces informations dans l'onglet Notes pour ne rien perdre.",
+    "sourceLabel": "Source de l'import (optionnel)",
+    "sourcePlaceholder": "ex: export Excel, ancien logiciel",
+    "fileLabel": "Fichier",
+    "fileHint": "CSV, JSON ou JSONL. Donnees stockees telles quelles.",
+    "fileEmpty": "Aucun fichier selectionne",
+    "recordsFound": "{{count}} enregistrement(s) prets a importer",
+    "parsing": "Analyse du fichier...",
+    "uploading": "Import {{current}} / {{total}}",
+    "mapping": {
+      "title": "Verifier le mapping des colonnes",
+      "subtitle": "Confirmez la correspondance des colonnes avec les champs client d'Ordinay. Les colonnes inconnues sont ignorees.",
+      "headerLabel": "Colonne du fichier",
+      "fieldLabel": "Champ associe",
+      "ignore": "Ignorer la colonne",
+      "confirm": "Confirmer le mapping",
+      "confirmed": "Mapping confirme.",
+      "confirmRequired": "Confirmez le mapping avant d'importer.",
+      "missingRequired": "Le champ Nom n'est pas mappe.",
+      "summary": "{{mapped}} mappes, {{ignored}} ignores",
+      "loadingAliases": "Chargement des alias...",
+      "aliasLoadError": "Liste d'alias indisponible; verifiez le mapping manuellement.",
+      "reset": "Reinitialiser le mapping"
+    },
+    "actions": {
+      "chooseFile": "Choisir un fichier",
+      "import": "Importer"
+    },
+    "errors": {
+      "unsupported": "Type de fichier non pris en charge. Utilisez CSV, JSON ou JSONL.",
+      "parse": "Impossible d'analyser le fichier.",
+      "empty": "Aucun enregistrement dans le fichier.",
+      "upload": "Echec de l'import. Aucune modification appliquee."
+    },
+    "success": "{{count}} enregistrement(s) mis en attente de validation.",
+    "auto": {
+      "success": "{{created}} importes, {{queued}} en attente ({{total}} au total).",
+      "successWithDuplicates": "{{created}} importes, {{queued}} en attente, {{duplicates}} doublons ignores ({{total}} au total)."
+    }
+  },
+
+  "importQueue": {
+    "title": "Donnees importees (lecture seule)",
+    "subtitle": "Les lignes valides sont importees comme non validees; les invalides restent en quarantaine.",
+    "loading": "Chargement des imports...",
+    "showing": "Affichage {{shown}} sur {{total}}",
+    "empty": "Aucun enregistrement importe.",
+    "filters": {
+      "entity": "Entite",
+      "status": "Statut",
+      "pending": "En attente",
+      "validated": "Valide",
+      "all": "Tous",
+      "allEntities": "Toutes les entites"
+    },
+    "columns": {
+      "id": "ID import",
+      "entity": "Entite",
+      "importedAt": "Date d'import",
+      "source": "Source",
+      "status": "Statut",
+      "preview": "Apercu des donnees",
+      "actions": "Actions",
+      "issues": "Problemes"
+    },
+    "status": {
+      "pending": "En attente de validation",
+      "validated": "Valide",
+      "resolved": "Entite liee #{{id}}",
+      "issues": "Problemes de validation detectes",
+      "archived": "Archive"
+    },
+    "summary": {
+      "total": "Total",
+      "pending": "En attente",
+      "validated": "Valide",
+      "issues": "Problemes",
+      "duplicates": "Doublons",
+      "archived": "Archive"
+    },
+    "sessions": {
+      "header": "Sessions d'import",
+      "title": "Session d'import",
+      "records": "{{count}} enregistrement(s)"
+    },
+    "issues": {
+      "ok": "OK",
+      "review": "A verifier",
+      "duplicate": "Doublon"
+    },
+    "preview": {
+      "empty": "Aucune donnee enregistree."
+    },
+    "entities": {
+      "client": "Client",
+      "dossier": "Dossier",
+      "lawsuit": "Procès",
+      "task": "Tache",
+      "session": "Audience",
+      "mission": "Mission",
+      "financialEntry": "Ecriture comptable",
+      "personalTask": "Tache personnelle",
+      "officer": "Huissier",
+      "document": "Document"
+    },
+    "actions": {
+      "refresh": "Rafraichir",
+      "loadMore": "Charger plus",
+      "viewPayload": "Voir les donnees",
+      "review": "Examiner",
+      "normalize": "Verifier",
+      "validate": "Valider et appliquer",
+      "archive": "Archiver",
+      "restore": "Restaurer",
+      "showArchived": "Voir archives",
+      "hideArchived": "Masquer archives",
+      "archiveValidated": "Archiver valides",
+      "openSession": "Voir enregistrements",
+      "closeSession": "Masquer enregistrements"
+    },
+    "errors": {
+      "load": "Impossible de charger la file d'import."
+    },
+    "review": {
+      "title": "Examiner l'import #{{id}} ({{entity}})",
+      "subtitle": "Fournissez un JSON normalise. Aucun mapping automatique.",
+      "notice": "Les imports restent en quarantaine. Seuls les enregistrements valides deviennent actifs.",
+      "payload": "Charge brute (lecture seule)",
+      "normalized": "Charge normalisee",
+      "normalizedHelp": "Collez un JSON normalise conforme au schema.",
+      "normalizedPlaceholder": "{\n  \"name\": \"...\",\n  \"status\": \"active\"\n}",
+      "hint": "La normalisation est manuelle. Corrigez les champs manquants et les conflits avant validation.",
+      "validationTitle": "Etat de validation",
+      "validationOk": "Validation reussie. Vous pouvez appliquer cet import.",
+      "missingFields": "Champs manquants : {{fields}}",
+      "conflicts": "Conflits : {{fields}}",
+      "errors": "{{count}} erreur(s) de validation.",
+      "parseRequired": "La charge normalisee est requise.",
+      "parseError": "La charge normalisee doit etre un JSON valide.",
+      "normalizeSuccess": "Validation terminee.",
+      "normalizeError": "Echec de la validation.",
+      "validationFailed": "Corrigez les problemes avant d'appliquer.",
+      "validateError": "Echec d'application.",
+      "applySuccess": "Import applique avec succes.",
+      "normalizing": "Verification...",
+      "validating": "Application..."
+    }
+  },
+
+  "dialog": {
+    "confirm": {
+      "defaults": {
+        "title": "Confirmation",
+        "message": "Êtes-vous sûr ?",
+        "confirm": "Confirmer",
+        "cancel": "Annuler"
+      }
+    },
+    "form": {
+      "validation": {
+        "required": {
+          "title": "Champs requis",
+          "message": "Veuillez corriger les erreurs du formulaire avant de continuer."
+        }
+      }
+    },
+    "detail": {
+      "documents": {
+        "delete": {
+          "title": "Supprimer le document",
+          "message": "Voulez-vous supprimer seulement le lien ou le fichier définitivement ?",
+          "confirm": "Supprimer le fichier",
+          "cancel": "Supprimer le lien"
+        },
+        "deleteSingle": {
+          "title": "Supprimer le document",
+          "message": "Êtes-vous sûr de vouloir supprimer ce document ?",
+          "confirm": "Supprimer",
+          "cancel": "Annuler"
+        }
+      },
+      "notes": {
+        "delete": {
+          "title": "Supprimer la note",
+          "message": "Êtes-vous sûr de vouloir supprimer cette note ?",
+          "confirm": "Supprimer",
+          "cancel": "Annuler"
+        }
+      },
+      "missions": {
+        "delete": {
+          "title": "Supprimer la mission",
+          "message": "Êtes-vous sûr de vouloir supprimer cette mission ?",
+          "confirm": "Supprimer",
+          "cancel": "Annuler"
+        }
+      },
+      "financial": {
+        "delete": {
+          "title": "Supprimer l'entrée financière",
+          "message": "Êtes-vous sûr de vouloir supprimer cette entrée ?",
+          "confirm": "Supprimer",
+          "cancel": "Annuler"
+        }
+      },
+      "related": {
+        "delete": {
+          "title": "Supprimer {{entity}}",
+          "message": "Êtes-vous sûr de vouloir supprimer ce {{entity}} ?",
+          "confirm": "Supprimer",
+          "cancel": "Annuler"
+        }
+      },
+      "impact": {
+        "change": {
+          "title": "Changement de pièce jointe",
+          "message": "Êtes-vous sûr de vouloir effectuer ce changement ?",
+          "confirm": "Confirmer le changement",
+          "cancel": "Annuler"
+        }
+      },
+      "entity": {
+        "delete": {
+          "title": "Supprimer {{entity}}",
+          "confirm": "Supprimer",
+          "cancel": "Annuler"
+        }
+      }
+    },
+    "impact": {
+      "warning": {
+        "title": "Avertissement d'impact de liaison",
+        "lead": "Vous êtes sur le point de {{action}}{{entityName}}",
+        "prompt": "Voulez-vous continuer ?",
+        "detail": "Cette action modifiera les relations entre les entités. Assurez-vous de bien comprendre l'impact avant de confirmer.",
+        "confirm": "Confirmer le changement",
+        "cancel": "Annuler"
+      }
+    }
+  },
+  "aria": {
+    "dialog": {
+      "close": "Fermer la boîte de dialogue"
+    },
+    "search": {
+      "clearSelection": "Effacer la sélection"
+    },
+    "userDropdown": {
+      "userMenu": "Menu utilisateur"
+    }
+  },
+  "search": {
+    "placeholder": "Rechercher clients, dossiers, tâches...",
+    "results": {
+      "found_one": "{{count}} Résultat Trouvé",
+      "found_other": "{{count}} Résultats Trouvés",
+      "none": "Aucun résultat trouvé",
+      "noneFor": "Aucun résultat pour \"{{query}}\"",
+      "tryAgain": "Essayez un autre terme de recherche",
+      "escHint": "ESC pour fermer"
+    },
+    "categories": {
+      "clients": "Clients",
+      "dossiers": "Dossiers",
+      "tasks": "Tâches",
+      "lawsuits": "Procès",
+      "hearings": "Audiences",
+      "bailiffs": "Huissiers"
+    },
+    "assignedTo": "Assigné à :",
+    "at": "à",
+    "result_one": "résultat",
+    "result_other": "résultats"
+  },
+  "header": {
+    "userMenu": {
+      "profile": "Profil",
+      "settings": "Paramètres",
+      "lightMode": "Mode Clair",
+      "darkMode": "Mode Sombre",
+      "logout": "Quitter l'application",
+      "exitApp": "Quitter l'application"
+    },
+    "roles": {
+      "OWNER": "Propriétaire",
+      "ADMIN": "Administrateur",
+      "LAWYER": "Avocat",
+      "ASSISTANT": "Assistant"
+    }
+  },
+  "entities": {
+    "dossiers": "Dossiers",
+    "lawsuits": "Procès",
+    "hearings": "Audiences",
+    "tasks": "Tâches",
+    "missionsBailiff": "Missions d'Huissier"
+  },
+  "documentGeneration": {
+    "title": "Générer un document",
+    "subtitle": "Choisissez un modèle, puis cliquez sur “Générer”. Ordinay remplit automatiquement les informations du dossier.",
+    "sections": {
+      "configuration": "Configuration"
+    },
+    "labels": {
+      "entity": "Entité:",
+      "reference": "Référence:",
+      "templateType": "Type de document",
+      "customTemplate": "Perso",
+      "language": "Langue",
+      "variant": "Variante"
+    },
+    "entities": {
+      "dossier": "Dossier",
+      "proces": "Procès",
+      "session": "Audience"
+    },
+    "languages": {
+      "en": "Anglais",
+      "fr": "Français",
+      "ar": "Arabe"
+    },
+    "footerNote": "Le document sera généré au format Word (.docx) et pourra être ouvert et modifié avec votre éditeur habituel.",
+    "actions": {
+      "generate": "Générer le document",
+      "generating": "Génération...",
+      "save": "Enregistrer",
+      "download": "Télécharger",
+      "saveAndDownload": "Enregistrer + Télécharger"
+    },
+    "generated": {
+      "title": "Document généré",
+      "template": "Modèle: {{name}}",
+      "language": "Langue: {{language}}",
+      "saved": "Enregistré dans Documents."
+    },
+    "confirm": {
+      "title": "Données manquantes",
+      "message": "Certaines données sont manquantes. Générer quand même?\n\n{{details}}",
+      "confirm": "Générer",
+      "cancel": "Annuler"
+    },
+    "warnings": {
+      "missingFields": "Champs manquants: {{fields}}",
+      "unknownFields": "Champs inconnus: {{fields}}",
+      "noVariant": "Aucune variante sélectionnée."
+    },
+    "toast": {
+      "generated": "Document généré. Choisissez une action.",
+      "generateError": "Erreur lors de la génération: {{error}}",
+      "saveMissingEntity": "Impossible d'enregistrer: entité introuvable.",
+      "saved": "Document enregistré dans l'onglet Documents.",
+      "saveError": "Erreur lors de l'enregistrement: {{error}}"
+    },
+    "defaults": {
+      "document": "Document",
+      "generatedLabel": "Document généré"
+    },
+    "emptyTemplates": "Aucun modèle disponible pour ce type d'entité et cette langue. Créez-en un dans Paramètres → Documents."
+  },
+  "templateManagement": {
+    "header": {
+      "title": "Gestion des modèles",
+      "subtitle": "Créez et gérez vos modèles Word. Ordinay remplace automatiquement les champs à partir de vos dossiers."
+    },
+    "actions": {
+      "newTemplate": "Nouveau modèle",
+      "createFirst": "Créer votre premier modèle",
+      "createTemplate": "Créer le modèle"
+    },
+    "sections": {
+      "system": "Modèles système",
+      "user": "Mes modèles"
+    },
+    "empty": {
+      "system": "Aucun modèle système",
+      "user": "Vous n'avez pas encore de modèle personnalisé"
+    },
+    "badges": {
+      "system": "Système"
+    },
+    "labels": {
+      "createdAt": "Créé le {{date}}"
+    },
+    "confirmDelete": {
+      "title": "Supprimer le modèle",
+      "message": "Voulez-vous vraiment supprimer le modèle \"{{name}}\" ?",
+      "confirm": "Supprimer",
+      "cancel": "Annuler"
+    },
+    "toasts": {
+      "systemEditBlocked": "Les modèles système ne peuvent pas être modifiés",
+      "systemDeleteBlocked": "Les modèles système ne peuvent pas être supprimés",
+      "deleted": "Modèle supprimé avec succès",
+      "updated": "Modèle mis à jour avec succès",
+      "created": "Modèle créé avec succès",
+      "genericError": "Erreur: {{error}}"
+    },
+    "quickGuide": {
+      "title": "Guide rapide : créer votre propre modèle",
+      "subtitle": "Rédigez votre document dans Word, insérez des champs depuis la liste ci‑dessous, puis importez le fichier .docx.",
+      "toggle": "Voir les étapes détaillées",
+      "steps": {
+        "prepare": "Préparez le document dans Word (titre, paragraphes, en-tête, etc.).",
+        "insert": "Insérez les champs Ordinay aux endroits qui changent (client, dossier, dates…).",
+        "save": "Enregistrez le fichier en .docx.",
+        "import": "Importez-le ici via “Nouveau modèle”.",
+        "generate": "Générez un document depuis un dossier ou un procès."
+      }
+    },
+    "fieldPicker": {
+      "total": "{{count}} champs disponibles",
+      "example": "Ex: {{example}}",
+      "actions": {
+        "expandAll": "Tout déplier",
+        "collapseAll": "Tout replier",
+        "copyAll": "Copier tout",
+        "copyGroup": "Copier le groupe",
+        "copyGroupTitle": "Copier tous les champs {{name}}",
+        "copyFieldTitle": "Copier le champ \"{{name}}\"",
+        "copy": "Copier",
+        "copied": "Copié"
+      },
+      "toasts": {
+        "fieldCopied": "Champ copié ! Collez-le dans votre document Word.",
+        "groupCopied": "Groupe de champs copié ! Collez-les dans votre document Word.",
+        "allCopied": "Tous les champs ont été copiés.",
+        "copyError": "Erreur lors de la copie"
+      }
+    },
+    "modal": {
+      "title": {
+        "create": "Nouveau modèle de document",
+        "edit": "Modifier le modèle"
+      },
+      "subtitle": "Créez un modèle Word et laissez Ordinay remplir les informations automatiquement.",
+      "sections": {
+        "configuration": "Configuration",
+        "file": "Fichier template"
+      },
+      "description": "Choisissez le type d'entité, la langue, puis importez votre fichier .docx.",
+      "fields": {
+        "name": "Nom du modèle *",
+        "entityType": "Type d'entité *",
+        "language": "Langue *"
+      },
+      "placeholders": {
+        "name": "Ex: Demande d'extraction"
+      },
+      "fileDrop": "Glissez votre fichier .docx ici",
+      "fileBrowse": "ou cliquez pour parcourir",
+      "currentFile": "Actuel: {{name}}",
+      "fieldsAvailable": "Champs disponibles",
+      "tipTitle": "Astuce :",
+      "tip": "Cliquez sur un champ pour le copier, puis collez-le dans votre document Word à l’endroit voulu. Gardez les champs en texte simple.",
+      "errors": {
+        "nameRequired": "Le nom du modèle est requis",
+        "fileRequired": "Le fichier DOCX est requis"
+      }
+    }
+  },
+  "templateFields": {
+    "client": {
+      "label": "Client",
+      "fields": {
+        "id": "ID client",
+        "name": "Nom complet",
+        "email": "Email",
+        "phone": "Téléphone",
+        "alternate_phone": "Téléphone secondaire",
+        "address": "Adresse",
+        "status": "Statut",
+        "cin": "CIN",
+        "date_of_birth": "Date de naissance",
+        "profession": "Profession",
+        "company": "Société",
+        "tax_id": "Identifiant fiscal",
+        "notes": "Notes",
+        "missing_fields": "Champs manquants",
+        "created_at": "Créé le",
+        "updated_at": "Mis à jour le",
+        "imported": "Importé",
+        "validated": "Validé",
+        "imported_at": "Importé le",
+        "deleted_at": "Supprimé le"
+      }
+    },
+    "dossier": {
+      "label": "Dossier",
+      "fields": {
+        "id": "ID dossier",
+        "reference": "Référence",
+        "client_id": "ID client",
+        "title": "Titre",
+        "description": "Description",
+        "category": "Catégorie",
+        "phase": "Phase",
+        "adversary_party": "Partie adverse",
+        "adversary_lawyer": "Avocat adverse",
+        "estimated_value": "Valeur estimée",
+        "court_reference": "Référence tribunal",
+        "assigned_lawyer": "Avocat assigné",
+        "status": "Statut",
+        "priority": "Priorité",
+        "opened_at": "Ouvert le",
+        "next_deadline": "Prochaine échéance",
+        "closed_at": "Clôturé le",
+        "created_at": "Créé le",
+        "updated_at": "Mis à jour le",
+        "imported": "Importé",
+        "validated": "Validé",
+        "imported_at": "Importé le",
+        "deleted_at": "Supprimé le"
+      }
+    },
+    "proces": {
+      "label": "Procès",
+      "fields": {
+        "id": "ID procès",
+        "reference": "Référence",
+        "case_number": "Numéro de procès",
+        "dossier_id": "ID dossier",
+        "title": "Titre",
+        "description": "Description",
+        "adversary": "Adversaire",
+        "adversary_party": "Partie adverse",
+        "adversary_lawyer": "Avocat adverse",
+        "court": "Tribunal",
+        "filing_date": "Date de dépôt",
+        "next_hearing": "Prochaine audience",
+        "judgment_number": "Numéro de jugement",
+        "judgment_date": "Date de jugement",
+        "reference_number": "Référence tribunal",
+        "status": "Statut",
+        "priority": "Priorité",
+        "opened_at": "Ouvert le",
+        "closed_at": "Clôturé le",
+        "created_at": "Créé le",
+        "updated_at": "Mis à jour le",
+        "imported": "Importé",
+        "validated": "Validé",
+        "imported_at": "Importé le",
+        "deleted_at": "Supprimé le"
+      }
+    },
+    "court": {
+      "label": "Tribunal",
+      "fields": {
+        "name": "Nom",
+        "address": "Adresse",
+        "city": "Ville"
+      }
+    },
+    "lawyer": {
+      "label": "Avocat",
+      "fields": {
+        "name": "Nom complet",
+        "title": "Titre",
+        "firm_name": "Nom du cabinet",
+        "office_name": "Nom du bureau",
+        "office_address": "Adresse du bureau",
+        "phone": "Téléphone",
+        "fax": "Fax",
+        "mobile": "Mobile",
+        "email": "Email",
+        "vpa": "VPA"
+      }
+    },
+    "session": {
+      "label": "Audience / Session",
+      "fields": {
+        "id": "ID audience",
+        "title": "Titre",
+        "status": "Statut",
+        "scheduled_at": "Planifiée le",
+        "session_date": "Date de session",
+        "duration": "Durée",
+        "location": "Lieu",
+        "court_room": "Salle",
+        "judge": "Juge",
+        "outcome": "Résultat",
+        "description": "Description",
+        "notes": "Notes",
+        "participants": "Participants",
+        "dossier_id": "ID dossier",
+        "lawsuit_id": "ID procès",
+        "created_at": "Créée le",
+        "updated_at": "Mise à jour le",
+        "imported": "Importée",
+        "validated": "Validée",
+        "imported_at": "Importée le",
+        "deleted_at": "Supprimée le",
+        "date": "Date (raccourci)"
+      }
+    },
+    "financial_entry": {
+      "label": "Entrées financières",
+      "fields": {
+        "id": "ID entrée",
+        "scope": "Portée",
+        "client_id": "ID client",
+        "dossier_id": "ID dossier",
+        "lawsuit_id": "ID procès",
+        "mission_id": "ID mission",
+        "task_id": "ID tâche",
+        "personal_task_id": "ID tâche personnelle",
+        "status": "Statut",
+        "category": "Catégorie",
+        "amount": "Montant",
+        "currency": "Devise",
+        "occurred_at": "Date opération",
+        "paid_at": "Payée le",
+        "title": "Titre",
+        "description": "Description",
+        "reference": "Référence",
+        "notes": "Notes",
+        "direction": "Sens",
+        "cancelled_at": "Annulée le",
+        "created_at": "Créée le",
+        "updated_at": "Mise à jour le",
+        "imported": "Importée",
+        "validated": "Validée",
+        "imported_at": "Importée le",
+        "deleted_at": "Supprimée le"
+      }
+    },
+    "adversary": {
+      "label": "Partie adverse",
+      "fields": {
+        "name": "Nom"
+      }
+    },
+    "judgment": {
+      "label": "Jugement",
+      "fields": {
+        "number": "Numéro",
+        "date": "Date"
+      }
+    },
+    "document": {
+      "label": "Document",
+      "fields": {
+        "copy_type": "Type de copie"
+      }
+    },
+    "today": {
+      "label": "Dates",
+      "fields": {}
+    }
+  },
+  "startup": {
+    "splashMessage": "Retrouver l'équilibre naturel..."
+  },
+  "status": {
+    "loading": "Chargement..."
+  },
+  "agent": {
+    "followUps": {
+      "verbs": {
+        "list": "Lister",
+        "show": "Afficher",
+        "summarize": "Résumer",
+        "explain": "Expliquer",
+        "open": "Ouvrir",
+        "review": "Consulter",
+        "view": "Voir"
+      },
+      "patterns": {
+        "target": "{{verb}} {{target}}",
+        "scoped": "{{verb}} {{target}} pour {{parent}}",
+        "withCount": "{{target}} ({{count}})",
+        "qualified": "{{qualifiers}} {{target}}",
+        "reviewContext": "Consulter le contexte de {{target}}",
+        "reviewDetails": "Consulter les détails de {{target}}",
+        "explainStatus": "Expliquer le statut de {{target}}",
+        "howCreated": "Comment les enregistrements de {{target}} sont créés"
+      },
+      "entities": {
+        "client": { "singular": "client", "plural": "clients" },
+        "dossier": { "singular": "dossier", "plural": "dossiers" },
+        "lawsuit": { "singular": "procès", "plural": "procès" },
+        "task": { "singular": "tâche", "plural": "tâches" },
+        "personal_task": { "singular": "tâche personnelle", "plural": "tâches personnelles" },
+        "session": { "singular": "session", "plural": "sessions" },
+        "mission": { "singular": "mission", "plural": "missions" },
+        "financial_entry": { "singular": "écriture comptable", "plural": "écritures comptables" },
+        "notification": { "singular": "notification", "plural": "notifications" },
+        "history_event": { "singular": "événement d'historique", "plural": "événements d'historique" },
+        "generic": { "singular": "enregistrement", "plural": "enregistrements" }
+      },
+      "qualifiers": {
+        "active": "actifs",
+        "overdue": "en retard",
+        "priority": "priorité {{priority}}"
+      },
+      "values": {
+        "urgent": "urgent",
+        "high": "haute",
+        "medium": "moyenne",
+        "low": "faible",
+        "blocked": "bloqué",
+        "pending": "en attente",
+        "active": "actif",
+        "inactive": "inactif",
+        "overdue": "en retard",
+        "paid": "payé",
+        "unpaid": "impayé"
+      },
+      "header": "Étapes suivantes suggérées",
+      "suggestionIntro_one": "J'ai trouvé {{count}} {{entity}} qui pourrait correspondre à votre demande :",
+      "suggestionIntro_other": "J'ai trouvé {{count}} {{entity}}s qui pourraient correspondre à votre demande :"
+    },
+    "topbar": {
+      "titleDesktop": "Ordinay Intelligence",
+      "titleMobile": "Agent Ordinay",
+      "configurePlaceholder": "Configurer l'IA dans les paramètres",
+      "hideContext": "Masquer le contexte",
+      "showContext": "Afficher le contexte",
+      "context": "Contexte",
+      "hideContextAria": "Masquer le panneau de contexte",
+      "showContextAria": "Afficher le panneau de contexte"
+    },
+    "layout": {
+      "contextTab": "Contexte",
+      "documentsTab": "Documents",
+      "collapsePanel": "Réduire le panneau",
+      "expandPanel": "Développer le panneau",
+      "offline": "Pas de connexion Internet — L'Agent est indisponible",
+      "closeNavigation": "Fermer la navigation"
+    },
+    "quickActions": {
+      "title": "Ordinay Intelligence",
+      "heading": "Agent",
+      "hint": "Interrogez vos dossiers, clients, tâches et documents.",
+      "hintSuffix": ""
+    },
+    "input": {
+      "placeholder": "Demandez n'importe quoi à Ordinay concernant vos procès, clients, tâches, ou sollicitez des rapports et analyses...",
+      "placeholderOffline": "Connectez-vous à Internet pour utiliser l'Agent...",
+      "tools": "Outils et pièces jointes",
+      "toolsAria": "Outils et pièces jointes",
+      "clear": "Effacer la saisie",
+      "stop": "Arrêter la génération",
+      "send": "Envoyer le message",
+      "availableCommands": "",
+      "attachments": "Pièces jointes",
+      "existingDocument": "Document existant",
+      "fromLibrary": "Depuis votre bibliothèque",
+      "uploadFile": "Téléverser un fichier",
+      "uploadFileHint": "PDF, DOCX, TXT, etc.",
+      "uploadImage": "Téléverser une image",
+      "uploadImageHint": "JPG, PNG, GIF, etc.",
+      "toolsHeading": "Outils",
+      "commands": "",
+      "slashCommands": "",
+      "webSearch": "Recherche Web",
+      "webSearchActive": "Actif — cliquez pour désactiver",
+      "webSearchHint": "Rechercher sur le Web",
+      "selectDocument": "Sélectionner un document",
+      "searchDocuments": "Rechercher des documents...",
+      "loadingDocuments": "Chargement des documents...",
+      "noDocumentsFound": "Aucun document trouvé",
+      "client": "Client",
+      "dossier": "Dossier",
+      "enter": "Entrée",
+      "toSend": "pour envoyer",
+      "shiftEnter": "Maj+Entrée",
+      "newLine": "nouvelle ligne",
+      "slashCommandsHint": ""
+    },
+    "history": {
+      "newConversation": "Nouvelle conversation",
+      "newFolder": "Nouveau dossier",
+      "folderNamePlaceholder": "Nom du dossier",
+      "createFolder": "Créer le dossier",
+      "cancel": "Annuler",
+      "expand": "Développer l'historique",
+      "collapse": "Réduire l'historique",
+      "ungrouped": "Non groupés",
+      "noConversations": "Aucune conversation",
+      "dropToRoot": "Déposez ici pour déplacer à la racine"
+    },
+    "session": {
+      "titleAria": "Titre de la conversation",
+      "save": "Enregistrer",
+      "cancel": "Annuler",
+      "moreOptions": "Plus d'options",
+      "rename": "Renommer",
+      "delete": "Supprimer",
+      "noMessagesYet": "Aucun message",
+      "messagesCount_one": "{{count}} message",
+      "messagesCount_other": "{{count}} messages",
+      "deleteTitle": "Supprimer la conversation",
+      "deleteConfirm": "Voulez-vous vraiment supprimer \"{{title}}\" ? Cette action est irréversible."
+    },
+    "folder": {
+      "nameAria": "Nom du dossier",
+      "save": "Enregistrer",
+      "cancel": "Annuler",
+      "options": "Options du dossier",
+      "rename": "Renommer",
+      "delete": "Supprimer le dossier",
+      "deleteTitle": "Supprimer le dossier",
+      "deleteConfirm": "Voulez-vous vraiment supprimer le dossier \"{{title}}\" ?",
+      "containsConversations_one": "Ce dossier contient {{count}} conversation.",
+      "containsConversations_other": "Ce dossier contient {{count}} conversations.",
+      "moveToRootAndDelete": "Déplacer à la racine et supprimer",
+      "deleteAll": "Tout supprimer"
+    },
+    "context": {
+      "connected": "Connecté à vos données",
+      "disabled": "Accès aux données désactivé",
+      "dataAccess": "Accès aux données",
+      "sources": {
+        "dossiers": "Dossiers",
+        "clients": "Clients",
+        "lawsuits": "Procès",
+        "tasks": "Tâches",
+        "personalTasks": "Tâches personnelles",
+        "missions": "Missions",
+        "sessions": "Sessions",
+        "financialEntries": "Comptabilité",
+        "notifications": "Notifications",
+        "history": "Historique",
+        "documents": "Documents"
+      }
+    },
+    "documents": {
+      "heading": "Documents de la session",
+      "subheading": "Fichiers disponibles pour enrichir les réponses de cette discussion.",
+      "total": "Total",
+      "readable": "Lisibles",
+      "processing": "En traitement",
+      "unreadable": "Illisibles",
+      "emptyNoSession": "Démarrez une session et téléversez des fichiers pour voir la compréhension des documents.",
+      "loading": "Chargement des documents...",
+      "empty": "Aucun document attaché à cette session pour l'instant.",
+      "viewDetails": "Voir les détails",
+      "hideDetails": "Masquer les détails",
+      "retryExtraction": "Relancer l'extraction",
+      "removeFromSession": "Retirer de la session",
+      "working": "En cours : {{action}}...",
+      "artifactPayload": "Charge utile de l'artefact",
+      "documentSummary": "Résumé du document",
+      "keyEntities": "Entités clés",
+      "qualityNotes": "Notes de qualité",
+      "status": {
+        "ready": "Prêt pour le contexte assistant",
+        "needsOcr": "Nécessite une OCR",
+        "failed": "Extraction échouée",
+        "extracting": "Extraction du texte...",
+        "notProcessed": "Non traité",
+        "processing": "Traitement du document"
+      },
+      "analyzedSummary": "Ce document a été analysé et est disponible pour enrichir les réponses de l'assistant.",
+      "errorLoad": "Échec du chargement des documents",
+      "errorOpenArtifacts": "Échec de l'ouverture des artefacts",
+      "errorRetry": "Échec de la relance de l'analyse",
+      "errorRemove": "Échec de la suppression du document"
+    },
+    "artifacts": {
+      "suggestion": "Suggestion",
+      "contextNeeded": "Contexte requis",
+      "selectionNeeded": "Sélection requise",
+      "error": "Erreur",
+      "tryLoadEntity": "Essayez d'abord de charger une entité :",
+      "clarificationRequired": "Clarification requise",
+      "reason": "Raison",
+      "entity": "Entité",
+      "resultCount": "Nombre de résultats",
+      "options": "Options",
+      "signals": "Signaux",
+      "riskAnalysis": "Analyse des risques",
+      "risksIdentified_one": "{{count}} risque identifié",
+      "risksIdentified_other": "{{count}} risques identifiés",
+      "recentActivity": "Activité récente",
+      "overview": "Aperçu",
+      "searchTheWeb": "Rechercher sur le Web",
+      "riskAnalysisFooter": "Analyse basée sur des règles · Nécessite une validation",
+      "dismiss": "Ignorer",
+      "yes": "Oui",
+      "no": "Non",
+      "declined": "Refusé",
+      "actionStarted": "Action démarrée",
+      "draftGenerationStarted": "Génération du brouillon démarrée"
+    },
+    "status": {
+      "searching": "Recherche en cours"
+    },
+    "cards": {
+      "ready": "Prêt",
+      "viewReport": "Voir le rapport",
+      "draftSummary_one": "{{words}} mot • {{sections}} sections",
+      "draftSummary_other": "{{words}} mots • {{sections}} sections",
+      "wordCount_one": "{{count}} mot",
+      "wordCount_other": "{{count}} mots"
+    },
+    "attachments": {
+      "view": "Voir {{name}}"
+    }
+  }
+}
+

@@ -1,0 +1,399 @@
+{
+  "error": {
+    "unexpected": "Une erreur inattendue s'est produite. Veuillez réessayer."
+  },
+  "impact": {
+    "actions": {
+      "perform": "effectuer cette action",
+      "changeLink": "modifier la pièce jointe"
+    }
+  },
+  "dossier": {
+    "add": {
+      "blocked": {
+        "noClients": "Veuillez ajouter un client avant de créer un dossier.",
+        "noClientSelected": "Veuillez sélectionner un client pour ce dossier."
+      }
+    },
+    "close": {
+      "blocked": {
+        "tasksOpen": "{{count}} tâche ouverte :",
+        "tasksOpen_plural": "{{count}} tâches ouvertes :",
+        "lawsuitsOpen": "{{count}} procès ouvert :",
+        "lawsuitsOpen_plural": "{{count}} procès ouverts :",
+        "unpaidBalance": "Solde impayé : {{amount}}",
+        "sessionsOpen": "{{count}} audience ouverte :",
+        "sessionsOpen_plural": "{{count}} audiences ouvertes :",
+        "missionsActive": "{{count}} mission de huissier active :",
+        "missionsActive_plural": "{{count}} missions de huissier actives :",
+        "andMore": "... et {{count}} autre",
+        "andMore_plural": "... et {{count}} autres"
+      },
+      "warning": {
+        "noDocuments": "Aucun document n'a été ajouté à ce dossier"
+      }
+    },
+    "delete": {
+      "blocked": {
+        "dossierNotFound": "Dossier introuvable"
+      },
+      "warning": {
+        "lawsuitsWillDelete": "Ce dossier contient {{count}} procès qui sera supprimé.",
+        "lawsuitsWillDelete_plural": "Ce dossier contient {{count}} procès qui seront supprimés.",
+        "tasksWillDelete": "Ce dossier contient {{count}} tâche qui sera supprimée.",
+        "tasksWillDelete_plural": "Ce dossier contient {{count}} tâches qui seront supprimées.",
+        "sessionsWillDelete": "Ce dossier contient {{count}} audience qui sera supprimée.",
+        "sessionsWillDelete_plural": "Ce dossier contient {{count}} audiences qui seront supprimées.",
+        "missionsWillDelete": "Ce dossier contient {{count}} mission qui sera supprimée.",
+        "missionsWillDelete_plural": "Ce dossier contient {{count}} missions qui seront supprimées.",
+        "financialsWillDelete": "Ce dossier a {{count}} écriture comptable qui sera supprimée.",
+        "financialsWillDelete_plural": "Ce dossier a {{count}} écritures comptables qui seront supprimées."
+      },
+      "forceDeleteMessage": "⚠️ Avertissement : La suppression de ce dossier supprimera également {{count}} entité liée (procès, tâches, audiences, missions, écritures comptables). Cette action est irréversible.",
+      "forceDeleteMessage_plural": "⚠️ Avertissement : La suppression de ce dossier supprimera également {{count}} entités liées (procès, tâches, audiences, missions, écritures comptables). Cette action est irréversible."
+    },
+    "impact": {
+      "reference": {
+        "field": "Numéro de dossier",
+        "current": "**Numéro de dossier actuel** : {{value}}",
+        "new": "**Nouveau numéro de dossier** : {{value}}",
+        "impact1": "• La référence du dossier sera modifiée",
+        "impact2": "• Tous les procès liés conserveront leur lien avec ce dossier",
+        "impact3": "• Les documents et rapports devront être mis à jour",
+        "impact4": "• Les écritures comptables conserveront la nouvelle référence"
+      },
+      "client": {
+        "field": "Client",
+        "current": "**Client actuel** : {{value}}",
+        "new": "**Nouveau client** : {{value}}",
+        "unknown": "Inconnu",
+        "impactTitle": "**Impact** :",
+        "impact1": "• Tous les procès liés resteront attachés à ce dossier",
+        "impact2": "• Les écritures comptables resteront associées au dossier",
+        "impact3": "• Le dossier apparaîtra désormais sous le nouveau client",
+        "impact4": "• Les indicateurs de suivi seront recalculés"
+      }
+    }
+  },
+  "lawsuit": {
+    "add": {
+      "blocked": {
+        "noDossiers": "Veuillez ajouter un dossier avant de créer un procès.",
+        "dossierNotFound": "Dossier parent introuvable",
+        "dossierClosed": "Impossible de créer un procès sous un dossier {{status}}",
+        "dossierDetails": "Dossier : {{lawsuitNumber}} - {{title}}",
+        "reopenRequired": "Vous devez d'abord rouvrir le dossier pour ajouter des procès"
+      }
+    },
+    "close": {
+      "blocked": {
+        "lawsuitNotFound": "Procès introuvable",
+        "sessionsOpen": "{{count}} audience ouverte :",
+        "sessionsOpen_plural": "{{count}} audiences ouvertes :",
+        "tasksOpen": "{{count}} tâche ouverte :",
+        "tasksOpen_plural": "{{count}} tâches ouvertes :",
+        "missionsActive": "{{count}} mission de huissier active :",
+        "missionsActive_plural": "{{count}} missions de huissier actives :",
+        "andMore": "... et {{count}} autre",
+        "andMore_plural": "... et {{count}} autres"
+      }
+    },
+    "delete": {
+      "warning": {
+        "sessionsWillDelete": "Ce procès contient {{count}} audience qui sera supprimée.",
+        "sessionsWillDelete_plural": "Ce procès contient {{count}} audiences qui seront supprimées.",
+        "tasksWillDelete": "Ce procès contient {{count}} tâche qui sera supprimée.",
+        "tasksWillDelete_plural": "Ce procès contient {{count}} tâches qui seront supprimées.",
+        "missionsWillDelete": "Ce procès contient {{count}} mission qui sera supprimée.",
+        "missionsWillDelete_plural": "Ce procès contient {{count}} missions qui seront supprimées."
+      },
+      "forceDeleteMessage": "⚠️ Avertissement : La suppression de ce procès supprimera également {{count}} entité liée (audiences, tâches, missions). Cette action est irréversible.",
+      "forceDeleteMessage_plural": "⚠️ Avertissement : La suppression de ce procès supprimera également {{count}} entités liées (audiences, tâches, missions). Cette action est irréversible."
+    },
+    "impact": {
+      "reference": {
+        "field": "Numéro de procès",
+        "current": "**Numéro de procès actuel** : {{value}}",
+        "new": "**Nouveau numéro de procès** : {{value}}",
+        "impact1": "• La référence du procès sera modifiée",
+        "impact2": "• Toutes les audiences liées conserveront leur lien avec ce procès",
+        "impact3": "• Les documents et rapports devront être mis à jour",
+        "impact4": "• Les écritures comptables conserveront la nouvelle référence"
+      },
+      "dossier": {
+        "field": "Dossier",
+        "current": "**Dossier actuel** : {{value}}",
+        "new": "**Nouveau dossier** : {{value}}",
+        "notAssigned": "Non assigné",
+        "impactTitle": "**Impact** :",
+        "impact1": "• Le client lié peut changer",
+        "impact2": "• Les écritures comptables seront agrégées sous le nouveau dossier",
+        "impact3": "• Les tâches et audiences liées au procès seront déplacées",
+        "impact4": "• Les indicateurs de suivi seront recalculés"
+      }
+    }
+  },
+  "client": {
+    "archive": {
+      "blocked": {
+        "clientNotFound": "Client introuvable",
+        "dossiersOpen": "{{count}} dossier ouvert :",
+        "dossiersOpen_plural": "{{count}} dossiers ouverts :",
+        "lawsuitsOpen": "{{count}} procès ouvert :",
+        "lawsuitsOpen_plural": "{{count}} procès ouverts :",
+        "tasksOpen": "{{count}} tâche ouverte :",
+        "tasksOpen_plural": "{{count}} tâches ouvertes :",
+        "sessionsOpen": "{{count}} audience ouverte :",
+        "sessionsOpen_plural": "{{count}} audiences ouvertes :",
+        "unpaidBalance": "Solde impayé : {{amount}}",
+        "andMore": "... et {{count}} autre",
+        "andMore_plural": "... et {{count}} autres"
+      }
+    },
+    "blocker": {
+      "openDossier": "{{count}} dossier ouvert",
+      "openDossiers": "{{count}} dossiers ouverts"
+    },
+    "delete": {
+      "warning": {
+        "dossiersWillDelete": "Ce client a {{count}} dossier qui sera supprimé.",
+        "dossiersWillDelete_plural": "Ce client a {{count}} dossiers qui seront supprimés.",
+        "lawsuitsWillDelete": "Ce client a {{count}} procès qui sera supprimé.",
+        "lawsuitsWillDelete_plural": "Ce client a {{count}} procès qui seront supprimés.",
+        "tasksWillDelete": "Ce client a {{count}} tâche qui sera supprimée.",
+        "tasksWillDelete_plural": "Ce client a {{count}} tâches qui seront supprimées.",
+        "sessionsWillDelete": "Ce client a {{count}} audience qui sera supprimée.",
+        "sessionsWillDelete_plural": "Ce client a {{count}} audiences qui seront supprimées.",
+        "missionsWillDelete": "Ce client a {{count}} mission qui sera supprimée.",
+        "missionsWillDelete_plural": "Ce client a {{count}} missions qui seront supprimées.",
+        "financialsWillDelete": "Ce client a {{count}} écriture comptable qui sera supprimée.",
+        "financialsWillDelete_plural": "Ce client a {{count}} écritures comptables qui seront supprimées."
+      },
+      "forceDeleteMessage": "⚠️ Avertissement : La suppression de ce client supprimera également {{count}} entité liée (dossiers, procès, tâches, audiences, missions, écritures comptables). Cette action est irréversible.",
+      "forceDeleteMessage_plural": "⚠️ Avertissement : La suppression de ce client supprimera également {{count}} entités liées (dossiers, procès, tâches, audiences, missions, écritures comptables). Cette action est irréversible."
+    }
+  },
+  "accounting": {
+    "edit": {
+      "blocked": {
+        "readOnly": "Modification interdite depuis l'écran Comptabilité\n\nL'écran Comptabilité est une surface de rapprochement en lecture seule.\nLes modifications doivent être effectuées depuis l'écran dédié de l'entité :\n  • Clients → Menu Clients\n  • Dossiers → Menu Dossiers\n  • Procès → Menu Procès\n  • Huissiers → Menu Huissiers\n\nVous pouvez cliquer sur le nom de l'entité pour y accéder directement."
+      }
+    }
+  },
+  "task": {
+    "add": {
+      "blocked": {
+        "noDossiers": "Veuillez ajouter un dossier avant de créer une tâche.",
+        "dossierClosed": "Impossible de créer une tâche sous un dossier {{status}}",
+        "dossierDetails": "Dossier : {{lawsuitNumber}} - {{title}}",
+        "lawsuitClosed": "Impossible de créer une tâche sous un procès {{status}}",
+        "lawsuitDetails": "Procès : {{lawsuitNumber}} - {{title}}",
+        "reopenRequired": "Vous devez d'abord rouvrir le {{parentType}} pour ajouter des tâches"
+      },
+      "warning": {
+        "parentNotResolved": "Parent {{parentType}} non résolu (vérifier après enregistrement)."
+      }
+    },
+    "edit": {
+      "blocked": {
+        "taskNotFound": "Tâche introuvable",
+        "dossierClosed": "Cette tâche appartient au dossier \"{{lawsuitNumber}}\" qui est {{status}}.\n\nLes modifications ne sont plus autorisées sur les dossiers fermés.",
+        "lawsuitClosed": "Cette tâche appartient au procès \"{{lawsuitNumber}}\" qui est fermé.\n\nLes modifications ne sont plus autorisées sur les procès fermés."
+      }
+    },
+    "impact": {
+      "parent": {
+        "current": "**Parent actuel** : {{value}}",
+        "new": "**Nouveau parent** : {{value}}",
+        "notAssigned": "Non assigné",
+        "dossierLabel": "Dossier {{lawsuitNumber}} - {{title}}",
+        "lawsuitLabel": "Procès {{lawsuitNumber}} - {{title}}",
+        "impactTitle": "**Impact** :",
+        "impact1": "• La tâche sera retirée de son contexte actuel",
+        "impact2": "• Les indicateurs de suivi seront recalculés",
+        "impact3": "• L'historique de la tâche sera conservé"
+      }
+    }
+  },
+  "session": {
+    "add": {
+      "blocked": {
+        "noDossiers": "Veuillez ajouter un dossier avant de planifier une audience.",
+        "dossierClosed": "Impossible de créer une audience sous un dossier {{status}}",
+        "dossierDetails": "Dossier : {{lawsuitNumber}} - {{title}}",
+        "lawsuitClosed": "Impossible de créer une audience sous un procès {{status}}",
+        "lawsuitDetails": "Procès : {{lawsuitNumber}} - {{title}}",
+        "reopenRequired": "Vous devez d'abord rouvrir le {{parentType}} pour ajouter des audiences"
+      },
+      "warning": {
+        "parentNotResolved": "Parent {{parentType}} non résolu (vérifier après enregistrement)."
+      }
+    },
+    "edit": {
+      "blocked": {
+        "sessionNotFound": "Audience introuvable",
+        "lawsuitClosed": "Cette audience appartient au procès \"{{lawsuitNumber}}\" qui est fermé.\n\nLes modifications ne sont plus autorisées sur les procès fermés.",
+        "dossierClosed": "Cette audience appartient au dossier \"{{lawsuitNumber}}\" qui est {{status}}.\n\nLes modifications ne sont plus autorisées sur les dossiers fermés."
+      }
+    },
+    "impact": {
+      "parent": {
+        "current": "**Pièce jointe actuelle** : {{value}}",
+        "new": "**Nouvelle pièce jointe** : {{value}}",
+        "notAssigned": "Non assigné",
+        "dossierLabel": "Dossier {{lawsuitNumber}} - {{title}}",
+        "lawsuitLabel": "Procès {{lawsuitNumber}} - {{title}}",
+        "impactTitle": "**Impact** :",
+        "impact1": "• L'audience sera retirée de son contexte actuel",
+        "impact2": "• Les indicateurs de suivi seront recalculés",
+        "impact3": "• L'historique de l'audience sera conservé"
+      }
+    }
+  },
+  "mission": {
+    "add": {
+      "blocked": {
+        "dossierNotFound": "Dossier parent introuvable",
+        "lawsuitNotFound": "Procès parent introuvable",
+        "dossierClosed": "Impossible de créer une mission sous un dossier {{status}}",
+        "dossierDetails": "Dossier : {{lawsuitNumber}} - {{title}}",
+        "lawsuitClosed": "Impossible de créer une mission sous un procès {{status}}",
+        "lawsuitDetails": "Procès : {{lawsuitNumber}} - {{title}}",
+        "reopenRequired": "Vous devez d'abord rouvrir le {{parentType}} pour créer des missions"
+      }
+    },
+    "edit": {
+      "blocked": {
+        "missionNotFound": "Mission introuvable",
+        "dossierClosed": "Cette mission est liée au dossier \"{{lawsuitNumber}}\" qui est {{status}}.\n\nLes modifications ne sont plus autorisées sur les dossiers fermés.",
+        "lawsuitClosed": "Cette mission est liée au procès \"{{lawsuitNumber}}\" qui est fermé.\n\nLes modifications ne sont plus autorisées sur les procès fermés."
+      }
+    },
+    "delete": {
+      "warning": {
+        "financialEntriesWillDelete": "Cette mission a {{count}} écriture comptable qui sera supprimée.",
+        "financialEntriesWillDelete_plural": "Cette mission a {{count}} écritures comptables qui seront supprimées.",
+        "documentsWillDelete": "Cette mission a {{count}} document qui sera supprimé.",
+        "documentsWillDelete_plural": "Cette mission a {{count}} documents qui seront supprimés.",
+        "notesWillDelete": "Cette mission a {{count}} note qui sera supprimée.",
+        "notesWillDelete_plural": "Cette mission a {{count}} notes qui seront supprimées."
+      },
+      "forceDeleteMessage": "⚠️ Avertissement : La suppression de cette mission supprimera également {{count}} entité liée (écritures comptables, documents, notes). Cette action est irréversible.",
+      "forceDeleteMessage_plural": "⚠️ Avertissement : La suppression de cette mission supprimera également {{count}} entités liées (écritures comptables, documents, notes). Cette action est irréversible."
+    },
+    "impact": {
+      "reference": {
+        "field": "Numéro de mission",
+        "current": "**Numéro de mission actuel** : {{value}}",
+        "new": "**Nouveau numéro de mission** : {{value}}",
+        "impactTitle": "**Impact** :",
+        "impact1": "• La référence de la mission sera modifiée",
+        "impact2": "• Tous les documents et rapports devront être mis à jour",
+        "impact3": "• Les écritures comptables conserveront la nouvelle référence"
+      },
+      "officer": {
+        "field": "Huissier",
+        "current": "**Huissier actuel** : {{value}}",
+        "new": "**Nouveau huissier** : {{value}}",
+        "notDefined": "Non défini",
+        "impactTitle": "**Impact** :",
+        "impact1": "• La mission sera retirée de l'huissier actuel",
+        "impact2": "• La responsabilité du suivi changera",
+        "impact3": "• L'historique de la mission sera conservé"
+      }
+    }
+  },
+  "financialEntry": {
+    "add": {
+      "blocked": {
+        "dossierClosed": "Le dossier \"{{lawsuitNumber}}\" est {{status}}.\n\nAucune nouvelle écriture comptable ne peut être ajoutée aux dossiers fermés.",
+        "lawsuitClosed": "Le procès \"{{lawsuitNumber}}\" est fermé.\n\nAucune nouvelle écriture comptable ne peut être ajoutée aux procès fermés."
+      }
+    },
+    "edit": {
+      "blocked": {
+        "entryNotFound": "Écriture comptable introuvable",
+        "entryCancelled": "Cette écriture comptable a été annulée et ne peut pas être modifiée.\n\nLes écritures annulées sont conservées à des fins d'audit.",
+        "dossierClosed": "Cette écriture est liée au dossier \"{{lawsuitNumber}}\" qui est {{status}}.\n\nLes écritures des dossiers fermés ne peuvent pas être modifiées.",
+        "lawsuitClosed": "Cette écriture est liée au procès \"{{lawsuitNumber}}\" qui est fermé.\n\nLes écritures des procès fermés ne peuvent pas être modifiées."
+      },
+      "warning": {
+        "entryPaid": "Cette écriture est marquée comme payée. La modifier sera journalisé et recalculera les soldes.",
+        "lead": "Cette écriture est déjà payée. La mettre à jour créera une trace de correction.",
+        "balanceImpact": "Les soldes client et dossier seront recalculés après l'enregistrement.",
+        "auditTrail": "Les montants et statuts précédents seront conservés dans l'historique avec date et auteur.",
+        "visibility": "Un événement d'historique indiquera qu'une écriture payée a été corrigée."
+      }
+    },
+    "delete": {
+      "blocked": {
+        "entryNotFound": "Écriture comptable introuvable",
+        "entryConfirmed": "Cette écriture comptable confirmée ne peut pas être supprimée définitivement.\n\nElle sera annulée et conservée à des fins d'audit."
+      },
+      "warning": {
+        "entryPaid": "Cette écriture est payée. La supprimer sera journalisé et conservera les valeurs précédentes.",
+        "lead": "Cette écriture est payée. Sa suppression nécessite confirmation et laissera une trace.",
+        "balanceImpact": "Les soldes seront recalculés après la suppression.",
+        "auditTrail": "Le montant, le statut et les détails précédents resteront dans l'historique.",
+        "softDelete": "Cette écriture sera annulée (pas supprimée définitivement) pour préserver la piste d'audit."
+      },
+      "success": {
+        "hardDelete": "Brouillon supprimé définitivement.",
+        "softDelete": "Écriture annulée et archivée à des fins d'audit."
+      }
+    },
+    "cancel": {
+      "success": "Écriture comptable annulée avec succès.",
+      "alreadyCancelled": "Cette écriture est déjà annulée."
+    },
+    "changeStatus": {
+      "blocked": {
+        "entryNotFound": "Écriture comptable introuvable",
+        "entryCancelled": "Les écritures annulées ne peuvent pas avoir leur statut modifié."
+      },
+      "warning": {
+        "alreadyPaid": "Cette écriture est payée. Modifier son statut sera journalisé et recalculera les soldes.",
+        "lead": "Vous modifiez le statut d'une écriture payée.",
+        "balanceImpact": "Les totaux financiers s'ajusteront selon le nouveau statut.",
+        "auditTrail": "Les anciens et nouveaux statuts seront enregistrés dans l'historique avec date."
+      }
+    },
+    "status": {
+      "draft": "Brouillon",
+      "confirmed": "Confirmé",
+      "cancelled": "Annulé"
+    },
+    "direction": {
+      "receivable": "À recevoir",
+      "receivableDesc": "Le client doit ce montant",
+      "payable": "À payer",
+      "payableDesc": "Dépense du cabinet (pas une obligation du client)"
+    },
+    "blocker": {
+      "unpaidReceivable": "Solde créances impayées : {{amount}}",
+      "unpaidReceivableCount": "{{count}} créance impayée",
+      "unpaidReceivableCount_plural": "{{count}} créances impayées",
+      "helpDossier": "Ce dossier ne peut pas être fermé car le client a des créances impayées. Marquez les écritures comme payées ou annulez-les pour continuer.",
+      "helpClient": "Ce client ne peut pas être archivé car il a des créances impayées. Marquez les écritures comme payées ou annulez-les pour continuer.",
+      "notePayable": "Note : Les dépenses internes (à payer) ne bloquent pas la fermeture."
+    }
+  },
+  "officer": {
+    "delete": {
+      "blocked": {
+        "activeMissions": "Cet huissier a {{count}} mission(s) active(s).\n\nVous devez d'abord terminer ou réassigner ces missions avant de supprimer l'huissier.",
+        "financialEntries": "Cet huissier est lié à {{count}} écriture comptable via ses missions.\n\nSupprimer un huissier avec des écritures existantes compromettrait l'intégrité des données.",
+        "financialEntries_plural": "Cet huissier est lié à {{count}} écritures comptables via ses missions.\n\nSupprimer un huissier avec des écritures existantes compromettrait l'intégrité des données."
+      },
+      "warning": {
+        "missionsWillDelete": "Cet huissier a {{count}} mission qui sera supprimée.",
+        "missionsWillDelete_plural": "Cet huissier a {{count}} missions qui seront supprimées.",
+        "financialsWillDelete": "Cet huissier a {{count}} écriture comptable qui sera supprimée.",
+        "financialsWillDelete_plural": "Cet huissier a {{count}} écritures comptables qui seront supprimées."
+      },
+      "forceDeleteMessage": "⚠️ Avertissement : La suppression de cet huissier supprimera également {{count}} entité liée (missions, écritures comptables). Cette action est irréversible.",
+      "forceDeleteMessage_plural": "⚠️ Avertissement : La suppression de cet huissier supprimera également {{count}} entités liées (missions, écritures comptables). Cette action est irréversible."
+    }
+  }
+}
+

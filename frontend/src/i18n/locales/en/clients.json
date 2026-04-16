@@ -1,0 +1,219 @@
+{
+  "page": {
+    "title": "Clients",
+    "subtitle": "{{total}} clients in total",
+    "subtitleFiltered": "{{total}} clients in total • {{displayed}} displayed",
+    "actions": {
+      "newClient": "New Client"
+    },
+    "loading": "Loading data..."
+  },
+  "stats": {
+    "total": "Total Clients",
+    "active": "Active Clients",
+    "inactive": "Inactive Clients",
+    "newThisMonth": "New This Month",
+    "newThisMonthTrend": "since the beginning of the month"
+  },
+  "table": {
+    "columns": {
+      "name": "Name",
+      "email": "Email",
+      "phone": "Phone",
+      "status": "Status",
+      "joinDate": "Join Date",
+      "actions": "Actions"
+    },
+    "status": {
+      "active": "Active",
+      "inactive": "Inactive"
+    },
+    "actions": {
+      "view": "View Details",
+      "edit": "Edit",
+      "delete": "Delete"
+    },
+    "empty": "No clients found",
+    "emptyFiltered": "No results found"
+  },
+  "confirm": {
+    "delete": {
+      "title": "Delete Client",
+      "message": "Are you sure you want to delete this client?",
+      "confirm": "Delete",
+      "cancel": "Cancel"
+    }
+  },
+  "form": {
+    "title": {
+      "edit": "Edit Client",
+      "create": "Add Client"
+    },
+    "subtitle": {
+      "edit": "Edit client information",
+      "create": "Add a new client to your database"
+    },
+    "help": {
+      "statusLocked": "Status can only be changed via the selector in the list view."
+    },
+    "fields": {
+      "name": {
+        "label": "Full Name",
+        "placeholder": "Ex: Ahmed Ben Ali"
+      },
+      "email": {
+        "label": "Email",
+        "placeholder": "example@email.com"
+      },
+      "phone": {
+        "label": "Phone",
+        "placeholder": "+216 98 123 456"
+      },
+      "alternatePhone": {
+        "label": "Alternate Phone",
+        "placeholder": "+216 71 234 567"
+      },
+      "cin": {
+        "label": "ID Number",
+        "placeholder": "12345678"
+      },
+      "dateOfBirth": {
+        "label": "Date of Birth"
+      },
+      "address": {
+        "label": "Address",
+        "placeholder": "Full address"
+      },
+      "profession": {
+        "label": "Profession",
+        "placeholder": "Ex: Entrepreneur"
+      },
+      "company": {
+        "label": "Company",
+        "placeholder": "Company name"
+      },
+      "taxId": {
+        "label": "Tax ID",
+        "placeholder": "1234567X"
+      },
+      "status": {
+        "label": "Status",
+        "options": {
+          "active": "Active",
+          "inactive": "Inactive"
+        }
+      },
+      "notes": {
+        "label": "Notes",
+        "placeholder": "Important notes about the client..."
+      }
+    },
+    "errors": {
+      "emailInvalid": "Invalid email"
+    }
+  },
+  "toasts": {
+    "statusUpdated": "Status updated to {{status}}",
+    "clientUpdated": "Client updated",
+    "statusError": "Error updating status",
+    "deleteError": "Error deleting client",
+    "deleteSuccess": {
+      "title": "Deletion successful",
+      "body": "Client deleted"
+    },
+    "cascadeError": "Error during cascade delete",
+    "cascadeSuccess": {
+      "title": "Cascade deletion",
+      "body": "Client and all related entities deleted"
+    },
+    "updateSuccess": "Client updated successfully!",
+    "createMissingId": "Client created, but returned ID is not available",
+    "createSuccess": "Client added successfully!",
+    "saveError": "Error saving client"
+  },
+  "confirmImpact": {
+    "action": "confirm modification"
+  },
+  "blockerModal": {
+    "actions": {
+      "delete": "delete client",
+      "changeStatus": "change status to \"{{status}}\"",
+      "edit": "modify client",
+      "default": "perform action on client"
+    },
+    "entityWithId": "Client #{{id}}",
+    "entityGeneric": "Client"
+  },
+  "detail": {
+    "entityName": "Client",
+    "notFound": "No client found.",
+    "deleteConfirm": "Are you sure you want to delete this client?",
+    "subtitle": "Client since {{date}}",
+    "quickActions": {
+      "status": {
+        "label": "Status",
+        "active": "Active",
+        "inactive": "Inactive"
+      }
+    },
+    "stats": {
+      "dossiers": "Dossiers",
+      "documents": "Documents"
+    },
+    "tabs": {
+      "dossiers": "Dossiers",
+      "dossiersEntity": "case file",
+      "dossiersAddSubtitle": "Create a new dossier for this client",
+      "lawsuits": "Lawsuits",
+      "lawsuitsEntity": "lawsuit",
+      "lawsuitsDisabled": "Please add a dossier first before creating a lawsuit for this client.",
+      "lawsuitsAddSubtitle": "Create a new lawsuit for this client",
+      "sessions": "Hearings",
+      "sessionsDisabled": "Please add a dossier first before scheduling a hearing.",
+      "sessionsEntity": "a hearing",
+      "sessionsAddSubtitle": "Create a new hearing for this client",
+      "tasks": "Tasks",
+      "tasksDisabled": "Please add a dossier first before creating a task for this client.",
+      "tasksEntity": "a task",
+      "tasksAddSubtitle": "Create a new task for this client",
+      "financial": "Accounting",
+      "documents": "Documents",
+      "history": "History",
+      "overview": "Overview"
+    },
+    "forms": {
+      "dossiersEmpty": "No dossiers available. Please create a dossier first.",
+      "lawsuitsEmpty": "No lawsuits available. Please create a lawsuit first.",
+      "lawsuitsDossierHelp": "Select the dossier to which this lawsuit will be linked",
+      "sessionLinkHelpWithLawsuits": "Choose if this hearing is linked to a dossier or a specific lawsuit",
+      "sessionLinkHelpNoLawsuits": "Choose if this hearing is linked to a dossier",
+      "sessionLawsuitHelp": "Select the lawsuit to which this hearing will be linked",
+      "sessionDossierHelp": "Select the dossier to which this hearing will be linked",
+      "taskDossierHelp": "Select the dossier to which this task will be linked",
+      "taskLawsuitHelp": "Select the lawsuit to which this task will be attached"
+    },
+    "overview": {
+      "personal": "Personal Information",
+      "contact": "Contact Information",
+      "registration": "Registration Information",
+      "notes": "Notes",
+      "fields": {
+        "name": "Full Name",
+        "cin": "CIN",
+        "dob": "Date of Birth",
+        "profession": "Profession",
+        "company": "Company",
+        "taxId": "Tax ID",
+        "email": "Email",
+        "phone": "Phone",
+        "alternatePhone": "Alternate Phone",
+        "address": "Address",
+        "joinDate": "Registration Date"
+      },
+      "notesEmpty": "No notes"
+    },
+    "fallback": {
+      "na": "N/A"
+    }
+  }
+}

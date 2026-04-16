@@ -1,0 +1,698 @@
+{
+  "page": {
+    "title": "Paramètres",
+    "subtitle": "Configurez les préférences de l'application"
+  },
+  "sections": {
+    "general": "Paramètres généraux",
+    "notifications": "Notifications",
+    "clientEmails": "Notifications par e-mail aux clients",
+    "appointments": "Notifications de rendez-vous et d'échéances",
+    "accountSecurity": "Compte & sécurité",
+    "appearance": "Apparence",
+    "imports": "Imports historiques"
+  },
+  "clientEmails": {
+    "enabled": {
+      "title": "Invitations d'e-mail client",
+      "description": "Afficher une invite pour notifier les clients par e-mail après les actions pertinentes"
+    },
+    "categoriesDescription": "Choisissez les événements qui peuvent déclencher une invite d'e-mail client :",
+    "categories": {
+      "dossiers": "Mises à jour des dossiers (changements de statut, échéances)",
+      "lawsuits": "Mises à jour des procès (statut, dates d'audience)",
+      "sessions": "Planification et modifications des audiences",
+      "financial": "Écritures financières"
+    }
+  },
+  "imports": {
+    "subtitle": "Consultez les imports bruts pour les clients."
+  },
+  "general": {
+    "language": {
+      "label": "Langue",
+      "description": "Choisissez la langue de l'interface"
+    },
+    "dateFormat": {
+      "label": "Format de date",
+      "description": "Comment afficher les dates"
+    },
+    "currency": {
+      "label": "Devise",
+      "description": "Choisissez la devise pour toutes les valeurs monetaires"
+    }
+  },
+  "notifications": {
+    "desktop": {
+      "title": "Activer les notifications",
+      "description": "Afficher les notifications dans l'application"
+    }
+  },
+  "appointments": {
+    "tasks": {
+      "title": "Tâches",
+      "overdue": {
+        "label": "Rappels pour les tâches en retard",
+        "description": "Notification quotidienne pour les tâches en retard (jusqu'à 3 jours)."
+      },
+      "upcoming": {
+        "label": "Rappels d'échéances à venir",
+        "description": "Rappels : {{days}} jours avant l'échéance."
+      }
+    },
+    "personalTasks": {
+      "title": "Tâches personnelles",
+      "upcoming": {
+        "label": "Rappels d'échéances à venir",
+        "description": "Rappels : {{days}} jours avant l'échéance."
+      },
+      "completion": {
+        "label": "Rappels de complétion après échéance",
+        "description": "Demande si la tâche a été complétée après l'échéance."
+      }
+    },
+    "sessions": {
+      "title": "Audiences",
+      "preparation": {
+        "label": "Rappels de préparation",
+        "description": "Rappels pour les audiences à venir : {{days}} jours avant."
+      },
+      "dayOf": {
+        "label": "Rappel le jour même",
+        "description": "Notification critique le jour de l'audience pour éviter tout oubli."
+      }
+    },
+    "lawsuits": {
+      "title": "Procès",
+      "basedOnPriority": "Selon la priorité du dossier parent",
+      "automaticTitle": "Notifications automatiques :",
+      "items": {
+        "noSession": "Rappel si aucune audience n'est planifiée (fréquence selon la priorité du dossier parent)",
+        "updateSuggestion": "Suggestion de mise à jour après les audiences/tâches effectuées"
+      },
+      "inherits": "Les procès héritent de la priorité de leur dossier parent pour déterminer la fréquence des rappels."
+    },
+    "payments": {
+      "title": "Paiements",
+      "overdue": {
+        "label": "Rappels de paiements en retard",
+        "before": "Rappels avant : {{days}} jours",
+        "frequency": "Rappels d'impayés : {{days}} jours"
+      }
+    },
+    "missions": {
+      "title": "Missions",
+      "upcoming": {
+        "label": "Rappels avant les échéances des missions",
+        "description": "Rappels : {{days}} jours avant l'échéance."
+      },
+      "completion": {
+        "label": "Vérification après échéance",
+        "description": "Demande si l'huissier a terminé la mission après l'échéance."
+      }
+    },
+    "dossiers": {
+      "title": "Dossiers",
+      "inactivity": {
+        "label": "Rappel d'inactivité ({{days}} jours)",
+        "description": "Notification si le dossier n'a pas été mis à jour depuis {{days}} jours."
+      },
+      "review": {
+        "label": "Rappel de revue (selon priorité)",
+        "high": "Haute priorité : tous les {{days}} jours",
+        "medium": "Priorité moyenne : tous les {{days}} jours",
+        "low": "Faible priorité : tous les {{days}} jours"
+      },
+      "deadline": {
+        "label": "Prochaine échéance (next_deadline)",
+        "description": "Rappels des échéances : 7 jours avant, 3 jours avant, le jour même, et en cas de retard."
+      }
+    },
+    "clients": {
+      "title": "Clients",
+      "inactivity": {
+        "label": "Rappel d'inactivité ({{days}} jours sans activité)",
+        "description": "Notification si le client n'a aucune activité (procès, tâches, audiences, paiements) pendant {{days}} jours."
+      }
+    }
+  },
+  "security": {
+    "current": {
+      "title": "Actuel (MVP bureau)",
+      "localOperator": "Cette application de bureau utilise une identité opérateur locale sur cet appareil.",
+      "noOnlineAuth": "Aucune authentification par compte en ligne n'est encore activée.",
+      "osControlled": "L'accès est contrôlé par l'utilisateur de votre système d'exploitation.",
+      "localData": "Protégez vos données via les accès du système et les sauvegardes/export locaux."
+    },
+    "comingSoon": {
+      "title": "À venir (compte SaaS)",
+      "caption": "Ces fonctions de compte arriveront avec la version cloud.",
+      "badge": "Bientôt disponible",
+      "items": {
+        "twoFactor": {
+          "label": "Authentification à deux facteurs (2FA)",
+          "description": "Sécuriser les comptes avec des codes de vérification."
+        },
+        "sessionTimeout": {
+          "label": "Expiration de session / déconnexion après inactivité",
+          "description": "Déconnexion automatique après une période d'inactivité."
+        },
+        "changePassword": {
+          "label": "Changer le mot de passe",
+          "description": "Gérer les identifiants depuis le compte cloud."
+        }
+      }
+    }
+  },
+  "appearance": {
+    "theme": {
+      "label": "Thème",
+      "description": "Choisissez le thème de l'application",
+      "options": {
+        "light": "Clair",
+        "dark": "Sombre",
+        "system": "Système"
+      }
+    }
+  },
+  "updates": {
+    "sectionTitle": "Mises à jour",
+    "currentVersion": "Version actuelle",
+    "versionUnavailable": "Indisponible",
+    "statusLabel": "Statut de mise à jour",
+    "availableVersion": "Disponible : {{version}}",
+    "available": "Mise à jour disponible",
+    "checking": "Recherche de mises à jour",
+    "downloading": "Téléchargement de la mise à jour",
+    "downloadProgress": "Téléchargement : {{percent}} %",
+    "upToDate": "À jour",
+    "updateFailed": "Échec de la mise à jour",
+    "actions": {
+      "check": "Vérifier les mises à jour",
+      "download": "Télécharger la mise à jour",
+      "install": "Installer et redémarrer"
+    },
+    "notice": {
+      "availableTitle": "Mise à jour disponible",
+      "availableMessage": "Une nouvelle version est prête quand vous le souhaitez.",
+      "downloadFailedTitle": "Échec de la mise à jour",
+      "downloadFailedMessage": "Téléchargement échoué. Vous pouvez réessayer à tout moment."
+    }
+  },
+  "agent": {
+    "sectionTitle": "Préférences Agent",
+    "loading": "Chargement des paramètres Agent...",
+    "preferredOutputFormat": {
+      "label": "Format de sortie préféré",
+      "description": "Utilisé par la génération de documents de l’agent quand aucun format n’est explicitement fourni."
+    },
+    "options": {
+      "auto": "Auto",
+      "pdf": "PDF",
+      "docx": "DOCX",
+      "xlsx": "XLSX",
+      "html": "HTML"
+    },
+    "actions": {
+      "save": "Enregistrer les paramètres",
+      "saving": "Enregistrement..."
+    },
+    "toast": {
+      "saved": "Paramètres Agent enregistrés",
+      "loadError": "Échec du chargement des paramètres Agent",
+      "saveError": "Échec de l’enregistrement des paramètres Agent"
+    },
+    "aiConfig": {
+      "sectionTitle": "Configuration IA",
+      "loading": "Chargement de la configuration IA...",
+      "mode": {
+        "label": "Comment Ordinay doit-il exécuter l’IA ?",
+        "byok": "Utiliser ma propre clé API",
+        "ordinay": "Utiliser Ordinay AI"
+      },
+      "ordinay": {
+        "description": "Vos requêtes IA sont gérées par Ordinay. Aucune clé API nécessaire.",
+        "requiresLicense": "Ordinay AI nécessite une licence active. Activez votre licence pour utiliser cette fonctionnalité.",
+        "status": {
+          "connected": "Connecté à Ordinay AI",
+          "notConnected": "Non connecté"
+        },
+        "actions": {
+          "authenticate": "Connecter la licence",
+          "authenticating": "Connexion..."
+        },
+        "toast": {
+          "authenticated": "Connecté à Ordinay AI",
+          "authFailed": "Échec de connexion à Ordinay AI"
+        }
+      },
+      "source": {
+        "saved": "Configuration enregistrée",
+        "savedNote": "Ce fournisseur est enregistré dans les paramètres et utilisé directement par l’agent.",
+        "fallback": "Fallback backend (.env)",
+        "fallbackNote": "L’agent utilise les valeurs d’environnement du backend. Enregistrez ici pour persister la configuration.",
+        "notConfigured": "Non configuré",
+        "notConfiguredNote": "Renseignez les champs, testez la connexion, puis enregistrez."
+      },
+      "guide": {
+        "title": "Guide de configuration rapide",
+        "step1": "Choisissez le type de fournisseur.",
+        "step2": "Renseignez la clé API, l’URL de base et le modèle (selon le fournisseur).",
+        "step3": "Cliquez sur Tester la connexion, puis Enregistrer la configuration."
+      },
+      "provider": {
+        "label": "Fournisseur",
+        "openai": "OpenAI",
+        "ollama": "Ollama (local)",
+        "custom": "Point d’accès personnalisé",
+        "anthropic": "Anthropic (Claude)",
+        "gemini": "Google (Gemini)",
+        "azure_openai": "Azure OpenAI",
+        "bedrock": "AWS Bedrock",
+        "comingSoon": "Bientôt disponible"
+      },
+      "customPreset": {
+        "label": "Préréglage personnalisé",
+        "openrouter": "OpenRouter",
+        "groq": "Groq",
+        "manual": "Personnalisé manuel"
+      },
+      "fields": {
+        "baseUrl": "URL de base",
+        "apiKey": "Clé API",
+        "model": "Modèle",
+        "placeholders": {
+          "baseUrlOpenAI": "https://api.openai.com/v1",
+          "baseUrlOllama": "http://localhost:11434",
+          "baseUrlCustom": "https://votre-endpoint.com/v1",
+          "apiKey": "sk-...",
+          "modelOpenAI": "gpt-4.1-mini",
+          "modelOllama": "llama3",
+          "modelCustom": "nom-du-modele",
+          "modelAnthropic": "claude-sonnet-4-5-20250514",
+          "modelGemini": "gemini-2.5-flash"
+        }
+      },
+      "actions": {
+        "save": "Enregistrer la configuration",
+        "saving": "Enregistrement...",
+        "test": "Tester la connexion",
+        "testing": "Test en cours..."
+      },
+      "test": {
+        "success": "Connecté",
+        "latency": "{{ms}}ms",
+        "failed": "Échec du test"
+      },
+      "toast": {
+        "saved": "Configuration IA enregistrée",
+        "saveError": "Échec de l’enregistrement de la configuration IA",
+        "testError": "Échec du test de connexion"
+      },
+      "help": {
+        "providerHelpTitle": "Aide fournisseur",
+        "fieldMeaningTitle": "Signification des champs",
+        "summary": {
+          "openai": "Utilisez l’accès direct à l’API OpenAI.",
+          "custom": "Utilisez ceci pour OpenRouter, Groq ou tout endpoint au format API OpenAI.",
+          "ollama": "Utilisez ceci pour des modèles Ollama locaux ou auto-hébergés.",
+          "anthropic": "Utilisez l’accès direct à l’API Anthropic pour Claude.",
+          "gemini": "Utilisez l’accès API Google AI Studio pour Gemini.",
+          "azure_openai": "L’intégration Azure OpenAI est prévue mais indisponible dans cette version.",
+          "bedrock": "L’intégration AWS Bedrock est prévue mais indisponible dans cette version."
+        },
+        "baseUrl": {
+          "openai": "L’endpoint OpenAI par défaut suffit généralement, sauf si vous utilisez un proxy.",
+          "custom": "Renseignez l’endpoint de votre fournisseur (ex. OpenRouter ou Groq).",
+          "ollama": "L’endpoint Ollama local par défaut est http://localhost:11434."
+        },
+        "apiKey": {
+          "standard": "Créez une clé API dans le tableau de bord du fournisseur puis collez-la ici.",
+          "anthropic": "Créez une clé API dans Anthropic Console.",
+          "gemini": "Créez une clé API dans Google AI Studio.",
+          "savedMaskHint": "La clé existante est déjà enregistrée."
+        },
+        "model": {
+          "openai": "Utilisez un identifiant de modèle OpenAI (ex. gpt-4.1-mini).",
+          "custom": "Utilisez l’identifiant exact attendu par votre endpoint personnalisé.",
+          "ollama": "Utilisez un modèle installé dans Ollama (ex. llama3.1:8b).",
+          "anthropic": "Utilisez un identifiant de modèle Claude depuis la documentation Anthropic.",
+          "gemini": "Utilisez un identifiant de modèle Gemini depuis la documentation Google."
+        },
+        "fieldMeaning": {
+          "baseUrl": "Racine de l’endpoint API utilisée pour les requêtes.",
+          "apiKey": "Secret utilisé pour authentifier les requêtes.",
+          "model": "Identifiant exact du modèle utilisé par le fournisseur."
+        },
+        "missingModelWarning": "Choisissez d’abord un fournisseur et un modèle, puis testez la connexion avant d’enregistrer."
+      },
+      "modelPicker": {
+        "placeholder": "Sélectionnez un modèle...",
+        "hint": "{{count}} modèle(s) installé(s) dans Ollama",
+        "vendor": {
+          "meta": "Meta",
+          "mistral": "Mistral AI",
+          "google": "Google",
+          "microsoft": "Microsoft",
+          "alibaba": "Alibaba (Qwen)",
+          "deepseek": "DeepSeek",
+          "cohere": "Cohere",
+          "huggingface": "Hugging Face",
+          "01ai": "01.AI",
+          "upstage": "Upstage",
+          "lmsys": "LMSYS",
+          "tii": "TII (Falcon)",
+          "wizardlm": "WizardLM",
+          "nousresearch": "Nous Research",
+          "nomic": "Nomic",
+          "mixedbread": "Mixedbread",
+          "snowflake": "Snowflake",
+          "ibm": "IBM",
+          "other": "Autre"
+        },
+        "tier": {
+          "small": "Léger — rapide, peu de ressources",
+          "medium": "Équilibré — bonne qualité, ressources modérées",
+          "large": "Puissant — haute qualité, plus de RAM nécessaire",
+          "xlarge": "Très puissant — excellente qualité, usage intensif",
+          "xxlarge": "Maximum — meilleure qualité, matériel haut de gamme requis"
+        }
+      },
+      "ollamaStatus": {
+        "title": "Statut runtime Ollama",
+        "checking": "Vérification d’Ollama...",
+        "refreshing": "Actualisation...",
+        "autoRefresh": "Rafraîchissement auto toutes les 5s",
+        "states": {
+          "not_installed": "Ollama n’est pas installé sur cette machine.",
+          "not_running": "Ollama n’est pas en cours d’exécution.",
+          "starting": "Démarrage d’Ollama...",
+          "running_no_models": "Ollama est démarré mais aucun modèle local n’est disponible.",
+          "ready": "Ollama est démarré et prêt.",
+          "api_mismatch": "Cette URL répond mais ce n’est pas un serveur Ollama."
+        },
+        "labels": {
+          "installed": "Installé",
+          "running": "Actif",
+          "models": "Modèles",
+          "endpoint": "Endpoint"
+        },
+        "values": {
+          "yes": "Oui",
+          "no": "Non",
+          "unknown": "Inconnu"
+        },
+        "hints": {
+          "install": "Installez Ollama. S’il est déjà installé, cliquez sur Ouvrir / démarrer Ollama.",
+          "start": "Ollama est installé mais n’est pas en cours d’exécution. Cliquez sur Démarrer.",
+          "pullModel": "Ajoutez au moins un modèle dans Ollama avant de tester.",
+          "apiMismatch": "Utilisez une URL Ollama pour ce fournisseur, ou passez à Fournisseur personnalisé/OpenAI pour cet endpoint."
+        },
+        "actions": {
+          "install": "Installer Ollama",
+          "start": "Ouvrir / démarrer Ollama",
+          "starting": "Démarrage...",
+          "openLibrary": "Ouvrir la bibliothèque de modèles",
+          "refresh": "Actualiser maintenant"
+        },
+        "connecting": "Connexion en cours...",
+        "toast": {
+          "startRequested": "Démarrage d’Ollama demandé — connexion en cours...",
+          "startSuccess": "Ollama démarré avec succès",
+          "startFailed": "Impossible de lancer Ollama"
+        }
+      },
+      "links": {
+        "openaiKeys": "Clés API OpenAI",
+        "openaiModels": "Documentation modèles OpenAI",
+        "openrouterKeys": "Clés OpenRouter",
+        "groqKeys": "Clés Groq",
+        "ollamaInstall": "Installer Ollama",
+        "ollamaLibrary": "Bibliothèque de modèles Ollama",
+        "anthropicKeys": "Clés API Anthropic",
+        "anthropicModels": "Documentation modèles Claude",
+        "geminiKey": "Clé API Gemini",
+        "geminiModels": "Documentation modèles Gemini",
+        "openaiFormat": "Référence API format OpenAI"
+      },
+      "notConfigured": "Aucun fournisseur IA configuré. L’agent ne sera pas disponible tant qu’un fournisseur n’est pas configuré."
+    }
+  },
+  "domains": {
+    "general": {
+      "label": "Général",
+      "description": "Langue, thème et formats de date."
+    },
+    "workspace": {
+      "label": "Espace de travail",
+      "description": "Paramètres par défaut et outils d'import/export."
+    },
+    "notifications": {
+      "label": "Notifications",
+      "description": "Règles de notification et rappels."
+    },
+    "agent": {
+      "label": "Agent",
+      "description": "Préférences utilisées par Ordinay Intelligence."
+    },
+    "security": {
+      "label": "Sécurité & accès",
+      "description": "Verrouillage, statut de licence et contrôles d'accès."
+    },
+    "updates": {
+      "label": "Mises à jour",
+      "description": "Version et mises à jour de l'application."
+    },
+    "referrals": {
+      "label": "Parrainages & Recompenses",
+      "description": "Votre lien de parrainage, statistiques et recompenses."
+    },
+    "advanced": {
+      "label": "Avancé",
+      "description": "Contrôles peu utilisés et outils de formation.",
+      "groupLabel": "Avancé"
+    }
+  },
+  "securityAccess": {
+    "workspaceLock": {
+      "title": "Verrouillage de l'espace de travail",
+      "header": {
+        "title": "Protection de l'espace de travail",
+        "enabledDescription": "Les espaces verrouillés nécessitent un mot de passe au démarrage ou après inactivité.",
+        "disabledDescription": "Ajoutez un mot de passe local pour protéger les données sensibles des clients."
+      },
+      "status": {
+        "enabled": "Activé",
+        "disabled": "Désactivé"
+      },
+      "why": {
+        "title": "Pourquoi verrouiller cet espace de travail ?",
+        "items": {
+          "protectsData": "Protège les données clients quand vous vous absentez.",
+          "autoLock": "Verrouillage automatique après inactivité ou au démarrage.",
+          "localOnly": "Mot de passe local uniquement, aucun compte en ligne requis."
+        }
+      },
+      "actions": {
+        "setup": "Configurer le verrouillage de l'espace de travail",
+        "enable": "Activer le verrouillage",
+        "cancel": "Annuler",
+        "changePassword": "Changer le mot de passe",
+        "updatePassword": "Mettre à jour le mot de passe",
+        "lockNow": "Verrouiller maintenant",
+        "disable": "Désactiver le verrouillage"
+      },
+      "preview": {
+        "title": "Aperçu de la sécurité",
+        "description": "Configurez la protection au démarrage et l'inactivité avant d'activer.",
+        "cards": {
+          "lockOnStartup": {
+            "title": "Verrouillage au démarrage",
+            "description": "Exiger un mot de passe au lancement."
+          },
+          "inactivity": {
+            "title": "Verrouillage par inactivité",
+            "description": "Verrouillage automatique après un délai défini."
+          }
+        }
+      },
+      "form": {
+        "title": "Configurer le verrouillage de l'espace de travail",
+        "subtitle": "Choisissez un mot de passe local et le comportement du verrou.",
+        "warning": "Si vous oubliez ce mot de passe, il n'y a pas de récupération. Vous devrez réinitialiser l'application pour retrouver l'accès. Nous recommandons fortement de le noter et de le conserver en lieu sûr.",
+        "fields": {
+          "password": {
+            "label": "Mot de passe",
+            "placeholder": "Saisissez le mot de passe (min. 6 caractères)"
+          },
+          "confirmPassword": {
+            "label": "Confirmer le mot de passe",
+            "placeholder": "Saisissez à nouveau le mot de passe"
+          },
+          "lockOnStartup": {
+            "label": "Verrouillage au démarrage",
+            "description": "Exiger un mot de passe lorsque l'application s'ouvre."
+          },
+          "inactivityTimeout": {
+            "label": "Verrouiller après inactivité (minutes)",
+            "hint": "Utilisez 0 pour désactiver le verrouillage automatique."
+          }
+        }
+      },
+      "settings": {
+        "title": "Paramètres de verrouillage",
+        "subtitle": "Affinez quand le verrou s'active.",
+        "lockOnStartup": {
+          "label": "Verrouillage au démarrage",
+          "description": "Exiger un mot de passe au démarrage de l'application."
+        },
+        "inactivityTimeout": {
+          "label": "Délai d'inactivité (minutes)",
+          "disabled": "Le verrouillage automatique est désactivé.",
+          "enabled": "Verrouille après {{minutes}} minutes d'inactivité."
+        }
+      },
+      "changePassword": {
+        "title": "Changer le mot de passe",
+        "fields": {
+          "currentPassword": "Mot de passe actuel",
+          "newPassword": "Nouveau mot de passe",
+          "confirmNewPassword": "Confirmer le nouveau mot de passe",
+          "newPasswordPlaceholder": "Min. 6 caractères"
+        }
+      },
+      "messages": {
+        "lockEnabled": "Verrouillage de l'espace de travail activé",
+        "lockDisabled": "Verrouillage de l'espace de travail désactivé",
+        "passwordChanged": "Mot de passe modifié avec succès",
+        "settingsUpdated": "Paramètres mis à jour"
+      },
+      "errors": {
+        "passwordRequired": "Le mot de passe est requis",
+        "passwordTooShort": "Le mot de passe doit contenir au moins 6 caractères",
+        "passwordMismatch": "Les mots de passe ne correspondent pas",
+        "allFieldsRequired": "Tous les champs de mot de passe sont requis",
+        "newPasswordTooShort": "Le nouveau mot de passe doit contenir au moins 6 caractères",
+        "newPasswordMismatch": "Les nouveaux mots de passe ne correspondent pas",
+        "currentPasswordIncorrect": "Le mot de passe actuel est incorrect"
+      },
+      "disableConfirm": {
+        "title": "Désactiver le verrouillage de l'espace de travail ?",
+        "description": "Votre espace de travail ne sera plus protégé jusqu'à ce que vous le réactiviez."
+      }
+    },
+    "license": {
+      "title": "Licence",
+      "statusLabel": "Statut",
+      "statusDescription": "Licence locale sur cet appareil",
+      "status": {
+        "free": "Plan gratuit",
+        "unactivated": "Non activé",
+        "activating": "Activation en cours",
+        "active": "Actif",
+        "expired": "Expiré",
+        "error": "Erreur",
+        "inactive": "Inactif"
+      },
+      "plan": {
+        "paid": "Plan payant (Illimité)",
+        "free": "Plan gratuit (Phase de test)"
+      },
+      "labels": {
+        "unknown": "Inconnu",
+        "notApplicable": "N/A",
+        "never": "Jamais"
+      },
+      "cards": {
+        "licenseType": "Type de licence",
+        "nextBilling": "Prochaine facturation",
+        "expirationDate": "Date d'expiration",
+        "currentPlan": "Plan actuel",
+        "planLimits": "Limites du plan"
+      },
+      "planLimits": {
+        "clients": "Plan gratuit : Clients {{count}}",
+        "dossiers": "Plan gratuit : Dossiers {{count}}",
+        "lawsuitsPerDossier": "Plan gratuit : Procès par dossier {{count}}",
+        "activeTasks": "Plan gratuit : Tâches actives {{count}}",
+        "paidUnlimited": "Plan payant : Illimité"
+      },
+      "freePlanNote": "L'accès gratuit est limité par l'échelle d'utilisation. Passez à la version payante pour supprimer les limites.",
+      "actions": {
+        "activate": "Activer / Mettre à niveau"
+      },
+      "emptyState": "Aucune licence activée.",
+      "errors": {
+        "activationFailed": "Échec de l'activation. Veuillez réessayer."
+      },
+      "perpetual": {
+        "highestPlan": "Vous possédez la licence Ordinay la plus élevée.",
+        "noChanges": "Les changements de plan ne sont pas disponibles pour les licences perpétuelles. Les modules complémentaires et agents seront disponibles séparément à l'avenir."
+      },
+      "planChange": {
+        "action": "Changer de plan",
+        "manageAction": "Gérer le plan",
+        "upgradeAction": "Changer de plan",
+        "title": "Changer de plan",
+        "subtitle": "Consultez votre plan actuel et choisissez-en un autre.",
+        "currentPlan": "Plan actuel",
+        "availablePlans": "Plans disponibles",
+        "status": {
+          "activationInProgress": "Activation en cours. Terminez l'activation avant de changer de plan."
+        },
+        "actions": {
+          "select": "Choisir ce plan",
+          "manage": "Gérer le plan",
+          "current": "Plan actuel",
+          "refresh": "Rafraîchir la licence",
+          "close": "Fermer",
+          "unavailable": "Indisponible",
+          "changeTo": "Changer"
+        },
+        "messages": {
+          "opened": "La page du plan s'est ouverte dans votre navigateur.",
+          "openFailed": "Impossible d'ouvrir la page du plan.",
+          "refreshSuccess": "Licence rafraîchie.",
+          "refreshFailed": "Impossible de rafraîchir la licence. Veuillez réessayer."
+        },
+        "notes": {
+          "title": "Processus externe",
+          "external": "Les changements de plan se font dans votre navigateur. Nous ouvrons le site Ordinay pour terminer la mise à jour.",
+          "after": "Après le changement, revenez ici et rafraîchissez la licence."
+        },
+        "plans": {
+          "free": {
+            "title": "Gratuit",
+            "description": "Usage limité pour évaluation."
+          },
+          "trial": {
+            "title": "Essai",
+            "description": "Accès temporaire aux fonctionnalités payantes."
+          },
+          "monthly": {
+            "title": "Mensuel",
+            "description": "Accès complet facturé chaque mois."
+          },
+          "yearly": {
+            "title": "Annuel",
+            "description": "Accès complet facturé chaque année."
+          },
+          "perpetual": {
+            "title": "Perpétuel",
+            "description": "Achat unique avec accès à vie."
+          }
+        }
+      },
+      "referral": {
+        "title": "Inviter un collègue",
+        "subtitle": "Partagez votre lien de parrainage une fois l'activation terminée.",
+        "loading": "Récupération du lien de parrainage...",
+        "unavailable": "Lien de parrainage indisponible",
+        "retry": "Réessayer",
+        "copyLink": "Copier le lien",
+        "copied": "Copié",
+        "copyFailed": "Échec de la copie. Veuillez réessayer."
+      }
+    }
+  }
+}

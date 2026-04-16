@@ -1,0 +1,106 @@
+{
+  "$schema": "https://raw.githubusercontent.com/electron-userland/electron-builder/master/packages/app-builder-lib/scheme.json",
+  "appId": "com.ordinay.desktop",
+  "productName": "ORDINAY",
+  "copyright": "Copyright © 2026 Ordinay Team",
+  "directories": {
+    "buildResources": "build",
+    "output": "dist-electron"
+  },
+  "afterPack": "scripts/after-pack.cjs",
+  "files": [
+    "dist/**/*",
+    "electron/**/*"
+  ],
+  "extraResources": [
+    {
+      "from": "../backend",
+      "to": "backend",
+      "filter": [
+        "src/**/*",
+        ".agent-build/**/*",
+        "package.json",
+        "node_modules/**/*",
+        "!node_modules/.cache/**",
+        "!**/*.log",
+        "!**/*.db"
+      ]
+    },
+    {
+      "from": "build/doc-intel",
+      "to": "doc-intel",
+      "filter": [
+        "**/*"
+      ]
+    }
+  ],
+  "win": {
+    "executableName": "ORDINAY",
+    "target": [
+      {
+        "target": "nsis",
+        "arch": ["x64"]
+      }
+    ],
+    "icon": "Light_mode_icon.ico",
+    "artifactName": "${productName}-Setup-${version}.${ext}",
+    "sign": false,
+    "verifyUpdateCodeSignature": false,
+    "extraResources": [
+      {
+        "from": "build/node.exe",
+        "to": "backend/node.exe"
+      },
+      {
+        "from": "build/Light_mode_icon.ico",
+        "to": "icon.ico"
+      }
+    ]
+  },
+  "nsis": {
+    "oneClick": false,
+    "perMachine": false,
+    "allowToChangeInstallationDirectory": true,
+    "deleteAppDataOnUninstall": false,
+    "createDesktopShortcut": true,
+    "createStartMenuShortcut": true,
+    "installerIcon": "Light_mode_icon.ico",
+    "uninstallerIcon": "Light_mode_icon.ico",
+    "installerHeaderIcon": "Light_mode_icon.ico"
+  },
+  "mac": {
+    "target": [
+      {
+        "target": "dmg",
+        "arch": ["x64", "arm64"]
+      }
+    ],
+    "icon": "build/icon.icns",
+    "category": "public.app-category.business",
+    "artifactName": "${productName}-${version}-${arch}.${ext}",
+    "extraResources": [
+      {
+        "from": "build/node",
+        "to": "backend/node"
+      }
+    ]
+  },
+  "linux": {
+    "target": [
+      {
+        "target": "AppImage",
+        "arch": ["x64"]
+      }
+    ],
+    "icon": "build/icons",
+    "category": "Office",
+    "artifactName": "${productName}-${version}.${ext}",
+    "extraResources": [
+      {
+        "from": "build/node",
+        "to": "backend/node"
+      }
+    ]
+  },
+  "publish": null
+}

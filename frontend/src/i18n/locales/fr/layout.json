@@ -1,0 +1,27 @@
+{
+  "sidebar": {
+    "dashboard": "Tableau de bord",
+    "clients": "Clients",
+    "dossiers": "Dossiers",
+    "tasks": "Tâches",
+    "lawsuits": "Procès",
+    "sessions": "Audiences",
+    "personalTasks": "Tâches personnelles",
+    "officers": "Huissiers",
+    "accounting": "Comptabilité",
+    "chatbot": "Ordinay Intelligence",
+    "theme": {
+      "light": "Mode clair",
+      "dark": "Mode sombre"
+    },
+    "logout": "Quitter l'application",
+    "exitApp": "Quitter l'application",
+    "groups": {
+      "core": "Principal",
+      "workflow": "Flux de travail",
+      "operations": "Opérations",
+      "tools": "Outils"
+    }
+  },
+  "header": {}
+}

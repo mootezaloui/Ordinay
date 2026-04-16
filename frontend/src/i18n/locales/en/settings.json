@@ -1,0 +1,705 @@
+{
+  "page": {
+    "title": "Settings",
+    "subtitle": "Configure your application preferences"
+  },
+  "sections": {
+    "general": "General Settings",
+    "notifications": "Notifications",
+    "clientEmails": "Client Email Notifications",
+    "appointments": "Appointment & Deadline Notifications",
+    "accountSecurity": "Account & Security",
+    "appearance": "Appearance",
+    "imports": "Legacy Imports"
+  },
+  "clientEmails": {
+    "enabled": {
+      "title": "Client Email Prompts",
+      "description": "Show a prompt to notify clients via email after relevant actions"
+    },
+    "categoriesDescription": "Choose which events can trigger client email prompts:",
+    "categories": {
+      "dossiers": "Dossier updates (status changes, deadlines)",
+      "lawsuits": "Lawsuit updates (status, hearing dates)",
+      "sessions": "Hearing scheduling and changes",
+      "financial": "Financial entries"
+    }
+  },
+  "imports": {
+    "subtitle": "Review raw legacy intake records for clients."
+  },
+  "general": {
+    "language": {
+      "label": "Language",
+      "description": "Choose the interface language"
+    },
+    "dateFormat": {
+      "label": "Date Format",
+      "description": "How to display dates"
+    },
+    "currency": {
+      "label": "Currency",
+      "description": "Choose the currency used for all monetary values"
+    }
+  },
+  "notifications": {
+    "desktop": {
+      "title": "Enable Notifications",
+      "description": "Show notifications within the app"
+    }
+  },
+  "appointments": {
+    "tasks": {
+      "title": "Tasks",
+      "overdue": {
+        "label": "Reminders for overdue tasks",
+        "description": "Daily notification for overdue tasks (up to 3 days)."
+      },
+      "upcoming": {
+        "label": "Upcoming deadline reminders",
+        "description": "Reminders: {{days}} days before the deadline."
+      }
+    },
+    "personalTasks": {
+      "title": "Personal Tasks",
+      "upcoming": {
+        "label": "Upcoming deadline reminders",
+        "description": "Reminders: {{days}} days before the deadline."
+      },
+      "completion": {
+        "label": "Completion reminders after deadline",
+        "description": "Asks if the task was completed after the deadline."
+      }
+    },
+    "sessions": {
+      "title": "Hearings",
+      "preparation": {
+        "label": "Preparation reminders",
+        "description": "Reminders for upcoming sessions: {{days}} days before the session."
+      },
+      "dayOf": {
+        "label": "Day-of reminder",
+        "description": "Critical notification on the day of the session to prevent any oversight."
+      }
+    },
+    "lawsuits": {
+      "title": "Lawsuits",
+      "basedOnPriority": "Based on parent lawsuit priority",
+      "automaticTitle": "Automatic notifications:",
+      "items": {
+        "noSession": "Reminder if no session scheduled (frequency based on parent lawsuit priority)",
+        "updateSuggestion": "Update suggestion after sessions/tasks completed"
+      },
+      "inherits": "Lawsuits inherit the priority of their parent lawsuit to determine the frequency of reminders."
+    },
+    "payments": {
+      "title": "Payments",
+      "overdue": {
+        "label": "Overdue payment reminders",
+        "before": "Reminders before: {{days}} days",
+        "frequency": "Overdue reminders: {{days}} days"
+      }
+    },
+    "missions": {
+      "title": "Missions",
+      "upcoming": {
+        "label": "Reminders before mission deadlines",
+        "description": "Reminders: {{days}} days before the deadline."
+      },
+      "completion": {
+        "label": "Verification after deadline",
+        "description": "Request if the bailiff has completed the mission after the deadline."
+      }
+    },
+    "dossiers": {
+      "title": "Dossiers",
+      "inactivity": {
+        "label": "Inactivity reminder ({{days}} days)",
+        "description": "Notification if the lawsuit has not been updated for {{days}} days."
+      },
+      "review": {
+        "label": "Review reminder (based on priority)",
+        "high": "High priority: every {{days}} days",
+        "medium": "Medium priority: every {{days}} days",
+        "low": "Low priority: every {{days}} days"
+      },
+      "deadline": {
+        "label": "Next deadline (next_deadline)",
+        "description": "Reminders for deadlines: 7 days before, 3 days before, on the day, and in case of delay."
+      }
+    },
+    "clients": {
+      "title": "Clients",
+      "inactivity": {
+        "label": "Inactivity reminder ({{days}} days without activity)",
+        "description": "Notification if the client has had no activity (lawsuits, tasks, sessions, payments) for {{days}} days."
+      }
+    }
+  },
+  "security": {
+    "current": {
+      "title": "Current (Desktop MVP)",
+      "localOperator": "This desktop app uses a local operator identity on this device.",
+      "noOnlineAuth": "Your data is stored locally and remains accessible even without an internet connection.",
+      "osControlled": "Access is controlled by your operating system user.",
+      "localData": "Protect your data with OS-level access and local backups/exports."
+    },
+    "onlineAccess": {
+      "title": "Online Access (Optional)",
+      "optionalBadge": "Optional",
+      "description": "Ordinay works fully offline by default. If you enable online access, you will be able to securely access your data from the web at ordinay.com and synchronize this device with your cloud account.",
+      "notice": {
+        "title": "By enabling online access:",
+        "items": {
+          "syncsData": "Your data will be copied and synchronized to Ordinay's cloud services.",
+          "requiresAccount": "This feature requires creating an online account.",
+          "offlineStillWorks": "You remain free to continue using Ordinay without online access."
+        }
+      },
+      "optionalNote": "Online access is optional. If you prefer to keep all your data strictly local, you can continue using Ordinay without enabling this feature.",
+      "actions": {
+        "enable": "Enable online access"
+      },
+      "modal": {
+        "title": "Online access setup",
+        "description": "Online access will be available in a future release. We'll guide you through account setup when it's ready.",
+        "badge": "Setup required (coming soon)",
+        "actions": {
+          "close": "Close",
+          "setupRequired": "Setup required"
+        }
+      }
+    }
+  },
+  "appearance": {
+    "theme": {
+      "label": "Theme",
+      "description": "Choose the app's theme",
+      "options": {
+        "light": "Light",
+        "dark": "Dark",
+        "system": "System"
+      }
+    }
+  },
+  "updates": {
+    "sectionTitle": "Updates",
+    "currentVersion": "Current version",
+    "versionUnavailable": "Unavailable",
+    "statusLabel": "Update status",
+    "availableVersion": "Available: {{version}}",
+    "available": "Update available",
+    "checking": "Checking for updates",
+    "downloading": "Downloading update",
+    "downloadProgress": "Download: {{percent}}%",
+    "upToDate": "Up to date",
+    "updateFailed": "Update failed",
+    "actions": {
+      "check": "Check for updates",
+      "download": "Download update",
+      "install": "Install and restart"
+    },
+    "notice": {
+      "availableTitle": "Update available",
+      "availableMessage": "A new version is ready when you are.",
+      "downloadFailedTitle": "Update failed",
+      "downloadFailedMessage": "Download failed. You can try again anytime."
+    }
+  },
+  "agent": {
+    "sectionTitle": "Agent Preferences",
+    "loading": "Loading agent settings...",
+    "preferredOutputFormat": {
+      "label": "Preferred output format",
+      "description": "Used by agent document generation when format is not explicitly provided."
+    },
+    "options": {
+      "auto": "Auto",
+      "pdf": "PDF",
+      "docx": "DOCX",
+      "xlsx": "XLSX",
+      "html": "HTML"
+    },
+    "actions": {
+      "save": "Save settings",
+      "saving": "Saving..."
+    },
+    "toast": {
+      "saved": "Agent settings saved",
+      "loadError": "Failed to load agent settings",
+      "saveError": "Failed to save agent settings"
+    },
+    "aiConfig": {
+      "sectionTitle": "AI Configuration",
+      "loading": "Loading AI configuration...",
+      "mode": {
+        "label": "How should Ordinay run AI?",
+        "byok": "Use my own API key",
+        "ordinay": "Use Ordinay AI"
+      },
+      "ordinay": {
+        "description": "Your AI requests are handled by Ordinay. No API key needed.",
+        "requiresLicense": "Ordinay AI requires an active license. Activate your license to use this feature.",
+        "status": {
+          "connected": "Connected to Ordinay AI",
+          "notConnected": "Not connected"
+        },
+        "actions": {
+          "authenticate": "Connect license",
+          "authenticating": "Connecting..."
+        },
+        "toast": {
+          "authenticated": "Connected to Ordinay AI",
+          "authFailed": "Failed to connect to Ordinay AI"
+        }
+      },
+      "source": {
+        "saved": "Saved configuration",
+        "savedNote": "This provider is saved in Settings and used directly by the agent.",
+        "fallback": "Backend fallback (.env)",
+        "fallbackNote": "The agent is running from backend environment defaults. Save values here to persist configuration in Settings.",
+        "notConfigured": "Not configured",
+        "notConfiguredNote": "Fill the fields below, test connection, then save."
+      },
+      "guide": {
+        "title": "Quick setup guide",
+        "step1": "Choose your provider type.",
+        "step2": "Fill API key, Base URL, and Model (as required).",
+        "step3": "Click Test connection, then Save configuration."
+      },
+      "provider": {
+        "label": "Provider",
+        "openai": "OpenAI",
+        "ollama": "Ollama (local)",
+        "custom": "Custom endpoint",
+        "anthropic": "Anthropic (Claude)",
+        "gemini": "Google (Gemini)",
+        "azure_openai": "Azure OpenAI",
+        "bedrock": "AWS Bedrock",
+        "comingSoon": "Coming soon"
+      },
+      "customPreset": {
+        "label": "Custom preset",
+        "openrouter": "OpenRouter",
+        "groq": "Groq",
+        "manual": "Manual custom"
+      },
+      "fields": {
+        "baseUrl": "Base URL",
+        "apiKey": "API Key",
+        "model": "Model",
+        "placeholders": {
+          "baseUrlOpenAI": "https://api.openai.com/v1",
+          "baseUrlOllama": "http://localhost:11434",
+          "baseUrlCustom": "https://your-endpoint.com/v1",
+          "apiKey": "sk-...",
+          "modelOpenAI": "gpt-4.1-mini",
+          "modelOllama": "llama3",
+          "modelCustom": "model-name",
+          "modelAnthropic": "claude-sonnet-4-5-20250514",
+          "modelGemini": "gemini-2.5-flash"
+        }
+      },
+      "actions": {
+        "save": "Save configuration",
+        "saving": "Saving...",
+        "test": "Test connection",
+        "testing": "Testing..."
+      },
+      "test": {
+        "success": "Connected",
+        "latency": "{{ms}}ms",
+        "failed": "Test failed"
+      },
+      "toast": {
+        "saved": "AI configuration saved",
+        "saveError": "Failed to save AI configuration",
+        "testError": "Connection test failed"
+      },
+      "help": {
+        "providerHelpTitle": "Provider help",
+        "fieldMeaningTitle": "Field meaning",
+        "summary": {
+          "openai": "Use direct OpenAI API access.",
+          "custom": "Use this for OpenRouter, Groq, or any OpenAI-format API endpoint.",
+          "ollama": "Use this for local or self-hosted Ollama models.",
+          "anthropic": "Use direct Anthropic API access for Claude.",
+          "gemini": "Use Google AI Studio API access for Gemini.",
+          "azure_openai": "Azure OpenAI integration is planned but not available in this release.",
+          "bedrock": "AWS Bedrock integration is planned but not available in this release."
+        },
+        "baseUrl": {
+          "openai": "Default OpenAI endpoint is usually correct unless your network requires a proxy.",
+          "custom": "Set your provider endpoint (for example OpenRouter or Groq).",
+          "ollama": "Default local Ollama endpoint is http://localhost:11434."
+        },
+        "apiKey": {
+          "standard": "Create an API key in the provider dashboard and paste it here.",
+          "anthropic": "Create an API key in Anthropic Console.",
+          "gemini": "Create an API key in Google AI Studio.",
+          "savedMaskHint": "Existing key is already saved."
+        },
+        "model": {
+          "openai": "Use an OpenAI model ID (for example gpt-4.1-mini).",
+          "custom": "Use the exact model ID expected by your custom endpoint.",
+          "ollama": "Use a model installed in Ollama (for example llama3.1:8b).",
+          "anthropic": "Use a Claude model ID from Anthropic docs.",
+          "gemini": "Use a Gemini model ID from Google docs."
+        },
+        "fieldMeaning": {
+          "baseUrl": "API endpoint root used for requests.",
+          "apiKey": "Secret credential used to authenticate requests.",
+          "model": "Exact model identifier used by the provider."
+        },
+        "missingModelWarning": "Choose a provider and model first, then run a connection test before saving."
+      },
+      "modelPicker": {
+        "placeholder": "Select a model...",
+        "hint": "{{count}} model(s) installed in Ollama",
+        "vendor": {
+          "meta": "Meta",
+          "mistral": "Mistral AI",
+          "google": "Google",
+          "microsoft": "Microsoft",
+          "alibaba": "Alibaba (Qwen)",
+          "deepseek": "DeepSeek",
+          "cohere": "Cohere",
+          "huggingface": "Hugging Face",
+          "01ai": "01.AI",
+          "upstage": "Upstage",
+          "lmsys": "LMSYS",
+          "tii": "TII (Falcon)",
+          "wizardlm": "WizardLM",
+          "nousresearch": "Nous Research",
+          "nomic": "Nomic",
+          "mixedbread": "Mixedbread",
+          "snowflake": "Snowflake",
+          "ibm": "IBM",
+          "other": "Other"
+        },
+        "tier": {
+          "small": "Lightweight — fast, low resource usage",
+          "medium": "Balanced — good quality, moderate resources",
+          "large": "Powerful — high quality, needs more RAM",
+          "xlarge": "Very powerful — excellent quality, heavy resource usage",
+          "xxlarge": "Maximum — best quality, requires high-end hardware"
+        }
+      },
+      "ollamaStatus": {
+        "title": "Ollama runtime status",
+        "checking": "Checking Ollama availability...",
+        "refreshing": "Refreshing...",
+        "autoRefresh": "Auto-refresh every 5s",
+        "states": {
+          "not_installed": "Ollama is not installed on this machine.",
+          "not_running": "Ollama is not running.",
+          "starting": "Starting Ollama...",
+          "running_no_models": "Ollama is running but no local models are available.",
+          "ready": "Ollama is running and ready.",
+          "api_mismatch": "This URL responds, but it is not an Ollama server."
+        },
+        "labels": {
+          "installed": "Installed",
+          "running": "Running",
+          "models": "Models",
+          "endpoint": "Endpoint"
+        },
+        "values": {
+          "yes": "Yes",
+          "no": "No",
+          "unknown": "Unknown"
+        },
+        "hints": {
+          "install": "Install Ollama. If it is already installed, click Open / Start.",
+          "start": "Ollama is installed but not running. Click Start to launch it.",
+          "pullModel": "Add at least one model in Ollama before testing.",
+          "apiMismatch": "Use Ollama URL for Ollama provider, or switch to Custom/OpenAI provider for this endpoint."
+        },
+        "actions": {
+          "install": "Install Ollama",
+          "start": "Open / Start Ollama",
+          "starting": "Starting...",
+          "openLibrary": "Open model library",
+          "refresh": "Refresh now"
+        },
+        "connecting": "Connecting...",
+        "toast": {
+          "startRequested": "Ollama start requested — connecting...",
+          "startSuccess": "Ollama started successfully",
+          "startFailed": "Failed to launch Ollama"
+        }
+      },
+      "links": {
+        "openaiKeys": "OpenAI API keys",
+        "openaiModels": "OpenAI model docs",
+        "openrouterKeys": "OpenRouter keys",
+        "groqKeys": "Groq keys",
+        "ollamaInstall": "Install Ollama",
+        "ollamaLibrary": "Ollama model library",
+        "anthropicKeys": "Anthropic API keys",
+        "anthropicModels": "Claude model docs",
+        "geminiKey": "Gemini API key",
+        "geminiModels": "Gemini model docs",
+        "openaiFormat": "OpenAI-format API reference"
+      },
+      "notConfigured": "No AI provider configured. The agent will not be available until you configure a provider."
+    }
+  },
+  "domains": {
+    "general": {
+      "label": "General",
+      "description": "Language, theme, and date formats."
+    },
+    "workspace": {
+      "label": "Workspace",
+      "description": "Workspace defaults and import/export tools."
+    },
+    "notifications": {
+      "label": "Notifications",
+      "description": "Notification rules and reminder behavior."
+    },
+    "agent": {
+      "label": "Agent",
+      "description": "Behavior preferences used by Ordinay Intelligence."
+    },
+    "security": {
+      "label": "Security & Access",
+      "description": "Workspace lock, license status, and access controls."
+    },
+    "updates": {
+      "label": "Updates",
+      "description": "Version status and app updates."
+    },
+    "referrals": {
+      "label": "Referrals & Rewards",
+      "description": "Your referral link, stats, and earned rewards."
+    },
+    "advanced": {
+      "label": "Advanced",
+      "description": "Rarely used controls and training tools.",
+      "groupLabel": "Advanced"
+    }
+  },
+  "securityAccess": {
+    "workspaceLock": {
+      "title": "Workspace Lock",
+      "header": {
+        "title": "Workspace protection",
+        "enabledDescription": "Locked workspaces require a password at startup or after inactivity.",
+        "disabledDescription": "Add a local password to keep sensitive client data protected."
+      },
+      "status": {
+        "enabled": "Enabled",
+        "disabled": "Disabled"
+      },
+      "why": {
+        "title": "Why lock this workspace?",
+        "items": {
+          "protectsData": "Protects client data when you step away.",
+          "autoLock": "Auto-lock after inactivity or on startup.",
+          "localOnly": "Local-only password, no online account required."
+        }
+      },
+      "actions": {
+        "setup": "Set up workspace lock",
+        "enable": "Enable lock",
+        "cancel": "Cancel",
+        "changePassword": "Change password",
+        "updatePassword": "Update password",
+        "lockNow": "Lock now",
+        "disable": "Disable lock"
+      },
+      "preview": {
+        "title": "Security preview",
+        "description": "Configure startup and inactivity protection before enabling.",
+        "cards": {
+          "lockOnStartup": {
+            "title": "Lock on startup",
+            "description": "Require a password at launch."
+          },
+          "inactivity": {
+            "title": "Inactivity lock",
+            "description": "Auto-lock after set minutes."
+          }
+        }
+      },
+      "form": {
+        "title": "Set up workspace lock",
+        "subtitle": "Choose a local password and how the lock behaves.",
+        "warning": "If you forget this password, there is no recovery. You will need to reset the app to regain access. We strongly recommend writing it down and keeping it safe.",
+        "fields": {
+          "password": {
+            "label": "Password",
+            "placeholder": "Enter password (min. 6 characters)"
+          },
+          "confirmPassword": {
+            "label": "Confirm password",
+            "placeholder": "Re-enter password"
+          },
+          "lockOnStartup": {
+            "label": "Lock on startup",
+            "description": "Require password when the app opens."
+          },
+          "inactivityTimeout": {
+            "label": "Lock after inactivity (minutes)",
+            "hint": "Use 0 to disable automatic lock."
+          }
+        }
+      },
+      "settings": {
+        "title": "Lock settings",
+        "subtitle": "Fine-tune when the lock activates.",
+        "lockOnStartup": {
+          "label": "Lock on startup",
+          "description": "Require password when app starts."
+        },
+        "inactivityTimeout": {
+          "label": "Inactivity timeout (minutes)",
+          "disabled": "Automatic lock is disabled.",
+          "enabled": "Locks after {{minutes}} minutes of inactivity."
+        }
+      },
+      "changePassword": {
+        "title": "Change password",
+        "fields": {
+          "currentPassword": "Current password",
+          "newPassword": "New password",
+          "confirmNewPassword": "Confirm new password",
+          "newPasswordPlaceholder": "Min. 6 characters"
+        }
+      },
+      "messages": {
+        "lockEnabled": "Workspace lock enabled successfully",
+        "lockDisabled": "Workspace lock disabled",
+        "passwordChanged": "Password changed successfully",
+        "settingsUpdated": "Settings updated"
+      },
+      "errors": {
+        "passwordRequired": "Password is required",
+        "passwordTooShort": "Password must be at least 6 characters",
+        "passwordMismatch": "Passwords do not match",
+        "allFieldsRequired": "All password fields are required",
+        "newPasswordTooShort": "New password must be at least 6 characters",
+        "newPasswordMismatch": "New passwords do not match",
+        "currentPasswordIncorrect": "Current password is incorrect"
+      },
+      "disableConfirm": {
+        "title": "Disable workspace lock?",
+        "description": "Your workspace will no longer be protected until you enable it again."
+      }
+    },
+    "license": {
+      "title": "License",
+      "statusLabel": "Status",
+      "statusDescription": "Local license on this device",
+      "status": {
+        "free": "Free plan",
+        "unactivated": "Unactivated",
+        "activating": "Activating",
+        "active": "Active",
+        "expired": "Expired",
+        "error": "Error",
+        "inactive": "Inactive"
+      },
+      "plan": {
+        "paid": "Paid plan (Unlimited)",
+        "free": "Free plan (Test phase)"
+      },
+      "labels": {
+        "unknown": "Unknown",
+        "notApplicable": "N/A",
+        "never": "Never"
+      },
+      "cards": {
+        "licenseType": "License Type",
+        "nextBilling": "Next Billing",
+        "expirationDate": "Expiration Date",
+        "currentPlan": "Current Plan",
+        "planLimits": "Plan Limits"
+      },
+      "planLimits": {
+        "clients": "Free plan: Clients {{count}}",
+        "dossiers": "Free plan: Dossiers {{count}}",
+        "lawsuitsPerDossier": "Free plan: Lawsuits per dossier {{count}}",
+        "activeTasks": "Free plan: Active tasks {{count}}",
+        "paidUnlimited": "Paid plan: Unlimited"
+      },
+      "freePlanNote": "Free access is limited by usage scale. Upgrade to remove limits.",
+      "actions": {
+        "activate": "Activate / Upgrade"
+      },
+      "emptyState": "No license Activated.",
+      "errors": {
+        "activationFailed": "Activation failed. Please try again."
+      },
+      "perpetual": {
+        "highestPlan": "You own the highest Ordinay license.",
+        "noChanges": "Plan changes are not available for perpetual licenses. Add-ons and agents will be available separately in the future."
+      },
+      "planChange": {
+        "action": "Change Plan",
+        "manageAction": "Manage Plan",
+        "upgradeAction": "Change Plan",
+        "title": "Change plan",
+        "subtitle": "Review your current plan and choose a new one.",
+        "currentPlan": "Current plan",
+        "availablePlans": "Available plans",
+        "status": {
+          "activationInProgress": "Activation is in progress. Finish activation before changing plans."
+        },
+        "actions": {
+          "select": "Choose plan",
+          "manage": "Manage plan",
+          "current": "Current plan",
+          "refresh": "Refresh license",
+          "close": "Close",
+          "unavailable": "Unavailable",
+          "changeTo": "Switch"
+        },
+        "messages": {
+          "opened": "Plan page opened in your browser.",
+          "openFailed": "Could not open the plan page.",
+          "refreshSuccess": "License refreshed.",
+          "refreshFailed": "Unable to refresh license. Please try again."
+        },
+        "notes": {
+          "title": "External checkout",
+          "external": "Plan changes happen in your browser. We'll open the Ordinay website to complete the update.",
+          "after": "After completing the change, return here and refresh your license."
+        },
+        "plans": {
+          "free": {
+            "title": "Free",
+            "description": "Limited usage for evaluation."
+          },
+          "trial": {
+            "title": "Trial",
+            "description": "Limited-time access to paid features."
+          },
+          "monthly": {
+            "title": "Monthly",
+            "description": "Full access billed monthly."
+          },
+          "yearly": {
+            "title": "Yearly",
+            "description": "Full access billed yearly."
+          },
+          "perpetual": {
+            "title": "Perpetual",
+            "description": "One-time purchase with lifetime access."
+          }
+        }
+      },
+      "referral": {
+        "title": "Invite a colleague",
+        "subtitle": "Share your referral link after activation is complete.",
+        "loading": "Fetching referral link...",
+        "unavailable": "Referral link unavailable",
+        "retry": "Retry",
+        "copyLink": "Copy link",
+        "copied": "Copied",
+        "copyFailed": "Copy failed. Please try again."
+      }
+    }
+  }
+}

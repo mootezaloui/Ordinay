@@ -1,0 +1,321 @@
+{
+  "page": {
+    "title": "الملفات",
+    "subtitle": "{{total}} ملف في المجموع",
+    "subtitleFiltered": "{{total}} ملف في المجموع • {{displayed}} معروض",
+    "loading": "جاري تحميل الملفات..."
+  },
+  "actions": {
+    "new": "ملف جديد",
+    "disabledTooltip": "أضف عميلاً أولاً قبل إنشاء ملف."
+  },
+  "stats": {
+    "total": "إجمالي الملفات",
+    "open": "الملفات المفتوحة",
+    "closed": "الملفات المغلقة",
+    "highPriority": "أولوية عالية"
+  },
+  "table": {
+    "columns": {
+      "number": "الرقم",
+      "title": "العنوان",
+      "client": "العميل",
+      "category": "الفئة",
+      "status": "الحالة",
+      "openDate": "تاريخ الفتح",
+      "priority": "الأولوية",
+      "actions": "الإجراءات"
+    },
+    "status": {
+      "open": "مفتوح",
+      "inProgress": "قيد الإجراء",
+      "onHold": "قيد الانتظار",
+      "closed": "مغلق"
+    },
+    "priority": {
+      "high": "عالي",
+      "medium": "متوسط",
+      "low": "منخفض"
+    },
+    "actions": {
+      "view": "عرض التفاصيل",
+      "edit": "تعديل",
+      "delete": "حذف"
+    },
+    "empty": "لم يتم العثور على ملفات",
+    "emptyFiltered": "لم يتم العثور على نتائج",
+    "emptyNoClients": "أضف عميلاً أولاً قبل إنشاء ملف."
+  },
+  "confirm": {
+    "delete": {
+      "title": "حذف الملف",
+      "message": "هل أنت متأكد أنك تريد حذف هذا الملف؟",
+      "confirm": "حذف",
+      "cancel": "إلغاء"
+    }
+  },
+  "toasts": {
+    "delete": {
+      "title": "تم الحذف بنجاح",
+      "body": "تم حذف الملف"
+    },
+    "cascadeError": "خطأ أثناء الحذف المتتالي",
+    "cascadeSuccess": {
+      "title": "حذف متتالي",
+      "body": "تم حذف الملف وجميع الكيانات المرتبطة"
+    },
+    "statusUpdated": "تم تحديث الحالة: {{status}}",
+    "statusTitle": "حالة الملف",
+    "priorityUpdated": "تم تحديث الأولوية: {{priority}}",
+    "priorityTitle": "أولوية الملف",
+    "updateSuccess": "تم تحديث الملف بنجاح!",
+    "createSuccess": "تمت إضافة الملف بنجاح!",
+    "saveError": "خطأ أثناء الحفظ"
+  },
+  "form": {
+    "title": {
+      "edit": "تعديل الملف",
+      "create": "إنشاء ملف"
+    },
+    "subtitle": {
+      "edit": "تعديل معلومات الملف",
+      "create": "إنشاء ملف جديد"
+    },
+    "help": {
+      "statusLocked": "يمكن تغيير الحالة فقط من خلال محدد القائمة"
+    },
+    "fields": {
+      "lawsuitNumber": {
+        "label": "المرجع / الرقم",
+        "placeholder": "مثال: DOS-2025-001 (يتم إنشاؤه تلقائيًا إذا كان فارغًا)",
+        "helper": "اختياري - اتركه فارغًا للإنشاء التلقائي (DOS-السنة-XXX)"
+      },
+      "title": {
+        "label": "عنوان الملف",
+        "placeholder": "مثال: قضية تجارية - عقد"
+      },
+      "clientId": {
+        "label": "العميل",
+        "helper": "حدد العميل المعني"
+      },
+      "category": {
+        "label": "الفئة",
+        "options": {
+          "commercialLaw": "القانون التجاري",
+          "familyLaw": "قانون الأسرة",
+          "criminalLaw": "القانون الجنائي",
+          "laborLaw": "قانون العمل",
+          "realEstateLaw": "قانون العقارات",
+          "administrativeLaw": "القانون الإداري",
+          "taxLaw": "القانون الضريبي"
+        }
+      },
+      "priority": {
+        "label": "الأولوية"
+      },
+      "phase": {
+        "label": "المرحلة",
+        "options": {
+          "opening": "الفتح",
+          "investigation": "التحقيق",
+          "negotiation": "المفاوضات",
+          "pleading": "المرافعة",
+          "judgment": "الحكم",
+          "execution": "التنفيذ"
+        }
+      },
+      "status": {
+        "label": "الحالة",
+        "options": {
+          "open": "مفتوح",
+          "inProgress": "قيد الإجراء",
+          "onHold": "قيد الانتظار",
+          "closed": "مغلق"
+        }
+      },
+      "openDate": {
+        "label": "تاريخ الفتح"
+      },
+      "description": {
+        "label": "الوصف",
+        "placeholder": "وصف مفصل للملف..."
+      },
+      "adversaryParty": {
+        "label": "الطرف الخصم",
+        "placeholder": "اسم الطرف الخصم"
+      },
+      "adversaryLawyer": {
+        "label": "محامي الخصم",
+        "placeholder": "المحامي. اسم المحامي"
+      },
+      "estimatedValue": {
+        "label": "القيمة المقدرة",
+        "placeholder": "مثال: 50,000 د.ت"
+      },
+      "courtReference": {
+        "label": "مرجع المحكمة",
+        "placeholder": "مثال: TPI-2024-1234"
+      }
+    }
+  },
+  "blocker": {
+    "action": "تعديل/حذف الملف",
+    "entityFallback": "الملف"
+  },
+  "confirmImpact": {
+    "action": "تعديل مرفق الملف"
+  },
+  "errors": {
+    "missingId": "معرف الملف مفقود"
+  },
+  "detail": {
+    "entityName": "الملف",
+    "notFound": "الملف غير موجود",
+    "deleteConfirm": "هل أنت متأكد أنك تريد حذف هذا الملف؟",
+    "defaults": {
+      "phases": {
+        "opening": "الفتح",
+        "investigation": "التحقيق",
+        "negotiation": "المفاوضات",
+        "pleading": "المرافعة",
+        "judgment": "الحكم",
+        "execution": "التنفيذ"
+      },
+      "categories": {
+        "commercial": "القانون التجاري",
+        "family": "قانون الأسرة",
+        "criminal": "القانون الجنائي",
+        "labor": "قانون العمل",
+        "realEstate": "قانون العقارات",
+        "administrative": "القانون الإداري",
+        "tax": "القانون الضريبي"
+      }
+    },
+    "status": {
+      "open": "مفتوح",
+      "inProgress": "قيد الإجراء",
+      "onHold": "قيد الانتظار",
+      "closed": "مغلق"
+    },
+    "fallback": {
+      "na": "غير متاح",
+      "noDeadlines": "لا يوجد مواعيد نهائية",
+      "notDefined": "غير محدد",
+      "unknownClient": "عميل غير معروف",
+      "unassignedClient": "عميل غير معين",
+      "nextDeadlineEmpty": "لا يوجد مواعيد نهائية قادمة"
+    },
+    "quickActions": {
+      "status": {
+        "label": "الحالة",
+        "open": "مفتوح",
+        "inProgress": "قيد الإجراء",
+        "onHold": "قيد الانتظار",
+        "closed": "مغلق"
+      },
+      "priority": {
+        "label": "الأولوية",
+        "high": "عالي",
+        "medium": "متوسط",
+        "low": "منخفض"
+      },
+      "phase": {
+        "label": "المرحلة",
+        "create": "إضافة مرحلة"
+      }
+    },
+    "header": {
+      "priority": "الأولوية",
+      "openingDate": "تاريخ الفتح",
+      "category": "الفئة",
+      "phase": "المرحلة",
+      "nextDeadline": "الموعد النهائي التالي"
+    },
+    "category": {
+      "options": {
+        "commercialLaw": "القانون التجاري",
+        "familyLaw": "قانون الأسرة",
+        "criminalLaw": "القانون الجنائي",
+        "laborLaw": "قانون العمل",
+        "realEstateLaw": "قانون العقارات",
+        "administrativeLaw": "القانون الإداري",
+        "taxLaw": "القانون الضريبي"
+      }
+    },
+    "deadlines": {
+      "urgency": {
+        "critical": "حرج",
+        "urgent": "عاجل",
+        "soon": "قريبًا",
+        "normal": "مخطط"
+      },
+      "viewDetails": "عرض التفاصيل"
+    },
+    "stats": {
+      "documents": "المستندات",
+      "tasks": "المهام",
+      "lawsuits": "القضايا",
+      "netProfit": "صافي الربح"
+    },
+    "tabs": {
+      "overview": "نظرة عامة",
+      "proceedings": "القضايا",
+      "proceedingsEntity": "قضية",
+      "proceedingsAddSubtitle": "إنشاء قضية جديدة لهذا الملف",
+      "sessions": "الجلسات",
+      "sessionsEntity": "جلسة",
+      "sessionsAddSubtitle": "إنشاء جلسة جديدة لهذا الملف",
+      "tasks": "المهام",
+      "tasksEntity": "مهمة",
+      "tasksAddSubtitle": "إنشاء مهمة جديدة لهذا الملف",
+      "missions": "المهام",
+      "missionsEntity": "مهمة",
+      "missionsAddSubtitle": "إنشاء مهمة محضر جديدة لهذا الملف",
+      "financial": "المحاسبة",
+      "documents": "المستندات",
+      "notes": "الملاحظات",
+      "history": "السجل"
+    },
+    "forms": {
+      "sessions": {
+        "linkHelpWithLawsuits": "اختر ما إذا كانت هذه الجلسة مرتبطة بهذا الملف أو بقضية محددة",
+        "linkHelpNoLawsuits": "ستكون هذه الجلسة مرتبطة بهذا الملف (لا توجد قضايا متاحة)",
+        "lawsuitsEmpty": "لا توجد قضايا متاحة. يُرجى إنشاء قضية أولاً.",
+        "lawsuitHelp": "حدد القضية المرتبطة بهذه الجلسة",
+        "dossierHelp": "ستكون هذه الجلسة مرتبطة بهذا الملف"
+      },
+      "tasks": {
+        "linkHelpWithLawsuits": "اختر ما إذا كانت هذه المهمة تتعلق بالملف بشكل عام أو بقضية محددة",
+        "linkHelpNoLawsuits": "ستكون هذه المهمة مرتبطة بالملف (لا توجد قضايا متاحة)",
+        "lawsuitsEmpty": "لا توجد قضايا متاحة. يُرجى إنشاء قضية أولاً.",
+        "lawsuitHelp": "حدد القضية المرتبطة بهذه المهمة",
+        "dossierHelp": "ستكون هذه المهمة مرتبطة بهذا الملف"
+      },
+      "missions": {
+        "linkedToDossier": "ستكون هذه المهمة مرتبطة بالملف {{lawsuitNumber}}"
+      }
+    },
+    "overview": {
+      "general": "معلومات عامة",
+      "description": "وصف الملف",
+      "adverse": "الطرف الخصم",
+      "legal": "معلومات قانونية",
+      "fields": {
+        "lawsuitNumber": "رقم الملف",
+        "lawsuitNumberHelp": "التنسيق: DOS-السنة-الرقم",
+        "title": "عنوان الملف",
+        "client": "العميل",
+        "clientHelp": "انتباه: تغيير العميل سينقل الملف إلى عميل آخر",
+        "category": "الفئة",
+        "phase": "المرحلة",
+        "openDate": "تاريخ الفتح",
+        "nextDeadline": "الموعد النهائي التالي",
+        "nextDeadlineEmpty": "لا يوجد مواعيد نهائية قادمة",
+        "adversaryParty": "الاسم",
+        "adversaryLawyer": "المحامي",
+        "courtReference": "مرجع المحكمة",
+        "estimatedValue": "القيمة المقدرة"
+      }
+    }
+  }
+}

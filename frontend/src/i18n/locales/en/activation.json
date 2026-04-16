@@ -1,0 +1,83 @@
+{
+  "states": {
+    "free": "Free plan limits apply",
+    "unactivated": "Activate Ordinay on this device",
+    "activating": "Activation in progress",
+    "active": "Activation complete",
+    "expired": "License expired - Reactivate this device",
+    "error": "Activation error - Try again"
+  },
+  "views": {
+    "waiting": {
+      "title": "Activating Ordinay",
+      "description": "Complete payment in your browser. This app will activate automatically when payment finishes.",
+      "status": "Waiting for activation..."
+    },
+    "success": {
+      "title": "Activation complete",
+      "description": "Your device is now activated. License details are ready.",
+      "rewardsTitle": "Referral reward added",
+      "rewards": {
+        "percentage": "{{value}}% off",
+        "fixed": "{{value}} off",
+        "extraDays": "{{value}} extra days",
+        "expires": "Expires {{date}}",
+        "noExpiry": "No expiry"
+      }
+    },
+    "error": {
+      "title": "Activation failed"
+    },
+    "freeSetup": {
+      "title": "Setting up free plan",
+      "description": "Setting up your free plan. One moment...",
+      "status": "Preparing free plan..."
+    },
+    "choice": {
+      "title": "Activate Ordinay (optional)",
+      "subtitle": "Keep working on the free plan or activate when ready.",
+      "description": "Activation removes free plan limits so you can scale without interruptions.",
+      "bullets": {
+        "limits": "Remove free plan limits for clients, dossiers, and active tasks.",
+        "manage": "Activate anytime from Settings > License."
+      },
+      "footer": "Ordinay stays usable without activation. Free plan limits will apply."
+    }
+  },
+  "actions": {
+    "openActivation": "Open activation page again",
+    "back": "Back",
+    "continue": "Continue to Ordinay",
+    "tryAgain": "Try again",
+    "continueFree": "Continue on free plan",
+    "activate": "Activate now"
+  },
+  "details": {
+    "status": "Status: {{status}}",
+    "plan": "Plan: {{plan}}",
+    "validUntil": "Valid Until: {{date}}",
+    "statusDefaults": {
+      "active": "active"
+    },
+    "plans": {
+      "free": "free",
+      "yearly": "yearly",
+      "monthly": "monthly",
+      "perpetual": "perpetual"
+    },
+    "validUntilValues": {
+      "lifetime": "Lifetime",
+      "unlimited": "Unlimited",
+      "fallbackDate": "2027-01-20"
+    }
+  },
+  "planChange": {
+    "toast": {
+      "title": "Plan updated",
+      "message": "Your plan has been changed successfully."
+    }
+  },
+  "errors": {
+    "activationFailed": "Activation failed. Please try again."
+  }
+}

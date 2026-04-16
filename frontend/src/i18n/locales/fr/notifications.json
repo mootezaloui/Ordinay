@@ -1,0 +1,1802 @@
+{
+  "dropdown": {
+    "aria": "Notifications",
+    "title": "Notifications",
+    "unreadCount_one": "{{count}} non lue",
+    "unreadCount_other": "{{count}} non lues",
+    "time": {
+      "justNow": "À l'instant",
+      "minutesAgo_one": "il y a {{count}} min",
+      "minutesAgo_other": "il y a {{count}} mins",
+      "hoursAgo_one": "il y a {{count}} heure",
+      "hoursAgo_other": "il y a {{count}} heures",
+      "daysAgo_one": "il y a {{count}} jour",
+      "daysAgo_other": "il y a {{count}} jours"
+    },
+    "empty": {
+      "title": "Aucune notification",
+      "subtitle": "Vous êtes à jour !"
+    },
+    "actions": {
+      "markAll": "Tout marquer comme lu",
+      "viewAll": "Tout afficher",
+      "clear": "Tout effacer",
+      "deleteOne": "Supprimer la notification",
+      "clearAll": {
+        "title": "Supprimer les notifications",
+        "message": "Etes-vous s–r de vouloir supprimer toutes les notifications ?",
+        "confirm": "Tout supprimer",
+        "cancel": "Annuler"
+      }
+    }
+  },
+  "center": {
+    "title": "Centre de notifications",
+    "subtitle": "{{total}} notifications / {{unread}} non lues",
+    "actions": {
+      "markAll": "Tout marquer comme lu",
+      "viewDetails": "Afficher les details",
+      "delete": "Supprimer",
+      "markInactive": {
+        "label": "Marquer inactif",
+        "title": "Marquer le client inactif",
+        "message": "Marquer \"{{clientName}}\" comme inactif ?",
+        "confirm": "Marquer inactif",
+        "cancel": "Annuler",
+        "success": "\"{{clientName}}\" marque inactif.",
+        "alreadyInactive": "\"{{clientName}}\" est deja inactif.",
+        "failed": "Impossible de marquer \"{{clientName}}\" inactif."
+      },
+      "markDossierOnHold": {
+        "label": "Mettre en pause",
+        "title": "Mettre le dossier en pause",
+        "message": "Mettre \"{{dossierNumber}}\" en pause ?",
+        "confirm": "Mettre en pause",
+        "cancel": "Annuler",
+        "success": "\"{{dossierNumber}}\" passe en pause.",
+        "alreadyOnHold": "\"{{dossierNumber}}\" est deja en pause.",
+        "alreadyClosed": "\"{{dossierNumber}}\" est deja clos.",
+        "failed": "Impossible de mettre \"{{dossierNumber}}\" en pause."
+      },
+      "markTaskDone": {
+        "label": "Marquer fait",
+        "title": "Marquer la tache terminee",
+        "message": "Marquer \"{{taskTitle}}\" comme terminee ?",
+        "confirm": "Marquer fait",
+        "cancel": "Annuler",
+        "success": "\"{{taskTitle}}\" marquee terminee.",
+        "alreadyDone": "\"{{taskTitle}}\" est deja terminee.",
+        "alreadyCancelled": "\"{{taskTitle}}\" est annulee.",
+        "failed": "Impossible de marquer \"{{taskTitle}}\" terminee."
+      },
+      "markTaskCancelled": {
+        "label": "Annuler la tache",
+        "title": "Annuler la tache",
+        "message": "Annuler \"{{taskTitle}}\" ?",
+        "confirm": "Annuler",
+        "cancel": "Retour",
+        "success": "\"{{taskTitle}}\" annulee.",
+        "alreadyCancelled": "\"{{taskTitle}}\" est deja annulee.",
+        "alreadyDone": "\"{{taskTitle}}\" est deja terminee.",
+        "failed": "Impossible d'annuler \"{{taskTitle}}\"."
+      },
+      "markSessionCompleted": {
+        "label": "Marquer terminee",
+        "title": "Marquer l'audience terminee",
+        "message": "Marquer \"{{sessionTitle}}\" terminee ?",
+        "confirm": "Marquer terminee",
+        "cancel": "Annuler",
+        "success": "\"{{sessionTitle}}\" marquee terminee.",
+        "alreadyCompleted": "\"{{sessionTitle}}\" est deja terminee.",
+        "alreadyCancelled": "\"{{sessionTitle}}\" est annulee.",
+        "failed": "Impossible de marquer \"{{sessionTitle}}\" terminee."
+      },
+      "markSessionCancelled": {
+        "label": "Annuler l'audience",
+        "title": "Annuler l'audience",
+        "message": "Annuler \"{{sessionTitle}}\" ?",
+        "confirm": "Annuler l'audience",
+        "cancel": "Retour",
+        "success": "\"{{sessionTitle}}\" annulee.",
+        "alreadyCancelled": "\"{{sessionTitle}}\" est deja annulee.",
+        "alreadyCompleted": "\"{{sessionTitle}}\" est deja terminee.",
+        "failed": "Impossible d'annuler \"{{sessionTitle}}\"."
+      },
+      "markMissionCompleted": {
+        "label": "Marquer terminee",
+        "title": "Marquer la mission terminee",
+        "message": "Marquer \"{{missionTitle}}\" terminee ?",
+        "confirm": "Marquer terminee",
+        "cancel": "Annuler",
+        "success": "\"{{missionTitle}}\" marquee terminee.",
+        "alreadyCompleted": "\"{{missionTitle}}\" est deja terminee.",
+        "alreadyCancelled": "\"{{missionTitle}}\" est annulee.",
+        "failed": "Impossible de marquer \"{{missionTitle}}\" terminee."
+      },
+      "markMissionCancelled": {
+        "label": "Annuler la mission",
+        "title": "Annuler la mission",
+        "message": "Annuler \"{{missionTitle}}\" ?",
+        "confirm": "Annuler la mission",
+        "cancel": "Retour",
+        "success": "\"{{missionTitle}}\" annulee.",
+        "alreadyCancelled": "\"{{missionTitle}}\" est deja annulee.",
+        "alreadyCompleted": "\"{{missionTitle}}\" est deja terminee.",
+        "failed": "Impossible d'annuler \"{{missionTitle}}\"."
+      },
+      "markFinancialPaid": {
+        "label": "Marquer paye",
+        "title": "Marquer le paiement paye",
+        "message": "Marquer \"{{entryLabel}}\" paye ?",
+        "confirm": "Marquer paye",
+        "cancel": "Annuler",
+        "success": "\"{{entryLabel}}\" marque paye.",
+        "alreadyPaid": "\"{{entryLabel}}\" est deja paye.",
+        "failed": "Impossible de marquer \"{{entryLabel}}\" paye."
+      },
+      "sendPaymentReminder": {
+        "label": "Envoyer rappel",
+        "title": "Envoyer un rappel de paiement",
+        "message": "Envoyer un rappel de paiement a {{clientName}} ?",
+        "confirm": "Envoyer",
+        "cancel": "Annuler",
+        "success": "Rappel prepare pour {{clientName}}.",
+        "noEmail": "Aucun email pour {{clientName}}.",
+        "emailSubject": "Rappel de paiement - {{clientName}}",
+        "emailBody": "Bonjour {{clientName}},\n\nCeci est un rappel pour le paiement de {{amount}} du {{dueDate}}.\n\nMerci."
+      },
+      "sendHearingReminder": {
+        "label": "Envoyer rappel",
+        "title": "Envoyer un rappel",
+        "message": "Envoyer un rappel a {{count}} participant(s) pour \"{{sessionTitle}}\" ?",
+        "confirm": "Envoyer",
+        "cancel": "Annuler",
+        "success": "Email de rappel prepare pour {{count}} participant(s).",
+        "noEmails": "Aucun email participant pour \"{{sessionTitle}}\".",
+        "emailSubject": "Rappel: {{sessionTitle}} le {{date}} {{time}}",
+        "emailBody": "Bonjour,\n\nCeci est un rappel pour l'audience \"{{sessionTitle}}\".\nDate: {{date}}\nHeure: {{time}}\nType: {{sessionType}}\nSalle: {{courtRoom}}\nLieu: {{location}}\n\nMerci de confirmer votre disponibilite.\n"
+      },
+      "clearAll": {
+        "title": "Supprimer toutes les notifications",
+        "message": "Cette action supprimera definitivement toutes les notifications.",
+        "confirm": "Supprimer",
+        "cancel": "Annuler",
+        "label": "Tout effacer"
+      }
+    },
+    "filters": {
+      "status": {
+        "label": "Statut :",
+        "options": {
+          "all": "Toutes",
+          "unread": "Non lues",
+          "read": "Lues"
+        }
+      },
+      "type": {
+        "label": "Type :",
+        "options": {
+          "all": "Tous"
+        }
+      }
+    },
+    "types": {
+      "all": "Tous les types",
+      "app": "Application",
+      "client": "Client",
+      "dossier": "Dossier",
+      "lawsuit": "Procès",
+      "task": "Tâche",
+      "personalTask": "Tâche personnelle",
+      "personal": "Tâche personnelle",
+      "session": "Session",
+      "hearing": "Audience",
+      "payment": "Paiement",
+      "document": "Document",
+      "deadline": "Échéance",
+      "mission": "Mission",
+      "financialEntry": "Comptabilité",
+      "financial": "Comptabilité",
+      "officer": "Huissier",
+      "system": "Système",
+      "success": "Succès",
+      "info": "Info",
+      "warning": "Avertissement",
+      "error": "Erreur"
+    },
+    "empty": "Aucune notification à afficher",
+    "priority": {
+      "urgent": "Urgent",
+      "high": "Élevée",
+      "success": "Succès",
+      "info": "Info"
+    },
+    "time": {
+      "dateAndTime": "{{date}} à {{time}}"
+    }
+  },
+  "templates": {
+    "titles": {
+      "clientAdded": "Nouveau Client Ajouté",
+      "dossierCreated": "Nouveau Dossier Créé",
+      "taskDue": "Tâche Urgente à Échéance",
+      "hearingScheduled": "Audience à Venir",
+      "paymentReceived": "Paiement Reçu",
+      "documentUploaded": "Document Téléversé",
+      "sessionScheduled": "Audience Planifiée",
+      "deadlineApproaching": "Échéance Approchant"
+    },
+    "clientAdded": "Le client \"{{clientName}}\" a été ajouté avec succès.",
+    "dossierCreated": "Le dossier {{dossierNumber}} a été créé pour {{clientName}}.",
+    "taskDue": "\"{{taskTitle}}\" est à échéance le {{dueDate}}.",
+    "hearingScheduled": "L'audience pour {{lawsuitNumber}} est planifiée le {{hearingDate}}.",
+    "paymentReceived": "{{clientName}} a effectué un paiement de {{amount}}.",
+    "documentUploaded": "\"{{documentName}}\" a été téléversé dans le dossier {{dossierNumber}}.",
+    "sessionScheduled": "\"{{sessionTitle}}\" est planifié pour le {{date}}.",
+    "deadlineApproaching_one": "L'échéance pour le dossier {{dossierNumber}} est dans {{count}} jour.",
+    "deadlineApproaching_other": "L'échéance pour le dossier {{dossierNumber}} est dans {{count}} jours."
+  },
+  "referrals": {
+    "rewardEarned": {
+      "title": "Récompense de parrainage obtenue",
+      "message": "Vous avez parrainé un nouveau client avec succès."
+    }
+  },
+  "severity": {
+    "success": "Succès",
+    "info": "Info",
+    "warning": "Avertissement",
+    "error": "Erreur"
+  },
+  "routes": {
+    "labels": {
+      "notifications": "Centre de notifications"
+    }
+  },
+  "content": {
+    "task": {
+      "reminder": {
+        "title": "Rappel de Tâche",
+        "message_one": "La tâche \"{{taskTitle}}\" est à échéance dans {{count}} jour. Avez-vous commencé ?",
+        "message_other": "La tâche \"{{taskTitle}}\" est à échéance dans {{count}} jours. Avez-vous commencé ?"
+      },
+      "upcoming": {
+        "title": "Tâche à Venir",
+        "message_one": "N'oubliez pas : \"{{taskTitle}}\" doit être terminée dans {{count}} jour.",
+        "message_other": "N'oubliez pas : \"{{taskTitle}}\" doit être terminée dans {{count}} jours."
+      },
+      "actionRequired": {
+        "title": "Action Requise",
+        "message": "\"{{taskTitle}}\" - L'échéance est aujourd'hui ! Où en êtes-vous ?"
+      },
+      "attention": {
+        "title": "Attention - En Retard",
+        "message_one": "La tâche \"{{taskTitle}}\" aurait dû être terminée il y a {{count}} jour.",
+        "message_other": "La tâche \"{{taskTitle}}\" aurait dû être terminée il y a {{count}} jours."
+      },
+      "statusCheck": {
+        "title": "Suivi de Tâche",
+        "message": "Avez-vous terminé la tâche \"{{taskTitle}}\" ? Échéance : {{dueDate}}"
+      },
+      "progressCheck": {
+        "title": "Vérification de l'Avancement",
+        "message": "Où en êtes-vous avec \"{{taskTitle}}\" ? Échéance : {{dueDate}}"
+      }
+    },
+    "session": {
+      "upcomingHearing": {
+        "title_one": "Audience dans {{count}} Jour",
+        "title_other": "Audience dans {{count}} Jours",
+        "message_one": "Audience planifiée pour le {{entityLabel}} \"{{lawsuitNumber}}\" dans {{count}} jour.",
+        "message_other": "Audience planifiée pour le {{entityLabel}} \"{{lawsuitNumber}}\" dans {{count}} jours.",
+        "messageWithLocation_one": "Audience planifiée pour le {{entityLabel}} \"{{lawsuitNumber}}\" dans {{count}} jour. Lieu : {{location}}",
+        "messageWithLocation_other": "Audience planifiée pour le {{entityLabel}} \"{{lawsuitNumber}}\" dans {{count}} jours. Lieu : {{location}}",
+        "messageNoLocation_one": "Audience planifiée pour le {{entityLabel}} \"{{lawsuitNumber}}\" dans {{count}} jour. Vérifiez les documents et la préparation.",
+        "messageNoLocation_other": "Audience planifiée pour le {{entityLabel}} \"{{lawsuitNumber}}\" dans {{count}} jours. Vérifiez les documents et la préparation."
+      },
+      "hearingToday": {
+        "title": "🔴 Audience Aujourd'hui",
+        "message": "Audience aujourd'hui pour le {{entityLabel}} \"{{lawsuitNumber}}\" à {{time}}.",
+        "messageWithLocation": "Audience aujourd'hui pour le {{entityLabel}} \"{{lawsuitNumber}}\" à {{time}}. Lieu : {{location}}"
+      },
+      "hearingOutcome": {
+        "title": "Résultat de l'Audience - Documentation Requise",
+        "message_one": "L'audience pour le {{entityLabel}} \"{{lawsuitNumber}}\" a eu lieu il y a {{count}} jour. Quel a été le résultat de l'audience ?",
+        "message_other": "L'audience pour le {{entityLabel}} \"{{lawsuitNumber}}\" a eu lieu il y a {{count}} jours. Quel a été le résultat de l'audience ?"
+      }
+    },
+    "lawsuit": {
+      "missingHearing": {
+        "title": "Audience Manquante - Procès sans Audience",
+        "message": "Le procès \"{{lawsuitTitle}}\" (Priorité : {{priority}}) n'a pas d'audience planifiée. Une audience a-t-elle été créée ?"
+      },
+      "missingTasks": {
+        "title": "Tâches Manquantes - Procès sans Tâches",
+        "message": "Le procès \"{{lawsuitTitle}}\" (Priorité : {{priority}}) n'a aucune tâche associée. Des actions sont-elles prévues ?"
+      },
+      "statusUpdate": {
+        "title": "Mise à Jour de Statut - Procès",
+        "message": "Le procès \"{{lawsuitTitle}}\" a {{activitySummary}}. Le statut du procès doit-il être mis à jour ? Y a-t-il eu un verdict ?",
+        "hearingsCompleted_one": "{{count}} audience terminée",
+        "hearingsCompleted_other": "{{count}} audiences terminées",
+        "tasksCompleted_one": "{{count}} tâche terminée",
+        "tasksCompleted_other": "{{count}} tâches terminées",
+        "and": " et "
+      }
+    },
+    "mission": {
+      "upcoming": {
+        "title": "Mission à Venir",
+        "message_one": "Mission \"{{missionTitle}}\" planifiée dans {{count}} jour. Tout est-il prêt ?",
+        "message_other": "Mission \"{{missionTitle}}\" planifiée dans {{count}} jours. Tout est-il prêt ?",
+        "messageDate": "Mission \"{{missionTitle}}\" le {{date}}. Avez-vous préparé les documents ?"
+      },
+      "completion": {
+        "title": "Suivi de Mission",
+        "message": "Mission \"{{missionTitle}}\" terminée ? Avez-vous reçu le rapport de l'huissier ?"
+      }
+    },
+    "financial": {
+      "paymentDue": {
+        "title": "Paiement Dû",
+        "message_one": "{{clientName}} doit vous payer {{amount}} dans {{count}} jour. Avez-vous envoyé un rappel ?",
+        "message_other": "{{clientName}} doit vous payer {{amount}} dans {{count}} jours. Avez-vous envoyé un rappel ?"
+      },
+      "followupRequired": {
+        "title": "Suivi Requis",
+        "message": "Le paiement de {{clientName}} ({{amount}}) est en retard. Avez-vous envoyé un suivi ?"
+      }
+    },
+    "dossier": {
+      "reviewReminder": {
+        "title": "Revue de Dossier - Priorité {{priority}}",
+        "message_one": "Le dossier \"{{dossierNumber}}\" (priorité {{priority}}) nécessite une revue. Dernière mise à jour il y a {{count}} jour.",
+        "message_other": "Le dossier \"{{dossierNumber}}\" (priorité {{priority}}) nécessite une revue. Dernière mise à jour il y a {{count}} jours."
+      }
+    },
+    "deadline": {
+      "urgent": {
+        "title": "Échéance Critique",
+        "message_one": "URGENT : \"{{title}}\" - Plus que {{count}} heure !",
+        "message_other": "URGENT : \"{{title}}\" - Plus que {{count}} heures !"
+      },
+      "approaching": {
+        "title": "Échéance Approchant",
+        "message_one": "\"{{title}}\" doit être finalisé dans {{count}} jour.",
+        "message_other": "\"{{title}}\" doit être finalisé dans {{count}} jours.",
+        "messageAlt_one": "Attention : {{count}} jour restant pour \"{{title}}\".",
+        "messageAlt_other": "Attention : {{count}} jours restants pour \"{{title}}\"."
+      },
+      "missed": {
+        "title": "Échéance Dépassée",
+        "message_one": "\"{{title}}\" a dépassé son échéance de {{count}} jour.",
+        "message_other": "\"{{title}}\" a dépassé son échéance de {{count}} jours."
+      }
+    },
+    "domain": {
+      "clientArchived": {
+        "title": "Client archivé",
+        "message": "Le client {{name}} a été archivé."
+      },
+      "clientReactivated": {
+        "title": "Client réactivé",
+        "message": "Le client {{name}} a été réactivé."
+      },
+      "dossierClosed": {
+        "title": "Dossier fermé",
+        "message": "Le Dossier {{lawsuitNumber}} a été fermé."
+      },
+      "dossierReopened": {
+        "title": "Dossier réouvert",
+        "message": "Le Dossier {{lawsuitNumber}} a été réouvert."
+      },
+      "lawsuitClosed": {
+        "title": "Procès fermé",
+        "message": "Le procès {{lawsuitNumber}} a été fermé."
+      },
+      "lawsuitReopened": {
+        "title": "Procès réouvert",
+        "message": "Le procès {{lawsuitNumber}} a été réouvert."
+      },
+      "taskAssigned": {
+        "title": "Tâche assignée",
+        "message": "La tâche \"{{title}}\" a été assignée à {{assignee}}.",
+        "messageToYou": "La tâche \"{{title}}\" vous a été assignée."
+      },
+      "taskStatusChanged": {
+        "title": "Statut de tâche mis à jour",
+        "message": "La tâche \"{{title}}\" est passée à \"{{status}}\"."
+      },
+      "taskOverdue": {
+        "title": "Tâche en retard",
+        "message_one": "La tâche \"{{title}}\" est en retard depuis {{count}} jour.",
+        "message_other": "La tâche \"{{title}}\" est en retard depuis {{count}} jours.",
+        "messageNoCount": "La tâche \"{{title}}\" est en retard."
+      },
+      "taskDueSoon": {
+        "title": "Échéance de tâche approchant",
+        "message": "La tâche \"{{title}}\" est à échéance le {{dueDate}}."
+      },
+      "sessionScheduled": {
+        "title": "Audience planifiée",
+        "message": "Audience \"{{title}}\" planifiée le {{date}} à {{time}}.",
+        "messageFallback": "Audience \"{{title}}\" planifiée le {{date}} à l'heure à confirmer."
+      },
+      "sessionUpcoming24h": {
+        "title": "Audience dans 24 heures",
+        "message": "Audience \"{{title}}\" dans 24 heures. Préparation finale requise."
+      },
+      "sessionUpcoming1h": {
+        "title": "Audience imminente",
+        "message": "Audience \"{{title}}\" dans 1 heure."
+      },
+      "sessionCompleted": {
+        "title": "Audience terminée",
+        "message": "L'audience \"{{title}}\" est marquée comme terminée."
+      },
+      "expenseAdded": {
+        "title": "Dépense ajoutée",
+        "message": "Nouvelle dépense {{amount}} enregistrée",
+        "messageWithCategory": "Nouvelle dépense {{amount}} enregistrée ({{category}})",
+        "messageNoAmount": "Nouvelle dépense enregistrée",
+        "messageWithCategoryNoAmount": "Nouvelle dépense enregistrée ({{category}})"
+      },
+      "clientAdvanceReceived": {
+        "title": "Acompte client reçu",
+        "message": "Acompte reçu de {{clientName}} ({{amount}}).",
+        "messageFallback": "Acompte reçu de {{clientName}}."
+      },
+      "clientBalanceOverdue": {
+        "title": "Solde client en retard",
+        "message": "Le solde de {{clientName}} est en retard de paiement.",
+        "messageFallback": "Le solde client est en retard de paiement."
+      },
+      "financialValidated": {
+        "title": "Écriture validée",
+        "message": "L'écriture \"{{description}}\" est validée.",
+        "messageFallback": "L'écriture est validée."
+      },
+      "financialPaid": {
+        "title": "Paiement confirmé",
+        "message": "Le paiement pour \"{{description}}\" est marqué comme payé.",
+        "messageFallback": "Le paiement est marqué comme payé."
+      },
+      "missionAssigned": {
+        "title": "Mission assignée",
+        "message": "La mission \"{{title}}\" a été assignée à {{officerName}}.",
+        "messageFallback": "La mission \"{{title}}\" a été assignée à un huissier."
+      },
+      "missionReassigned": {
+        "title": "Mission réassignée",
+        "message": "La mission \"{{title}}\" est transférée de {{oldOfficer}} à {{newOfficer}}.",
+        "messageFallback": "La mission \"{{title}}\" a été réassignée."
+      },
+      "missionOverdue": {
+        "title": "Mission en retard",
+        "message_one": "La mission \"{{title}}\" est en retard. ({{count}} jour)",
+        "message_other": "La mission \"{{title}}\" est en retard. ({{count}} jours)",
+        "messageNoCount": "La mission \"{{title}}\" est en retard."
+      },
+      "actionBlocked": {
+        "title": "Action bloquée",
+        "message": "Action bloquée par les règles métier.",
+        "messageWithReason": "{{reason}}"
+      },
+      "impactConfirmed": {
+        "title": "Impact relationnel confirmé",
+        "message": "Modification confirmée après avertissement d'impact.",
+        "messageWithSummary": "{{summary}}"
+      }
+    },
+    "priority": {
+      "low": "Faible",
+      "medium": "Moyenne",
+      "normal": "Normale",
+      "high": "Élevée",
+      "urgent": "Urgente"
+    }
+  },
+  "contentVariants": {
+    "content.task.overdue": [
+      {
+        "tone": "urgent",
+        "title_one": "Tâche En Retard - {{count}} jour",
+        "title_other": "Tâche En Retard - {{count}} jours",
+        "message_one": "La tâche \"{{taskTitle}}\" est en retard de {{count}} jour. Action requise.",
+        "message_other": "La tâche \"{{taskTitle}}\" est en retard de {{count}} jours. Action requise."
+      },
+      {
+        "tone": "professional",
+        "title_one": "Suivi : {{count}} jour de retard",
+        "title_other": "Suivi : {{count}} jours de retard",
+        "message_one": "\"{{taskTitle}}\" a pris {{count}} jour de retard. Veuillez la clôturer.",
+        "message_other": "\"{{taskTitle}}\" a pris {{count}} jours de retard. Veuillez la clôturer."
+      }
+    ],
+    "content.task.upcomingDeadline": [
+      {
+        "tone": "professional",
+        "title_one": "Échéance dans {{count}} jour",
+        "title_other": "Échéance dans {{count}} jours",
+        "message_one": "La tâche \"{{taskTitle}}\" est à échéance dans {{count}} jour.",
+        "message_other": "La tâche \"{{taskTitle}}\" est à échéance dans {{count}} jours."
+      },
+      {
+        "tone": "planning",
+        "title_one": "Planification : {{count}} jour restant",
+        "title_other": "Planification : {{count}} jours restants",
+        "message_one": "\"{{taskTitle}}\" est à échéance dans {{count}} jour. Bloquez du temps pour terminer.",
+        "message_other": "\"{{taskTitle}}\" est à échéance dans {{count}} jours. Bloquez du temps pour terminer."
+      }
+    ],
+    "content.task.dueToday": [
+      {
+        "tone": "urgent",
+        "title": "Échéance Aujourd'hui",
+        "message": "La tâche \"{{taskTitle}}\" doit être terminée aujourd'hui. Avez-vous terminé ?"
+      },
+      {
+        "tone": "focused",
+        "title": "Échéance d'aujourd'hui",
+        "message": "\"{{taskTitle}}\" doit être terminée aujourd'hui. Continuez à avancer."
+      }
+    ],
+    "content.personalTask.upcomingDeadline": [
+      {
+        "tone": "professional",
+        "title_one": "Échéance de tâche personnelle dans {{count}} jour",
+        "title_other": "Échéance de tâche personnelle dans {{count}} jours",
+        "message_one": "La tâche personnelle \"{{taskTitle}}\" est à échéance dans {{count}} jour.",
+        "message_other": "La tâche personnelle \"{{taskTitle}}\" est à échéance dans {{count}} jours."
+      },
+      {
+        "tone": "planning",
+        "title_one": "Tâche personnelle due dans {{count}} jour",
+        "title_other": "Tâche personnelle due dans {{count}} jours",
+        "message_one": "\"{{taskTitle}}\" est planifiée dans {{count}} jour. Réservez du temps.",
+        "message_other": "\"{{taskTitle}}\" est planifiée dans {{count}} jours. Réservez du temps."
+      },
+      {
+        "tone": "gentle",
+        "title_one": "Petit rappel : {{count}} jour restant",
+        "title_other": "Petit rappel : {{count}} jours restants",
+        "message_one": "Juste un mot : \"{{taskTitle}}\" est à échéance dans {{count}} jour.",
+        "message_other": "Juste un mot : \"{{taskTitle}}\" est à échéance dans {{count}} jours."
+      },
+      {
+        "tone": "casual",
+        "title_one": "Info rapide — J-{{count}}",
+        "title_other": "Info rapide — J-{{count}}",
+        "message_one": "Hey ! \"{{taskTitle}}\" est à rendre dans {{count}} jour. Tu gères.",
+        "message_other": "Hey ! \"{{taskTitle}}\" est à rendre dans {{count}} jours. Tu gères."
+      },
+      {
+        "tone": "focused",
+        "title_one": "J-{{count}} : tâche perso",
+        "title_other": "J-{{count}} : tâche perso",
+        "message_one": "\"{{taskTitle}}\" à rendre dans {{count}} jour. Garde le rythme.",
+        "message_other": "\"{{taskTitle}}\" à rendre dans {{count}} jours. Garde le rythme."
+      }
+    ],
+    "content.personalTask.completionReminder": [
+      {
+        "tone": "professional",
+        "title": "Tâche Personnelle - Rappel de Finalisation",
+        "message_one": "La tâche personnelle \"{{taskTitle}}\" avait une échéance il y a {{count}} jour. La tâche a-t-elle été terminée ?",
+        "message_other": "La tâche personnelle \"{{taskTitle}}\" avait une échéance il y a {{count}} jours. La tâche a-t-elle été terminée ?"
+      },
+      {
+        "tone": "follow-up",
+        "title": "Suivi de tâche personnelle",
+        "message_one": "\"{{taskTitle}}\" était due il y a {{count}} jour. Mettre à jour ou reporter ?",
+        "message_other": "\"{{taskTitle}}\" était due il y a {{count}} jours. Mettre à jour ou reporter ?"
+      }
+    ],
+    "content.session.upcomingHearing": [
+      {
+        "tone": "professional",
+        "title_one": "Audience dans {{count}} jour",
+        "title_other": "Audience dans {{count}} jours",
+        "message_one": "Audience {{sessionTitle}} ({{entityLabel}}: {{lawsuitNumber}}) dans {{count}} jour a {{time}}{{detailsLine}}",
+        "message_other": "Audience {{sessionTitle}} ({{entityLabel}}: {{lawsuitNumber}}) dans {{count}} jours a {{time}}{{detailsLine}}"
+      },
+      {
+        "tone": "focused",
+        "title_one": "J-{{count}}",
+        "title_other": "J-{{count}}",
+        "message_one": "Preparation pour {{sessionTitle}} dans {{count}} jour a {{time}}{{detailsLine}}",
+        "message_other": "Preparation pour {{sessionTitle}} dans {{count}} jours a {{time}}{{detailsLine}}"
+      }
+    ],
+    
+    "content.session.hearingToday": [
+      {
+        "tone": "urgent",
+        "title": "Audience aujourd'hui",
+        "message": "Audience aujourd'hui: {{sessionTitle}} ({{entityLabel}}: {{lawsuitNumber}}) a {{time}}{{detailsLine}}"
+      },
+      {
+        "tone": "professional",
+        "title": "Audience prevue aujourd'hui",
+        "message": "Audience prevue: {{sessionTitle}} ({{entityLabel}}: {{lawsuitNumber}}) a {{time}}{{detailsLine}}"
+      }
+    ],
+    "content.session.participantReminder": [
+      {
+        "tone": "actionable",
+        "title_one": "Rappel: notifier les participants ({{count}} jour)",
+        "title_other": "Rappel: notifier les participants ({{count}} jours)",
+        "message_one": "Envoyer un rappel aux participants pour {{sessionTitle}} ({{lawsuitNumber}}) dans {{count}} jour a {{time}}{{detailsLine}}",
+        "message_other": "Envoyer un rappel aux participants pour {{sessionTitle}} ({{lawsuitNumber}}) dans {{count}} jours a {{time}}{{detailsLine}}"
+      },
+      {
+        "tone": "focused",
+        "title_one": "Participants: J-{{count}}",
+        "title_other": "Participants: J-{{count}}",
+        "message_one": "Preparer le rappel participants pour {{sessionTitle}}. Audience dans {{count}} jour a {{time}}{{detailsLine}}",
+        "message_other": "Preparer le rappel participants pour {{sessionTitle}}. Audience dans {{count}} jours a {{time}}{{detailsLine}}"
+      },
+      {
+        "tone": "gentle",
+        "title_one": "Petit rappel participants",
+        "title_other": "Petit rappel participants",
+        "message_one": "Pensez a rappeler les participants pour {{sessionTitle}} ({{lawsuitNumber}}) dans {{count}} jour a {{time}}{{detailsLine}}",
+        "message_other": "Pensez a rappeler les participants pour {{sessionTitle}} ({{lawsuitNumber}}) dans {{count}} jours a {{time}}{{detailsLine}}"
+      }
+    ],
+    
+    "content.session.hearingOutcome": [
+      {
+        "tone": "professional",
+        "title": "Notes d'audience requises",
+        "message_one": "L'audience pour le {{entityLabel}} \"{{lawsuitNumber}}\" a eu lieu il y a {{count}} jour. Ajoutez vos notes.",
+        "message_other": "L'audience pour le {{entityLabel}} \"{{lawsuitNumber}}\" a eu lieu il y a {{count}} jours. Ajoutez vos notes."
+      },
+      {
+        "tone": "follow-up",
+        "title": "Noter l'audience",
+        "message_one": "{{entityLabel}} \"{{lawsuitNumber}}\" s'est déroulé il y a {{count}} jour. Notez l'issue.",
+        "message_other": "{{entityLabel}} \"{{lawsuitNumber}}\" s'est déroulé il y a {{count}} jours. Notez l'issue."
+      },
+      {
+        "tone": "friendly",
+        "title": "Petit suivi",
+        "message_one": "Comment s'est passée {{entityLabel}} \"{{lawsuitNumber}}\" ? Ajoutez vos notes d'il y a {{count}} jour.",
+        "message_other": "Comment s'est passée {{entityLabel}} \"{{lawsuitNumber}}\" ? Ajoutez vos notes d'il y a {{count}} jours."
+      },
+      {
+        "tone": "gentle",
+        "title": "Pense-bete notes",
+        "message_one": "Rappel : {{entityLabel}} \"{{lawsuitNumber}}\" date d'il y a {{count}} jour. Notez le resultat.",
+        "message_other": "Rappel : {{entityLabel}} \"{{lawsuitNumber}}\" date d'il y a {{count}} jours. Notez le resultat."
+      },
+      {
+        "tone": "supportive",
+        "title": "Cloturer le suivi",
+        "message_one": "Completez le suivi de {{entityLabel}} \"{{lawsuitNumber}}\" (il y a {{count}} jour) avec une note rapide.",
+        "message_other": "Completez le suivi de {{entityLabel}} \"{{lawsuitNumber}}\" (il y a {{count}} jours) avec une note rapide."
+      }
+    ],
+    "content.session.today": [
+      {
+        "tone": "urgent",
+        "title": "Session Aujourd'hui",
+        "message": "Audience \"{{sessionTitle}}\" aujourd'hui à {{time}}. Bonne chance !",
+        "messageFallback": "Audience \"{{sessionTitle}}\" aujourd'hui à l'heure prévue. Bonne chance !"
+      },
+      {
+        "tone": "professional",
+        "title": "Session d'aujourd'hui",
+        "message": "\"{{sessionTitle}}\" est aujourd'hui à {{time}}. Revue finale.",
+        "messageFallback": "\"{{sessionTitle}}\" est aujourd'hui. Confirmez l'horaire et les documents."
+      }
+    ],
+    "content.session.tomorrow": [
+      {
+        "tone": "professional",
+        "title": "Session Demain",
+        "message": "L'audience \"{{sessionTitle}}\" a lieu demain. Êtes-vous prêt ?",
+        "messageAlt": "Session demain : \"{{sessionTitle}}\". Avez-vous vérifié tous les dossiers ?"
+      },
+      {
+        "tone": "preparation",
+        "title": "Audience de demain",
+        "message": "\"{{sessionTitle}}\" est demain. Finalisez vos documents.",
+        "messageAlt": "Demain : \"{{sessionTitle}}\". Confirmez les dossiers et la logistique."
+      }
+    ],
+    "content.session.preparation": [
+      {
+        "tone": "professional",
+        "title": "Préparation de Session",
+        "message_one": "Session \"{{sessionTitle}}\" dans {{count}} jour. Avez-vous préparé vos plaidoiries ?",
+        "message_other": "Session \"{{sessionTitle}}\" dans {{count}} jours. Avez-vous préparé vos plaidoiries ?",
+        "messageAlt_one": "L'audience \"{{sessionTitle}}\" est dans {{count}} jour. Avez-vous préparé vos arguments ?",
+        "messageAlt_other": "L'audience \"{{sessionTitle}}\" est dans {{count}} jours. Avez-vous préparé vos arguments ?",
+        "messageDate": "Session \"{{sessionTitle}}\" le {{date}}. Avez-vous rassemblé tous les documents nécessaires ?"
+      },
+      {
+        "tone": "planning",
+        "title": "Compte à rebours de session",
+        "message_one": "\"{{sessionTitle}}\" est dans {{count}} jour. Alignez les arguments et les pièces.",
+        "message_other": "\"{{sessionTitle}}\" est dans {{count}} jours. Alignez les arguments et les pièces.",
+        "messageAlt_one": "Session \"{{sessionTitle}}\" dans {{count}} jour. Confirmez les notes et les mémoires.",
+        "messageAlt_other": "Session \"{{sessionTitle}}\" dans {{count}} jours. Confirmez les notes et les mémoires.",
+        "messageDate": "\"{{sessionTitle}}\" le {{date}}. Vérifiez les dossiers."
+      }
+    ],
+    "content.mission.upcomingDeadline": [
+      {
+        "tone": "professional",
+        "title_one": "Mission - Échéance dans {{count}} jour",
+        "title_other": "Mission - Échéance dans {{count}} jours",
+        "message_one": "La mission \"{{missionTitle}}\" (priorité {{priority}}) a une échéance dans {{count}} jour ({{dueDate}}).",
+        "message_other": "La mission \"{{missionTitle}}\" (priorité {{priority}}) a une échéance dans {{count}} jours ({{dueDate}})."
+      },
+      {
+        "tone": "planning",
+        "title_one": "Mission due dans {{count}} jour",
+        "title_other": "Mission due dans {{count}} jours",
+        "message_one": "\"{{missionTitle}}\" (priorité {{priority}}) est due dans {{count}} jour ({{dueDate}}). Alignez avec l'huissier.",
+        "message_other": "\"{{missionTitle}}\" (priorité {{priority}}) est due dans {{count}} jours ({{dueDate}}). Alignez avec l'huissier."
+      },
+      {
+        "tone": "focused",
+        "title_one": "Échéance dans {{count}} jour",
+        "title_other": "Échéance dans {{count}} jours",
+        "message_one": "{{missionTitle}} (priorité {{priority}}) - échéance dans {{count}} jour ({{dueDate}}).",
+        "message_other": "{{missionTitle}} (priorité {{priority}}) - échéance dans {{count}} jours ({{dueDate}})."
+      },
+      {
+        "tone": "gentle",
+        "title_one": "Petit rappel mission",
+        "title_other": "Petit rappel mission",
+        "message_one": "Juste un rappel : \"{{missionTitle}}\" arrive dans {{count}} jour ({{dueDate}}).",
+        "message_other": "Juste un rappel : \"{{missionTitle}}\" arrive dans {{count}} jours ({{dueDate}})."
+      }
+      
+    ],
+    "content.mission.completionReminder": [
+      {
+        "tone": "professional",
+        "title": "Mission - Mise à Jour Requise",
+        "message_one": "La mission \"{{missionTitle}}\" avait une échéance il y a {{count}} jour. La mission a-t-elle été terminée par l'huissier ?",
+        "message_other": "La mission \"{{missionTitle}}\" avait une échéance il y a {{count}} jours. La mission a-t-elle été terminée par l'huissier ?"
+      },
+      {
+        "tone": "follow-up",
+        "title": "Mise à jour de mission nécessaire",
+        "message_one": "\"{{missionTitle}}\" était due il y a {{count}} jour. Confirmez l'achèvement avec l'huissier.",
+        "message_other": "\"{{missionTitle}}\" était due il y a {{count}} jours. Confirmez l'achèvement avec l'huissier."
+      },
+      {
+        "tone": "focused",
+        "title": "Mission en retard",
+        "message_one": "{{missionTitle}} a {{count}} jour de retard. Clôturez ou relancez.",
+        "message_other": "{{missionTitle}} a {{count}} jours de retard. Clôturez ou relancez."
+      },
+      {
+        "tone": "gentle",
+        "title": "Suivi rapide",
+        "message_one": "Rappel : \"{{missionTitle}}\" était due il y a {{count}} jour. Des nouvelles ?",
+        "message_other": "Rappel : \"{{missionTitle}}\" était due il y a {{count}} jours. Des nouvelles ?"
+      }
+    ],
+    "content.mission.dueToday": [
+      {
+        "tone": "urgent",
+        "title": "Mission Aujourd'hui",
+        "message": "Mission \"{{missionTitle}}\" aujourd'hui. Confirmé avec l'huissier ?"
+      },
+      {
+        "tone": "professional",
+        "title": "Mission planifiée aujourd'hui",
+        "message": "\"{{missionTitle}}\" est planifiée pour aujourd'hui. Coordonnez avec l'huissier."
+      },
+      {
+        "tone": "friendly",
+        "title": "C'est pour aujourd'hui",
+        "message": "\"{{missionTitle}}\" est due aujourd'hui. Petit point avec l'huissier ?"
+      },
+      {
+        "tone": "focused",
+        "title": "Échéance aujourd'hui",
+        "message": "{{missionTitle}} - à faire aujourd'hui."
+      }
+    ],
+    "content.financial.upcomingPayment": [
+      {
+        "tone": "professional",
+        "title_one": "Paiement attendu - {{count}} jour",
+        "title_other": "Paiement attendu - {{count}} jours",
+        "message_one": "Paiement de {{amount}} attendu de \"{{clientName}}\"{{parentContext}} dans {{count}} jour.",
+        "message_other": "Paiement de {{amount}} attendu de \"{{clientName}}\"{{parentContext}} dans {{count}} jours.",
+        "messageWithDescription_one": "Paiement de {{amount}} attendu de \"{{clientName}}\"{{parentContext}} dans {{count}} jour. {{description}}",
+        "messageWithDescription_other": "Paiement de {{amount}} attendu de \"{{clientName}}\"{{parentContext}} dans {{count}} jours. {{description}}"
+      },
+      {
+        "tone": "reminder",
+        "title_one": "Paiement dans {{count}} jour",
+        "title_other": "Paiement dans {{count}} jours",
+        "message_one": "\"{{clientName}}\"{{parentContext}} doit payer {{amount}} dans {{count}} jour. Planifiez un rappel.",
+        "message_other": "\"{{clientName}}\"{{parentContext}} doit payer {{amount}} dans {{count}} jours. Planifiez un rappel.",
+        "messageWithDescription_one": "\"{{clientName}}\"{{parentContext}} doit payer {{amount}} dans {{count}} jour. Note : {{description}}",
+        "messageWithDescription_other": "\"{{clientName}}\"{{parentContext}} doit payer {{amount}} dans {{count}} jours. Note : {{description}}"
+      },
+      {
+        "tone": "focused",
+        "title_one": "Paiement dans {{count}} jour",
+        "title_other": "Paiement dans {{count}} jours",
+        "message_one": "{{clientName}}{{parentContext}} doit {{amount}} dans {{count}} jour.",
+        "message_other": "{{clientName}}{{parentContext}} doit {{amount}} dans {{count}} jours.",
+        "messageWithDescription_one": "{{clientName}}{{parentContext}} doit {{amount}} dans {{count}} jour. {{description}}",
+        "messageWithDescription_other": "{{clientName}}{{parentContext}} doit {{amount}} dans {{count}} jours. {{description}}"
+      },
+      {
+        "tone": "gentle",
+        "title_one": "Petit rappel paiement",
+        "title_other": "Petit rappel paiement",
+        "message_one": "Petit rappel : {{amount}} de \"{{clientName}}\"{{parentContext}} dans {{count}} jour.",
+        "message_other": "Petit rappel : {{amount}} de \"{{clientName}}\"{{parentContext}} dans {{count}} jours.",
+        "messageWithDescription_one": "Petit rappel : {{amount}} de \"{{clientName}}\"{{parentContext}} dans {{count}} jour. {{description}}",
+        "messageWithDescription_other": "Petit rappel : {{amount}} de \"{{clientName}}\"{{parentContext}} dans {{count}} jours. {{description}}"
+      }
+    ],
+    "content.financial.overduePayment": [
+      {
+        "tone": "urgent",
+        "title_one": "Paiement en retard - {{count}} jour",
+        "title_other": "Paiement en retard - {{count}} jours",
+        "message_one": "Le paiement de {{amount}} de \"{{clientName}}\"{{parentContext}} est en retard de {{count}} jour. Relance recommandee.",
+        "message_other": "Le paiement de {{amount}} de \"{{clientName}}\"{{parentContext}} est en retard de {{count}} jours. Relance recommandee."
+      },
+      {
+        "tone": "professional",
+        "title_one": "Paiement en retard de {{count}} jour",
+        "title_other": "Paiement en retard de {{count}} jours",
+        "message_one": "\"{{clientName}}\"{{parentContext}} doit toujours {{amount}} ({{count}} jour de retard). Relancez.",
+        "message_other": "\"{{clientName}}\"{{parentContext}} doit toujours {{amount}} ({{count}} jours de retard). Relancez."
+      },
+      {
+        "tone": "focused",
+        "title_one": "Retard {{count}} jour",
+        "title_other": "Retard {{count}} jours",
+        "message_one": "{{clientName}}{{parentContext}} a {{count}} jour de retard sur {{amount}}.",
+        "message_other": "{{clientName}}{{parentContext}} a {{count}} jours de retard sur {{amount}}."
+      },
+      {
+        "tone": "gentle",
+        "title_one": "Suivi paiement",
+        "title_other": "Suivi paiement",
+        "message_one": "Rappel : {{clientName}}{{parentContext}} a {{count}} jour de retard sur {{amount}}.",
+        "message_other": "Rappel : {{clientName}}{{parentContext}} a {{count}} jours de retard sur {{amount}}."
+      }
+    ],
+    "content.financial.paymentOverdue": [
+      {
+        "tone": "urgent",
+        "title": "Paiement en retard",
+        "message_one": "Le paiement de {{clientName}}{{parentContext}} ({{amount}}) est en retard de {{count}} jour.",
+        "message_other": "Le paiement de {{clientName}}{{parentContext}} ({{amount}}) est en retard de {{count}} jours."
+      },
+      {
+        "tone": "professional",
+        "title": "Paiement en attente",
+        "message_one": "Paiement de {{clientName}}{{parentContext}} ({{amount}}) en retard de {{count}} jour. Relancez.",
+        "message_other": "Paiement de {{clientName}}{{parentContext}} ({{amount}}) en retard de {{count}} jours. Relancez."
+      },
+      {
+        "tone": "focused",
+        "title": "Paiement en retard",
+        "message_one": "{{amount}} de {{clientName}}{{parentContext}} en retard de {{count}} jour.",
+        "message_other": "{{amount}} de {{clientName}}{{parentContext}} en retard de {{count}} jours."
+      },
+      {
+        "tone": "gentle",
+        "title": "Rappel paiement",
+        "message_one": "Rappel : {{clientName}}{{parentContext}} a {{count}} jour de retard sur {{amount}}.",
+        "message_other": "Rappel : {{clientName}}{{parentContext}} a {{count}} jours de retard sur {{amount}}."
+      }
+    ],
+    "content.financial.paymentDueToday": [
+      {
+        "tone": "professional",
+        "title": "Paiement attendu aujourd'hui",
+        "message": "{{clientName}}{{parentContext}} doit payer {{amount}} aujourd'hui. Paiement recu ?",
+        "messageAlt": "Paiement attendu de {{clientName}}{{parentContext}} : {{amount}}. Recu ?"
+      },
+      {
+        "tone": "reminder",
+        "title": "Paiement du jour",
+        "message": "{{clientName}}{{parentContext}} doit regler {{amount}} aujourd'hui. Confirmez la reception.",
+        "messageAlt": "{{clientName}} - {{amount}} aujourd'hui{{parentContext}}. Verifiez le statut."
+      },
+      {
+        "tone": "friendly",
+        "title": "C'est pour aujourd'hui",
+        "message": "Petit point : {{clientName}}{{parentContext}} doit {{amount}} aujourd'hui.",
+        "messageAlt": "A regler aujourd'hui : {{amount}} de {{clientName}}{{parentContext}}."
+      },
+      {
+        "tone": "focused",
+        "title": "Echeance aujourd'hui",
+        "message": "{{clientName}}{{parentContext}} - {{amount}} aujourd'hui.",
+        "messageAlt": "{{amount}} aujourd'hui{{parentContext}}."
+      }
+
+    ],
+    "content.financial.paymentReceivable": [
+      {
+        "tone": "professional",
+        "title": "Paiement a recevoir",
+        "message_one": "Le paiement de {{clientName}}{{parentContext}} ({{amount}}) est du dans {{count}} jour.",
+        "message_other": "Le paiement de {{clientName}}{{parentContext}} ({{amount}}) est du dans {{count}} jours."
+      },
+      {
+        "tone": "planning",
+        "title": "Paiement a venir",
+        "message_one": "{{clientName}}{{parentContext}} doit regler {{amount}} dans {{count}} jour. Prevoir un rappel.",
+        "message_other": "{{clientName}}{{parentContext}} doit regler {{amount}} dans {{count}} jours. Prevoir un rappel."
+      },
+      {
+        "tone": "focused",
+        "title_one": "Paiement dans {{count}} jour",
+        "title_other": "Paiement dans {{count}} jours",
+        "message_one": "{{amount}} attendus de {{clientName}}{{parentContext}} dans {{count}} jour.",
+        "message_other": "{{amount}} attendus de {{clientName}}{{parentContext}} dans {{count}} jours."
+      },
+      {
+        "tone": "gentle",
+        "title": "Petit rappel",
+        "message_one": "Petit rappel : {{clientName}}{{parentContext}} doit {{amount}} dans {{count}} jour.",
+        "message_other": "Petit rappel : {{clientName}}{{parentContext}} doit {{amount}} dans {{count}} jours."
+      }
+    ],
+    "content.client.inActive": [
+      {
+        "tone": "professionnel",
+        "title_one": "Client Inactif - {{count}}+ Jour",
+        "title_other": "Client Inactif - {{count}}+ Jours",
+        "message_one": "Le client \"{{clientName}}\" n'a eu aucune activité depuis {{count}} jour (dossiers, tâches, sessions, paiements). Souhaitez-vous marquer ce client comme inactif ?",
+        "message_other": "Le client \"{{clientName}}\" n'a eu aucune activité depuis {{count}} jours (dossiers, tâches, sessions, paiements). Souhaitez-vous marquer ce client comme inactif ?"
+      },
+      {
+        "tone": "suivi",
+        "title_one": "Client inactif depuis {{count}} jour",
+        "title_other": "Client inactif depuis {{count}} jours",
+        "message_one": "\"{{clientName}}\" n'a eu aucune activité depuis {{count}} jour. Décidez d'archiver ou d'engager.",
+        "message_other": "\"{{clientName}}\" n'a eu aucune activité depuis {{count}} jours. Décidez d'archiver ou d'engager."
+      },
+      {
+        "tone": "doux",
+        "title_one": "Petit rappel : {{count}} jour sans activité",
+        "title_other": "Petit rappel : {{count}} jours sans activité",
+        "message_one": "Aucune activité pour \"{{clientName}}\" depuis {{count}} jour. Un petit check-in ?",
+        "message_other": "Aucune activité pour \"{{clientName}}\" depuis {{count}} jours. Un petit check-in ?"
+      },
+      {
+        "tone": "décontracté",
+        "title_one": "Relance rapide ? {{count}} jour calme",
+        "title_other": "Relance rapide ? {{count}} jours calmes",
+        "message_one": "\"{{clientName}}\" est silencieux depuis {{count}} jour. On relance ?",
+        "message_other": "\"{{clientName}}\" est silencieux depuis {{count}} jours. On relance ?"
+      },
+      {
+        "tone": "ciblé",
+        "title_one": "Vérifiez client inactif ({{count}} jour)",
+        "title_other": "Vérifiez client inactif ({{count}} jours)",
+        "message_one": "Revoir \"{{clientName}}\" - aucune activité depuis {{count}} jour.",
+        "message_other": "Revoir \"{{clientName}}\" - aucune activité depuis {{count}} jours."
+      },
+      {
+        "tone": "professionnel-clair",
+        "title_one": "Alerte Client : Aucune activité depuis {{count}} jour",
+        "title_other": "Alerte Client : Aucune activité depuis {{count}} jours",
+        "message_one": "Le client \"{{clientName}}\" n'a eu aucune activité depuis {{count}} jour. Souhaitez-vous le marquer comme inactif ?",
+        "message_other": "Le client \"{{clientName}}\" n'a eu aucune activité depuis {{count}} jours. Souhaitez-vous le marquer comme inactif ?"
+      },
+      {
+        "tone": "axé-action",
+        "title_one": "Revoyez le client : {{count}} jour d'inactivité",
+        "title_other": "Revoyez le client : {{count}} jours d'inactivité",
+        "message_one": "\"{{clientName}}\" est inactif depuis {{count}} jour. Temps de renouer ou de mettre à jour son statut ?",
+        "message_other": "\"{{clientName}}\" est inactif depuis {{count}} jours. Temps de renouer ou de mettre à jour son statut ?"
+      },
+      {
+        "tone": "soutien",
+        "title_one": "Suivi client nécessaire ({{count}} jour)",
+        "title_other": "Suivi client nécessaire ({{count}} jours)",
+        "message_one": "Envisagez de contacter \"{{clientName}}\" - aucune activité enregistrée depuis {{count}} jour.",
+        "message_other": "Envisagez de contacter \"{{clientName}}\" - aucune activité enregistrée depuis {{count}} jours."
+      },
+      {
+        "tone": "concis",
+        "title_one": "Vérification statut client : {{count}} jour silencieux",
+        "title_other": "Vérification statut client : {{count}} jours silencieux",
+        "message_one": "\"{{clientName}}\" - aucune activité depuis {{count}} jour. Vérifier le statut ?",
+        "message_other": "\"{{clientName}}\" - aucune activité depuis {{count}} jours. Vérifier le statut ?"
+      },
+      {
+        "tone": "réengagement",
+        "title_one": "Réengagez le client : {{count}} jour sans activité",
+        "title_other": "Réengagez le client : {{count}} jours sans activité",
+        "message_one": "\"{{clientName}}\" n'a pas été actif depuis {{count}} jour. Moment idéal pour un suivi.",
+        "message_other": "\"{{clientName}}\" n'a pas été actif depuis {{count}} jours. Moment idéal pour un suivi."
+      },
+      {
+        "tone": "joueur",
+        "title_one": "{{clientName}} est-il toujours votre client ?",
+        "title_other": "{{clientName}} est-il toujours votre client ?",
+        "message_one": "👀 Ça fait {{count}} jour sans nouvelles. On fait un petit coucou ou on met à jour son statut ?",
+        "message_other": "👀 Ça fait {{count}} jours sans nouvelles. On fait un petit coucou ou on met à jour son statut ?"
+      },
+      {
+        "tone": "surpris",
+        "title_one": "Wow ! {{count}} jour sans {{clientName}}",
+        "title_other": "Wow ! {{count}} jours sans {{clientName}}",
+        "message_one": "Cela fait {{count}} jour sans nouvelles de \"{{clientName}}\". Tout va bien ? Envie de prendre des nouvelles ?",
+        "message_other": "Cela fait {{count}} jours sans nouvelles de \"{{clientName}}\". Tout va bien ? Envie de prendre des nouvelles ?"
+      },
+      {
+        "tone": "amical",
+        "title_one": "📞 Suivi client : {{clientName}}",
+        "title_other": "📞 Suivi client : {{clientName}}",
+        "message_one": "Ça fait {{count}} jour de silence radio de la part de {{clientName}}. Prêt à renouer le contact ?",
+        "message_other": "Ça fait {{count}} jours de silence radio de la part de {{clientName}}. Prêt à renouer le contact ?"
+      },
+      {
+        "tone": "conversationnel",
+        "title_one": "Hé, quoi de neuf avec {{clientName}} ?",
+        "title_other": "Hé, quoi de neuf avec {{clientName}} ?",
+        "message_one": "On n'a pas vu d'activité de leur part depuis {{count}} jour. On les recontacte ou on les marque inactifs ?",
+        "message_other": "On n'a pas vu d'activité de leur part depuis {{count}} jours. On les recontacte ou on les marque inactifs ?"
+      },
+      {
+        "tone": "décontracté-joueur",
+        "title_one": "Psst... {{clientName}} vous a manqué",
+        "title_other": "Psst... {{clientName}} vous a manqué",
+        "message_one": "{{count}} jour sans activité. Temps d'un petit bonjour ou d'une mise à jour de statut ?",
+        "message_other": "{{count}} jours sans activité. Temps d'un petit bonjour ou d'une mise à jour de statut ?"
+      },
+      {
+        "tone": "cinématographique",
+        "title_one": "Statut client : Le cas du {{clientName}} disparu",
+        "title_other": "Statut client : Le cas du {{clientName}} disparu",
+        "message_one": "🔍 Aucune activité détectée depuis {{count}} jour. On enquête ou on archive ?",
+        "message_other": "🔍 Aucune activité détectée depuis {{count}} jours. On enquête ou on archive ?"
+      },
+      {
+        "tone": "social",
+        "title_one": "Mise à jour client : {{clientName}}",
+        "title_other": "Mise à jour client : {{clientName}}",
+        "message_one": "Ça fait {{count}} jour que {{clientName}} n'a pas été actif. 💭 Des idées pour renouer le contact ?",
+        "message_other": "Ça fait {{count}} jours que {{clientName}} n'a pas été actif. 💭 Des idées pour renouer le contact ?"
+      }
+    ],
+    "content.dossier.inactivityReminder": [
+      {
+        "tone": "motivant",
+        "title_one": "📂 Dossier à relancer ({{count}} jour)",
+        "title_other": "📂 Dossier à relancer ({{count}} jours)",
+        "message_one": "Le dossier \"{{dossierNumber}}\" attend une mise à jour depuis {{count}} jour. C'est le moment d'avancer !",
+        "message_other": "Le dossier \"{{dossierNumber}}\" attend une mise à jour depuis {{count}} jours. C'est le moment d'avancer !"
+      },
+      {
+        "tone": "urgent-doux",
+        "title_one": "Action requise : Dossier en attente",
+        "title_other": "Action requise : Dossier en attente",
+        "message_one": "\"{{dossierNumber}}\" n'a pas bougé depuis {{count}} jour. Besoin d'un coup de main ?",
+        "message_other": "\"{{dossierNumber}}\" n'a pas bougé depuis {{count}} jours. Besoin d'un coup de main ?"
+      },
+      {
+        "tone": "encourageant",
+        "title_one": "💪 On y va ! Dossier {{dossierNumber}}",
+        "title_other": "💪 On y va ! Dossier {{dossierNumber}}",
+        "message_one": "Ça fait {{count}} jour que ce dossier attend. Prêt à le faire avancer ?",
+        "message_other": "Ça fait {{count}} jours que ce dossier attend. Prêt à le faire avancer ?"
+      },
+      {
+        "tone": "clair",
+        "title_one": "Dossier inactif : {{count}} jour écoulé",
+        "title_other": "Dossier inactif : {{count}} jours écoulés",
+        "message_one": "Le dossier \"{{dossierNumber}}\" nécessite votre attention. Aucune mise à jour depuis {{count}} jour.",
+        "message_other": "Le dossier \"{{dossierNumber}}\" nécessite votre attention. Aucune mise à jour depuis {{count}} jours."
+      },
+      {
+        "tone": "direct",
+        "title_one": "À traiter : Dossier {{dossierNumber}}",
+        "title_other": "À traiter : Dossier {{dossierNumber}}",
+        "message_one": "{{count}} jour sans mouvement sur ce dossier. Quelles sont les prochaines étapes ?",
+        "message_other": "{{count}} jours sans mouvement sur ce dossier. Quelles sont les prochaines étapes ?"
+      }
+    ],
+    "content.dossier.statusUpdateNeeded": [
+      {
+        "tone": "check-status",
+        "title_one": "📋 Statut à vérifier ({{count}} jour)",
+        "title_other": "📋 Statut à vérifier ({{count}} jours)",
+        "message_one": "Le dossier \"{{dossierNumber}}\" n'a pas été mis à jour depuis {{count}} jour. Terminé ou toujours en cours ?",
+        "message_other": "Le dossier \"{{dossierNumber}}\" n'a pas été mis à jour depuis {{count}} jours. Terminé ou toujours en cours ?"
+      },
+      {
+        "tone": "suivi",
+        "title_one": "Mise à jour nécessaire : Dossier {{dossierNumber}}",
+        "title_other": "Mise à jour nécessaire : Dossier {{dossierNumber}}",
+        "message_one": "Il est temps de faire le point sur ce dossier ouvert depuis {{count}} jour. Où en êtes-vous ?",
+        "message_other": "Il est temps de faire le point sur ce dossier ouvert depuis {{count}} jours. Où en êtes-vous ?"
+      },
+      {
+        "tone": "friendly",
+        "title_one": "Où en est {{dossierNumber}} ?",
+        "title_other": "Où en est {{dossierNumber}} ?",
+        "message_one": "Ça fait {{count}} jour sans nouvelles. Le dossier est-il toujours actif ?",
+        "message_other": "Ça fait {{count}} jours sans nouvelles. Le dossier est-il toujours actif ?"
+      },
+      {
+        "tone": "professional",
+        "title_one": "Vérification statut : Dossier {{dossierNumber}}",
+        "title_other": "Vérification statut : Dossier {{dossierNumber}}",
+        "message_one": "Ouvert depuis {{count}} jour. Avez-vous terminé ou avez-vous besoin de plus de temps ?",
+        "message_other": "Ouvert depuis {{count}} jours. Avez-vous terminé ou avez-vous besoin de plus de temps ?"
+      }
+    ],
+    "content.dossier.missingTasks": [
+      {
+        "tone": "constructif",
+        "title": "📝 Dossier sans plan d'action",
+        "message": "Le dossier \"{{dossierNumber}}\" (Priorité : {{priority}}) n'a pas encore de tâches. Voulez-vous en ajouter pour le faire avancer ?"
+      },
+      {
+        "tone": "guide",
+        "title": "Planifiez les étapes pour {{dossierNumber}}",
+        "message": "Ce dossier prioritaire ({{priority}}) n'a pas de tâches définies. Quelles actions prévoyez-vous ?"
+      },
+      {
+        "tone": "curieux",
+        "title": "Comment allez-vous traiter {{dossierNumber}} ?",
+        "message": "Dossier prioritaire {{priority}} sans tâches. Avez-vous besoin d'aide pour définir les prochaines actions ?"
+      },
+      {
+        "tone": "action",
+        "title": "À planifier : Dossier {{dossierNumber}}",
+        "message": "Priorité {{priority}} mais aucune tâche n'est définie. Prêt à créer un plan d'action ?"
+      },
+      {
+        "tone": "simple",
+        "title": "Ajoutez des tâches à {{dossierNumber}}",
+        "message": "Dossier prioritaire ({{priority}}) sans tâches. Quelles sont les prochaines étapes ?"
+      }
+    ],
+    "content.dossier.highPriorityReview": [
+      {
+        "tone": "important",
+        "title": "⚠️ Priorité {{priority}} : Vérification requise",
+        "message": "Le dossier \"{{dossierNumber}}\" nécessite une revue urgente. Tous les éléments sont-ils en place ?"
+      },
+      {
+        "tone": "focalise",
+        "title": "Attention : Dossier {{priority}} à examiner",
+        "message": "\"{{dossierNumber}}\" est marqué comme haute priorité. Prenez un moment pour vérifier son avancement."
+      },
+      {
+        "tone": "urgent",
+        "title": "Revoir d'urgence : {{dossierNumber}}",
+        "message": "Dossier prioritaire {{priority}} nécessitant votre attention immédiate. Tout est-il sous contrôle ?"
+      },
+      {
+        "tone": "calme-important",
+        "title": "Dossier prioritaire à examiner",
+        "message": "\"{{dossierNumber}}\" (Priorité : {{priority}}) a besoin d'une vérification. Pouvez-vous y jeter un œil ?"
+      },
+      {
+        "tone": "direct",
+        "title": "Examinez ce dossier {{priority}}",
+        "message": "\"{{dossierNumber}}\" - haute priorité. Merci de vérifier son statut et son avancement."
+      }
+    ],
+    "content.dossier.generalReview": [
+      {
+        "tone": "check-in",
+        "title_one": "🔍 Vérifiez l'avancement ({{count}} jour)",
+        "title_other": "🔍 Vérifiez l'avancement ({{count}} jours)",
+        "message_one": "Le dossier {{lawsuitNumber}} est ouvert depuis {{count}} jour. Tout se passe comme prévu ?",
+        "message_other": "Le dossier {{lawsuitNumber}} est ouvert depuis {{count}} jours. Tout se passe comme prévu ?"
+      },
+      {
+        "tone": "concerné",
+        "title_one": "Comment avance {{lawsuitNumber}} ?",
+        "title_other": "Comment avance {{lawsuitNumber}} ?",
+        "message_one": "Ouvert depuis {{count}} jour. Besoin de soutien ou tout est sous contrôle ?",
+        "message_other": "Ouvert depuis {{count}} jours. Besoin de soutien ou tout est sous contrôle ?"
+      },
+      {
+        "tone": "collaboratif",
+        "title_one": "Point sur le dossier {{lawsuitNumber}}",
+        "title_other": "Point sur le dossier {{lawsuitNumber}}",
+        "message_one": "Ça fait {{count}} jour. Un rapide check-in pour s'assurer que tout avance bien ?",
+        "message_other": "Ça fait {{count}} jours. Un rapide check-in pour s'assurer que tout avance bien ?"
+      },
+      {
+        "tone": "simple",
+        "title_one": "Revue : Dossier {{lawsuitNumber}}",
+        "title_other": "Revue : Dossier {{lawsuitNumber}}",
+        "message_one": "Ouvert depuis {{count}} jour. À vérifier.",
+        "message_other": "Ouvert depuis {{count}} jours. À vérifier."
+      },
+      {
+        "tone": "encourageant",
+        "title_one": "Tout va bien sur {{lawsuitNumber}} ?",
+        "title_other": "Tout va bien sur {{lawsuitNumber}} ?",
+        "message_one": "{{count}} jour d'ouverture. Un moment pour vérifier l'avancement ?",
+        "message_other": "{{count}} jours d'ouverture. Un moment pour vérifier l'avancement ?"
+      }
+    ],
+    "content.task.reminder": [
+      {
+        "tone": "professional",
+        "title": "Rappel de Tâche",
+        "message_one": "La tâche \"{{taskTitle}}\" est à échéance dans {{count}} jour. Avez-vous commencé ?",
+        "message_other": "La tâche \"{{taskTitle}}\" est à échéance dans {{count}} jours. Avez-vous commencé ?"
+      },
+      {
+        "tone": "friendly",
+        "title": "Petit rappel",
+        "message_one": "\"{{taskTitle}}\" arrive dans {{count}} jour. Où en êtes-vous ?",
+        "message_other": "\"{{taskTitle}}\" arrive dans {{count}} jours. Où en êtes-vous ?"
+      },
+      {
+        "tone": "focused",
+        "title": "Rappel",
+        "message_one": "{{taskTitle}} - J-{{count}}. Avez-vous démarré ?",
+        "message_other": "{{taskTitle}} - J-{{count}}. Avez-vous démarré ?"
+      }
+    ],
+    "content.task.upcoming": [
+      {
+        "tone": "professional",
+        "title": "Tâche à Venir",
+        "message_one": "N'oubliez pas : \"{{taskTitle}}\" doit être terminée dans {{count}} jour.",
+        "message_other": "N'oubliez pas : \"{{taskTitle}}\" doit être terminée dans {{count}} jours."
+      },
+      {
+        "tone": "planning",
+        "title_one": "Planification : J-{{count}}",
+        "title_other": "Planification : J-{{count}}",
+        "message_one": "\"{{taskTitle}}\" est prévue dans {{count}} jour. Bloquez du temps.",
+        "message_other": "\"{{taskTitle}}\" est prévue dans {{count}} jours. Bloquez du temps."
+      },
+      {
+        "tone": "friendly",
+        "title": "À venir",
+        "message_one": "\"{{taskTitle}}\" dans {{count}} jour. Prêt ?",
+        "message_other": "\"{{taskTitle}}\" dans {{count}} jours. Prêt ?"
+      }
+
+    ],
+    "content.task.actionRequired": [
+      {
+        "tone": "urgent",
+        "title": "Action Requise",
+        "message": "\"{{taskTitle}}\" - L'échéance est aujourd'hui ! Où en êtes-vous ?"
+      },
+      {
+        "tone": "professional",
+        "title": "Action nécessaire aujourd'hui",
+        "message": "La tâche \"{{taskTitle}}\" doit être finalisée aujourd'hui. Confirmez l'avancement."
+      },
+      {
+        "tone": "direct",
+        "title": "À traiter maintenant",
+        "message": "\"{{taskTitle}}\" - échéance aujourd'hui. Finalisez."
+      },
+      {
+        "tone": "supportive",
+        "title": "Besoin d'avancer",
+        "message": "\"{{taskTitle}}\" est due aujourd'hui. Puis-je vous aider ?"
+      }
+    ],
+    "content.task.attention": [
+      {
+        "tone": "urgent",
+        "title": "Attention - En Retard",
+        "message_one": "La tâche \"{{taskTitle}}\" aurait dû être terminée il y a {{count}} jour.",
+        "message_other": "La tâche \"{{taskTitle}}\" aurait dû être terminée il y a {{count}} jours."
+      },
+      {
+        "tone": "professional",
+        "title_one": "Retard de {{count}} jour",
+        "title_other": "Retard de {{count}} jours",
+        "message_one": "\"{{taskTitle}}\" a {{count}} jour de retard. Veuillez clôturer ou mettre à jour.",
+        "message_other": "\"{{taskTitle}}\" a {{count}} jours de retard. Veuillez clôturer ou mettre à jour."
+      },
+      {
+        "tone": "concerned",
+        "title": "Tâche en retard",
+        "message_one": "\"{{taskTitle}}\" devait être terminée il y a {{count}} jour. Besoin d'aide ?",
+        "message_other": "\"{{taskTitle}}\" devait être terminée il y a {{count}} jours. Besoin d'aide ?"
+      }
+    ],
+    "content.task.statusCheck": [
+      {
+        "tone": "professional",
+        "title": "Suivi de Tâche",
+        "message": "Avez-vous terminé la tâche \"{{taskTitle}}\" ? Échéance : {{dueDate}}"
+      },
+      {
+        "tone": "friendly",
+        "title": "Point sur votre tâche",
+        "message": "Comment avance \"{{taskTitle}}\" ? (Échéance : {{dueDate}})"
+      },
+      {
+        "tone": "direct",
+        "title": "Statut ?",
+        "message": "\"{{taskTitle}}\" - terminée ou en cours ? ({{dueDate}})"
+      },
+      {
+        "tone": "supportive",
+        "title": "Petit check-in",
+        "message": "Où en êtes-vous sur \"{{taskTitle}}\" ? Échéance le {{dueDate}}."
+      }
+    ],
+    "content.task.progressCheck": [
+      {
+        "tone": "professional",
+        "title": "Vérification de l'Avancement",
+        "message": "Où en êtes-vous avec \"{{taskTitle}}\" ? Échéance : {{dueDate}}"
+      },
+      {
+        "tone": "collaborative",
+        "title": "Point d'avancement",
+        "message": "Comment progresse \"{{taskTitle}}\" ? (Due le {{dueDate}})"
+      },
+      {
+        "tone": "supportive",
+        "title": "Comment ça avance ?",
+        "message": "\"{{taskTitle}}\" progresse bien ? Échéance : {{dueDate}}. Dites-moi si vous avez besoin d'aide."
+      },
+      {
+        "tone": "focused",
+        "title": "Progression",
+        "message": "{{taskTitle}} - avancement ? ({{dueDate}})"
+      }
+
+    ],
+    "content.lawsuit.missingHearing": [
+      {
+        "tone": "professional",
+        "title": "Audience Manquante - Procès sans Audience",
+        "message": "Le procès \"{{lawsuitTitle}}\" (Priorité : {{priority}}) n'a pas d'audience planifiée. Une audience a-t-elle été créée ?"
+      },
+      {
+        "tone": "actionable",
+        "title": "Planifiez une audience",
+        "message": "Le procès \"{{lawsuitTitle}}\" ({{priority}}) n'a pas d'audience. Faut-il en programmer une ?"
+      },
+      {
+        "tone": "concerned",
+        "title": "Procès sans audience",
+        "message": "\"{{lawsuitTitle}}\" (priorité {{priority}}) n'a toujours pas d'audience planifiée. Voulez-vous en créer une ?"
+      },
+      {
+        "tone": "direct",
+        "title": "Audience requise",
+        "message": "{{lawsuitTitle}} - aucune audience. Planifiez-en une."
+      }
+    ],
+    "content.lawsuit.missingTasks": [
+      {
+        "tone": "professional",
+        "title": "Tâches Manquantes - Procès sans Tâches",
+        "message": "Le procès \"{{lawsuitTitle}}\" (Priorité : {{priority}}) n'a aucune tâche associée. Des actions sont-elles prévues ?"
+      },
+      {
+        "tone": "actionable",
+        "title": "Définissez les actions",
+        "message": "Le procès \"{{lawsuitTitle}}\" ({{priority}}) n'a pas de tâches. Quelles sont les prochaines étapes ?"
+      },
+      {
+        "tone": "planning",
+        "title": "Plan d'action nécessaire",
+        "message": "\"{{lawsuitTitle}}\" (priorité {{priority}}) nécessite un plan d'action. Créez des tâches."
+      },
+      {
+        "tone": "supportive",
+        "title": "Besoin d'un plan ?",
+        "message": "Le procès \"{{lawsuitTitle}}\" n'a pas de tâches. Voulez-vous que je vous aide à planifier ?"
+      }
+    ],
+    "content.lawsuit.statusUpdate": [
+      {
+        "tone": "professional",
+        "title": "Mise à Jour de Statut - Procès",
+        "message": "Le procès \"{{lawsuitTitle}}\" a {{activitySummary}}. Le statut du procès doit-il être mis à jour ? Y a-t-il eu un verdict ?",
+        "hearingsCompleted_one": "{{count}} audience terminée",
+        "hearingsCompleted_other": "{{count}} audiences terminées",
+        "tasksCompleted_one": "{{count}} tâche terminée",
+        "tasksCompleted_other": "{{count}} tâches terminées",
+        "and": " et "
+      },
+      {
+        "tone": "follow-up",
+        "title": "Verdict ou mise à jour ?",
+        "message": "\"{{lawsuitTitle}}\" a progressé ({{activitySummary}}). Mettez à jour le statut.",
+        "hearingsCompleted_one": "{{count}} audience",
+        "hearingsCompleted_other": "{{count}} audiences",
+        "tasksCompleted_one": "{{count}} tâche",
+        "tasksCompleted_other": "{{count}} tâches",
+        "and": ", "
+      },
+      {
+        "tone": "direct",
+        "title": "Statut du procès",
+        "message": "{{lawsuitTitle}} : {{activitySummary}}. Verdict ?",
+        "hearingsCompleted_one": "{{count}} audience faite",
+        "hearingsCompleted_other": "{{count}} audiences faites",
+        "tasksCompleted_one": "{{count}} tâche faite",
+        "tasksCompleted_other": "{{count}} tâches faites",
+        "and": " + "
+      }
+    ],
+    "content.mission.upcoming": [
+      {
+        "tone": "professional",
+        "title": "Mission à Venir",
+        "message_one": "Mission \"{{missionTitle}}\" planifiée dans {{count}} jour. Tout est-il prêt ?",
+        "message_other": "Mission \"{{missionTitle}}\" planifiée dans {{count}} jours. Tout est-il prêt ?",
+        "messageDate": "Mission \"{{missionTitle}}\" le {{date}}. Avez-vous préparé les documents ?"
+      },
+      {
+        "tone": "planning",
+        "title_one": "Mission dans {{count}} jour",
+        "title_other": "Mission dans {{count}} jours",
+        "message_one": "\"{{missionTitle}}\" est planifiée dans {{count}} jour. Préparez les documents.",
+        "message_other": "\"{{missionTitle}}\" est planifiée dans {{count}} jours. Préparez les documents.",
+        "messageDate": "\"{{missionTitle}}\" le {{date}}. Documents prêts ?"
+      },
+      {
+        "tone": "friendly",
+        "title": "Mission à venir",
+        "message_one": "N'oubliez pas : \"{{missionTitle}}\" dans {{count}} jour !",
+        "message_other": "N'oubliez pas : \"{{missionTitle}}\" dans {{count}} jours !",
+        "messageDate": "\"{{missionTitle}}\" approche ({{date}}). Tout est prêt ?"
+      },
+      {
+        "tone": "focused",
+        "title_one": "J-{{count}}",
+        "title_other": "J-{{count}}",
+        "message_one": "{{missionTitle}} dans {{count}} jour. Vérifiez tout.",
+        "message_other": "{{missionTitle}} dans {{count}} jours. Vérifiez tout.",
+        "messageDate": "{{missionTitle}} - {{date}}"
+      }
+    ],
+    "content.mission.completion": [
+      {
+        "tone": "professional",
+        "title": "Suivi de Mission",
+        "message": "Mission \"{{missionTitle}}\" terminée ? Avez-vous reçu le rapport de l'huissier ?"
+      },
+      {
+        "tone": "follow-up",
+        "title": "Rapport de mission",
+        "message": "\"{{missionTitle}}\" est-elle terminée ? Récupérez le rapport de l'huissier."
+      },
+      {
+        "tone": "friendly",
+        "title": "Des nouvelles ?",
+        "message": "Comment s'est passée la mission \"{{missionTitle}}\" ? Rapport reçu ?"
+      },
+      {
+        "tone": "direct",
+        "title": "Mission terminée ?",
+        "message": "{{missionTitle}} - rapport de l'huissier reçu ?"
+      }
+     
+    ],
+    "content.financial.paymentDue": [
+      {
+        "tone": "professional",
+        "title": "Paiement Dû",
+        "message_one": "{{clientName}} doit vous payer {{amount}} dans {{count}} jour. Avez-vous envoyé un rappel ?",
+        "message_other": "{{clientName}} doit vous payer {{amount}} dans {{count}} jours. Avez-vous envoyé un rappel ?"
+      },
+      {
+        "tone": "reminder",
+        "title_one": "Paiement dans {{count}} jour",
+        "title_other": "Paiement dans {{count}} jours",
+        "message_one": "{{clientName}} doit {{amount}} dans {{count}} jour. Rappel envoyé ?",
+        "message_other": "{{clientName}} doit {{amount}} dans {{count}} jours. Rappel envoyé ?"
+      },
+      {
+        "tone": "friendly",
+        "title": "Rappel paiement",
+        "message_one": "Petit rappel : {{clientName}} doit vous régler {{amount}} dans {{count}} jour.",
+        "message_other": "Petit rappel : {{clientName}} doit vous régler {{amount}} dans {{count}} jours."
+      },
+      {
+        "tone": "focused",
+        "title_one": "J-{{count}}",
+        "title_other": "J-{{count}}",
+        "message_one": "{{clientName}} - {{amount}} dans {{count}} jour",
+        "message_other": "{{clientName}} - {{amount}} dans {{count}} jours"
+      }
+    ],
+    "content.financial.followupRequired": [
+      {
+        "tone": "professional",
+        "title": "Suivi Requis",
+        "message": "Le paiement de {{clientName}} ({{amount}}) est en retard. Avez-vous envoyé un suivi ?"
+      },
+      {
+        "tone": "actionable",
+        "title": "Relance nécessaire",
+        "message": "{{clientName}} a un paiement en retard ({{amount}}). Envoyez une relance."
+      },
+      {
+        "tone": "friendly",
+        "title": "Petit suivi ?",
+        "message": "Le paiement de {{clientName}} ({{amount}}) se fait attendre. Un petit rappel ?"
+      },
+      {
+        "tone": "direct",
+        "title": "Relancez",
+        "message": "{{clientName}} - {{amount}} en retard. Contactez-le."
+      }
+      
+    ],
+    "content.dossier.reviewReminder": [
+      {
+        "tone": "professional",
+        "title": "Revue de Dossier - Priorité {{priority}}",
+        "message_one": "Le dossier \"{{dossierNumber}}\" (priorité {{priority}}) nécessite une revue. Dernière mise à jour il y a {{count}} jour.",
+        "message_other": "Le dossier \"{{dossierNumber}}\" (priorité {{priority}}) nécessite une revue. Dernière mise à jour il y a {{count}} jours."
+      },
+      {
+        "tone": "focused",
+        "title": "Revue requise : {{priority}}",
+        "message_one": "\"{{dossierNumber}}\" - dernière mise à jour il y a {{count}} jour. Vérifiez.",
+        "message_other": "\"{{dossierNumber}}\" - dernière mise à jour il y a {{count}} jours. Vérifiez."
+      },
+      {
+        "tone": "friendly",
+        "title": "Dossier à revoir",
+        "message_one": "Le dossier \"{{dossierNumber}}\" n'a pas été mis à jour depuis {{count}} jour. Un petit check ?",
+        "message_other": "Le dossier \"{{dossierNumber}}\" n'a pas été mis à jour depuis {{count}} jours. Un petit check ?"
+      },
+      {
+        "tone": "urgent",
+        "title": "Revue urgente : {{priority}}",
+        "message_one": "\"{{dossierNumber}}\" (priorité {{priority}}) nécessite attention. {{count}} jour sans mise à jour.",
+        "message_other": "\"{{dossierNumber}}\" (priorité {{priority}}) nécessite attention. {{count}} jours sans mise à jour."
+      }
+    ],
+    "content.deadline.urgent": [
+      {
+        "tone": "urgent",
+        "title": "Échéance Critique",
+        "message_one": "URGENT : \"{{title}}\" - Plus que {{count}} heure !",
+        "message_other": "URGENT : \"{{title}}\" - Plus que {{count}} heures !"
+      },
+      {
+        "tone": "alert",
+        "title_one": "⚠️ {{count}} heure restante",
+        "title_other": "⚠️ {{count}} heures restantes",
+        "message_one": "\"{{title}}\" doit être finalisé dans {{count}} heure. Agissez maintenant.",
+        "message_other": "\"{{title}}\" doit être finalisé dans {{count}} heures. Agissez maintenant."
+      },
+      {
+        "tone": "direct",
+        "title": "Critique",
+        "message_one": "{{title}} - {{count}} heure !",
+        "message_other": "{{title}} - {{count}} heures !"
+      }
+    ],
+    "content.deadline.approaching": [
+      {
+        "tone": "professional",
+        "title": "Échéance Approchant",
+        "message_one": "\"{{title}}\" doit être finalisé dans {{count}} jour.",
+        "message_other": "\"{{title}}\" doit être finalisé dans {{count}} jours.",
+        "messageAlt_one": "Attention : {{count}} jour restant pour \"{{title}}\".",
+        "messageAlt_other": "Attention : {{count}} jours restants pour \"{{title}}\"."
+      },
+      {
+        "tone": "planning",
+        "title_one": "Échéance J-{{count}}",
+        "title_other": "Échéance J-{{count}}",
+        "message_one": "\"{{title}}\" arrive dans {{count}} jour. Planifiez votre temps.",
+        "message_other": "\"{{title}}\" arrive dans {{count}} jours. Planifiez votre temps.",
+        "messageAlt_one": "J-{{count}} pour \"{{title}}\". Priorisez.",
+        "messageAlt_other": "J-{{count}} pour \"{{title}}\". Priorisez."
+      },
+      {
+        "tone": "friendly",
+        "title": "Échéance proche",
+        "message_one": "N'oubliez pas : \"{{title}}\" dans {{count}} jour !",
+        "message_other": "N'oubliez pas : \"{{title}}\" dans {{count}} jours !",
+        "messageAlt_one": "{{count}} jour pour \"{{title}}\" - vous êtes prêt ?",
+        "messageAlt_other": "{{count}} jours pour \"{{title}}\" - vous êtes prêt ?"
+      },
+      {
+        "tone": "focused",
+        "title_one": "J-{{count}}",
+        "title_other": "J-{{count}}",
+        "message_one": "{{title}} - {{count}} jour restant",
+        "message_other": "{{title}} - {{count}} jours restants",
+        "messageAlt_one": "{{title}} • J-{{count}}",
+        "messageAlt_other": "{{title}} • J-{{count}}"
+      }
+    ],
+    "content.deadline.missed": [
+      {
+        "tone": "urgent",
+        "title": "Échéance Dépassée",
+        "message_one": "\"{{title}}\" a dépassé son échéance de {{count}} jour.",
+        "message_other": "\"{{title}}\" a dépassé son échéance de {{count}} jours."
+      },
+      {
+        "tone": "professional",
+        "title_one": "Retard de {{count}} jour",
+        "title_other": "Retard de {{count}} jours",
+        "message_one": "\"{{title}}\" est en retard de {{count}} jour. Action requise.",
+        "message_other": "\"{{title}}\" est en retard de {{count}} jours. Action requise."
+      },
+      {
+        "tone": "concerned",
+        "title": "Échéance manquée",
+        "message_one": "\"{{title}}\" devait être terminé il y a {{count}} jour. Que s'est-il passé ?",
+        "message_other": "\"{{title}}\" devait être terminé il y a {{count}} jours. Que s'est-il passé ?"
+      },
+      {
+        "tone": "direct",
+        "title": "En retard",
+        "message_one": "{{title}} - +{{count}} jour",
+        "message_other": "{{title}} - +{{count}} jours"
+      }
+      
+    ]
+  },
+  "clientEmail": {
+    "modal": {
+      "title": "Notification Client",
+      "description": "Voulez-vous notifier le client de cette mise à jour ?",
+      "recipient": "Destinataire",
+      "subject": "Sujet",
+      "message": "Message",
+      "preview": "Aperçu",
+      "hide": "Masquer",
+      "infoMessage": "📧 Un e-mail sera envoyé au client pour l'informer de cette mise à jour. Vous pouvez choisir de ne pas notifier le client si cette action est interne.",
+      "actions": {
+        "decline": "Non, ne pas notifier",
+        "confirm": "Oui, envoyer un e-mail",
+        "sending": "Envoi en cours..."
+      }
+    },
+    "toast": {
+      "success": {
+        "title": "E-mail envoyé",
+        "message": "Le client a été notifié."
+      },
+      "failed": {
+        "title": "E-mail non envoyé",
+        "message": "L'e-mail n'a pas pu être envoyé. Veuillez vérifier votre configuration e-mail."
+      }
+    },
+    "subjects": {
+      "dossierCreated": "Ouverture de Votre Dossier {{title}} ({{number}})",
+      "dossierStatusChanged": "Mise à Jour de Dossier {{title}} ({{number}})",
+      "dossierDeadlineChanged": "Modification d'Échéance - {{title}} ({{number}})",
+      "lawsuitCreated": "Ouverture de Votre Procès {{title}} ({{number}})",
+      "lawsuitStatusChanged": "Mise à Jour de Procès {{title}} ({{number}})",
+      "lawsuitHearingChanged": "Modification de Date d'Audience - {{title}} ({{number}})",
+      "sessionScheduled": "Audience Planifiée - {{title}}",
+      "sessionDateChanged": "Modification de Date d'Audience - {{title}}",
+      "sessionCancelled": "Annulation d'Audience - {{number}}",
+      "financialEntryAdded": "Nouvelle Écriture Comptable Concernant Votre Dossier"
+    },
+    "body": {
+      "greeting": "Cher/Chère {{name}},",
+      "closing": "Cordialement,\n{{senderName}}",
+      "dossierCreated": {
+        "confirmation": "Nous confirmons l'ouverture de votre Dossier.",
+        "details": "Dossier : {{title}} ({{number}})\nDate d'enregistrement : {{date}}",
+        "footer": "Nous restons à votre disposition pour toute question."
+      },
+      "dossierStatusChanged": {
+        "intro": "Nous vous informons que le statut de votre Dossier a été modifié.",
+        "details": "Dossier : {{title}} ({{number}})\nNouveau Statut : {{newStatus}}\nDate : {{date}}",
+        "footer": "Pour toute question, n'hésitez pas à nous contacter.",
+        "statusExplanations": {
+          "Closed": "Votre Dossier est maintenant fermé. Tous les éléments du procès ont été traités.",
+          "Suspended": "Votre Dossier est temporairement suspendu en raison de circonstances nécessitant une pause dans le traitement.",
+          "OpenAfterReopening": "Votre Dossier a été rouvert pour traitement suite à de nouveaux développements.",
+          "Open": "Votre Dossier est maintenant actif et en cours de traitement."
+        }
+      },
+      "dossierDeadlineChanged": {
+        "intro": "Nous vous informons d'une modification d'échéance concernant votre Dossier.",
+        "details": "Dossier : {{title}} ({{number}})\n\nÉchéance précédente : {{oldDate}}\nNouvelle échéance : {{newDate}}",
+        "impact": "Cette modification {{impactNote}}.",
+        "impactNotes": {
+          "significant": "représente un changement significatif dans le calendrier de votre Dossier",
+          "moderate": "peut impacter le calendrier de traitement de votre Dossier"
+        },
+        "footer": "Pour toute question, n'hésitez pas à nous contacter."
+      },
+      "lawsuitCreated": {
+        "confirmation": "Nous confirmons l'ouverture d'un nouveau procès vous concernant.",
+        "details": "Procès : {{title}} ({{number}})\nJuridiction : {{court}}",
+        "footer": "Nous vous tiendrons informé de chaque étape."
+      },
+      "lawsuitStatusChanged": {
+        "intro": "Nous vous informons d'un développement concernant votre procès.",
+        "details": "Procès : {{title}} ({{number}})\nTribunal : {{court}}\nNouveau Statut : {{newStatus}}\nDate : {{date}}",
+        "footer": "Nous restons à votre disposition pour toute information complémentaire.",
+        "statusExplanations": {
+          "Clos": "Votre procès est maintenant clos. Une décision finale a été rendue.",
+          "Suspendu": "Votre procès a été suspendu par le tribunal. Nous vous tiendrons informé de la reprise des procédures."
+        }
+      },
+      "lawsuitHearingChanged": {
+        "intro": "Nous vous informons d'une modification concernant votre prochaine audience.",
+        "details": "Procès : {{title}} ({{number}})\nTribunal : {{court}}\n\nDate précédente : {{oldDate}}\nNouvelle date : {{newDate}}",
+        "footer": "Veuillez prendre note de ce changement et vous organiser en conséquence.\n\nPour toute question, n'hésitez pas à nous contacter."
+      },
+      "sessionScheduled": {
+        "intro": "Une audience a été planifiée pour votre Dossier.",
+        "details": "Type : {{title}}\nDate : {{date}} à {{time}}\nLieu : {{location}}\nDurée estimée : {{duration}}",
+        "detailsWithLawsuit": "Procès : {{lawsuitTitle}} ({{lawsuitNumber}})\nType : {{title}}\nDate : {{date}} à {{time}}\nLieu : {{location}}\nDurée estimée : {{duration}}",
+        "footer": "Nous vous tiendrons informé de tout développement."
+      },
+      "sessionDateChanged": {
+        "intro": "Nous vous informons d'une modification concernant votre prochaine audience.",
+        "details": "Audience : {{title}}\n\nDate précédente : {{oldDate}} à {{oldTime}}\nNouvelle date : {{newDate}} à {{newTime}}\n\nLieu : {{location}}",
+        "detailsWithLawsuit": "Procès : {{lawsuitTitle}} ({{lawsuitNumber}})\nAudience : {{title}}\n\nDate précédente : {{oldDate}} à {{oldTime}}\nNouvelle date : {{newDate}} à {{newTime}}\n\nLieu : {{location}}",
+        "footer": "Veuillez prendre note de ce changement et vous organiser en conséquence.\n\nPour toute question, n'hésitez pas à nous contacter."
+      },
+      "sessionCancelled": {
+        "intro": "Nous vous informons de l'annulation de l'audience planifiée.",
+        "details": "Audience annulée : {{date}} à {{time}}\nLieu : {{location}}",
+        "detailsWithLawsuit": "Procès : {{lawsuitNumber}} - {{lawsuitTitle}}\nAudience annulée : {{date}} à {{time}}\nLieu : {{location}}",
+        "footer": "Une nouvelle date vous sera communiquée dès que possible."
+      },
+      "financialEntryAdded": {
+        "intro": "Une nouvelle écriture comptable a été enregistrée.",
+        "details": "Description : {{description}}\nMontant : {{amount}}",
+        "detailsWithDueDate": "Description : {{description}}\nMontant : {{amount}}\nDate d'échéance : {{dueDate}}",
+        "detailsWithBalance": "Description : {{description}}\nMontant : {{amount}}\nSolde client après écriture : {{clientBalance}}",
+        "footer": "Veuillez prendre note de cette mise à jour."
+      }
+    }
+  },
+  "group": {
+    "tasks": {
+      "dueSoon": {
+        "title": "Tâches à venir",
+        "message": "{{count}} tâches dues dans les 7 prochains jours"
+      }
+    },
+    "missions": {
+      "dueSoon": {
+        "title": "Missions à venir",
+        "message": "{{count}} missions dues dans les 7 prochains jours"
+      }
+    },
+    "hearings": {
+      "dueSoon": {
+        "title": "Audiences à venir",
+        "message": "{{count}} audiences dans les 7 prochains jours"
+      }
+    },
+    "payments": {
+      "dueSoon": {
+        "title": "Paiements à venir",
+        "message": "{{count}} paiements dus dans les 7 prochains jours"
+      }
+    }
+  }
+}
+
+
+
+
+

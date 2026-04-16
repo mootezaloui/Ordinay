@@ -1,0 +1,280 @@
+{
+  "search": {
+    "placeholder": "Rechercher des missions...",
+    "empty": "Aucune mission trouvée"
+  },
+  "filter": {
+    "all": "Toutes ({{count}})",
+    "planned": "Planifiées ({{count}})",
+    "scheduled": "Planifiées ({{count}})",
+    "inProgress": "En cours ({{count}})",
+    "completed": "Terminées ({{count}})",
+    "cancelled": "Annulées ({{count}})"
+  },
+  "labels": {
+    "assigned": "Assignée :",
+    "dueDate": "Échéance :",
+    "documents": "{{count}} documents",
+    "fees": "{{amount}} frais"
+  },
+  "priority": {
+    "high": "Haute priorité"
+  },
+  "add": "Ajouter {{entityName}}",
+  "addDefault": "Mission",
+  "empty": "Aucune mission pour le moment",
+  "dialog": {
+    "detail": {
+      "missions": {
+        "delete": {
+          "title": "Supprimer la mission",
+          "message": "Êtes-vous sûr de vouloir supprimer cette mission ? Cette action ne peut pas être annulée.",
+          "confirm": "Supprimer",
+          "cancel": "Annuler"
+        }
+      }
+    }
+  },
+  "detail": {
+    "entityName": "Mission",
+    "notFound": "Mission non trouvée.",
+    "deleteConfirm": "Êtes-vous sûr de vouloir supprimer cette mission ?",
+    "subtitle": "{{title}}",
+    "fallback": {
+      "na": "N/A",
+      "none": "Aucun",
+      "noReport": "Aucun rapport disponible",
+      "noLinkedEntity": "Aucune entité liée",
+      "notAssigned": "Non assignée",
+      "unassigned": "Non assignée",
+      "untitled": "Mission #{{id}}"
+    },
+    "quickActions": {
+      "status": {
+        "label": "Statut",
+        "planned": "Planifiée",
+        "inProgress": "En cours",
+        "completed": "Terminée",
+        "cancelled": "Annulée"
+      },
+      "priority": {
+        "label": "Priorité",
+        "high": "Haute",
+        "medium": "Moyenne",
+        "low": "Basse"
+      },
+      "bailiff": {
+        "label": "Huissier"
+      }
+    },
+    "header": {
+      "assignedOn": "Assignée le",
+      "dueDate": "Date d'échéance",
+      "completedOn": "Terminée le",
+      "bailiff": "Huissier",
+      "priority": "Priorité"
+    },
+    "stats": {
+      "documents": "Documents",
+      "duration": "Durée"
+    },
+    "tabs": {
+      "overview": "Aperçu",
+      "fees": "Frais d'huissier",
+      "documents": "Documents",
+      "notes": "Notes",
+      "relations": "Relations",
+      "history": "Historique"
+    },
+    "relations": {
+      "title": "Entités liées",
+      "bailiff": "Huissier",
+      "dossier": "Dossier",
+      "lawsuit": "Procès",
+      "empty": "Aucune entité liée"
+    },
+    "overview": {
+      "missionDetails": "Détails de la mission",
+      "dates": "Dates",
+      "description": "Description",
+      "report": "Rapport / Résultat",
+      "linkedEntity": "Entité liée",
+      "bailiffInfo": "Informations sur l'huissier",
+      "fields": {
+        "missionNumber": "Numéro de mission",
+        "title": "Titre",
+        "missionType": "Type de mission",
+        "status": "Statut",
+        "priority": "Priorité",
+        "assignDate": "Date d'assignation",
+        "dueDate": "Date d'échéance",
+        "completionDate": "Date de réalisation",
+        "entityType": "Type d'entité",
+        "entity": "Entité",
+        "assignedBailiff": "Huissier assigné",
+        "phone": "Téléphone",
+        "location": "Lieu"
+      },
+      "missionTypes": {
+        "service": "Signification",
+        "inspection": "Inspection",
+        "seizure": "Saisie",
+        "execution": "Exécution",
+        "other": "Autre"
+      },
+      "statuses": {
+        "scheduled": "Planifiée",
+        "inProgress": "En cours",
+        "completed": "Terminée",
+        "cancelled": "Annulée"
+      },
+      "priorities": {
+        "low": "Basse",
+        "medium": "Moyenne",
+        "high": "Haute",
+        "urgent": "Urgente"
+      },
+      "entityTypes": {
+        "dossier": "Dossier",
+        "lawsuit": "Procès"
+      },
+      "help": {
+        "entityType": "Sélectionnez le type d'entité à laquelle cette mission est liée",
+        "entity": "Sélectionnez le dossier ou le procès concerné",
+        "bailiff": "Attention : Changer l'huissier transférera la mission à un autre huissier"
+      },
+      "placeholders": {
+        "selectLawsuit": "Sélectionnez un procès...",
+        "selectDossier": "Sélectionnez un dossier..."
+      }
+    },
+    "missions": {
+      "empty": "Aucune mission pour le moment",
+      "entityName": "Mission",
+      "toast": {
+        "success": {
+          "add": "Mission créée avec succès !",
+          "addWithEntries": "Mission créée avec {{count}} écritures comptables !",
+          "update": "Mission mise à jour avec succès !",
+          "delete": "Mission supprimée avec succès !",
+          "financialAdd": "Écriture comptable ajoutée avec succès !",
+          "financialUpdate": "Écriture comptable mise à jour avec succès !",
+          "financialDelete": "Écriture comptable supprimée avec succès !"
+        },
+        "error": {
+          "add": "Erreur lors de la création de la mission",
+          "delete": "Erreur lors de la suppression de la mission",
+          "financialAdd": "Erreur lors de l'ajout de l'écriture comptable"
+        }
+      }
+    }
+  },
+  "financial": {
+    "addTitle": "Ajouter des frais d'huissier",
+    "expenseType": "Dépense"
+  },
+  "scope": {
+    "client": "Client"
+  },
+  "fallback": {
+    "unknownClient": "Client inconnu",
+    "unknownDossier": "Dossier inconnu",
+    "noLawsuit": "Aucun procès"
+  },
+  "form": {
+    "title": {
+      "add": "Ajouter une mission",
+      "edit": "Modifier la mission"
+    },
+    "subtitle": {
+      "add": "Créer une nouvelle mission",
+      "addFor": "Créer une nouvelle mission pour {{entity}}"
+    },
+    "submit": {
+      "add": "Ajouter",
+      "edit": "Enregistrer"
+    },
+    "fields": {
+      "officer": "Huissier",
+      "entityType": "Type d'entité",
+      "entityReference": "Référence",
+      "missionNumber": "Référence / Numéro",
+      "title": "Titre de la mission",
+      "missionType": "Type de mission",
+      "priority": "Priorité",
+      "assignDate": "Date d'assignation",
+      "dueDate": "Date d'échéance",
+      "status": "Statut",
+      "description": "Description",
+      "result": "Rapport / Résultat",
+      "completionDate": "Date de réalisation",
+      "notes": "Notes",
+      "documents": "Documents",
+      "financialEntries": "Frais d'huissier"
+    },
+    "placeholders": {
+      "officer": "Sélectionnez un huissier...",
+      "missionNumber": "Ex : MIS-2025-001 (auto-généré si vide)",
+      "title": "Ex : Signification d'acte judiciaire",
+      "description": "Description détaillée de la mission...",
+      "result": "Rapport détaillé de l'exécution de la mission...",
+      "notes": "Notes supplémentaires..."
+    },
+    "help": {
+      "entityReference": "Référence du dossier ou du procès",
+      "missionNumber": "Optionnel - Laissez vide pour la génération automatique (MIS-ANNÉE-XXX)",
+      "result": "À remplir une fois la mission terminée",
+      "completionDate": "Date de réalisation de la mission (si terminée)",
+      "documents": "Ajoutez des documents relatifs à cette mission (PDF, DOC, XLS, PPT, Images, Archives)",
+      "financialEntries": "Ajoutez des frais relatifs à cette mission. Ces frais seront automatiquement liés à la mission et au client.",
+      "bailiffAssigned": "Cette mission sera assignée à {{name}}",
+      "entityType": "Sélectionnez si la mission concerne un dossier ou un procès",
+      "entityReferenceSelect": "Sélectionnez le dossier ou le procès pour cette mission"
+    },
+    "feesSection": {
+      "title": "Frais d'huissier",
+      "summary_one": "{{count}} entrée • Total : {{total}}",
+      "summary_other": "{{count}} entrées • Total : {{total}}",
+      "add": "Ajouter",
+      "entryTitle": "Frais {{index}}",
+      "delete": "Supprimer ces frais",
+      "labels": {
+        "amount": "Montant ({{currency}})",
+        "date": "Date",
+        "status": "Statut",
+        "description": "Description"
+      },
+      "placeholders": {
+        "amount": "0,00",
+        "description": "Ex : frais de service, frais de déplacement..."
+      },
+      "status": {
+        "draft": "Brouillon",
+        "confirmed": "Confirmé",
+        "paid": "Payé"
+      },
+      "empty": {
+        "title": "Aucun frais ajouté pour le moment.",
+        "subtitle": "Cliquez sur « Ajouter » pour enregistrer les frais de cette mission"
+      }
+    },
+    "options": {
+      "missionType": {
+        "Service": "Signification",
+        "Execution": "Exécution",
+        "Observation": "Observation",
+        "Seizure": "Saisie",
+        "Investigation": "Investigation"
+      },
+      "status": {
+        "planned": "Planifiée",
+        "inProgress": "En cours",
+        "completed": "Terminée",
+        "cancelled": "Annulée"
+      }
+    }
+  },
+  "blockers": {
+    "missingParent": "Vous ne pouvez pas créer une mission. Veuillez d'abord créer au moins un dossier."
+  }
+}

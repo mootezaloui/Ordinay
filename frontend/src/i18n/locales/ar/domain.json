@@ -1,0 +1,398 @@
+{
+  "error": {
+    "unexpected": "حدث خطأ غير متوقع. يُرجى المحاولة مرة أخرى."
+  },
+  "impact": {
+    "actions": {
+      "perform": "تنفيذ هذا الإجراء",
+      "changeLink": "تغيير المرفق"
+    }
+  },
+  "dossier": {
+    "add": {
+      "blocked": {
+        "noClients": "يُرجى إضافة عميل قبل إنشاء ملف.",
+        "noClientSelected": "يُرجى تحديد عميل لهذا الملف."
+      }
+    },
+    "close": {
+      "blocked": {
+        "tasksOpen": "{{count}} مهمة مفتوحة:",
+        "tasksOpen_plural": "{{count}} مهام مفتوحة:",
+        "lawsuitsOpen": "{{count}} قضية مفتوحة:",
+        "lawsuitsOpen_plural": "{{count}} قضايا مفتوحة:",
+        "unpaidBalance": "الرصيد غير المدفوع: {{amount}} د.ت",
+        "sessionsOpen": "{{count}} جلسة مفتوحة:",
+        "sessionsOpen_plural": "{{count}} جلسات مفتوحة:",
+        "missionsActive": "{{count}} مهمة محضر نشطة:",
+        "missionsActive_plural": "{{count}} مهام محضر نشطة:",
+        "andMore": "... و {{count}} أخرى",
+        "andMore_plural": "... و {{count}} أخرى"
+      },
+      "warning": {
+        "noDocuments": "لم تتم إضافة أي مستندات إلى هذا الملف"
+      }
+    },
+    "delete": {
+      "blocked": {
+        "dossierNotFound": "الملف غير موجود"
+      },
+      "warning": {
+        "lawsuitsWillDelete": "يحتوي هذا الملف على {{count}} قضية سيتم حذفها.",
+        "lawsuitsWillDelete_plural": "يحتوي هذا الملف على {{count}} قضايا سيتم حذفها.",
+        "tasksWillDelete": "يحتوي هذا الملف على {{count}} مهمة سيتم حذفها.",
+        "tasksWillDelete_plural": "يحتوي هذا الملف على {{count}} مهام سيتم حذفها.",
+        "sessionsWillDelete": "يحتوي هذا الملف على {{count}} جلسة سيتم حذفها.",
+        "sessionsWillDelete_plural": "يحتوي هذا الملف على {{count}} جلسات سيتم حذفها.",
+        "missionsWillDelete": "يحتوي هذا الملف على {{count}} مهمة سيتم حذفها.",
+        "missionsWillDelete_plural": "يحتوي هذا الملف على {{count}} مهام سيتم حذفها.",
+        "financialsWillDelete": "يحتوي هذا الملف على {{count}} قيد مالي سيتم حذفه.",
+        "financialsWillDelete_plural": "يحتوي هذا الملف على {{count}} قيود مالية سيتم حذفها."
+      },
+      "forceDeleteMessage": "⚠️ تحذير: حذف هذا الملف سيحذف أيضًا {{count}} كيان مرتبط (قضايا، مهام، جلسات، مهام، قيود مالية). هذا الإجراء لا يمكن الرجوع فيه.",
+      "forceDeleteMessage_plural": "⚠️ تحذير: حذف هذا الملف سيحذف أيضًا {{count}} كيانات مرتبطة (قضايا، مهام، جلسات، مهام، قيود مالية). هذا الإجراء لا يمكن الرجوع فيه."
+    },
+    "impact": {
+      "reference": {
+        "field": "رقم الملف",
+        "current": "**رقم الملف الحالي**: {{value}}",
+        "new": "**رقم الملف الجديد**: {{value}}",
+        "impact1": "• سيتم تعديل مرجع الملف",
+        "impact2": "• جميع القضايا المرتبطة ستحتفظ برابطها مع هذا الملف",
+        "impact3": "• يجب تحديث المستندات والتقارير",
+        "impact4": "• القيود المالية ستحتفظ بالمرجع الجديد"
+      },
+      "client": {
+        "field": "العميل",
+        "current": "**العميل الحالي**: {{value}}",
+        "new": "**العميل الجديد**: {{value}}",
+        "unknown": "غير معروف",
+        "impactTitle": "**التأثير**:",
+        "impact1": "• جميع القضايا المرتبطة ستبقى مرفقة بهذا الملف",
+        "impact2": "• القيود المالية ستبقى مرتبطة بالملف",
+        "impact3": "• سيظهر الملف الآن تحت العميل الجديد",
+        "impact4": "• سيتم إعادة حساب مؤشرات المتابعة"
+      }
+    }
+  },
+  "lawsuit": {
+    "add": {
+      "blocked": {
+        "noDossiers": "يُرجى إضافة ملف قبل إنشاء قضية.",
+        "dossierNotFound": "الملف الرئيسي غير موجود",
+        "dossierClosed": "لا يمكن إنشاء قضية تحت ملف {{status}}",
+        "dossierDetails": "الملف: {{lawsuitNumber}} - {{title}}",
+        "reopenRequired": "يجب أولاً إعادة فتح الملف لإضافة قضايا"
+      }
+    },
+    "close": {
+      "blocked": {
+        "lawsuitNotFound": "القضية غير موجودة",
+        "sessionsOpen": "{{count}} جلسة مفتوحة:",
+        "sessionsOpen_plural": "{{count}} جلسات مفتوحة:",
+        "tasksOpen": "{{count}} مهمة مفتوحة:",
+        "tasksOpen_plural": "{{count}} مهام مفتوحة:",
+        "missionsActive": "{{count}} مهمة محضر نشطة:",
+        "missionsActive_plural": "{{count}} مهام محضر نشطة:",
+        "andMore": "... و {{count}} أخرى",
+        "andMore_plural": "... و {{count}} أخرى"
+      }
+    },
+    "delete": {
+      "warning": {
+        "sessionsWillDelete": "تحتوي هذه القضية على {{count}} جلسة سيتم حذفها.",
+        "sessionsWillDelete_plural": "تحتوي هذه القضية على {{count}} جلسات سيتم حذفها.",
+        "tasksWillDelete": "تحتوي هذه القضية على {{count}} مهمة سيتم حذفها.",
+        "tasksWillDelete_plural": "تحتوي هذه القضية على {{count}} مهام سيتم حذفها.",
+        "missionsWillDelete": "تحتوي هذه القضية على {{count}} مهمة سيتم حذفها.",
+        "missionsWillDelete_plural": "تحتوي هذه القضية على {{count}} مهام سيتم حذفها."
+      },
+      "forceDeleteMessage": "⚠️ تحذير: حذف هذه القضية سيحذف أيضًا {{count}} كيان مرتبط (جلسات، مهام، مهام). هذا الإجراء لا يمكن الرجوع فيه.",
+      "forceDeleteMessage_plural": "⚠️ تحذير: حذف هذه القضية سيحذف أيضًا {{count}} كيانات مرتبطة (جلسات، مهام، مهام). هذا الإجراء لا يمكن الرجوع فيه."
+    },
+    "impact": {
+      "reference": {
+        "field": "رقم القضية",
+        "current": "**رقم القضية الحالي**: {{value}}",
+        "new": "**رقم القضية الجديد**: {{value}}",
+        "impact1": "• سيتم تعديل مرجع القضية",
+        "impact2": "• جميع الجلسات المرتبطة ستحتفظ برابطها مع هذه القضية",
+        "impact3": "• يجب تحديث المستندات والتقارير",
+        "impact4": "• القيود المالية ستحتفظ بالمرجع الجديد"
+      },
+      "dossier": {
+        "field": "الملف",
+        "current": "**الملف الحالي**: {{value}}",
+        "new": "**الملف الجديد**: {{value}}",
+        "notAssigned": "غير معين",
+        "impactTitle": "**التأثير**:",
+        "impact1": "• قد يتغير العميل المرتبط",
+        "impact2": "• سيتم تجميع القيود المالية تحت الملف الجديد",
+        "impact3": "• سيتم نقل المهام والجلسات المرتبطة بالقضية",
+        "impact4": "• سيتم إعادة حساب مؤشرات المتابعة"
+      }
+    }
+  },
+  "client": {
+    "archive": {
+      "blocked": {
+        "clientNotFound": "العميل غير موجود",
+        "dossiersOpen": "{{count}} ملف مفتوح:",
+        "dossiersOpen_plural": "{{count}} ملفات مفتوحة:",
+        "lawsuitsOpen": "{{count}} قضية مفتوحة:",
+        "lawsuitsOpen_plural": "{{count}} قضايا مفتوحة:",
+        "tasksOpen": "{{count}} مهمة مفتوحة:",
+        "tasksOpen_plural": "{{count}} مهام مفتوحة:",
+        "sessionsOpen": "{{count}} جلسة مفتوحة:",
+        "sessionsOpen_plural": "{{count}} جلسات مفتوحة:",
+        "unpaidBalance": "الرصيد غير المدفوع: {{amount}} د.ت",
+        "andMore": "... و {{count}} أخرى",
+        "andMore_plural": "... و {{count}} أخرى"
+      }
+    },
+    "blocker": {
+      "openDossier": "{{count}} ملف مفتوح",
+      "openDossiers": "{{count}} ملفات مفتوحة"
+    },
+    "delete": {
+      "warning": {
+        "dossiersWillDelete": "هذا العميل لديه {{count}} ملف سيتم حذفه.",
+        "dossiersWillDelete_plural": "هذا العميل لديه {{count}} ملفات سيتم حذفها.",
+        "lawsuitsWillDelete": "هذا العميل لديه {{count}} قضية سيتم حذفها.",
+        "lawsuitsWillDelete_plural": "هذا العميل لديه {{count}} قضايا سيتم حذفها.",
+        "tasksWillDelete": "هذا العميل لديه {{count}} مهمة سيتم حذفها.",
+        "tasksWillDelete_plural": "هذا العميل لديه {{count}} مهام سيتم حذفها.",
+        "sessionsWillDelete": "هذا العميل لديه {{count}} جلسة سيتم حذفها.",
+        "sessionsWillDelete_plural": "هذا العميل لديه {{count}} جلسات سيتم حذفها.",
+        "missionsWillDelete": "هذا العميل لديه {{count}} مهمة سيتم حذفها.",
+        "missionsWillDelete_plural": "هذا العميل لديه {{count}} مهام سيتم حذفها.",
+        "financialsWillDelete": "هذا العميل لديه {{count}} قيد مالي سيتم حذفه.",
+        "financialsWillDelete_plural": "هذا العميل لديه {{count}} قيود مالية سيتم حذفها."
+      },
+      "forceDeleteMessage": "⚠️ تحذير: حذف هذا العميل سيحذف أيضًا {{count}} كيان مرتبط (ملفات، قضايا، مهام، جلسات، مهام، قيود مالية). هذا الإجراء لا يمكن الرجوع فيه.",
+      "forceDeleteMessage_plural": "⚠️ تحذير: حذف هذا العميل سيحذف أيضًا {{count}} كيانات مرتبطة (ملفات، قضايا، مهام، جلسات، مهام، قيود مالية). هذا الإجراء لا يمكن الرجوع فيه."
+    }
+  },
+  "accounting": {
+    "edit": {
+      "blocked": {
+        "readOnly": "التعديل ممنوع من شاشة المحاسبة\n\nشاشة المحاسبة هي واجهة مطابقة للقراءة فقط.\nيجب إجراء التعديلات من الشاشة المخصصة للكيان:\n  • العملاء → قائمة العملاء\n  • الملفات → قائمة الملفات\n  • القضايا → قائمة القضايا\n  • المحضرين → قائمة المحضرين\n\nيمكنك النقر على اسم الكيان للوصول إليه مباشرة."
+      }
+    }
+  },
+  "task": {
+    "add": {
+      "blocked": {
+        "noDossiers": "يُرجى إضافة ملف قبل إنشاء مهمة.",
+        "dossierClosed": "لا يمكن إنشاء مهمة تحت ملف {{status}}",
+        "dossierDetails": "الملف: {{lawsuitNumber}} - {{title}}",
+        "lawsuitClosed": "لا يمكن إنشاء مهمة تحت قضية {{status}}",
+        "lawsuitDetails": "القضية: {{lawsuitNumber}} - {{title}}",
+        "reopenRequired": "يجب أولاً إعادة فتح {{parentType}} لإضافة مهام"
+      },
+      "warning": {
+        "parentNotResolved": "الأصل {{parentType}} غير محدد (التحقق بعد الحفظ)."
+      }
+    },
+    "edit": {
+      "blocked": {
+        "taskNotFound": "المهمة غير موجودة",
+        "dossierClosed": "هذه المهمة تابعة للملف \"{{lawsuitNumber}}\" وهو {{status}}.\n\nلم تعد التعديلات مسموحة على الملفات المغلقة.",
+        "lawsuitClosed": "هذه المهمة تابعة للقضية \"{{lawsuitNumber}}\" وهي مغلقة.\n\nلم تعد التعديلات مسموحة على القضايا المغلقة."
+      }
+    },
+    "impact": {
+      "parent": {
+        "current": "**الأصل الحالي**: {{value}}",
+        "new": "**الأصل الجديد**: {{value}}",
+        "notAssigned": "غير معين",
+        "dossierLabel": "الملف {{lawsuitNumber}} - {{title}}",
+        "lawsuitLabel": "القضية {{lawsuitNumber}} - {{title}}",
+        "impactTitle": "**التأثير**:",
+        "impact1": "• سيتم إزالة المهمة من سياقها الحالي",
+        "impact2": "• سيتم إعادة حساب مؤشرات المتابعة",
+        "impact3": "• سيتم الاحتفاظ بسجل المهمة"
+      }
+    }
+  },
+  "session": {
+    "add": {
+      "blocked": {
+        "noDossiers": "يُرجى إضافة ملف قبل جدولة جلسة.",
+        "dossierClosed": "لا يمكن إنشاء جلسة تحت ملف {{status}}",
+        "dossierDetails": "الملف: {{lawsuitNumber}} - {{title}}",
+        "lawsuitClosed": "لا يمكن إنشاء جلسة تحت قضية {{status}}",
+        "lawsuitDetails": "القضية: {{lawsuitNumber}} - {{title}}",
+        "reopenRequired": "يجب أولاً إعادة فتح {{parentType}} لإضافة جلسات"
+      },
+      "warning": {
+        "parentNotResolved": "الأصل {{parentType}} غير محدد (التحقق بعد الحفظ)."
+      }
+    },
+    "edit": {
+      "blocked": {
+        "sessionNotFound": "الجلسة غير موجودة",
+        "lawsuitClosed": "هذه الجلسة تابعة للقضية \"{{lawsuitNumber}}\" وهي مغلقة.\n\nلم تعد التعديلات مسموحة على القضايا المغلقة.",
+        "dossierClosed": "هذه الجلسة تابعة للملف \"{{lawsuitNumber}}\" وهو {{status}}.\n\nلم تعد التعديلات مسموحة على الملفات المغلقة."
+      }
+    },
+    "impact": {
+      "parent": {
+        "current": "**المرفق الحالي**: {{value}}",
+        "new": "**المرفق الجديد**: {{value}}",
+        "notAssigned": "غير معين",
+        "dossierLabel": "الملف {{lawsuitNumber}} - {{title}}",
+        "lawsuitLabel": "القضية {{lawsuitNumber}} - {{title}}",
+        "impactTitle": "**التأثير**:",
+        "impact1": "• سيتم إزالة الجلسة من سياقها الحالي",
+        "impact2": "• سيتم إعادة حساب مؤشرات المتابعة",
+        "impact3": "• سيتم الاحتفاظ بسجل الجلسة"
+      }
+    }
+  },
+  "mission": {
+    "add": {
+      "blocked": {
+        "dossierNotFound": "الملف الرئيسي غير موجود",
+        "lawsuitNotFound": "القضية الرئيسية غير موجودة",
+        "dossierClosed": "لا يمكن إنشاء مهمة تحت ملف {{status}}",
+        "dossierDetails": "الملف: {{lawsuitNumber}} - {{title}}",
+        "lawsuitClosed": "لا يمكن إنشاء مهمة تحت قضية {{status}}",
+        "lawsuitDetails": "القضية: {{lawsuitNumber}} - {{title}}",
+        "reopenRequired": "يجب أولاً إعادة فتح {{parentType}} لإنشاء مهام"
+      }
+    },
+    "edit": {
+      "blocked": {
+        "missionNotFound": "المهمة غير موجودة",
+        "dossierClosed": "هذه المهمة مرتبطة بالملف \"{{lawsuitNumber}}\" وهو {{status}}.\n\nلم تعد التعديلات مسموحة على الملفات المغلقة.",
+        "lawsuitClosed": "هذه المهمة مرتبطة بالقضية \"{{lawsuitNumber}}\" وهي مغلقة.\n\nلم تعد التعديلات مسموحة على القضايا المغلقة."
+      }
+    },
+    "delete": {
+      "warning": {
+        "financialEntriesWillDelete": "هذه المهمة تحتوي على {{count}} قيد مالي سيتم حذفه.",
+        "financialEntriesWillDelete_plural": "هذه المهمة تحتوي على {{count}} قيود مالية سيتم حذفها.",
+        "documentsWillDelete": "هذه المهمة تحتوي على {{count}} مستند سيتم حذفه.",
+        "documentsWillDelete_plural": "هذه المهمة تحتوي على {{count}} مستندات سيتم حذفها.",
+        "notesWillDelete": "هذه المهمة تحتوي على {{count}} ملاحظة سيتم حذفها.",
+        "notesWillDelete_plural": "هذه المهمة تحتوي على {{count}} ملاحظات سيتم حذفها."
+      },
+      "forceDeleteMessage": "⚠️ تحذير: حذف هذه المهمة سيحذف أيضًا {{count}} كيان مرتبط (قيود مالية، مستندات، ملاحظات). هذا الإجراء لا يمكن الرجوع فيه.",
+      "forceDeleteMessage_plural": "⚠️ تحذير: حذف هذه المهمة سيحذف أيضًا {{count}} كيانات مرتبطة (قيود مالية، مستندات، ملاحظات). هذا الإجراء لا يمكن الرجوع فيه."
+    },
+    "impact": {
+      "reference": {
+        "field": "رقم المهمة",
+        "current": "**رقم المهمة الحالي**: {{value}}",
+        "new": "**رقم المهمة الجديد**: {{value}}",
+        "impactTitle": "**التأثير**:",
+        "impact1": "• سيتم تعديل مرجع المهمة",
+        "impact2": "• يجب تحديث جميع المستندات والتقارير",
+        "impact3": "• القيود المالية ستحتفظ بالمرجع الجديد"
+      },
+      "officer": {
+        "field": "المحضر",
+        "current": "**المحضر الحالي**: {{value}}",
+        "new": "**المحضر الجديد**: {{value}}",
+        "notDefined": "غير محدد",
+        "impactTitle": "**التأثير**:",
+        "impact1": "• سيتم إزالة المهمة من المحضر الحالي",
+        "impact2": "• ستتغير مسؤولية المتابعة",
+        "impact3": "• سيتم الاحتفاظ بسجل المهمة"
+      }
+    }
+  },
+  "financialEntry": {
+    "add": {
+      "blocked": {
+        "dossierClosed": "الملف \"{{lawsuitNumber}}\" {{status}}.\n\nلا يمكن إضافة قيود مالية جديدة إلى الملفات المغلقة.",
+        "lawsuitClosed": "القضية \"{{lawsuitNumber}}\" مغلقة.\n\nلا يمكن إضافة قيود مالية جديدة إلى القضايا المغلقة."
+      }
+    },
+    "edit": {
+      "blocked": {
+        "entryNotFound": "القيد المالي غير موجود",
+        "dossierClosed": "هذا القيد مرتبط بالملف \"{{lawsuitNumber}}\" وهو {{status}}.\n\nلا يمكن تعديل القيود من الملفات المغلقة.",
+        "lawsuitClosed": "هذا القيد مرتبط بالقضية \"{{lawsuitNumber}}\" وهي مغلقة.\n\nلا يمكن تعديل القيود من القضايا المغلقة.",
+        "entryCancelled": "تم إلغاء هذا القيد المالي ولا يمكن تعديله.\n\nيتم الاحتفاظ بالقيود الملغاة لأغراض التدقيق."
+      },
+      "warning": {
+        "entryPaid": "هذا القيد مُعلَّم كمدفوع. تعديله سيُسجَّل وسيُعاد احتساب الأرصدة.",
+        "lead": "هذا القيد مدفوع بالفعل. تحديثه سينشئ أثراً تصحيحياً.",
+        "balanceImpact": "سيتم إعادة احتساب أرصدة العميل والملف بعد الحفظ.",
+        "auditTrail": "سيتم الاحتفاظ بالمبلغ والحالة السابقة في السجل مع التاريخ والمستخدم.",
+        "visibility": "سيتم إنشاء حدث في السجل يشير إلى تصحيح قيد مدفوع."
+      }
+    },
+    "delete": {
+      "blocked": {
+        "entryNotFound": "القيد المالي غير موجود",
+        "entryConfirmed": "لا يمكن حذف هذا القيد المالي المؤكد نهائياً.\n\nسيتم إلغاؤه والاحتفاظ به لأغراض التدقيق."
+      },
+      "warning": {
+        "entryPaid": "هذا القيد مدفوع. حذفه سيُسجَّل مع الاحتفاظ بالقيم السابقة.",
+        "lead": "هذا القيد مدفوع. الحذف يحتاج تأكيد وسيترك أثراً في السجل.",
+        "balanceImpact": "سيتم إعادة احتساب الأرصدة بعد الحذف.",
+        "auditTrail": "سيبقى المبلغ والحالة والتفاصيل السابقة في السجل.",
+        "softDelete": "سيتم إلغاء هذا القيد (وليس حذفه نهائياً) للحفاظ على سجل التدقيق."
+      },
+      "success": {
+        "hardDelete": "تم حذف المسودة نهائياً.",
+        "softDelete": "تم إلغاء القيد وأرشفته لأغراض التدقيق."
+      }
+    },
+    "changeStatus": {
+      "blocked": {
+        "entryNotFound": "القيد المالي غير موجود",
+        "entryCancelled": "لا يمكن تغيير حالة القيود الملغاة."
+      },
+      "warning": {
+        "alreadyPaid": "هذا القيد مدفوع. تغيير حالته سيُسجَّل وسيُعاد احتساب الأرصدة.",
+        "lead": "أنت تغيّر حالة قيد مدفوع.",
+        "balanceImpact": "سيتم ضبط الإجماليات المالية حسب الحالة الجديدة.",
+        "auditTrail": "سيتم تخزين الحالة السابقة والجديدة في السجل مع الطابع الزمني."
+      }
+    },
+    "cancel": {
+      "success": "تم إلغاء القيد المالي بنجاح.",
+      "alreadyCancelled": "هذا القيد ملغى بالفعل."
+    },
+    "status": {
+      "draft": "مسودة",
+      "confirmed": "مؤكد",
+      "cancelled": "ملغى"
+    },
+    "direction": {
+      "receivable": "مستحقات",
+      "receivableDesc": "العميل يدين بهذا المبلغ",
+      "payable": "مستحقات للدفع",
+      "payableDesc": "نفقات المكتب (ليست التزام العميل)"
+    },
+    "blocker": {
+      "unpaidReceivable": "رصيد المستحقات غير المدفوعة: {{amount}} د.ت",
+      "unpaidReceivableCount": "{{count}} مستحق غير مدفوع",
+      "unpaidReceivableCount_plural": "{{count}} مستحقات غير مدفوعة",
+      "helpDossier": "لا يمكن إغلاق هذا الملف لأن العميل لديه مستحقات غير مدفوعة. قم بتعليم القيود كمدفوعة أو ألغها للمتابعة.",
+      "helpClient": "لا يمكن أرشفة هذا العميل لأنه لديه مستحقات غير مدفوعة. قم بتعليم القيود كمدفوعة أو ألغها للمتابعة.",
+      "notePayable": "ملاحظة: النفقات الداخلية (المستحقة للدفع) لا تمنع الإغلاق."
+    }
+  },
+  "officer": {
+    "delete": {
+      "blocked": {
+        "activeMissions": "هذا المحضر لديه {{count}} مهمة محضر نشطة.\n\nيجب أولاً إكمال هذه المهام أو إعادة تعيينها قبل حذف المحضر.",
+        "financialEntries": "هذا المحضر مرتبط بـ {{count}} قيد مالي عبر مهامه.\n\nحذف محضر به قيود موجودة سيهدد سلامة البيانات.",
+        "financialEntries_plural": "هذا المحضر مرتبط بـ {{count}} قيود مالية عبر مهامه.\n\nحذف محضر به قيود موجودة سيهدد سلامة البيانات."
+      },
+      "warning": {
+        "missionsWillDelete": "هذا المحضر لديه {{count}} مهمة محضر سيتم حذفها.",
+        "missionsWillDelete_plural": "هذا المحضر لديه {{count}} مهام محضر سيتم حذفها.",
+        "financialsWillDelete": "هذا المحضر لديه {{count}} قيد مالي سيتم حذفه.",
+        "financialsWillDelete_plural": "هذا المحضر لديه {{count}} قيود مالية سيتم حذفها."
+      },
+      "forceDeleteMessage": "⚠️ تحذير: حذف هذا المحضر سيحذف أيضًا {{count}} كيان مرتبط (مهام المحضر، قيود مالية). هذا الإجراء لا يمكن الرجوع فيه.",
+      "forceDeleteMessage_plural": "⚠️ تحذير: حذف هذا المحضر سيحذف أيضًا {{count}} كيانات مرتبطة (مهام المحضر، قيود مالية). هذا الإجراء لا يمكن الرجوع فيه."
+    }
+  }
+}

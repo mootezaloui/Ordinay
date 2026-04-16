@@ -1,0 +1,219 @@
+{
+  "page": {
+    "title": "العملاء",
+    "subtitle": "{{total}} عميل في المجموع",
+    "subtitleFiltered": "{{total}} عميل في المجموع • عرض {{displayed}}",
+    "actions": {
+      "newClient": "عميل جديد"
+    },
+    "loading": "جاري تحميل البيانات..."
+  },
+  "stats": {
+    "total": "إجمالي العملاء",
+    "active": "عملاء نشطون",
+    "inactive": "عملاء غير نشطين",
+    "newThisMonth": "جدد هذا الشهر",
+    "newThisMonthTrend": "منذ بداية الشهر"
+  },
+  "table": {
+    "columns": {
+      "name": "الاسم",
+      "email": "البريد الإلكتروني",
+      "phone": "الهاتف",
+      "status": "الحالة",
+      "joinDate": "تاريخ الانضمام",
+      "actions": "الإجراءات"
+    },
+    "status": {
+      "active": "نشط",
+      "inactive": "غير نشط"
+    },
+    "actions": {
+      "view": "عرض التفاصيل",
+      "edit": "تعديل",
+      "delete": "حذف"
+    },
+    "empty": "لم يتم العثور على عملاء",
+    "emptyFiltered": "لم يتم العثور على نتائج"
+  },
+  "confirm": {
+    "delete": {
+      "title": "حذف العميل",
+      "message": "هل أنت متأكد أنك تريد حذف هذا العميل؟",
+      "confirm": "حذف",
+      "cancel": "إلغاء"
+    }
+  },
+  "form": {
+    "title": {
+      "edit": "تعديل العميل",
+      "create": "إضافة عميل"
+    },
+    "subtitle": {
+      "edit": "تعديل معلومات العميل",
+      "create": "إضافة عميل جديد إلى قاعدة البيانات الخاصة بك"
+    },
+    "help": {
+      "statusLocked": "يمكن تغيير الحالة فقط من خلال المحدد في عرض القائمة."
+    },
+    "fields": {
+      "name": {
+        "label": "الاسم الكامل",
+        "placeholder": "مثال: أحمد بن علي"
+      },
+      "email": {
+        "label": "البريد الإلكتروني",
+        "placeholder": "example@email.com"
+      },
+      "phone": {
+        "label": "الهاتف",
+        "placeholder": "+216 98 123 456"
+      },
+      "alternatePhone": {
+        "label": "هاتف بديل",
+        "placeholder": "+216 71 234 567"
+      },
+      "cin": {
+        "label": "رقم البطاقة الوطنية",
+        "placeholder": "12345678"
+      },
+      "dateOfBirth": {
+        "label": "تاريخ الميلاد"
+      },
+      "address": {
+        "label": "العنوان",
+        "placeholder": "العنوان الكامل"
+      },
+      "profession": {
+        "label": "المهنة",
+        "placeholder": "مثال: رائد أعمال"
+      },
+      "company": {
+        "label": "الشركة",
+        "placeholder": "اسم الشركة"
+      },
+      "taxId": {
+        "label": "المعرف الضريبي",
+        "placeholder": "1234567X"
+      },
+      "status": {
+        "label": "الحالة",
+        "options": {
+          "active": "نشط",
+          "inactive": "غير نشط"
+        }
+      },
+      "notes": {
+        "label": "ملاحظات",
+        "placeholder": "ملاحظات مهمة حول العميل..."
+      }
+    },
+    "errors": {
+      "emailInvalid": "بريد إلكتروني غير صالح"
+    }
+  },
+  "toasts": {
+    "statusUpdated": "تم تحديث الحالة إلى {{status}}",
+    "clientUpdated": "تم تحديث العميل",
+    "statusError": "حدث خطأ أثناء تحديث الحالة",
+    "deleteError": "حدث خطأ أثناء حذف العميل",
+    "deleteSuccess": {
+      "title": "تم الحذف بنجاح",
+      "body": "تم حذف العميل"
+    },
+    "cascadeError": "حدث خطأ أثناء الحذف المتتالي",
+    "cascadeSuccess": {
+      "title": "حذف متتالي",
+      "body": "تم حذف العميل وجميع الكيانات المرتبطة"
+    },
+    "updateSuccess": "تم تحديث العميل بنجاح!",
+    "createMissingId": "تم إنشاء العميل، ولكن معرف الإرجاع غير متاح",
+    "createSuccess": "تمت إضافة العميل بنجاح!",
+    "saveError": "حدث خطأ أثناء حفظ العميل"
+  },
+  "confirmImpact": {
+    "action": "تأكيد التعديل"
+  },
+  "blockerModal": {
+    "actions": {
+      "delete": "حذف العميل",
+      "changeStatus": "تغيير الحالة إلى \"{{status}}\"",
+      "edit": "تعديل العميل",
+      "default": "تنفيذ إجراء على العميل"
+    },
+    "entityWithId": "العميل رقم {{id}}",
+    "entityGeneric": "عميل"
+  },
+  "detail": {
+    "entityName": "العميل",
+    "notFound": "لم يتم العثور على عميل.",
+    "deleteConfirm": "هل أنت متأكد أنك تريد حذف هذا العميل؟",
+    "subtitle": "عميل منذ {{date}}",
+    "quickActions": {
+      "status": {
+        "label": "الحالة",
+        "active": "نشط",
+        "inactive": "غير نشط"
+      }
+    },
+    "stats": {
+      "dossiers": "الملفات",
+      "documents": "المستندات"
+    },
+    "tabs": {
+      "dossiers": "الملفات",
+      "dossiersEntity": "ملف",
+      "dossiersAddSubtitle": "إنشاء ملف جديد لهذا العميل",
+      "lawsuits": "القضايا",
+      "lawsuitsEntity": "قضية",
+      "lawsuitsDisabled": "يرجى أولاً إضافة ملف قبل إنشاء قضية لهذا العميل.",
+      "lawsuitsAddSubtitle": "إنشاء قضية جديدة لهذا العميل",
+      "sessions": "الجلسات",
+      "sessionsDisabled": "يرجى أولاً إضافة ملف قبل جدولة جلسة.",
+      "sessionsEntity": "جلسة",
+      "sessionsAddSubtitle": "إنشاء جلسة جديدة لهذا العميل",
+      "tasks": "المهام",
+      "tasksDisabled": "يرجى أولاً إضافة ملف قبل إنشاء مهمة لهذا العميل.",
+      "tasksEntity": "مهمة",
+      "tasksAddSubtitle": "إنشاء مهمة جديدة لهذا العميل",
+      "financial": "المحاسبة",
+      "documents": "المستندات",
+      "history": "السجل",
+      "overview": "نظرة عامة"
+    },
+    "forms": {
+      "dossiersEmpty": "لا توجد ملفات متاحة. يرجى أولاً إنشاء ملف.",
+      "lawsuitsEmpty": "لا توجد قضايا متاحة. يرجى أولاً إنشاء قضية.",
+      "lawsuitsDossierHelp": "حدد الملف الذي ستكون هذه القضية مرتبطة به",
+      "sessionLinkHelpWithLawsuits": "اختر ما إذا كانت هذه الجلسة مرتبطة بملف أو بقضية محددة",
+      "sessionLinkHelpNoLawsuits": "اختر ما إذا كانت هذه الجلسة مرتبطة بملف",
+      "sessionLawsuitHelp": "حدد القضية التي ستكون هذه الجلسة مرتبطة بها",
+      "sessionDossierHelp": "حدد الملف الذي ستكون هذه الجلسة مرتبطة به",
+      "taskDossierHelp": "حدد الملف الذي ستكون هذه المهمة مرتبطة به",
+      "taskLawsuitHelp": "حدد القضية التي ستكون هذه المهمة مرتبطة بها"
+    },
+    "overview": {
+      "personal": "المعلومات الشخصية",
+      "contact": "معلومات الاتصال",
+      "registration": "معلومات التسجيل",
+      "notes": "ملاحظات",
+      "fields": {
+        "name": "الاسم الكامل",
+        "cin": "البطاقة الوطنية",
+        "dob": "تاريخ الميلاد",
+        "profession": "المهنة",
+        "company": "الشركة",
+        "taxId": "المعرف الضريبي",
+        "email": "البريد الإلكتروني",
+        "phone": "الهاتف",
+        "alternatePhone": "هاتف بديل",
+        "address": "العنوان",
+        "joinDate": "تاريخ التسجيل"
+      },
+      "notesEmpty": "لا توجد ملاحظات"
+    },
+    "fallback": {
+      "na": "غير متاح"
+    }
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "sidebar": {
+    "dashboard": "لوحة التحكم",
+    "clients": "العملاء",
+    "dossiers": "الملفات",
+    "tasks": "المهام",
+    "lawsuits": "القضايا",
+    "sessions": "الجلسات",
+    "personalTasks": "المهام الشخصية",
+    "officers": "المحضرون",
+    "accounting": "المحاسبة",
+    "chatbot": "Ordinay Intelligence",
+    "theme": {
+      "light": "الوضع الفاتح",
+      "dark": "الوضع الداكن"
+    },
+    "logout": "خروج من التطبيق",
+    "exitApp": "خروج من التطبيق",
+    "groups": {
+      "core": "أساسي",
+      "workflow": "سير العمل",
+      "operations": "العمليات",
+      "tools": "أدوات"
+    }
+  },
+  "header": {}
+}

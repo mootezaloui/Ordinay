@@ -1,0 +1,288 @@
+{
+  "page": {
+    "title": "الجلسات",
+    "subtitle": "{{total}} جلسة إجمالاً",
+    "subtitleFiltered": "{{total}} جلسة إجمالاً، {{displayed}} معروضة"
+  },
+  "actions": {
+    "new": "جلسة جديدة",
+    "disabledTooltip": "أضف ملفاً قبل جدولة جلسة"
+  },
+  "stats": {
+    "total": "إجمالي الجلسات",
+    "today": "اليوم",
+    "thisWeek": "هذا الأسبوع",
+    "completed": "مكتملة"
+  },
+  "table": {
+    "columns": {
+      "title": "العنوان",
+      "type": "النوع",
+      "date": "التاريخ",
+      "time": "الوقت",
+      "duration": "المدة",
+      "location": "المكان",
+      "status": "الحالة",
+      "actions": "الإجراءات"
+    },
+    "type": {
+      "consultation": "استشارة",
+      "audience": "جلسة",
+      "expertise": "خبرة",
+      "mediation": "وساطة",
+      "telephone": "مكالمة هاتفية"
+    },
+    "status": {
+      "scheduled": "مجدولة",
+      "confirmed": "مؤكدة",
+      "pending": "معلقة",
+      "onHold": "مؤجلة",
+      "completed": "مكتملة",
+      "cancelled": "ملغاة"
+    },
+    "actions": {
+      "view": "عرض التفاصيل",
+      "edit": "تعديل",
+      "delete": "حذف"
+    },
+    "empty": "لا توجد جلسات",
+    "emptyFiltered": "لا توجد نتائج تطابق الفلاتر",
+    "emptyNoDossiers": "أضف ملفاً قبل جدولة جلسة"
+  },
+  "confirm": {
+    "delete": {
+      "title": "حذف الجلسة",
+      "message": "هل أنت متأكد من رغبتك في حذف هذه الجلسة؟",
+      "confirm": "حذف",
+      "cancel": "إلغاء"
+    }
+  },
+  "toasts": {
+    "deleteSuccess": "تم حذف الجلسة",
+    "deletedTitle": "محذوفة",
+    "deleteError": "خطأ أثناء حذف الجلسة",
+    "statusUpdated": "تم تحديث الحالة: {{status}}",
+    "statusTitle": "حالة الجلسة",
+    "updateSuccess": "تم تحديث الجلسة بنجاح",
+    "createSuccess": "تم إضافة الجلسة بنجاح",
+    "saveError": "خطأ أثناء الحفظ"
+  },
+  "form": {
+    "title": {
+      "edit": "تعديل الجلسة",
+      "create": "إضافة جلسة جديدة"
+    },
+    "subtitle": {
+      "edit": "تحديث تفاصيل الجلسة",
+      "create": "إنشاء جلسة جديدة"
+    },
+    "statusReadonlyHelp": "لا يمكن تغيير الحالة إلا عبر المحدد في القائمة",
+    "fields": {
+      "title": {
+        "label": "عنوان الجلسة",
+        "placeholder": "مثال: جلسة تمهيدية"
+      },
+      "type": {
+        "label": "النوع",
+        "options": {
+          "hearing": "جلسة",
+          "consultation": "استشارة",
+          "mediation": "وساطة",
+          "expertAssessment": "خبرة",
+          "phoneCall": "مكالمة هاتفية",
+          "other": "أخرى"
+        }
+      },
+      "linkType": {
+        "label": "مرتبطة بـ",
+        "options": {
+          "dossier": "ملف",
+          "lawsuit": "قضية"
+        },
+        "helper": "يمكن ربط الجلسة بقضية أو مباشرة بملف"
+      },
+      "lawsuitId": {
+        "label": "القضية",
+        "helper": "اختر القضية المعنية"
+      },
+      "dossierId": {
+        "label": "الملف",
+        "helper": "اختر الملف المعني"
+      },
+      "date": {
+        "label": "التاريخ"
+      },
+      "time": {
+        "label": "الوقت",
+        "helper": "اختر وقت البداية"
+      },
+      "duration": {
+        "label": "المدة المتوقعة",
+        "helper": "المدة المتوقعة للجلسة",
+        "options": {
+          "00_15": "15 دقيقة",
+          "00_30": "30 دقيقة",
+          "00_45": "45 دقيقة",
+          "01_00": "ساعة واحدة",
+          "01_30": "ساعة ونصف",
+          "02_00": "ساعتان",
+          "02_30": "ساعتان ونصف",
+          "03_00": "3 ساعات",
+          "04_00": "4 ساعات"
+        }
+      },
+      "location": {
+        "label": "المكان",
+        "placeholder": "المكتب، المحكمة، إلخ."
+      },
+      "courtRoom": {
+        "label": "قاعة المحكمة",
+        "placeholder": "مثال: قاعة 5أ",
+        "helper": "القاعة المحددة التي ستعقد فيها الجلسة"
+      },
+      "judge": {
+        "label": "القاضي",
+        "placeholder": "مثال: القاضي أحمد",
+        "helper": "القاضي الذي يرأس هذه الجلسة"
+      },
+      "status": {
+        "label": "الحالة",
+        "options": {
+          "scheduled": "مجدولة",
+          "confirmed": "مؤكدة",
+          "pending": "معلقة",
+          "completed": "مكتملة",
+          "cancelled": "ملغاة"
+        }
+      },
+      "description": {
+        "label": "الوصف",
+        "placeholder": "وصف الجلسة..."
+      }
+    }
+  },
+  "blocker": {
+    "action": "تعديل/حذف الجلسة",
+    "entityWithDate": "جلسة يوم {{date}}",
+    "entityFallback": "جلسة"
+  },
+  "confirmImpact": {
+    "action": "تأكيد التغيير",
+    "entityFallback": "جلسة"
+  },
+  "export": {
+    "filename": "جلسات-{{date}}.csv"
+  },
+  "detail": {
+    "entityName": "جلسة",
+    "notFound": "الجلسة غير موجودة",
+    "deleteConfirm": "هل أنت متأكد من رغبتك في حذف هذه الجلسة؟",
+    "subtitle": "{{type}} - {{date}} الساعة {{time}}",
+    "fallback": {
+      "na": "غير متوفر",
+      "none": "لا يوجد",
+      "noDescription": "لا يوجد وصف"
+    },
+    "quickActions": {
+      "status": {
+        "label": "الحالة",
+        "scheduled": "مجدولة",
+        "confirmed": "مؤكدة",
+        "pending": "معلقة",
+        "completed": "مكتملة",
+        "cancelled": "ملغاة"
+      },
+      "type": {
+        "label": "النوع",
+        "consultation": "استشارة",
+        "hearing": "جلسة",
+        "expertise": "خبرة",
+        "mediation": "وساطة",
+        "telephone": "مكالمة هاتفية",
+        "other": "أخرى"
+      }
+    },
+    "header": {
+      "date": "التاريخ",
+      "time": "الوقت",
+      "duration": "المدة",
+      "location": "المكان",
+      "courtRoom": "قاعة المحكمة",
+      "judge": "القاضي",
+      "participants": "المشاركون"
+    },
+    "tabs": {
+      "overview": "نظرة عامة",
+      "participants": "المشاركون",
+      "documents": "الوثائق",
+      "report": "التقرير",
+      "history": "السجل"
+    },
+    "participants": {
+      "empty": "لا يوجد مشاركون",
+      "entityName": "مشارك",
+      "unnamed": "مشارك بدون اسم",
+      "roles": {
+        "lawyer": "محامي",
+        "client": "موكل",
+        "judge": "قاضي",
+        "witness": "شاهد",
+        "expert": "خبير",
+        "default": "مشارك"
+      },
+      "form": {
+        "name": "الاسم",
+        "namePlaceholder": "الاسم الكامل",
+        "nameHelp": "من سيحضر هذه الجلسة؟",
+        "role": "الدور",
+        "rolePlaceholder": "اختر دوراً",
+        "email": "البريد الإلكتروني",
+        "emailPlaceholder": "name@email.com",
+        "phone": "الهاتف",
+        "phonePlaceholder": "+216 12 345 678",
+        "phoneHelp": "رقم هاتف اختياري للتنسيق يوم الجلسة"
+      }
+    },
+    "overview": {
+      "general": "معلومات عامة",
+      "details": "تفاصيل الجلسة",
+      "description": "الوصف",
+      "fields": {
+        "title": "عنوان الجلسة",
+        "linkType": "مرتبطة بـ",
+        "linkTypeOptions": {
+          "dossier": "ملف",
+          "lawsuit": "قضية"
+        },
+        "linkTypeHelp": "يمكن ربط الجلسة بقضية أو مباشرة بملف",
+        "lawsuit": "القضية",
+        "lawsuitPlaceholder": "اختر قضية...",
+        "lawsuitHelp": "اختر القضية المعنية",
+        "dossier": "الملف",
+        "dossierPlaceholder": "اختر ملفاً...",
+        "dossierHelp": "اختر الملف المعني",
+        "date": "التاريخ",
+        "time": "الوقت",
+        "timeHelp": "اختر وقت بداية الجلسة",
+        "duration": "المدة المتوقعة",
+        "durationHelp": "المدة المتوقعة للجلسة",
+        "durationOptions": {
+          "00_15": "15 دقيقة",
+          "00_30": "30 دقيقة",
+          "00_45": "45 دقيقة",
+          "01_00": "ساعة واحدة",
+          "01_30": "ساعة ونصف",
+          "02_00": "ساعتان",
+          "02_30": "ساعتان ونصف",
+          "03_00": "3 ساعات",
+          "04_00": "4 ساعات"
+        },
+        "location": "المكان",
+        "courtRoom": "قاعة المحكمة",
+        "courtRoomHelp": "القاعة المحددة لهذه الجلسة",
+        "judge": "القاضي",
+        "judgeHelp": "القاضي الذي يرأس هذه الجلسة"
+      }
+    }
+  }
+}

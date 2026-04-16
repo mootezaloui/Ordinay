@@ -1,0 +1,219 @@
+﻿{
+  "page": {
+    "title": "Clients",
+    "subtitle": "{{total}} clients au total",
+    "subtitleFiltered": "{{total}} clients au total • {{displayed}} affichés",
+    "actions": {
+      "newClient": "Nouveau Client"
+    },
+    "loading": "Chargement des données..."
+  },
+  "stats": {
+    "total": "Total Clients",
+    "active": "Clients Actifs",
+    "inactive": "Clients Inactifs",
+    "newThisMonth": "Nouveaux Ce Mois",
+    "newThisMonthTrend": "depuis le début du mois"
+  },
+  "table": {
+    "columns": {
+      "name": "Nom",
+      "email": "Email",
+      "phone": "Téléphone",
+      "status": "Statut",
+      "joinDate": "Date d'adhésion",
+      "actions": "Actions"
+    },
+    "status": {
+      "active": "Actif",
+      "inactive": "Inactif"
+    },
+    "actions": {
+      "view": "Voir les détails",
+      "edit": "Modifier",
+      "delete": "Supprimer"
+    },
+    "empty": "Aucun client trouvé",
+    "emptyFiltered": "Aucun résultat trouvé"
+  },
+  "confirm": {
+    "delete": {
+      "title": "Supprimer le client",
+      "message": "Êtes-vous sûr de vouloir supprimer ce client ?",
+      "confirm": "Supprimer",
+      "cancel": "Annuler"
+    }
+  },
+  "form": {
+    "title": {
+      "edit": "Modifier le client",
+      "create": "Ajouter un client"
+    },
+    "subtitle": {
+      "edit": "Modifier les informations du client",
+      "create": "Ajouter un nouveau client à votre base de données"
+    },
+    "help": {
+      "statusLocked": "Le statut ne peut être modifié que via le sélecteur dans la vue liste."
+    },
+    "fields": {
+      "name": {
+        "label": "Nom complet",
+        "placeholder": "Ex : Ahmed Ben Ali"
+      },
+      "email": {
+        "label": "Email",
+        "placeholder": "exemple@email.com"
+      },
+      "phone": {
+        "label": "Téléphone",
+        "placeholder": "+216 98 123 456"
+      },
+      "alternatePhone": {
+        "label": "Téléphone secondaire",
+        "placeholder": "+216 71 234 567"
+      },
+      "cin": {
+        "label": "Numéro de CIN",
+        "placeholder": "12345678"
+      },
+      "dateOfBirth": {
+        "label": "Date de naissance"
+      },
+      "address": {
+        "label": "Adresse",
+        "placeholder": "Adresse complète"
+      },
+      "profession": {
+        "label": "Profession",
+        "placeholder": "Ex : Entrepreneur"
+      },
+      "company": {
+        "label": "Entreprise",
+        "placeholder": "Nom de l'entreprise"
+      },
+      "taxId": {
+        "label": "Identifiant fiscal",
+        "placeholder": "1234567X"
+      },
+      "status": {
+        "label": "Statut",
+        "options": {
+          "active": "Actif",
+          "inactive": "Inactif"
+        }
+      },
+      "notes": {
+        "label": "Notes",
+        "placeholder": "Notes importantes sur le client..."
+      }
+    },
+    "errors": {
+      "emailInvalid": "Email invalide"
+    }
+  },
+  "toasts": {
+    "statusUpdated": "Statut mis à jour en {{status}}",
+    "clientUpdated": "Client mis à jour",
+    "statusError": "Erreur lors de la mise à jour du statut",
+    "deleteError": "Erreur lors de la suppression du client",
+    "deleteSuccess": {
+      "title": "Suppression réussie",
+      "body": "Client supprimé"
+    },
+    "cascadeError": "Erreur lors de la suppression en cascade",
+    "cascadeSuccess": {
+      "title": "Suppression en cascade",
+      "body": "Client et toutes les entités associées supprimés"
+    },
+    "updateSuccess": "Client mis à jour avec succès !",
+    "createMissingId": "Client créé, mais l'ID retourné n'est pas disponible",
+    "createSuccess": "Client ajouté avec succès !",
+    "saveError": "Erreur lors de l'enregistrement du client"
+  },
+  "confirmImpact": {
+    "action": "confirmer la modification"
+  },
+  "blockerModal": {
+    "actions": {
+      "delete": "supprimer le client",
+      "changeStatus": "changer le statut en \"{{status}}\"",
+      "edit": "modifier le client",
+      "default": "effectuer une action sur le client"
+    },
+    "entityWithId": "Client #{{id}}",
+    "entityGeneric": "Client"
+  },
+  "detail": {
+    "entityName": "Client",
+    "notFound": "Aucun client trouvé.",
+    "deleteConfirm": "Êtes-vous sûr de vouloir supprimer ce client ?",
+    "subtitle": "Client depuis {{date}}",
+    "quickActions": {
+      "status": {
+        "label": "Statut",
+        "active": "Actif",
+        "inactive": "Inactif"
+      }
+    },
+    "stats": {
+      "dossiers": "Dossiers",
+      "documents": "Documents"
+    },
+    "tabs": {
+      "dossiers": "Dossiers",
+      "dossiersEntity": "dossier",
+      "dossiersAddSubtitle": "Créer un nouveau dossier pour ce client",
+      "lawsuits": "Procès",
+      "lawsuitsEntity": "procès",
+      "lawsuitsDisabled": "Veuillez d'abord ajouter un dossier avant de créer un procès pour ce client.",
+      "lawsuitsAddSubtitle": "Créer un nouveau procès pour ce client",
+      "sessions": "Audiences",
+      "sessionsDisabled": "Veuillez d'abord ajouter un dossier avant de planifier une audience.",
+      "sessionsEntity": "une audience",
+      "sessionsAddSubtitle": "Créer une nouvelle audience pour ce client",
+      "tasks": "Tâches",
+      "tasksDisabled": "Veuillez d'abord ajouter un dossier avant de créer une tâche pour ce client.",
+      "tasksEntity": "une tâche",
+      "tasksAddSubtitle": "Créer une nouvelle tâche pour ce client",
+      "financial": "Comptabilité",
+      "documents": "Documents",
+      "history": "Historique",
+      "overview": "Vue d'ensemble"
+    },
+    "forms": {
+      "dossiersEmpty": "Aucun dossier disponible. Veuillez d'abord créer un dossier.",
+      "lawsuitsEmpty": "Aucun procès disponible. Veuillez d'abord créer un procès.",
+      "lawsuitsDossierHelp": "Sélectionnez le dossier auquel ce procès sera lié",
+      "sessionLinkHelpWithLawsuits": "Choisissez si cette audience est liée à un dossier ou à un procès spécifique",
+      "sessionLinkHelpNoLawsuits": "Choisissez si cette audience est liée à un dossier",
+      "sessionLawsuitHelp": "Sélectionnez le procès auquel cette audience sera liée",
+      "sessionDossierHelp": "Sélectionnez le dossier auquel cette audience sera liée",
+      "taskDossierHelp": "Sélectionnez le dossier auquel cette tâche sera liée",
+      "taskLawsuitHelp": "Sélectionnez le procès auquel cette tâche sera attachée"
+    },
+    "overview": {
+      "personal": "Informations Personnelles",
+      "contact": "Coordonnées",
+      "registration": "Informations d'Inscription",
+      "notes": "Notes",
+      "fields": {
+        "name": "Nom complet",
+        "cin": "CIN",
+        "dob": "Date de naissance",
+        "profession": "Profession",
+        "company": "Entreprise",
+        "taxId": "Identifiant fiscal",
+        "email": "Email",
+        "phone": "Téléphone",
+        "alternatePhone": "Téléphone secondaire",
+        "address": "Adresse",
+        "joinDate": "Date d'inscription"
+      },
+      "notesEmpty": "Aucune note"
+    },
+    "fallback": {
+      "na": "N/A"
+    }
+  }
+}

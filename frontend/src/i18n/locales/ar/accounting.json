@@ -1,0 +1,310 @@
+{
+  "page": {
+    "title": "المحاسبة",
+    "subtitle": "{{total}} إدخال في المجموع",
+    "subtitleFiltered": "{{total}} إدخال في المجموع · عرض {{displayed}}",
+    "actions": {
+      "new": "إدخال جديد"
+    }
+  },
+  "stats": {
+    "totalRevenue": "إيرادات العملاء",
+    "clientExpenses": "مصروفات العملاء",
+    "officeExpenses": "مصروفات المكتب",
+    "netBalance": "الرصيد الصافي",
+    "trend": {
+      "clients": "تداولات العملاء",
+      "reimbursable": "قابل للاسترداد",
+      "internal": "داخلي",
+      "positive": "رصيد إيجابي",
+      "negative": "رصيد سلبي"
+    }
+  },
+  "filters": {
+    "all": "الكل",
+    "clients": "العملاء",
+    "internal": "المكتب"
+  },
+  "priority": {
+    "title": "العناصر ذات الأولوية ({{count}})",
+    "more": "و{{count}} عناصر أخرى...",
+    "statusHints": {
+      "draft": "بحاجة إلى تأكيد",
+      "confirmed": "بانتظار الدفع أو التسوية",
+      "paid": "مدفوع",
+      "cancelled": "إدخال ملغي"
+    }
+  },
+  "table": {
+    "columns": {
+      "date": "التاريخ",
+      "entry": "الإدخال",
+      "clientDossier": "العميل / الملف",
+      "type": "النوع",
+      "amount": "المبلغ",
+      "status": "الحالة",
+      "actions": "الإجراءات"
+    },
+    "type": {
+      "revenue": "إيراد",
+      "expense": "مصروف"
+    },
+    "status": {
+      "draft": "مسودة",
+      "confirmed": "مؤكد",
+      "paid": "مدفوع",
+      "cancelled": "ملغي"
+    },
+    "scope": {
+      "client": "عميل",
+      "internal": "مكتب",
+      "office": "مكتب"
+    },
+    "category": {
+      "honoraires": "أتعاب",
+      "advance": "دفعة مسبقة من العميل",
+      "other": "أخرى",
+      "frais_bureau": "مصروفات المكتب",
+      "frais_judiciaires": "مصروفات قضائية",
+      "frais_huissier": "مصروفات المحضر"
+    },
+    "fallback": {
+      "untitled": "بدون عنوان"
+    },
+    "actions": {
+      "edit": "تعديل",
+      "delete": "حذف"
+    },
+    "empty": "لا توجد إدخالات محاسبية حتى الآن",
+    "emptyFiltered": "لا توجد إدخالات محاسبية تطابق الفلاتر الخاصة بك"
+  },
+  "confirm": {
+    "delete": {
+      "title": "حذف الإدخال",
+      "message": "هل أنت متأكد أنك تريد حذف هذا الإدخال؟ لا يمكن التراجع عن هذا الإجراء.",
+      "confirm": "حذف",
+      "cancel": "إلغاء"
+    }
+  },
+  "toasts": {
+    "deleteSuccess": "تم حذف الإدخال",
+    "deleteError": "تعذر حذف الإدخال",
+    "updateSuccess": "تم تحديث الإدخال",
+    "createSuccess": "تم إنشاء الإدخال",
+    "saveError": "تعذر حفظ الإدخال"
+  },
+  "history": {
+    "updateLabel": "تم تحديث الإدخال المحاسبي"
+  },
+  "form": {
+    "title": {
+      "edit": "تعديل الإدخال المالي",
+      "create": "إدخال مالي جديد"
+    },
+    "subtitle": {
+      "edit": "قم بتحديث التفاصيل المحاسبية أدناه",
+      "create": "إضافة إدخال محاسبي جديد"
+    },
+    "fields": {
+      "scope": {
+        "label": "النطاق المالي",
+        "help": "اختر 'عميل' للعمليات المتعلقة بالعملاء، 'داخلي' لمصروفات المكتب",
+        "options": {
+          "client": "عميل (يؤثر على رصيد العميل)",
+          "internal": "داخلي (مصروفات المكتب)"
+        }
+      },
+      "type": {
+        "label": "نوع العملية",
+        "help": "حدد ما إذا كان هذا الإدخال إيراداً أم مصروفاً",
+        "options": {
+          "revenue": "إيراد (أموال مستلمة)",
+          "expense": "مصروف (أموال مدفوعة)"
+        }
+      },
+      "category": {
+        "label": "الفئة",
+        "placeholder": "اختر فئة",
+        "options": {
+          "honoraires": "أتعاب",
+          "advance": "دفعة مسبقة من العميل",
+          "other": "أخرى",
+          "frais_bureau": "مصروفات المكتب",
+          "frais_judiciaires": "مصروفات قضائية",
+          "frais_huissier": "مصروفات المحضر"
+        }
+      },
+      "amount": {
+        "label": "المبلغ (د.ت)",
+        "placeholder": "0.00"
+      },
+      "date": {
+        "label": "التاريخ",
+        "help": "إذا تُرك فارغاً، سيتم استخدام تاريخ اليوم"
+      },
+      "dueDate": {
+        "label": "تاريخ الاستحقاق",
+        "help": "إلزامي: الموعد النهائي للدفع أو تاريخ التحصيل المتوقع"
+      },
+      "status": {
+        "label": "الحالة"
+      },
+      "title": {
+        "label": "العنوان",
+        "placeholder": "مثال: رسوم تقديم المحكمة، مصروفات سفر المحضر، استشارة قانونية...",
+        "help": "عنوان قصير ووصفي لهذا الإدخال المالي"
+      },
+      "description": {
+        "label": "تفاصيل إضافية (اختياري)",
+        "placeholder": "تفاصيل إضافية اختيارية حول هذا الإدخال المالي..."
+      },
+      "client": {
+        "label": "العميل",
+        "help": "العميل المعني بهذه العملية (مطلوب إذا كان النطاق = عميل)",
+        "placeholder": "اختر عميل"
+      },
+      "dossier": {
+        "label": "الملف (اختياري)",
+        "help": "الملف المعني (اختياري)",
+        "placeholder": "اختر ملف"
+      },
+      "lawsuit": {
+        "label": "القضية (اختياري)",
+        "help": "القضية المعنية (اختياري)",
+        "placeholder": "اختر قضية"
+      },
+      "mission": {
+        "label": "المهمة المرتبطة",
+        "help": "حدد مهمة المحضر المتعلقة بهذه المصروفات",
+        "selectPrerequisite": "يرجى أولاً اختيار ملف أو قضية",
+        "noneForEntity": "لا توجد مهمة لهذا الملف/القضية",
+        "selectMission": "حدد المهمة المتعلقة بهذه المصروفات",
+        "noneAvailable": "لا توجد مهمة متاحة",
+        "fallbackOfficer": "المحضر غير محدد",
+        "autoDescription": "مصروفات المحضر - {{missionNumber}} - {{title}}"
+      }
+    }
+  },
+  "blocker": {
+    "action": "تعديل/حذف الإدخال المالي",
+    "entityFallback": "إدخال"
+  },
+  "export": {
+    "filename": "محاسبة-{{date}}.csv"
+  },
+  "detail": {
+    "entityName": "إدخال محاسبي",
+    "notFound": "لم يتم العثور على الإدخال المحاسبي",
+    "deleteConfirm": "هل أنت متأكد أنك تريد حذف هذا الإدخال المحاسبي؟",
+    "subtitle": "{{category}} • {{amount}} • {{date}}",
+    "fallback": {
+      "na": "غير متاح",
+      "none": "لا شيء",
+      "noAdditionalDetails": "لا توجد تفاصيل إضافية",
+      "noNotes": "لا توجد ملاحظات",
+      "untitled": "الإدخال رقم {{id}}"
+    },
+    "financial": {
+      "fallback": {
+        "unknownClient": "عميل غير معروف",
+        "unknownDossier": "ملف غير معروف",
+        "unknownLawsuit": "قضية غير معروفة",
+        "selectMissionFirst": "اختر مهمة أولاً",
+        "missionDependent": "لا شيء (يعتمد على المهمة)"
+      },
+      "help": {
+        "currentMission": "المهمة الحالية",
+        "missionOfficer": "المحضر لهذه المهمة",
+        "bailiffExpensesOnly": "فقط مصروفات المحضر",
+        "expensesForBailiff": "المصروفات لهذا المحضر",
+        "selectMissionExpenses": "حدد المهمة المرتبطة بهذه المصروفات",
+        "feesAreExpenses": "تُعامل هذه المصروفات كمصروفات",
+        "autoCategoryBailiffFees": "تم تعيين الفئة تلقائيًا إلى مصروفات المحضر",
+        "missionClient": "تم تعبئة العميل تلقائيًا من المهمة",
+        "missionDossier": "تم تعبئة الملف تلقائيًا من المهمة",
+        "missionLawsuit": "تم تعبئة القضية تلقائيًا من المهمة",
+        "personalTasksInternalOnly": "المهام الشخصية هي مصروفات داخلية"
+      }
+    },
+    "quickActions": {
+      "status": {
+        "label": "الحالة",
+        "draft": "مسودة",
+        "confirmed": "مؤكد",
+        "paid": "مدفوع",
+        "cancelled": "ملغي"
+      }
+    },
+    "toast": {
+      "success": {
+        "update": "تم تحديث الإدخال بنجاح!",
+        "create": "تم إضافة الإدخال بنجاح!"
+      },
+      "error": {
+        "save": "حدث خطأ أثناء حفظ الإدخال"
+      }
+    },
+    "header": {
+      "revenue": "إيراد",
+      "expense": "مصروف",
+      "client": "عميل",
+      "office": "مكتب",
+      "date": "التاريخ",
+      "dueDate": "تاريخ الاستحقاق",
+      "dossier": "ملف",
+      "lawsuit": "قضية",
+      "bailiff": "محضر"
+    },
+    "tabs": {
+      "overview": "نظرة عامة",
+      "relations": "العلاقات",
+      "history": "السجل"
+    },
+    "relations": {
+      "title": "الكيانات المرتبطة",
+      "empty": "لا توجد كيانات مرتبطة",
+      "client": "العميل",
+      "dossier": "الملف",
+      "lawsuit": "القضية",
+      "bailiff": "المحضر"
+    },
+    "overview": {
+      "financial": "التفاصيل المالية",
+      "dates": "التواريخ",
+      "entities": "الكيانات المرتبطة",
+      "notes": "ملاحظات",
+      "fields": {
+        "title": "العنوان",
+        "titlePlaceholder": "مثال: رسوم تقديم المحكمة، مصروفات سفر المحضر...",
+        "description": "تفاصيل إضافية",
+        "noAdditionalDetails": "لا توجد تفاصيل إضافية",
+        "amount": "المبلغ",
+        "type": "النوع",
+        "typeRevenue": "إيراد",
+        "typeExpense": "مصروف",
+        "category": "الفئة",
+        "status": "الحالة",
+        "scope": "النطاق",
+        "scopeClient": "عميل",
+        "scopeOffice": "مكتب (داخلي)",
+        "date": "تاريخ المعاملة",
+        "dueDate": "تاريخ الاستحقاق",
+        "client": "العميل",
+        "clientPlaceholder": "اختر عميل...",
+        "dossier": "الملف",
+        "dossierPlaceholder": "اختر ملف...",
+        "dossierHelp": "يتم عرض ملفات العميل المختار فقط",
+        "lawsuit": "القضية",
+        "lawsuitPlaceholder": "اختر قضية...",
+        "lawsuitHelp": "يتم عرض قضايا الملف المختار فقط"
+      },
+      "categories": {
+        "Fees": "أتعاب",
+        "bailiff_fees": "مصروفات المحضر",
+        "office_expenses": "مصروفات المكتب",
+        "salary": "راتب",
+        "other": "أخرى"
+      }
+    }
+  }
+}

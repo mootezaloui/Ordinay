@@ -1,0 +1,280 @@
+{
+  "search": {
+    "placeholder": "Search missions...",
+    "empty": "No missions found"
+  },
+  "filter": {
+    "all": "All ({{count}})",
+    "planned": "Planned ({{count}})",
+    "scheduled": "Scheduled ({{count}})",
+    "inProgress": "In Progress ({{count}})",
+    "completed": "Completed ({{count}})",
+    "cancelled": "Cancelled ({{count}})"
+  },
+  "labels": {
+    "assigned": "Assigned:",
+    "dueDate": "Due:",
+    "documents": "{{count}} documents",
+    "fees": "{{amount}} fees"
+  },
+  "priority": {
+    "high": "High Priority"
+  },
+  "add": "Add {{entityName}}",
+  "addDefault": "Mission",
+  "empty": "No missions yet",
+  "dialog": {
+    "detail": {
+      "missions": {
+        "delete": {
+          "title": "Delete mission",
+          "message": "Are you sure you want to delete this mission? This action cannot be undone.",
+          "confirm": "Delete",
+          "cancel": "Cancel"
+        }
+      }
+    }
+  },
+  "detail": {
+    "entityName": "Mission",
+    "notFound": "Mission not found.",
+    "deleteConfirm": "Are you sure you want to delete this mission?",
+    "subtitle": "{{title}}",
+    "fallback": {
+      "na": "N/A",
+      "none": "None",
+      "noReport": "No report available",
+      "noLinkedEntity": "No linked entity",
+      "notAssigned": "Not assigned",
+      "unassigned": "Unassigned",
+      "untitled": "Mission #{{id}}"
+    },
+    "quickActions": {
+      "status": {
+        "label": "Status",
+        "planned": "Planned",
+        "inProgress": "In Progress",
+        "completed": "Completed",
+        "cancelled": "Cancelled"
+      },
+      "priority": {
+        "label": "Priority",
+        "high": "High",
+        "medium": "Medium",
+        "low": "Low"
+      },
+      "bailiff": {
+        "label": "Bailiff"
+      }
+    },
+    "header": {
+      "assignedOn": "Assigned On",
+      "dueDate": "Due Date",
+      "completedOn": "Completed On",
+      "bailiff": "Bailiff",
+      "priority": "Priority"
+    },
+    "stats": {
+      "documents": "Documents",
+      "duration": "Duration"
+    },
+    "tabs": {
+      "overview": "Overview",
+      "fees": "Bailiff Fees",
+      "documents": "Documents",
+      "notes": "Notes",
+      "relations": "Relations",
+      "history": "History"
+    },
+    "relations": {
+      "title": "Linked Entities",
+      "bailiff": "Bailiff",
+      "dossier": "Dossier",
+      "lawsuit": "Lawsuit",
+      "empty": "No linked entity"
+    },
+    "overview": {
+      "missionDetails": "Mission Details",
+      "dates": "Dates",
+      "description": "Description",
+      "report": "Report / Result",
+      "linkedEntity": "Linked Entity",
+      "bailiffInfo": "Bailiff Information",
+      "fields": {
+        "missionNumber": "Mission Number",
+        "title": "Title",
+        "missionType": "Mission Type",
+        "status": "Status",
+        "priority": "Priority",
+        "assignDate": "Assign Date",
+        "dueDate": "Due Date",
+        "completionDate": "Completion Date",
+        "entityType": "Entity Type",
+        "entity": "Entity",
+        "assignedBailiff": "Assigned Bailiff",
+        "phone": "Phone",
+        "location": "Location"
+      },
+      "missionTypes": {
+        "service": "Service",
+        "inspection": "Inspection",
+        "seizure": "Seizure",
+        "execution": "Execution",
+        "other": "Other"
+      },
+      "statuses": {
+        "scheduled": "Scheduled",
+        "inProgress": "In Progress",
+        "completed": "Completed",
+        "cancelled": "Cancelled"
+      },
+      "priorities": {
+        "low": "Low",
+        "medium": "Medium",
+        "high": "High",
+        "urgent": "Urgent"
+      },
+      "entityTypes": {
+        "dossier": "Dossier",
+        "lawsuit": "Lawsuit"
+      },
+      "help": {
+        "entityType": "Select the type of entity this mission is linked to",
+        "entity": "Select the dossier or lawsuit concerned",
+        "bailiff": "Warning: Changing the bailiff will transfer the mission to another bailiff"
+      },
+      "placeholders": {
+        "selectLawsuit": "Select a lawsuit...",
+        "selectDossier": "Select a dossier..."
+      }
+    },
+    "missions": {
+      "empty": "No missions yet",
+      "entityName": "Mission",
+      "toast": {
+        "success": {
+          "add": "Mission created successfully!",
+          "addWithEntries": "Mission created with {{count}} financial entries!",
+          "update": "Mission updated successfully!",
+          "delete": "Mission deleted successfully!",
+          "financialAdd": "Financial entry added successfully!",
+          "financialUpdate": "Financial entry updated successfully!",
+          "financialDelete": "Financial entry deleted successfully!"
+        },
+        "error": {
+          "add": "Error creating mission",
+          "delete": "Error deleting mission",
+          "financialAdd": "Error adding financial entry"
+        }
+      }
+    }
+  },
+  "financial": {
+    "addTitle": "Add Bailiff Fees",
+    "expenseType": "Expense"
+  },
+  "scope": {
+    "client": "Client"
+  },
+  "fallback": {
+    "unknownClient": "Unknown client",
+    "unknownDossier": "Unknown dossier",
+    "noLawsuit": "No lawsuit"
+  },
+  "form": {
+    "title": {
+      "add": "Add Mission",
+      "edit": "Edit Mission"
+    },
+    "subtitle": {
+      "add": "Create a new mission",
+      "addFor": "Create a new mission for {{entity}}"
+    },
+    "submit": {
+      "add": "Add",
+      "edit": "Save"
+    },
+    "fields": {
+      "officer": "Bailiff",
+      "entityType": "Entity Type",
+      "entityReference": "Reference",
+      "missionNumber": "Reference / Number",
+      "title": "Mission Title",
+      "missionType": "Mission Type",
+      "priority": "Priority",
+      "assignDate": "Assignment Date",
+      "dueDate": "Due Date",
+      "status": "Status",
+      "description": "Description",
+      "result": "Report / Result",
+      "completionDate": "Completion Date",
+      "notes": "Notes",
+      "documents": "Documents",
+      "financialEntries": "Bailiff Fees"
+    },
+    "placeholders": {
+      "officer": "Select a bailiff...",
+      "missionNumber": "Ex: MIS-2025-001 (auto-generated if empty)",
+      "title": "Ex: Service of judicial act",
+      "description": "Detailed description of the mission...",
+      "result": "Detailed report of the mission execution...",
+      "notes": "Additional notes..."
+    },
+    "help": {
+      "entityReference": "Reference of the dossier or lawsuit",
+      "missionNumber": "Optional - Leave blank for automatic generation (MIS-YEAR-XXX)",
+      "result": "To be filled once the mission is completed",
+      "completionDate": "Completion date of the mission (if completed)",
+      "documents": "Add documents related to this mission (PDF, DOC, XLS, PPT, Images, Archives)",
+      "financialEntries": "Add fees related to this mission. These fees will be automatically linked to the mission and client.",
+      "bailiffAssigned": "This mission will be assigned to {{name}}",
+      "entityType": "Select whether the mission concerns a dossier or a lawsuit",
+      "entityReferenceSelect": "Select the dossier or lawsuit for this mission"
+    },
+    "feesSection": {
+      "title": "Bailiff Fees",
+      "summary_one": "{{count}} entry • Total: {{total}}",
+      "summary_other": "{{count}} entries • Total: {{total}}",
+      "add": "Add",
+      "entryTitle": "Fee {{index}}",
+      "delete": "Delete this fee",
+      "labels": {
+        "amount": "Amount ({{currency}})",
+        "date": "Date",
+        "status": "Status",
+        "description": "Description"
+      },
+      "placeholders": {
+        "amount": "0.00",
+        "description": "Ex: Service fees, travel expenses..."
+      },
+      "status": {
+        "draft": "Draft",
+        "confirmed": "Confirmed",
+        "paid": "Paid"
+      },
+      "empty": {
+        "title": "No fees added yet.",
+        "subtitle": "Click \"Add\" to save the fees for this mission"
+      }
+    },
+    "options": {
+      "missionType": {
+        "Service": "Service",
+        "Execution": "Execution",
+        "Observation": "Observation",
+        "Seizure": "Seizure",
+        "Investigation": "Investigation"
+      },
+      "status": {
+        "planned": "Planned",
+        "inProgress": "In Progress",
+        "completed": "Completed",
+        "cancelled": "Cancelled"
+      }
+    }
+  },
+  "blockers": {
+    "missingParent": "You cannot create a mission. Please create at least one dossier first."
+  }
+}

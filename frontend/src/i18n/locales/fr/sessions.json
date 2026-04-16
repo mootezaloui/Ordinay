@@ -1,0 +1,288 @@
+{
+  "page": {
+    "title": "Audiences",
+    "subtitle": "{{total}} audiences au total",
+    "subtitleFiltered": "{{total}} audiences au total, {{displayed}} affichées"
+  },
+  "actions": {
+    "new": "Nouvelle audience",
+    "disabledTooltip": "Ajoutez un dossier avant de programmer une audience"
+  },
+  "stats": {
+    "total": "Total des audiences",
+    "today": "Aujourd'hui",
+    "thisWeek": "Cette semaine",
+    "completed": "Terminées"
+  },
+  "table": {
+    "columns": {
+      "title": "Titre",
+      "type": "Type",
+      "date": "Date",
+      "time": "Heure",
+      "duration": "Durée",
+      "location": "Lieu",
+      "status": "Statut",
+      "actions": "Actions"
+    },
+    "type": {
+      "consultation": "Consultation",
+      "audience": "Audience",
+      "expertise": "Expertise",
+      "mediation": "Médiation",
+      "telephone": "Téléphone"
+    },
+    "status": {
+      "scheduled": "Programmée",
+      "confirmed": "Confirmée",
+      "pending": "En attente",
+      "onHold": "En suspens",
+      "completed": "Terminée",
+      "cancelled": "Annulée"
+    },
+    "actions": {
+      "view": "Voir les détails",
+      "edit": "Modifier",
+      "delete": "Supprimer"
+    },
+    "empty": "Aucune audience trouvée",
+    "emptyFiltered": "Aucun résultat ne correspond à vos filtres",
+    "emptyNoDossiers": "Ajoutez un dossier avant de programmer une audience"
+  },
+  "confirm": {
+    "delete": {
+      "title": "Supprimer l'audience",
+      "message": "Êtes-vous sûr de vouloir supprimer cette audience ?",
+      "confirm": "Supprimer",
+      "cancel": "Annuler"
+    }
+  },
+  "toasts": {
+    "deleteSuccess": "Audience supprimée",
+    "deletedTitle": "Supprimée",
+    "deleteError": "Erreur lors de la suppression de l'audience",
+    "statusUpdated": "Statut mis à jour : {{status}}",
+    "statusTitle": "Statut de l'audience",
+    "updateSuccess": "Audience mise à jour avec succès",
+    "createSuccess": "Audience ajoutée avec succès",
+    "saveError": "Erreur lors de l'enregistrement"
+  },
+  "form": {
+    "title": {
+      "edit": "Modifier l'audience",
+      "create": "Ajouter une nouvelle audience"
+    },
+    "subtitle": {
+      "edit": "Mettre à jour les détails de l'audience",
+      "create": "Créer une nouvelle audience"
+    },
+    "statusReadonlyHelp": "Le statut ne peut être modifié que via le sélecteur dans la liste",
+    "fields": {
+      "title": {
+        "label": "Titre de l'audience",
+        "placeholder": "Ex : Audience préliminaire"
+      },
+      "type": {
+        "label": "Type",
+        "options": {
+          "hearing": "Audience",
+          "consultation": "Consultation",
+          "mediation": "Médiation",
+          "expertAssessment": "Expertise",
+          "phoneCall": "Appel téléphonique",
+          "other": "Autre"
+        }
+      },
+      "linkType": {
+        "label": "Liée à",
+        "options": {
+          "dossier": "Dossier",
+          "lawsuit": "Procès"
+        },
+        "helper": "Une audience peut être liée à un procès ou directement à un dossier"
+      },
+      "lawsuitId": {
+        "label": "Procès",
+        "helper": "Sélectionnez le procès concerné"
+      },
+      "dossierId": {
+        "label": "Dossier",
+        "helper": "Sélectionnez le dossier concerné"
+      },
+      "date": {
+        "label": "Date"
+      },
+      "time": {
+        "label": "Heure",
+        "helper": "Sélectionnez l'heure de début"
+      },
+      "duration": {
+        "label": "Durée estimée",
+        "helper": "Durée prévue de l'audience",
+        "options": {
+          "00_15": "15 minutes",
+          "00_30": "30 minutes",
+          "00_45": "45 minutes",
+          "01_00": "1 heure",
+          "01_30": "1h30",
+          "02_00": "2 heures",
+          "02_30": "2h30",
+          "03_00": "3 heures",
+          "04_00": "4 heures"
+        }
+      },
+      "location": {
+        "label": "Lieu",
+        "placeholder": "Cabinet, Tribunal, etc."
+      },
+      "courtRoom": {
+        "label": "Salle d'audience",
+        "placeholder": "ex. Salle 5A",
+        "helper": "La salle précise où se déroule cette audience"
+      },
+      "judge": {
+        "label": "Juge",
+        "placeholder": "ex. Juge Dupont",
+        "helper": "Le juge qui préside cette audience"
+      },
+      "status": {
+        "label": "Statut",
+        "options": {
+          "scheduled": "Programmée",
+          "confirmed": "Confirmée",
+          "pending": "En attente",
+          "completed": "Terminée",
+          "cancelled": "Annulée"
+        }
+      },
+      "description": {
+        "label": "Description",
+        "placeholder": "Description de l'audience..."
+      }
+    }
+  },
+  "blocker": {
+    "action": "Modifier/Supprimer l'audience",
+    "entityWithDate": "Audience du {{date}}",
+    "entityFallback": "Audience"
+  },
+  "confirmImpact": {
+    "action": "Confirmer la modification",
+    "entityFallback": "Audience"
+  },
+  "export": {
+    "filename": "audiences-{{date}}.csv"
+  },
+  "detail": {
+    "entityName": "Audience",
+    "notFound": "Audience non trouvée",
+    "deleteConfirm": "Êtes-vous sûr de vouloir supprimer cette audience ?",
+    "subtitle": "{{type}} - {{date}} à {{time}}",
+    "fallback": {
+      "na": "N/D",
+      "none": "Aucun",
+      "noDescription": "Aucune description"
+    },
+    "quickActions": {
+      "status": {
+        "label": "Statut",
+        "scheduled": "Programmée",
+        "confirmed": "Confirmée",
+        "pending": "En attente",
+        "completed": "Terminée",
+        "cancelled": "Annulée"
+      },
+      "type": {
+        "label": "Type",
+        "consultation": "Consultation",
+        "hearing": "Audience",
+        "expertise": "Expertise",
+        "mediation": "Médiation",
+        "telephone": "Téléphone",
+        "other": "Autre"
+      }
+    },
+    "header": {
+      "date": "Date",
+      "time": "Heure",
+      "duration": "Durée",
+      "location": "Lieu",
+      "courtRoom": "Salle d'audience",
+      "judge": "Juge",
+      "participants": "Participants"
+    },
+    "tabs": {
+      "overview": "Aperçu",
+      "participants": "Participants",
+      "documents": "Documents",
+      "report": "Compte-rendu",
+      "history": "Historique"
+    },
+    "participants": {
+      "empty": "Aucun participant",
+      "entityName": "un participant",
+      "unnamed": "Participant sans nom",
+      "roles": {
+        "lawyer": "Avocat",
+        "client": "Client",
+        "judge": "Juge",
+        "witness": "Témoin",
+        "expert": "Expert",
+        "default": "Participant"
+      },
+      "form": {
+        "name": "Nom",
+        "namePlaceholder": "Nom complet",
+        "nameHelp": "Qui assistera à cette audience ?",
+        "role": "Rôle",
+        "rolePlaceholder": "Choisir un rôle",
+        "email": "E-mail",
+        "emailPlaceholder": "nom@email.com",
+        "phone": "Téléphone",
+        "phonePlaceholder": "+216 12 345 678",
+        "phoneHelp": "Numéro de contact optionnel pour la coordination le jour J"
+      }
+    },
+    "overview": {
+      "general": "Informations générales",
+      "details": "Détails de l'audience",
+      "description": "Description",
+      "fields": {
+        "title": "Titre de l'audience",
+        "linkType": "Liée à",
+        "linkTypeOptions": {
+          "dossier": "Dossier",
+          "lawsuit": "Procès"
+        },
+        "linkTypeHelp": "Une audience peut être liée à un procès ou directement à un dossier",
+        "lawsuit": "Procès",
+        "lawsuitPlaceholder": "Sélectionner un procès...",
+        "lawsuitHelp": "Sélectionnez le procès concerné",
+        "dossier": "Dossier",
+        "dossierPlaceholder": "Sélectionner un dossier...",
+        "dossierHelp": "Sélectionnez le dossier concerné",
+        "date": "Date",
+        "time": "Heure",
+        "timeHelp": "Sélectionnez l'heure de début de l'audience",
+        "duration": "Durée estimée",
+        "durationHelp": "Durée estimée de l'audience",
+        "durationOptions": {
+          "00_15": "15 minutes",
+          "00_30": "30 minutes",
+          "00_45": "45 minutes",
+          "01_00": "1 heure",
+          "01_30": "1h30",
+          "02_00": "2 heures",
+          "02_30": "2h30",
+          "03_00": "3 heures",
+          "04_00": "4 heures"
+        },
+        "location": "Lieu",
+        "courtRoom": "Salle d'audience",
+        "courtRoomHelp": "Salle précise pour cette audience",
+        "judge": "Juge",
+        "judgeHelp": "Juge qui préside cette audience"
+      }
+    }
+  }
+}

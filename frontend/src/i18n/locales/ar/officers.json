@@ -1,0 +1,178 @@
+{
+  "page": {
+    "title": "المحضرون",
+    "subtitle": "{{total}} محضر في المجموع",
+    "subtitleFiltered": "{{total}} محضر في المجموع، {{displayed}} معروض",
+    "actions": {
+      "new": "محضر جديد"
+    }
+  },
+  "stats": {
+    "total": "إجمالي المحضرين",
+    "available": "متاحون",
+    "busy": "مشغولون",
+    "inactive": "غير نشطين"
+  },
+  "table": {
+    "columns": {
+      "name": "الاسم",
+      "phone": "الهاتف",
+      "email": "البريد الإلكتروني",
+      "location": "الموقع",
+      "status": "الحالة",
+      "actions": "الإجراءات"
+    },
+    "status": {
+      "available": "متاح",
+      "busy": "مشغول",
+      "inactive": "غير نشط"
+    },
+    "actions": {
+      "view": "عرض التفاصيل",
+      "edit": "تعديل",
+      "delete": "حذف"
+    },
+    "empty": "لا يوجد محضرون متاحون",
+    "emptyFiltered": "لم يتم العثور على نتائج"
+  },
+  "confirm": {
+    "delete": {
+      "title": "حذف المحضر",
+      "message": "هل أنت متأكد أنك تريد حذف هذا المحضر؟",
+      "confirm": "حذف",
+      "cancel": "إلغاء"
+    }
+  },
+  "form": {
+    "title": {
+      "edit": "تعديل المحضر",
+      "create": "محضر جديد"
+    },
+    "subtitle": {
+      "edit": "تعديل معلومات المحضر",
+      "create": "إضافة محضر جديد"
+    },
+    "fields": {
+      "name": {
+        "label": "الاسم الكامل",
+        "placeholder": "مثال: المحامي أحمد بن سالم"
+      },
+      "phone": {
+        "label": "الهاتف",
+        "placeholder": "+216 98 123 456"
+      },
+      "alternatePhone": {
+        "label": "هاتف بديل",
+        "placeholder": "+216 71 234 567"
+      },
+      "email": {
+        "label": "البريد الإلكتروني",
+        "placeholder": "email@example.com"
+      },
+      "location": {
+        "label": "الموقع",
+        "placeholder": "مثال: تونس"
+      },
+      "address": {
+        "label": "العنوان الكامل",
+        "placeholder": "عنوان المكتب/الدراسة"
+      },
+      "status": {
+        "label": "الحالة"
+      },
+      "notes": {
+        "label": "ملاحظات",
+        "placeholder": "ملاحظات حول هذا المحضر..."
+      }
+    },
+    "help": {
+      "statusLocked": "يمكن تغيير الحالة فقط من خلال محدد القائمة"
+    }
+  },
+  "toasts": {
+    "deleteSuccess": {
+      "title": "تم الحذف بنجاح",
+      "body": "تم حذف المحضر"
+    },
+    "cascadeSuccess": {
+      "title": "تم الحذف المتتالي بنجاح",
+      "body": "تم حذف المحضر وجميع الكيانات المرتبطة"
+    },
+    "cascadeError": "خطأ أثناء الحذف المتتالي. يرجى المحاولة مرة أخرى.",
+    "updateSuccess": "تم تحديث المحضر بنجاح!",
+    "createSuccess": "تمت إضافة المحضر بنجاح!",
+    "saveError": "خطأ في حفظ المحضر"
+  },
+  "blockerModal": {
+    "actionName": "تعديل/حذف المحضر",
+    "entityFallback": "المحضر"
+  },
+  "detail": {
+    "entityName": "المحضر",
+    "notFound": "المحضر غير موجود",
+    "deleteConfirm": "هل أنت متأكد أنك تريد حذف هذا المحضر؟",
+    "quickActions": {
+      "status": {
+        "label": "الحالة",
+        "available": "متاح",
+        "busy": "مشغول",
+        "inactive": "غير نشط"
+      }
+    },
+    "header": {
+      "independent": "محضر مستقل",
+      "phone": "الهاتف",
+      "email": "البريد الإلكتروني",
+      "location": "الموقع"
+    },
+    "stats": {
+      "totalMissions": "إجمالي مهام المحضر",
+      "inProgress": "قيد التنفيذ",
+      "completed": "مكتملة"
+    },
+    "tabs": {
+      "overview": "نظرة عامة",
+      "missions": "مهام المحضر",
+      "lawsuits": "القضايا/الملفات المرتبطة",
+      "financial": "المحاسبة",
+      "financialDescription": "تتبع مالي لجميع مهام هذا المحضر",
+      "documents": "المستندات",
+      "history": "السجل"
+    },
+    "missions": {
+      "empty": "لا توجد مهام محضر معينة لهذا المحضر",
+      "entityName": "مهمة محضر",
+      "addSubtitle": "تعيين مهمة محضر جديدة لهذا المحضر",
+      "help": {
+        "assigned": "ستُعين هذه المهمة لـ {{name}}",
+        "entityType": "حدد ما إذا كانت هذه المهمة تتعلق بملف أو قضية",
+        "entityReference": "حدد الملف أو القضية لهذه المهمة"
+      }
+    },
+    "lawsuits": {
+      "empty": "لا توجد قضايا/ملفات مرتبطة لهذا المحضر"
+    },
+    "overview": {
+      "general": "معلومات عامة",
+      "contact": "معلومات الاتصال",
+      "notes": "الملاحظات",
+      "fields": {
+        "name": "الاسم الكامل",
+        "alternatePhone": "هاتف بديل",
+        "address": "العنوان الكامل"
+      },
+      "placeholders": {
+        "name": "مثال: المحامي أحمد بن سالم",
+        "email": "email@example.com",
+        "phone": "+216 98 123 456",
+        "alternatePhone": "+216 71 234 567",
+        "location": "مثال: تونس",
+        "address": "عنوان المكتب/الدراسة"
+      }
+    },
+    "fallback": {
+      "na": "غير متاح",
+      "noNotes": "لا توجد ملاحظات"
+    }
+  }
+}
